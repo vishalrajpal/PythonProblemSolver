@@ -18,8 +18,9 @@ class TestDataSetReader:
             print 'reading json'
             new_question = Question(question)
             questions.append(new_question)
+            new_question.solve()
             
-        for question in questions:
-            question.solve()
+#         for question in questions:
+#             question.solve()
             
 #         print questions

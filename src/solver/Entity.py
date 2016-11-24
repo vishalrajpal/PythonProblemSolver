@@ -10,4 +10,4 @@ class Entity:
         return self.m_name
         
     def get_name(self):
-        return unicodedata.normalize('NFKD', self.m_name).encode('ascii', 'ignore')
+        return unicodedata.normalize('NFKD', self.m_name).encode('ascii', 'ignore').lower()
