@@ -54,6 +54,8 @@ class Sentence:
         self.m_is_first_word_an_expletive = True if self.m_syntactic_pattern[0] == 'E' else False
         self.m_sentence_index = sentence_index
         self.m_is_pronoun_noun_found = False
+        self.temp_transfer_entity = None
+        self.temp_dobj = None
         print self.m_predicted_label
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
@@ -85,7 +87,7 @@ class Sentence:
         for matched_pos in self.m_matched_pos:
             word_pos = matched_pos[1].split(" ")
             parts_of_speech = word_pos[0]
-            word = word_pos[1]
+            word = word_pos[1].lower()
             self.m_words_pos[word] = parts_of_speech
             print word + ":" + parts_of_speech         
             if parts_of_speech in PublicKeys.NOUN_POS:
@@ -118,7 +120,7 @@ class Sentence:
                         current_pronoun_noun = current_sentence_coref_dict[word]
                         print 'current_pronoun_noun' + current_pronoun_noun
                         print self.m_question.m_proper_nouns
-                        if current_pronoun_noun in self.m_question.m_proper_nouns:
+                        if current_pronoun_noun.lower() in self.m_question.m_proper_nouns:
                             self.m_processed_pronoun = current_pronoun_noun
                             self.m_is_pronoun_noun_found = True
                             print "Pronoun Noun :" + self.m_processed_pronoun
@@ -128,74 +130,126 @@ class Sentence:
     def extract_entities(self):
         print 'in extract entities'
         sentence_parse = Sentence.SPACY_PARSER(self.m_sentence_text)
+        spacy_subj = None
+        temp_pobj = None
         for token in sentence_parse:
             print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
-            if token.dep_ == 'pobj' or token.dep_ == 'poss':
+            if token.dep_ == 'pobj':
                 print 'found pobj'
-                self.m_pobj = token.orth_
-                if self.m_pobj in self.m_all_pronouns:
-                    self.m_pobj = self.m_processed_pronoun
-                    
-                self.m_has_a_pobj = True
-
+                temp_pobj = token
+#                 self.assign_pobj(token)
+            elif token.dep_ == 'nsubj':
+                spacy_subj = token.orth_.lower()
+            elif token.dep_ == 'poss':
+                self.assign_poss_entities(token)
         
         sentence_svos = findSVOs(sentence_parse)
+        print spacy_subj
+        print self.m_has_a_pobj
         print sentence_svos
         if len(sentence_svos) > 0 :
             transfer_entity_relation = None
-            if self.m_is_first_word_an_expletive == False:                
+            if self.m_is_first_word_an_expletive == False:
+                                
                 print sentence_svos[0][0]
                 print sentence_svos[0][2]
                 
-                self.m_has_a_nsubj  = True
-                self.m_nsubj = sentence_svos[0][0]
+                #trying to assign subj and obj from svo
+                self.assign_nsubj(sentence_svos[0][0])
+                self.assign_dobj(sentence_svos[0][2])
                 
-                if self.m_nsubj in self.m_all_pronouns:
-                    self.m_nsubj = self.m_processed_pronoun
+                print 'after trying to assign dobj:'
+                print  self.m_has_a_dobj
+                print self.temp_dobj
                 
-                self.m_owner_entity = Entity('nsubj', self.m_nsubj)
-                self.m_has_a_dobj = True
-                self.m_dobj = sentence_svos[0][2]
+                if self.m_has_a_dobj == False:
+                    if self.temp_dobj != None:
+                        self.assign_dobj(self.temp_dobj)
+                        if self.temp_transfer_entity != None:
+                            self.assign_transfer_entity(self.temp_transfer_entity, 'dobj')
+                    elif temp_pobj != None:
+                        self.assign_dobj(temp_pobj.orth_.lower())
+                        #self.assign_dobj(self.m_pobj, 'pobj')
+                        self.assign_transfer_entity(sentence_svos[0][2], 'dobj')
+                elif temp_pobj != None:
+                    self.assign_transfer_entity(temp_pobj.orth_.lower(), 'pobj')
+                elif self.temp_transfer_entity != None:
+                    self.assign_transfer_entity(self.temp_transfer_entity, 'poss')
+                    
                 
-                if self.m_dobj in self.m_all_pronouns:
-                    self.m_dobj = self.m_processed_pronoun
-                
-                if self.m_has_a_pobj:
-                    self.m_transfer_entity = Entity('pobj', self.m_pobj)
+#                 if self.m_has_a_dobj == False and self.temp_dobj != None:
+#                     self.assign_dobj(self.temp_dobj)
+#                     self.assign_transfer_entity(sentence_svos[0][2], 'dobj')
+#                 elif self.m_has_a_pobj == True:
+#                     print 'has a pobj'
+#                     if self.m_has_a_dobj == False:
+#                         print 'no dobj'
+#                         self.assign_dobj(self.m_pobj, 'pobj')
+#                         self.assign_transfer_entity(sentence_svos[0][2], 'dobj')
+#                     else:
+#                         self.assign_transfer_entity(self.m_pobj, 'pobj')
+#                 elif self.temp_transfer_entity != None:
+#                     self.assign_transfer_entity(self.temp_transfer_entity, 'poss')
             else:
-                self.m_has_a_dobj = True
-                self.m_dobj = sentence_svos[0][2]
-                if self.m_has_a_pobj:
-                    self.m_has_a_nsubj  = True
-                    self.m_nsubj = self.m_pobj
-                    if self.m_nsubj in self.m_all_pronouns:
-                        self.m_nsubj = self.m_processed_pronoun
-                    self.m_owner_entity = Entity('nsubj', self.m_nsubj)
-
-            
-#             print self.m_dependencies
-#             for dependency in self.m_dependencies:
-#                     relation = dependency[0]
-#                     if relation == 'nmod:to' or relation == 'nmod:from' or relation == 'nmod:poss' or relation == 'iobj' or relation == 'nmod:in' or relation == 'nmod:on':
-#                         transfer_entity_relation = relation                                    
-#                         if self.m_has_a_pronoun:
-#                             self.m_transfer_entity = Entity(relation, unicode(self.m_processed_pronoun, "utf-8"))
-#                         else:
-#                             self.m_transfer_entity = Entity(relation, dependency[2])
-            
-#             if self.m_is_first_word_an_expletive == True and self.m_nsubj == None and self.m_transfer_entity != None:
-#                 print 'in setting nlod as the subject'
-#                 self.m_has_a_nsubj  = True
-#                 self.m_nsubj = unicode(self.m_transfer_entity.get_name(), 'utf-8')
-#                 self.m_owner_entity = Entity('nsubj', self.m_nsubj)
-#                 self.m_transfer_entity = None
-            
-            print 'transfer entity:'
-            if self.m_transfer_entity != None:
-                print self.m_transfer_entity
+                self.assign_dobj(sentence_svos[0][2])
                 
+                if temp_pobj != None:
+                    self.assign_nsubj(temp_pobj.orth_.lower())
+            print 'before calling extract quantified'
             self.extract_quantified_entities(True, transfer_entity_relation)
+        elif spacy_subj != None and temp_pobj != None:
+            self.temp_dobj = temp_pobj.orth_
+            print 'In spacy' + spacy_subj
+            print self.temp_dobj
+            self.assign_nsubj(spacy_subj)
+            self.assign_dobj(self.temp_dobj)
+            self.extract_quantified_entities(False, None)
+            
 
+    def assign_nsubj(self, subj):
+        self.m_has_a_nsubj  = True
+        self.m_nsubj = subj
+        if self.m_nsubj in self.m_all_pronouns:
+            self.m_nsubj = self.m_processed_pronoun
+        self.m_owner_entity = Entity('nsubj', self.m_nsubj)
+        
+    def assign_dobj(self, dobj):
+        if self.is_integer(dobj) == False and dobj not in self.m_question.m_proper_nouns:
+            self.m_has_a_dobj = True
+            self.m_dobj = dobj
+                    
+            if self.m_dobj in self.m_all_pronouns:
+                self.m_dobj = self.m_processed_pronoun
+
+    def assign_pobj(self, token):
+        token_orth = token.orth_.lower()
+        print token_orth
+        print self.m_question.get_quantified_entities()
+        print self.m_question.get_quantified_entity_objects()
+        if token_orth in self.m_question.get_quantified_entities():
+            print 'assigning pobj'
+            self.m_pobj = token_orth
+            if self.m_pobj in self.m_all_pronouns:
+                self.m_pobj = self.m_processed_pronoun
+                        
+            self.m_has_a_pobj = True
+        #elif token_orth in self.m_question.get_quantified_entity_objects():
+        else:
+            self.temp_dobj = token_orth
+        
+    def assign_poss_entities(self, token):
+        self.temp_transfer_entity = token.orth_.lower()
+        self.temp_dobj = token.head.orth_.lower()
+    
+    def assign_transfer_entity(self, val, pos):
+        if val != None:
+            val = val.lower()
+            print 'in assign transfer entity:' + val
+            if val in self.m_all_pronouns:
+                val = self.m_processed_pronoun
+            
+            self.m_transfer_entity = Entity(pos, val)
+        
     def extract_normal_entities(self):
         transfer_entity_relation = None
         for dependency in self.m_dependencies:
@@ -217,8 +271,14 @@ class Sentence:
         
     
     def extract_quantified_entities(self, to_create_transfer_entity, transfer_entity_relation):
+        print self.m_transfer_entity
+#         print self.m_owner_entity
+        
         if self.m_cardinal != None:
             if self.m_owner_entity != None:
+                print self.m_dobj
+                print type(self.m_dobj)
+                print self.m_dobj.lower()
                 temp_quantified_entity = QuantifiedEntity(self.m_cardinal, 'dobj', self.m_dobj, False)
                 temp_quantified_entity.set_owner_entity(self.m_owner_entity)
                 merge_entities = self.get_or_merge_entity(temp_quantified_entity)                                                    
@@ -283,6 +343,14 @@ class Sentence:
                 max = wup_similarity if max < wup_similarity else max
         return max           
            
+    def is_integer(self, val):
+        is_integer = True
+        try:
+            dummy = int(val)
+        except:
+            is_integer = False
+        return is_integer
+
     def extract_result(self):
         quantified_entities = self.m_question.get_quantified_entities()
         subjects_object_entities = quantified_entities[self.m_evaluating_subject.get_name()]

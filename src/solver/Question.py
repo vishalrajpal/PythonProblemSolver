@@ -16,7 +16,7 @@ class Question:
         self.m_evaluating_sentence = None
         self.m_simplified_question = ""
         self.m_coref_dict = {}
-        self.m_proper_nouns = []
+        self.m_proper_nouns = set()
         self.read_sentences()
         
     def extract_corefs(self):
@@ -34,9 +34,9 @@ class Question:
                     print coref_mapping[1]
                     sentence_index = coref_mapping[0][1]
                     print sentence_index
-                    src_word = coref_mapping[0][0]
+                    src_word = coref_mapping[0][0].lower()
                     print src_word
-                    sink_word = coref_mapping[1][0]
+                    sink_word = coref_mapping[1][0].lower()
                     print sink_word
                     
                     self.m_coref_dict[sentence_index][src_word] = sink_word
@@ -72,7 +72,7 @@ class Question:
         self.m_entities.append(entity)
 
     def add_proper_noun(self, noun):
-        self.m_proper_nouns.append(noun)
+        self.m_proper_nouns.add(noun.lower())
 
     def add_quantified_entity(self, quantified_entity):
         quantity_exists = self.quantified_entity_exists(quantified_entity)
@@ -84,12 +84,22 @@ class Question:
         return quantity_exists
         
     def quantified_entity_exists(self, quantified_entity):
+        print quantified_entity
+        print 'existing qes'
+        for k, v in self.m_quantified_entities.items():
+                for e in v:
+                    print "{} -> {} {}".format(k, e.m_cardinal, e.m_object)
         owner_entity = quantified_entity.get_owner_entity()
         quantified_entity_exists = False
         owner_entity_name = owner_entity.get_name()
+        print owner_entity_name
         if owner_entity_name in self.m_quantified_entities:
             owner_quantified_entities = self.m_quantified_entities[owner_entity_name]
+            print owner_quantified_entities
             for owner_quantified_entity in owner_quantified_entities:
+                print owner_quantified_entity
+                print quantified_entity
+                print quantified_entity.get_name()
                 if owner_quantified_entity.get_name() == quantified_entity.get_name():
                     quantified_entity_exists = True
         else:
@@ -105,6 +115,13 @@ class Question:
 
     def get_quantified_entities(self):
         return self.m_quantified_entities
+
+    def get_quantified_entity_objects(self):
+        qe_objects = set()
+        for v in self.m_quantified_entities.values():
+            for e in v:
+                qe_objects.add(e.m_object)
+        return qe_objects
 
     def solve(self):
         print "In Solve"

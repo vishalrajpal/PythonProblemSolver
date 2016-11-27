@@ -1,9 +1,9 @@
 class QuantifiedEntity:
     
-    def __init__(self, cardinal, object_dependency, object, is_transfer_entity):
+    def __init__(self, cardinal, object_dependency, q_object, is_transfer_entity):
         self.m_cardinal = cardinal
         self.m_object_dependecy = object_dependency
-        self.m_object = object
+        self.m_object = q_object.lower()
         self.m_transactions = []
         self.m_is_transfer_entity = is_transfer_entity
         self.m_owner_entity = None
@@ -23,7 +23,7 @@ class QuantifiedEntity:
         self.m_transactions.append(value)
         
     def get_name(self):
-        return self.m_object.lower()
+        return self.m_object
     
     def is_transfer_entity(self):
         return self.is_transfer_entity
