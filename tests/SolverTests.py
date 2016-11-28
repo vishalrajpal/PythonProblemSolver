@@ -43,7 +43,16 @@ class SolverTests(unittest.TestCase):
         print question_json_obj["ParentIndex"] 
         new_question = Question(question_json_obj)
         new_question.solve()
-        self.assertEquals(new_question.get_quantified_entities().get(0), "joan -> 13 games", "Joan football question fails.")
+        print 'in test prints'
+        joans_entities = new_question.get_quantified_entities().get("joan")
+        self.assertEquals(len(joans_entities), 1, "Joan should have 1 quantified entity.")
+        joan_seashell_entity = joans_entities[0]
+        print 'str rep'
+        joan_actual_qe = joan_seashell_entity.get_str_rep()
+        print joan_actual_qe
+        joan_expected_qe = "joan -> 13 game"
+        print joan_expected_qe
+        self.assertEquals(joan_actual_qe, joan_expected_qe, "Joan football question fails.")
         
     if __name__ == '__main__':
         

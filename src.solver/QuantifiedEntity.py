@@ -40,3 +40,9 @@ class QuantifiedEntity:
     
     def set_equal_to_state(self, value):
         self.m_equal_to_state = value
+        
+    def get_str_rep(self):
+        if self.m_equal_to_state != None:
+            return self.m_owner_entity.get_name() + " -> " + str(self.m_cardinal) + " = " + str(self.m_equal_to_state) + " " + self.m_object 
+        else:
+            return self.m_owner_entity.get_name() + " -> " + str(self.m_cardinal) + " " + self.m_object
