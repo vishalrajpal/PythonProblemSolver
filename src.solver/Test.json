@@ -1,0 +1,40 @@
+[{ 
+	"ParentIndex": 1,
+	"iIndex": 1,
+	"lEquations": ["X = 70 - 27"],
+	"lSolutions": ["43"],
+	"sQuestion": "Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ? ",
+	"Sentences": [{
+		"Sentence": "Joan found 70 seashells on the beach .",
+		"SimplifiedSentences": [{
+			"Sentence": "Joan found 70 seashells on the beach .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVCNPDN"
+		}]
+	}, {
+		"Sentence": "she gave Sam some of her seashells .",
+		"SimplifiedSentences": [{
+			"Sentence": "she gave Sam some of her seashells .",
+			"label": "-",
+			"PredictedLabel": "-",
+			"SyntacticPattern": "NVNDPNN"
+		}]
+	}, {
+		"Sentence": "She has 27 seashell .",
+		"SimplifiedSentences": [{
+			"Sentence": "She has 27 seashell .",
+			"label": "=",
+			"PredictedLabel": "=",
+			"SyntacticPattern": "NVCN"
+		}]
+	}, {
+		"Sentence": "How many seashells did she give to Sam ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many seashells did she give to Sam ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVNVPN"
+		}]
+	}]
+}]

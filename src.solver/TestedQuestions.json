@@ -1,0 +1,200 @@
+[{
+	"ParentIndex": 8,
+	"iIndex": 8,
+	"lEquations": ["X = 4 + 9"],
+	"lSolutions": ["13"],
+	"sQuestion": "Joan went to 4 football games this year . She went to 9 games last year . How many football games did Joan go to in all ? ",
+	"Sentences": [{
+		"Sentence": "Joan went to 4 football games this year .",
+		"SimplifiedSentences": [{
+			"Sentence": "Joan went to 4 football games this year .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVPCNDN"
+		}]
+	}, {
+		"Sentence": "She went to 9 games last year .",
+		"SimplifiedSentences": [{
+			"Sentence": "She went to 9 games last year .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVPCNAN"
+		}]
+	}, {
+		"Sentence": "How many football games did Joan go to in all ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many football games did Joan go to in all ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVNVPPD"
+		}]
+	}]
+},{
+	"ParentIndex": 14,
+	"iIndex": 14,
+	"lEquations": ["X = 2 + 3"],
+	"lSolutions": ["5"],
+	"sQuestion": "There are 2 pencils in the drawer . Tim placed 3 pencils in the drawer . How many pencils are now there in total ? ",
+	"Sentences": [{
+		"Sentence": "There are 2 pencils in the drawer .",
+		"SimplifiedSentences": [{
+			"Sentence": "There are 2 pencils in the drawer .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "EVCNPDN"
+		}]
+	}, {
+		"Sentence": "Tim placed 3 pencils in the drawer .",
+		"SimplifiedSentences": [{
+			"Sentence": "Tim placed 3 pencils in the drawer .",
+			"label": "-",
+			"PredictedLabel": "-",
+			"SyntacticPattern": "NVCNPDN"
+		}]
+	}, {
+		"Sentence": "How many pencils are now there in total ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many pencils are now there in total ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVPN"
+		}]
+	}]
+},{
+	"ParentIndex": 91,
+	"iIndex": 91,
+	"lEquations": ["X = 676 - 224"],
+	"lSolutions": ["452"],
+	"sQuestion": "Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ",
+	"Sentences": [{
+		"Sentence": "Jason has 676 Pokemon cards .",
+		"SimplifiedSentences": [{
+			"Sentence": "Jason has 676 Pokemon cards .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVCN"
+		}]
+	}, {
+		"Sentence": "Alyssa bought 224 of Jason's Pokemon cards .",
+		"SimplifiedSentences": [{
+			"Sentence": "Alyssa bought 224 of Jason's Pokemon cards .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVCPNN"
+		}]
+	}, {
+		"Sentence": "How many Pokemon cards does Jason have now ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many Pokemon cards does Jason have now ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVNV"
+		}]
+	}]
+}, {
+	"sQuestion": "Sally had 27 Pokemon cards . Dan gave her 41 new Pokemon cards . Sally bought 20 Pokemon cards . How many Pokemon cards does Sally have now ? ",
+	"lSolutions": ["88"],
+	"ParentIndex": 54,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"PredictedLabel": "+",
+			"label": "+",
+			"Sentence": "Sally had 27 Pokemon cards ."
+		}],
+		"Sentence": "Sally had 27 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNCAN",
+			"PredictedLabel": "-",
+			"label": "+",
+			"Sentence": "Dan gave her 41 new Pokemon cards ."
+		}],
+		"Sentence": "Dan gave her 41 new Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"PredictedLabel": "+",
+			"label": "+",
+			"Sentence": "Sally bought 20 Pokemon cards ."
+		}],
+		"Sentence": "Sally bought 20 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"PredictedLabel": "?",
+			"label": "?",
+			"Sentence": "How many Pokemon cards does Sally have now ?"
+		}],
+		"Sentence": "How many Pokemon cards does Sally have now ?"
+	}],
+	"lEquations": ["X = 27 + 41 + 20"],
+	"iIndex": 54
+},{
+	"ParentIndex": 86,
+	"iIndex": 86,
+	"lEquations": ["X = 79 - 63"],
+	"lSolutions": ["16"],
+	"sQuestion": "Joan found 79 seashells on the beach , she gave Mike 63 of the seashells . How many seashells does she now have ? ",
+	"Sentences": [{
+		"Sentence": "Joan found 79 seashells on the beach , she gave Mike 63 of the seashells .",
+		"SimplifiedSentences": [{
+			"Sentence": "Joan found 79 seashells on the beach .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVCNPDN"
+		}, {
+			"Sentence": "she gave Mike 63 of the seashells .",
+			"label": "-",
+			"PredictedLabel": "-",
+			"SyntacticPattern": "NVNCPDN"
+		}]
+	}, {
+		"Sentence": "How many seashells does she now have ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many seashells does she now have ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVNV"
+		}]
+	}]
+},{ 
+	"ParentIndex": 1,
+	"iIndex": 1,
+	"lEquations": ["X = 70 - 27"],
+	"lSolutions": ["43"],
+	"sQuestion": "Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ? ",
+	"Sentences": [{
+		"Sentence": "Joan found 70 seashells on the beach .",
+		"SimplifiedSentences": [{
+			"Sentence": "Joan found 70 seashells on the beach .",
+			"label": "+",
+			"PredictedLabel": "+",
+			"SyntacticPattern": "NVCNPDN"
+		}]
+	}, {
+		"Sentence": "she gave Sam some of her seashells .",
+		"SimplifiedSentences": [{
+			"Sentence": "she gave Sam some of her seashells .",
+			"label": "-",
+			"PredictedLabel": "-",
+			"SyntacticPattern": "NVNDPNN"
+		}]
+	}, {
+		"Sentence": "She has 27 seashell .",
+		"SimplifiedSentences": [{
+			"Sentence": "She has 27 seashell .",
+			"label": "=",
+			"PredictedLabel": "=",
+			"SyntacticPattern": "NVCN"
+		}]
+	}, {
+		"Sentence": "How many seashells did she give to Sam ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many seashells did she give to Sam ?",
+			"label": "?",
+			"PredictedLabel": "?",
+			"SyntacticPattern": "WANVNVPN"
+		}]
+	}]
+}]
