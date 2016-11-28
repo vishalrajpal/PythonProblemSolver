@@ -14,7 +14,7 @@ import unirest
 
 class Sentence:
 
-    SCORENLP = StanfordCoreNLP("stanford-corenlp-full-2016-10-31/")
+    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\"\/?]+)(\){1})')
     
@@ -74,7 +74,8 @@ class Sentence:
         self.extract_dependencies()
 #         self.process_pronouns()
         if self.m_predicted_label == '?':
-            self.extract_evaluation_entities()
+            print 'ignore'
+#             self.extract_evaluation_entities()
         else:
             self.extract_entities()
 
@@ -336,8 +337,6 @@ class Sentence:
     def extract_evaluation_entities(self):
         print 'In extract evaluating entities'
         noun_chunks = self.get_noun_chunks()
-        print noun_chunks
-        print noun_chunks[0]
         if self.m_is_pronoun_noun_found == True:
             print self.m_processed_pronoun
         

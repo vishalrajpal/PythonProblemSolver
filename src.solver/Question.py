@@ -4,9 +4,10 @@ from collections import OrderedDict
 from corenlp import StanfordCoreNLP
 from collections import OrderedDict
 
+
 class Question:
 
-    SCORENLP = StanfordCoreNLP("stanford-corenlp-full-2016-10-31/")    
+    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")    
     
     def __init__(self, question_json):
         self.m_question_json = question_json    
@@ -134,6 +135,6 @@ class Question:
             for k, v in self.m_quantified_entities.items():
                 for e in v:
                     print e         
-            print self.m_evaluating_sentence.extract_result()
+#             print self.m_evaluating_sentence.extract_result()
         else:
             print 'I don\'t have an evaluating sentence!'
