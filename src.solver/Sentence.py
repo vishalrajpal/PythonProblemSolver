@@ -15,7 +15,8 @@ from QuestionSentenceSolver import QuestionSentenceSolver
 
 class Sentence:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/home/niyati/.local/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/home/niyati/.local/lib/python2.7/stanford-corenlp-full-2016-10-31")
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\"\/?]+)(\){1})')
     NON_ALLOWED_NOUN_CHUNKS = ["how", "many", "much"]
@@ -453,20 +454,22 @@ class Sentence:
         result = None
         if self.m_question_label == 'all':
             return QuestionSentenceSolver.solve_for_all_label(self)
+        elif self.m_question_label == '+':
+            return QuestionSentenceSolver.solve_for_plus_label(self)
         else:
             return None
-#         if len(self.m_possible_evaluating_subjects) == 1:
-#             subject = self.m_possible_evaluating_subjects[0]
-#             if subject in quantified_entities:
-#                 subjects_object_entities = quantified_entities[subject]
-#                 
-#                 for subjects_object_entity in subjects_object_entities:
-#                     print 'during comparison'
-#                     print subjects_object_entity
-#                     print self.m_possible_evaluating_object
-#                     if subjects_object_entity.get_name() == self.m_possible_evaluating_object:
-#                         result = subjects_object_entity
-#                         break
+        # if len(self.m_possible_evaluating_subjects) == 1:
+        #     subject = self.m_possible_evaluating_subjects[0]
+        #     if subject in quantified_entities:
+        #         subjects_object_entities = quantified_entities[subject]
+        #
+        #         for subjects_object_entity in subjects_object_entities:
+        #             print 'during comparison'
+        #             print subjects_object_entity
+        #             print self.m_possible_evaluating_object
+        #             if subjects_object_entity.get_name() == self.m_possible_evaluating_object:
+        #                 result = subjects_object_entity
+        #                 break
 #         return result
 
 #         subjects_object_entities = quantified_entities[self.m_evaluating_subject.get_name()]

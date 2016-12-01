@@ -8,7 +8,7 @@ class QuestionSentencesLabeler:
         self.m_question_count_map = {}
         self.initializeLabelQuestionMap()
         for k,v in self.m_question_label_map.items():
-            if v == 'all':
+            if v == '+':
                 print k + ' --Count:' + str(self.m_question_count_map[k])
         #self.labelQuestionSentences()
     

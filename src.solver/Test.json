@@ -1,33 +1,33 @@
 [{
-	"sQuestion": "Keith has 20 books . Jason has 21 books . How many books do they have together ? ",
-	"lSolutions": ["41"],
-	"ParentIndex": 31,
+	"ParentIndex": 108,
+	"iIndex": 108,
+	"lEquations": ["X = 8 - 3"],
+	"lSolutions": ["5"],
+	"sQuestion": "Mary had 8 potatoes in the garden . The rabbits ate 3 of the potatoes . How many potatoes does Mary now have ? ",
 	"Sentences": [{
+		"Sentence": "Mary had 8 potatoes in the garden .",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
+			"Sentence": "Mary had 8 potatoes in the garden .",
 			"label": "+",
-			"PredictedLabel": "+",
-			"Sentence": "Keith has 20 books ."
-		}],
-		"Sentence": "Keith has 20 books ."
+			"PredictedLabel" : "+",
+			"SyntacticPattern": "NVCNPDN"
+		}]
 	}, {
+		"Sentence": "The rabbits ate 3 of the potatoes .",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"label": "+",
-			"PredictedLabel": "+",
-			"Sentence": "Jason has 21 books ."
-		}],
-		"Sentence": "Jason has 21 books ."
+			"Sentence": "The rabbits ate 3 of the potatoes .",
+			"label": "-",
+			"PredictedLabel" : "-",
+			"SyntacticPattern": "DNVCPDN"
+		}]
 	}, {
+		"Sentence": "How many potatoes does Mary now have ?",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANVNV",
-			"QuestionLabel": "all",
+			"Sentence": "How many potatoes does Mary now have ?",
 			"label": "?",
-			"PredictedLabel": "?",
-			"Sentence": "How many books do they have together ?"
-		}],
-		"Sentence": "How many books do they have together ?"
-	}],
-	"lEquations": ["X = 20 + 21"],
-	"iIndex": 31
+			"PredictedLabel" : "?",
+			"QuestionLabel" : "+",
+			"SyntacticPattern": "WANVNV"
+		}]
+	}]
 }]
