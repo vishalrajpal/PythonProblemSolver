@@ -11,13 +11,14 @@ from spacy.en import English
 from subject_object_extraction import findSVOs
 import unicodedata
 import unirest
+from QuestionSentenceSolver import QuestionSentenceSolver
 
 class Sentence:
 
     SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\"\/?]+)(\){1})')
-    
+    NON_ALLOWED_NOUN_CHUNKS = ["how", "many", "much"]
     STRING_TO_DICT_PATTERN = re.compile(r'(\S+)=(".*?"|\S+)')
     SINGULAR_PRONOUN = ['he', 'she', 'it', 'him', 'her', 'his']
     SINGULAR_SUBJECT_PRONOUN = ['he', 'she', 'him', 'her', 'his']
@@ -60,12 +61,13 @@ class Sentence:
         self.temp_transfer_entity = None
         self.temp_dobj = None
         self.m_has_an_unknown_quantity = False
-        self.m_possible_evaluating_subjects = None
+        self.m_possible_evaluating_subjects = []
         self.m_possible_evaluating_object = None
-        
+        self.m_question_label = None
         print self.m_predicted_label
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
+            self.m_question_label = sentence_json["QuestionLabel"]
         
     def __str__(self):
         return self.m_sentence_text
@@ -74,8 +76,7 @@ class Sentence:
         self.extract_dependencies()
 #         self.process_pronouns()
         if self.m_predicted_label == '?':
-            print 'ignore'
-#             self.extract_evaluation_entities()
+            self.extract_evaluation_entities()
         else:
             self.extract_entities()
 
@@ -336,16 +337,41 @@ class Sentence:
                     
     def extract_evaluation_entities(self):
         print 'In extract evaluating entities'
-        noun_chunks = self.get_noun_chunks()
+        noun_chunks = self.get_noun_chunks(self.m_sentence_text)
         if self.m_is_pronoun_noun_found == True:
-            print self.m_processed_pronoun
+            print self.m_processed_pronoun        
         
-        for index, val in enumerate(noun_chunks):            
+        for index, val in enumerate(noun_chunks):
+            val_lower_unicode = val.lower()
+            for word in Sentence.NON_ALLOWED_NOUN_CHUNKS:
+                if word in val_lower_unicode:
+                    val_lower_unicode = val_lower_unicode.replace(word,'')
+#                     noun_chunks[index] = val_lower_str.replace(word,'')
+                    print noun_chunks
+            print 'Before assigning chunk'
+            print val_lower_unicode
+            noun_chunks[index] = val_lower_unicode.strip()
+        print "after removing non allowed chunks: ", noun_chunks
+                
+#             chunk_split = val.split()
+#             if len(chunk_split) > 1:
+#                 sentence_split = self.m_sentence_text.split()
+#                 lemma_sentence = ''
+#                 for sentence_split_word in sentence_split:
+#                     lemma_sentence = lemma_sentence + ' ' + Sentence.LEMMATIZER_MODULE.lemmatize(sentence_split_word)
+#                 print lemma_sentence
+#                 noun_chunks = self.get_noun_chunks(lemma_sentence)    
+        
+                                
+        for index, val in enumerate(noun_chunks):
             if val == self.m_current_pronoun:
                 noun_chunks[index] = self.m_processed_pronoun
             noun_chunks[index] = Sentence.LEMMATIZER_MODULE.lemmatize(unicode(noun_chunks[index])).lower()
+        
         print 'After lemmatizing and pronoun replacement'
         print noun_chunks
+        
+        
         
         for noun in noun_chunks:
             if noun in self.m_question.get_quantified_entities():
@@ -386,7 +412,7 @@ class Sentence:
 #                                     
 #                     self.m_evaluating_object = Entity('dobj', matching_noun.get_name())
                            
-    def get_noun_chunks(self):
+    def get_noun_chunks(self, text):
         response = unirest.post("https://textanalysis.p.mashape.com/spacy-noun-chunks-extraction",
           headers={
             "X-Mashape-Key": "9rHNYPNXpOmshUXLsLxtJJ8Qabkdp1DkjSsjsnAHic8vw9yrP7",
@@ -394,7 +420,7 @@ class Sentence:
             "Accept": "application/json"
           },
           params={
-            "text": self.m_sentence_text
+            "text": text
           }
         )
         print response.body
@@ -425,18 +451,23 @@ class Sentence:
         print 'In extract result'
         quantified_entities = self.m_question.get_quantified_entities()
         result = None
-        if len(self.m_possible_evaluating_subjects) == 1:
-            subject = self.m_possible_evaluating_subjects.get(0)
-            if subject in quantified_entities:
-                subjects_object_entities = quantified_entities[subject]
-                
-                for subjects_object_entity in subjects_object_entities:
-                    print subjects_object_entity
-                    print self.m_evaluating_object
-                    if subjects_object_entity.get_name() == self.m_possible_evaluating_object:
-                        result = subjects_object_entity
-                        break
-        return result
+        if self.m_question_label == 'all':
+            return QuestionSentenceSolver.solve_for_all_label(self.m_possible_evaluating_subjects, self.m_possible_evaluating_object, quantified_entities)
+        else:
+            return None
+#         if len(self.m_possible_evaluating_subjects) == 1:
+#             subject = self.m_possible_evaluating_subjects[0]
+#             if subject in quantified_entities:
+#                 subjects_object_entities = quantified_entities[subject]
+#                 
+#                 for subjects_object_entity in subjects_object_entities:
+#                     print 'during comparison'
+#                     print subjects_object_entity
+#                     print self.m_possible_evaluating_object
+#                     if subjects_object_entity.get_name() == self.m_possible_evaluating_object:
+#                         result = subjects_object_entity
+#                         break
+#         return result
 
 #         subjects_object_entities = quantified_entities[self.m_evaluating_subject.get_name()]
 #         result = None

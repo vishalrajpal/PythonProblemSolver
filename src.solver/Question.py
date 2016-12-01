@@ -134,7 +134,10 @@ class Question:
             print self.m_quantified_entities.values()
             for k, v in self.m_quantified_entities.items():
                 for e in v:
-                    print e         
-#             print self.m_evaluating_sentence.extract_result()
+                    print e
+            answer = self.m_evaluating_sentence.extract_result()
+            print answer
+            return answer
         else:
             print 'I don\'t have an evaluating sentence!'
+            return None

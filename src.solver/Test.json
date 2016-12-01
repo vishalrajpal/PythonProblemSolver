@@ -1,40 +1,30 @@
-[{ 
-	"ParentIndex": 1,
-	"iIndex": 1,
-	"lEquations": ["X = 70 - 27"],
-	"lSolutions": ["43"],
-	"sQuestion": "Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ? ",
+[{
+	"sQuestion": "Joan found 6 seashells and Jessica found 8 seashells on the beach . How many seashells did they find together ? ",
+	"lSolutions": ["14"],
+	"ParentIndex": 15,
 	"Sentences": [{
-		"Sentence": "Joan found 70 seashells on the beach .",
 		"SimplifiedSentences": [{
-			"Sentence": "Joan found 70 seashells on the beach .",
+			"SyntacticPattern": "NVCNPDN",
 			"label": "+",
-			"PredictedLabel": "+",
-			"SyntacticPattern": "NVCNPDN"
-		}]
+			"PredictedLabel":"+",
+			"Sentence": "Joan found 6 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Jessica found 8 seashells on the beach ."
+		}],
+		"Sentence": "Joan found 6 seashells and Jessica found 8 seashells on the beach ."
 	}, {
-		"Sentence": "she gave Sam some of her seashells .",
 		"SimplifiedSentences": [{
-			"Sentence": "she gave Sam some of her seashells .",
-			"label": "-",
-			"PredictedLabel": "-",
-			"SyntacticPattern": "NVNDPNN"
-		}]
-	}, {
-		"Sentence": "She has 27 seashell .",
-		"SimplifiedSentences": [{
-			"Sentence": "She has 27 seashell .",
-			"label": "=",
-			"PredictedLabel": "=",
-			"SyntacticPattern": "NVCN"
-		}]
-	}, {
-		"Sentence": "How many seashells did she give to Sam ?",
-		"SimplifiedSentences": [{
-			"Sentence": "How many seashells did she give to Sam ?",
+			"SyntacticPattern": "WANVNV",
+			"QuestionLabel": "all",
 			"label": "?",
-			"PredictedLabel": "?",
-			"SyntacticPattern": "WANVNVPN"
-		}]
-	}]
+			"PredictedLabel":"?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 6 + 8"],
+	"iIndex": 15
 }]
