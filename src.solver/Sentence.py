@@ -452,7 +452,7 @@ class Sentence:
         quantified_entities = self.m_question.get_quantified_entities()
         result = None
         if self.m_question_label == 'all':
-            return QuestionSentenceSolver.solve_for_all_label(self.m_possible_evaluating_subjects, self.m_possible_evaluating_object, quantified_entities)
+            return QuestionSentenceSolver.solve_for_all_label(self)
         else:
             return None
 #         if len(self.m_possible_evaluating_subjects) == 1:

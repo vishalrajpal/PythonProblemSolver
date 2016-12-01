@@ -1,30 +1,33 @@
 [{
-	"sQuestion": "Joan found 6 seashells and Jessica found 8 seashells on the beach . How many seashells did they find together ? ",
-	"lSolutions": ["14"],
-	"ParentIndex": 15,
+	"sQuestion": "Keith has 20 books . Jason has 21 books . How many books do they have together ? ",
+	"lSolutions": ["41"],
+	"ParentIndex": 31,
 	"Sentences": [{
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPDN",
+			"SyntacticPattern": "NVCN",
 			"label": "+",
-			"PredictedLabel":"+",
-			"Sentence": "Joan found 6 seashells on the beach ."
-		}, {
-			"SyntacticPattern": "NVCNPDN",
-			"label": "+",
-			"PredictedLabel":"+",
-			"Sentence": "Jessica found 8 seashells on the beach ."
+			"PredictedLabel": "+",
+			"Sentence": "Keith has 20 books ."
 		}],
-		"Sentence": "Joan found 6 seashells and Jessica found 8 seashells on the beach ."
+		"Sentence": "Keith has 20 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel": "+",
+			"Sentence": "Jason has 21 books ."
+		}],
+		"Sentence": "Jason has 21 books ."
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "WANVNV",
 			"QuestionLabel": "all",
 			"label": "?",
-			"PredictedLabel":"?",
-			"Sentence": "How many seashells did they find together ?"
+			"PredictedLabel": "?",
+			"Sentence": "How many books do they have together ?"
 		}],
-		"Sentence": "How many seashells did they find together ?"
+		"Sentence": "How many books do they have together ?"
 	}],
-	"lEquations": ["X = 6 + 8"],
-	"iIndex": 15
+	"lEquations": ["X = 20 + 21"],
+	"iIndex": 31
 }]
