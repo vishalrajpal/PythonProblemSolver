@@ -12,6 +12,7 @@ from subject_object_extraction import findSVOs
 import unicodedata
 import unirest
 from QuestionSentenceSolver import QuestionSentenceSolver
+from TransferTransaction import TransferTransaction
 
 class Sentence:
 
@@ -281,15 +282,23 @@ class Sentence:
                 print self.m_dobj.lower()
                 
                 owner_modified_cardinal = self.m_cardinal
+                 
                 if self.m_has_an_unknown_quantity:
                     if self.m_predicted_label == '-':
                         owner_modified_cardinal = "-" + self.m_cardinal
+                        transfer_transaction_cardinal = self.m_cardinal
                     else:
                         owner_modified_cardinal = self.m_cardinal
-                
+                        transfer_transaction_cardinal = "-" + self.m_cardinal
+                else:
+                    transfer_transaction_cardinal = -self.m_cardinal
                 temp_quantified_entity = QuantifiedEntity(owner_modified_cardinal, 'dobj', lemmatized_dobj, False)
                 temp_quantified_entity.set_owner_entity(self.m_owner_entity)
-                merge_entities = self.get_or_merge_entity(temp_quantified_entity)                                                    
+                
+                transfer_transaction = TransferTransaction(to_create_transfer_entity, self.m_transfer_entity, lemmatized_dobj, transfer_transaction_cardinal)
+                temp_quantified_entity.add_transfer_transaction(transfer_transaction)
+                
+                merge_entities = self.get_or_merge_entity(temp_quantified_entity, transfer_transaction)                                                    
                 self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
             else:
                 self.m_owner_entity = Entity("global", u"global")
@@ -302,7 +311,7 @@ class Sentence:
                 
                 temp_quantified_entity = QuantifiedEntity(global_modified_cardinal, 'dobj', lemmatized_dobj, False)
                 temp_quantified_entity.set_owner_entity(self.m_owner_entity)
-                merge_entities = self.get_or_merge_entity(temp_quantified_entity)                                                    
+                merge_entities = self.get_or_merge_entity(temp_quantified_entity, None)                                                    
                 self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
                 
                 
@@ -313,28 +322,49 @@ class Sentence:
                 if self.m_has_an_unknown_quantity:
                     if self.m_predicted_label == '+':
                         transfer_modified_cardinal = "-" + self.m_cardinal
+                        transfer_transaction_cardinal = self.m_cardinal
                     else:
                         transfer_modified_cardinal = self.m_cardinal
+                        transfer_transaction_cardinal = "-" + self.m_cardinal
                 else:
                     transfer_modified_cardinal = -self.m_cardinal
+                    transfer_transaction_cardinal = self.m_cardinal
                 
                 print transfer_modified_cardinal
                 temp_transfer_quantified_entity = QuantifiedEntity(transfer_modified_cardinal, transfer_entity_relation, lemmatized_dobj, True)
                 temp_transfer_quantified_entity.set_owner_entity(self.m_transfer_entity)
-                to_merge_transfer_entity = self.get_or_merge_entity(temp_transfer_quantified_entity)                                                    
+                transfer_transaction = TransferTransaction(to_create_transfer_entity, self.m_owner_entity, lemmatized_dobj, transfer_transaction_cardinal)
+                temp_transfer_quantified_entity.add_transfer_transaction(transfer_transaction)
+                
+                to_merge_transfer_entity = self.get_or_merge_entity(temp_transfer_quantified_entity, transfer_transaction)                                                    
                 self.m_transfer_quantified_entity = temp_transfer_quantified_entity if to_merge_transfer_entity == True else None
             
         else:
             self.m_object_entity = Entity('dobj', self.m_dobj)
         
-    def get_or_merge_entity(self, temp_entity):    
+    def get_or_merge_entity(self, temp_entity, transfer_transaction):    
         to_merge_entities = self.m_question.add_quantified_entity(temp_entity)
         print 'to merge?' 
         print to_merge_entities
         if to_merge_entities:
-            self.merge_entities(temp_entity)
+            self.merge_entities(temp_entity, transfer_transaction)
         return to_merge_entities
                     
+    def merge_entities(self, temp_quantified_entity, transfer_transaction):
+        print "in merge"
+        quantified_entities = self.m_question.get_quantified_entities()
+        subject = temp_quantified_entity.get_owner_entity().get_name()
+        #sentence_output = self.output(True)
+        sentence_output = temp_quantified_entity.get_cardinal()
+        subject_quantified_entities = quantified_entities[subject]
+        for subject_quantified_entity in subject_quantified_entities:
+            if subject_quantified_entity.get_name() == temp_quantified_entity.get_name():
+                if self.m_predicted_label == '=':
+                    subject_quantified_entity.set_equal_to_state(sentence_output)
+                else:
+                    subject_quantified_entity.perform_operation(sentence_output, self.m_has_an_unknown_quantity, transfer_transaction)
+                print subject_quantified_entity
+    
     def extract_evaluation_entities(self):
         print 'In extract evaluating entities'
         noun_chunks = self.get_noun_chunks(self.m_sentence_text)
@@ -480,20 +510,7 @@ class Sentence:
 #                 break
 #         return result
     
-    def merge_entities(self, temp_quantified_entity):
-        print "in merge"
-        quantified_entities = self.m_question.get_quantified_entities()
-        subject = temp_quantified_entity.get_owner_entity().get_name()
-        #sentence_output = self.output(True)
-        sentence_output = temp_quantified_entity.get_cardinal()
-        subject_quantified_entities = quantified_entities[subject]
-        for subject_quantified_entity in subject_quantified_entities:
-            if subject_quantified_entity.get_name() == temp_quantified_entity.get_name():
-                if self.m_predicted_label == '=':
-                    subject_quantified_entity.set_equal_to_state(sentence_output)
-                else:
-                    subject_quantified_entity.perform_operation(sentence_output, self.m_has_an_unknown_quantity)
-                print subject_quantified_entity
+    
     
     def process_pronouns(self):
         print 'process pronouns'

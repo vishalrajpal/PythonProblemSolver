@@ -5,6 +5,7 @@ class QuantifiedEntity:
         self.m_object_dependecy = object_dependency
         self.m_object = q_object.lower()
         self.m_transactions = []
+        self.m_transfer_transactions = []
         self.m_is_transfer_entity = is_transfer_entity
         self.m_owner_entity = None
         self.m_equal_to_state = None
@@ -22,18 +23,22 @@ class QuantifiedEntity:
     def get_owner_entity(self):
         return self.m_owner_entity
         
-    def perform_operation(self, value, has_an_unknown_entity):
+    def perform_operation(self, value, has_an_unknown_entity, transfer_transaction):
         if (has_an_unknown_entity or type(self.m_cardinal) is str):
             self.m_cardinal = str(self.m_cardinal) + " + " + str(value)
         else:
             self.m_cardinal = self.m_cardinal + value
+            self.m_transfer_transactions.append(transfer_transaction)
         self.m_transactions.append(value)
         
+    def add_transfer_transaction(self, transfer_transaction):
+        self.m_transfer_transactions.append(transfer_transaction)
+
     def get_name(self):
         return self.m_object
     
     def is_transfer_entity(self):
-        return self.is_transfer_entity
+        return self.m_is_transfer_entity
     
     def get_cardinal(self):
         return self.m_cardinal

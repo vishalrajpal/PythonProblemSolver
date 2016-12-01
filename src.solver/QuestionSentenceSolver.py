@@ -33,12 +33,24 @@ class QuestionSentenceSolver:
         result = 0
         
         for subject in quantified_entities:
-            if subject in sentence.m_question.m_proper_nouns:
-                all_objects_for_subject =  quantified_entities[subject]
-                for object_for_subject in all_objects_for_subject:
-                    if possible_object == object_for_subject.get_name():
-                        print 'adding'
-                        result = result + object_for_subject.m_cardinal
+            all_objects_for_subject =  quantified_entities[subject]
+            for object_for_subject in all_objects_for_subject:
+                if possible_object == object_for_subject.get_name():
+                    for transfer_transaction in object_for_subject.m_transfer_transactions:
+                        if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
+                            print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                            result = result + transfer_transaction.m_quantity
+                        elif transfer_transaction.m_transferred_by_to == None:
+                            print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                            result = result + -transfer_transaction.m_quantity
+                            
+        
+#         for subject in quantified_entities:
+#             all_objects_for_subject =  quantified_entities[subject]
+#             for object_for_subject in all_objects_for_subject:
+#                 if object_for_subject.is_transfer_entity() == False and possible_object == object_for_subject.get_name():
+#                     print 'adding for ' + subject + str(object_for_subject.m_cardinal)
+#                     result = result + object_for_subject.m_cardinal
         print result
         return result
     

@@ -1,33 +1,38 @@
 [{
-	"sQuestion": "Keith has 20 books . Jason has 21 books . How many books do they have together ? ",
-	"lSolutions": ["41"],
-	"ParentIndex": 31,
+	"sQuestion": "There are 33 pencils and 44 crayons in the drawer . Joan placed 27 pencils in the drawer . How many pencils are now there in total ? ",
+	"lSolutions": ["60"],
+	"ParentIndex": 37,
 	"Sentences": [{
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
+			"SyntacticPattern": "EVCNPDN",
 			"label": "+",
-			"PredictedLabel": "+",
-			"Sentence": "Keith has 20 books ."
+			"PredictedLabel":"+",
+			"Sentence": "There are 33 pencils in the drawer ."
+		}, {
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "There are 44 crayons in the drawer ."
 		}],
-		"Sentence": "Keith has 20 books ."
+		"Sentence": "There are 33 pencils and 44 crayons in the drawer ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"label": "+",
-			"PredictedLabel": "+",
-			"Sentence": "Jason has 21 books ."
+			"SyntacticPattern": "NVCNPDN",
+			"label": "-",
+			"PredictedLabel":"-",
+			"Sentence": "Joan placed 27 pencils in the drawer ."
 		}],
-		"Sentence": "Jason has 21 books ."
+		"Sentence": "Joan placed 27 pencils in the drawer ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANVNV",
+			"SyntacticPattern": "WANVPN",
 			"QuestionLabel": "all",
 			"label": "?",
-			"PredictedLabel": "?",
-			"Sentence": "How many books do they have together ?"
+			"PredictedLabel":"?",
+			"Sentence": "How many pencils are now there in total ?"
 		}],
-		"Sentence": "How many books do they have together ?"
+		"Sentence": "How many pencils are now there in total ?"
 	}],
-	"lEquations": ["X = 20 + 21"],
-	"iIndex": 31
+	"lEquations": ["X = 33 + 27 "],
+	"iIndex": 37
 }]
