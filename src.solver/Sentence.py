@@ -66,6 +66,7 @@ class Sentence:
         self.m_possible_evaluating_subjects = []
         self.m_possible_evaluating_object = None
         self.m_question_label = None
+        self.m_complex_nouns = []
         print self.m_predicted_label
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
@@ -157,6 +158,10 @@ class Sentence:
                 spacy_subj = token.orth_.lower()
             elif token.dep_ == 'poss':
                 self.assign_poss_entities(token)
+            elif token.dep_ == 'compound' or token.dep_ == 'amod':
+                self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
+
+        print self.m_complex_nouns
         
         sentence_svos = findSVOs(sentence_parse)
         print spacy_subj
@@ -367,6 +372,13 @@ class Sentence:
                 print subject_quantified_entity
     
     def extract_evaluation_entities(self):
+        sentence_parse = Sentence.SPACY_PARSER(self.m_sentence_text)
+        for token in sentence_parse:
+            if token.dep_ == 'compound' or token.dep_ == 'amod':
+                self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
+
+        print self.m_complex_nouns
+
         print 'In extract evaluating entities'
         noun_chunks = self.get_noun_chunks(self.m_sentence_text)
         if self.m_is_pronoun_noun_found == True:
@@ -545,4 +557,3 @@ class Sentence:
                 else:
                     output = self.m_predicted_label + ' ' + 'X'
         return output
-        

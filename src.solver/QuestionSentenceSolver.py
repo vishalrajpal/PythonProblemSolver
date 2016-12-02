@@ -25,17 +25,25 @@ class QuestionSentenceSolver:
                 print 'replaced noun'
                 print noun
             print noun
+            noun_split = noun.split()
+            print noun_split
             if noun in quantified_entities:
                 possible_subjects.append(noun)
-            elif possible_object == None and QuestionSentenceSolver.is_in_objects(quantified_entities, noun):
+            elif possible_object == None and len(noun_split) == 1 and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, False):
+                print possible_object
                 possible_object = noun
-        
+            elif QuestionSentenceSolver.is_a_complex_noun(sentence.m_complex_nouns, noun) and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, True):
+                print possible_object
+                possible_object = noun
+
+        print possible_object
         result = 0
         
         for subject in quantified_entities:
             all_objects_for_subject =  quantified_entities[subject]
             for object_for_subject in all_objects_for_subject:
-                if possible_object == object_for_subject.get_name():
+                if object_for_subject.get_name() in possible_object:
+                # if possible_object == object_for_subject.get_name():
                     for transfer_transaction in object_for_subject.m_transfer_transactions:
                         if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
                             print 'adding for ' + subject + str(transfer_transaction.m_quantity)
@@ -55,11 +63,25 @@ class QuestionSentenceSolver:
         return result
     
     @staticmethod
-    def is_in_objects(quantified_entities, ex_object):
+    def is_in_objects(quantified_entities, ex_object, is_complex_noun):
+        print "in is in objects"
+        print ex_object
+        print quantified_entities.values()
         for v in quantified_entities.values():
             for subjects_object in v:
-                if subjects_object.get_name() == ex_object:
+                if not is_complex_noun and subjects_object.get_name() == ex_object:
                     return True
+                elif is_complex_noun and subjects_object.get_name() in ex_object:
+                    return True
+        return False
+
+    @staticmethod
+    def is_a_complex_noun(complex_nouns, ex_object):
+        print "in is complex noun"
+        print complex_nouns
+        for v in complex_nouns:
+            if v == ex_object:
+                return True
         return False
 
     @staticmethod
@@ -105,7 +127,7 @@ class QuestionSentenceSolver:
                 if word in quantified_entities:
                     possible_subjects.append(word)
             elif pos == 'NN' or pos == 'NNS':
-                if possible_object == None and QuestionSentenceSolver.is_in_objects(quantified_entities, word):
+                if possible_object == None and QuestionSentenceSolver.is_in_objects(quantified_entities, word, False):
                     possible_object = word
 
         result = 0
