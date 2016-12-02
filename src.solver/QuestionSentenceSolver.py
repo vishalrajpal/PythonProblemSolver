@@ -47,6 +47,12 @@ class QuestionSentenceSolver:
             possible_object = QuestionSentenceSolver.process_noun_chunks(sentence, sentence.m_sentence_text, quantified_entities)
             print 'possible object was none: now:', possible_object
         
+        if possible_object == None:
+            if len(sentence.m_complex_nouns) > 0:
+                possible_object = QuestionSentenceSolver.find_match_from_quantified_entities(sentence, quantified_entities)
+            
+            
+            
         for subject in quantified_entities:
             all_objects_for_subject =  quantified_entities[subject]
             for object_for_subject in all_objects_for_subject:
@@ -62,7 +68,15 @@ class QuestionSentenceSolver:
                                 result = result + -transfer_transaction.m_quantity
                 except:
                     print 'In exception line 45'
-                    result = 0           
+                    result = 0
+            
+                
+            
+            
+            
+            
+            
+                  
         
 #         for subject in quantified_entities:
 #             all_objects_for_subject =  quantified_entities[subject]
@@ -72,6 +86,19 @@ class QuestionSentenceSolver:
 #                     result = result + object_for_subject.m_cardinal
         #print result
         return result
+    
+    @staticmethod
+    def find_match_from_quantified_entities(sentence, quantified_entities):
+        possible_object = None
+        complex_nouns = sentence.m_complex_nouns
+        for k,v in quantified_entities.items():
+            for e in v:
+                for complex_noun in complex_nouns:
+                    quantity_name = e.get_name()
+                    if complex_noun in quantity_name or quantity_name in complex_noun:
+                        possible_object = complex_noun
+                        break
+        return possible_object
     
     @staticmethod
     def process_noun_chunks(sentence, text, quantified_entities):

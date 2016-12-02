@@ -3,8 +3,8 @@ from Question import Question
 
 class AnswerTests():
     
-    TESTED_QUESTIONS_FILE_PATH = "/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/error45.json"
-    
+    TESTED_QUESTIONS_FILE_PATH = "error45.json"
+#     TESTED_QUESTIONS_FILE_PATH = "Test.json"
     def __init__(self):
         print 'In init'
     
