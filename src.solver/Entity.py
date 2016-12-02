@@ -10,4 +10,8 @@ class Entity:
         return self.m_name.lower()
         
     def get_name(self):
-        return unicodedata.normalize('NFKD', self.m_name).encode('ascii', 'ignore').lower()
+        try:
+            return unicodedata.normalize('NFKD', self.m_name).encode('ascii', 'ignore').lower()
+        except:
+            print 'In exception: Entity getname'
+            return None

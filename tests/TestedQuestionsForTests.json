@@ -96,4 +96,326 @@
 	}],
 	"lEquations": ["X = 20 + 21"],
 	"iIndex": 31
+},{
+	"sQuestion": "Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all ?",
+	"lSolutions": [252],
+	"ParentIndex": 680,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Melanie grew 139 turnips ."
+		}],
+		"Sentence": "Melanie grew 139 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Benny grew 113 turnips ."
+		}],
+		"Sentence": "Benny grew 113 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many turnips did they grow in all ?"
+		}],
+		"Sentence": "How many turnips did they grow in all ?"
+	}],
+	"lEquations": ["139+113=x"],
+	"iIndex": 0
+},{
+	"sQuestion": "Sara picked 6 pears and Tim picked 5 pears from the pear tree. How many pears were picked in total ?",
+	"lSolutions": [11],
+	"ParentIndex": 689,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Sara picked 6 pears from the pear tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Tim picked 5 pears from the pear tree ."
+		}],
+		"Sentence": "Sara picked 6 pears and Tim picked 5 pears from the pear tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many pears were picked in total ?"
+		}],
+		"Sentence": "How many pears were picked in total ?"
+	}],
+	"lEquations": ["6+5=x"],
+	"iIndex": 0
+},{
+	"sQuestion": "Jason grew 23 watermelons and 18 turnips . Nancy grew 28 watermelons . How many watermelons did they grow in total ? ",
+	"lSolutions": ["51"],
+	"ParentIndex": 28,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Jason grew 23 watermelons ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Jason grew 18 turnips ."
+		}],
+		"Sentence": "Jason grew 23 watermelons and 18 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Nancy grew 28 watermelons ."
+		}],
+		"Sentence": "Nancy grew 28 watermelons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many watermelons did they grow in total ?"
+		}],
+		"Sentence": "How many watermelons did they grow in total ?"
+	}],
+	"lEquations": ["X = 23 + 28"],
+	"iIndex": 28
+},{
+	"sQuestion": "There are 9 crayons in the drawer . Benny placed 3 crayons in the drawer . How many crayons are now there in total ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 66,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "There are 9 crayons in the drawer ."
+		}],
+		"Sentence": "There are 9 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Benny placed 3 crayons in the drawer ."
+		}],
+		"Sentence": "Benny placed 3 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many crayons are now there in total ?"
+		}],
+		"Sentence": "How many crayons are now there in total ?"
+	}],
+	"lEquations": ["X = 9 + 3"],
+	"iIndex": 66
+},{
+	"sQuestion": "Sally grew 6 carrots . Fred grew 4 carrots . How many carrots did they grow in all ? ",
+	"lSolutions": ["10"],
+	"ParentIndex": 105,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Sally grew 6 carrots ."
+		}],
+		"Sentence": "Sally grew 6 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Fred grew 4 carrots ."
+		}],
+		"Sentence": "Fred grew 4 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many carrots did they grow in all ?"
+		}],
+		"Sentence": "How many carrots did they grow in all ?"
+	}],
+	"lEquations": ["X = 6 + 4"],
+	"iIndex": 105
+},{
+	"sQuestion": "Fred picked 36 limes , Alyssa picked 32 limes , and Nancy picked 35 limes and 18 pears , at the farm . How many limes were picked in total ? ",
+	"lSolutions": ["103"],
+	"ParentIndex": 374,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Fred picked 36 limes at the farm ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Alyssa picked 32 limes at the farm ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Nancy picked 35 limes at the farm ."
+		}],
+		"Sentence": "Fred picked 36 limes , Alyssa picked 32 limes , and Nancy picked 35 limes and 18 pears , at the farm ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many limes were picked in total ?"
+		}],
+		"Sentence": "How many limes were picked in total ?"
+	}],
+	"lEquations": ["X = 36 + 32 + 35"],
+	"iIndex": 374
+},{
+	"sQuestion": "A bucket contains 3 gallons of water . If Derek adds 6.8 gallons more , how many gallons will there be in all ? ",
+	"lSolutions": ["9.8"],
+	"ParentIndex": 242,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "A bucket contains 3 gallons of water ."
+		}],
+		"Sentence": "A bucket contains 3 gallons of water ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PNVCN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "If Derek adds 6.8 gallons more ."
+		}, {
+			"SyntacticPattern": "WANVPD",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "how many gallons will there be in all ? ."
+		}],
+		"Sentence": "If Derek adds 6.8 gallons more , how many gallons will there be in all ?"
+	}],
+	"lEquations": ["X = 3.0 + 6.8"],
+	"iIndex": 242
+},{
+	"sQuestion": "Mike picked 7 apples , Nancy picked 3 apples , and Keith picked 6 apples and 4 pears , at the farm . How many apples were picked in total ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 347,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Mike picked 7 apples at the farm ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Nancy picked 3 apples at the farm ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Keith picked 6 apples at the farm ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "i",
+			"PredictedLabel":"i",
+			"Sentence": "Keith picked 4 pears at the farm ."
+		}],
+		"Sentence": "Mike picked 7 apples , Nancy picked 3 apples , and Keith picked 6 apples and 4 pears , at the farm ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many apples were picked in total ?"
+		}],
+		"Sentence": "How many apples were picked in total ?"
+	}],
+	"lEquations": ["X = 7 + 3 + 6"],
+	"iIndex": 347
+},{
+	"sQuestion": "A car company produced 3884 cars in North America and 2871 cars in Europe . How many cars is that in all ? ",
+	"lSolutions": ["6755.0"],
+	"ParentIndex": 139,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "A car company produced 3884 cars in North America ."
+		}, {
+			"SyntacticPattern": "DNVCNPN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "A car company produced 2871 cars in Europe ."
+		}],
+		"Sentence": "A car company produced 3884 cars in North America and 2871 cars in Europe ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPPD",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many cars is that in all ?"
+		}],
+		"Sentence": "How many cars is that in all ?"
+	}],
+	"lEquations": ["X = 3884.0 + 2871.0"],
+	"iIndex": 139
+},{
+	"sQuestion": "Tom has 9 yellow balloons and Sara has 8 yellow balloons . How many yellow balloons do they have in total ? ",
+	"lSolutions": ["17"],
+	"ParentIndex": 9,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Tom has 9 yellow balloons ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"PredictedLabel":"+",
+			"Sentence": "Sara has 8 yellow balloons ."
+		}],
+		"Sentence": "Tom has 9 yellow balloons and Sara has 8 yellow balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNVPN",
+			"QuestionLabel": "all",
+			"label": "?",
+			"PredictedLabel":"?",
+			"Sentence": "How many yellow balloons do they have in total ?"
+		}],
+		"Sentence": "How many yellow balloons do they have in total ?"
+	}],
+	"lEquations": ["X = 9 + 8"],
+	"iIndex": 9
 }]

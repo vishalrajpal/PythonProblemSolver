@@ -7,6 +7,8 @@ class LemmatizerModule:
         self.wnl = nltk.WordNetLemmatizer()
     
     def lemmatize(self, verb):
+        if verb == None:
+            return ''
         unicode_lemma_verb =self. wnl.lemmatize(verb, pos='n')
         return unicodedata.normalize('NFKD', unicode_lemma_verb).encode('ascii', 'ignore')
 
