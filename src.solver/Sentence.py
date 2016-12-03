@@ -16,8 +16,8 @@ from TransferTransaction import TransferTransaction
 
 class Sentence:
 
-    SCORENLP = SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
-    #SCORENLP = StanfordCoreNLP("/home/niyati/.local/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    # SCORENLP = SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\"\/?]+)(\){1})')
     NON_ALLOWED_NOUN_CHUNKS = ["how", "many", "much"]
@@ -67,6 +67,7 @@ class Sentence:
         self.m_possible_evaluating_object = None
         self.m_question_label = None
         self.m_complex_nouns = []
+        self.m_sentece_words = []
         ##print self.m_predicted_label
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
@@ -100,8 +101,9 @@ class Sentence:
             word_pos = matched_pos[1].split(" ")
             parts_of_speech = word_pos[0]
             word = word_pos[1].lower()
+            self.m_sentece_words.append(word)
             self.m_words_pos[word] = parts_of_speech
-            ##print word + ":" + parts_of_speech         
+            # print word + ":" + parts_of_speech
             if parts_of_speech in PublicKeys.NOUN_POS:
                 lemma = Sentence.LEMMATIZER_MODULE.lemmatize(word)
                 self.m_all_noun_lemmas.append(lemma)
@@ -461,7 +463,7 @@ class Sentence:
     def get_noun_chunks(self, text):
         response = unirest.post("https://textanalysis.p.mashape.com/spacy-noun-chunks-extraction",
           headers={
-            "X-Mashape-Key": "d1cHsVCjUbmshZ5v6PHFElb5S5fXp1Xf6yUjsnxeOyynUa3f6I",
+            "X-Mashape-Key": "KRSu5yA8domshWMHNzhofCid2f3fp1aOWWsjsnuS3zN7CYN9Kq",
             "Content-Type": "application/x-www-form-urlencoded",
             "Accept": "application/json"
           },
@@ -499,8 +501,8 @@ class Sentence:
         result = None
         if self.m_question_label == 'all':
             return QuestionSentenceSolver.solve_for_all_label(self)
-#         elif self.m_question_label == '+':
-#             return QuestionSentenceSolver.solve_for_plus_label(self)
+        elif self.m_question_label == '+':
+            return QuestionSentenceSolver.solve_for_plus_label(self)
         else:
             return None
         # if len(self.m_possible_evaluating_subjects) == 1:

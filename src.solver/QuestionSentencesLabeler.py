@@ -30,8 +30,8 @@ class QuestionSentencesLabeler:
             
         
     def labelQuestionSentences(self):
-        self.m_test_dataset_file = "/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json"
-        with open("/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json") as data_file:    
+        self.m_test_dataset_file = "/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json"
+        with open("/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json") as data_file:
             data = json.load(data_file)
             
         question_label_data = []
@@ -45,14 +45,14 @@ class QuestionSentencesLabeler:
                     if current_sentence_label == '?':
                         current_sentence_text = simplified_sentence["Sentence"]
                         simplified_sentence["QuestionLabel"] = self.m_question_label_map[current_sentence_text]
-                        if simplified_sentence["QuestionLabel"] == 'all':
+                        if simplified_sentence["QuestionLabel"] == '+':
                             question_label_data.append(question)
-        with open("/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/TrainingDataQuestionLabeled_All.json", 'w') as data_file:
+        with open("TrainingDataQuestionLabeled_Plus.json", 'w') as data_file:
             data = json.dump(question_label_data, data_file)
             
     def extract_faulters(self):
         all_faulters = [25,26,29,34,35,45,51,53,88,111,112,126,127,138,140,144,146,152,156,158,161,163,168,170,172,183,187,194,198,200,206,211,233,234,243,245,261,262,264,267,269,271,279,297,301,314,316,320,326,338,356,359,360,363,390,422,425,426,432,445,455,461,464,472,481,482,486,487,515,517,531,532,538,549,557,579,580,599,620,636,677,702,703,719,720,735,741,742,743,746,749,750,753,775,779,783,785,790,796,807,817,829,830,838,839,841,857,858,863,864,865,867,905,906,907,909,1068,1070,1075,1081,1082,1083,1089,1123,1125,1153,1161,1166,1194,1200,1212,1216,1217]
-        with open("/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/TrainingDataQuestionLabeled_All.json") as data_file:    
+        with open("/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/TrainingDataQuestionLabeled_All.json") as data_file:
             data = json.load(data_file)
         
         total_count = 0

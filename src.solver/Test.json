@@ -1,38 +1,30 @@
 [{
-	"sQuestion": "Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ",
-	"lSolutions": ["47"],
-	"ParentIndex": 35,
+	"sQuestion": "Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers . How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all ? ",
+	"lSolutions": ["0.6666666666666666"],
+	"ParentIndex": 182,
 	"Sentences": [{
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
+			"SyntacticPattern": "NANVCNPAN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "Joan picked 37 oranges ."
+			"Sentence": "Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers ."
 		}, {
-			"SyntacticPattern": "NVCN",
+			"SyntacticPattern": "NVCNPAN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "Sara picked 10 oranges ."
+			"Sentence": "Hannah bought 0.3333333333333333 pound of red peppers ."
 		}],
-		"Sentence": "Joan picked 37 oranges and Sara picked 10 oranges ."
+		"Sentence": "Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Alyssa picked 30 pears ."
-		}],
-		"Sentence": "Alyssa picked 30 pears ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANVVPN",
+			"SyntacticPattern": "WANPNVNNVPD",
 			"PredictedLabel": "?",
-			"QuestionLabel": "all",
+			"QuestionLabel": "+",
 			"label": "?",
-			"Sentence": "How many oranges were picked in total ?"
+			"Sentence": "How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all ?"
 		}],
-		"Sentence": "How many oranges were picked in total ?"
+		"Sentence": "How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all ?"
 	}],
-	"lEquations": ["X = 37 + 10"],
-	"iIndex": 35
+	"lEquations": ["X = 0.3333333333333333 + 0.3333333333333333"],
+	"iIndex": 182
 }]
