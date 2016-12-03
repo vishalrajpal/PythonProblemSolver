@@ -47,30 +47,40 @@ class QuestionSentenceSolver:
             possible_object = QuestionSentenceSolver.process_noun_chunks(sentence, sentence.m_sentence_text, quantified_entities)
             print 'possible object was none: now:', possible_object
         
+        #string-matching
         if possible_object == None:
             if len(sentence.m_complex_nouns) > 0:
                 possible_object = QuestionSentenceSolver.find_match_from_quantified_entities(sentence, quantified_entities)
             
-            
-            
-        for subject in quantified_entities:
-            all_objects_for_subject =  quantified_entities[subject]
-            for object_for_subject in all_objects_for_subject:
-                try:
-                    if object_for_subject.get_name() in possible_object:
-                    # if possible_object == object_for_subject.get_name():
-                        for transfer_transaction in object_for_subject.m_transfer_transactions:
-                            if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
-                                #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
-                                result = result + transfer_transaction.m_quantity
-                            elif transfer_transaction.m_transferred_by_to == None:
-                                #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
-                                result = result + -transfer_transaction.m_quantity
-                except:
-                    print 'In exception line 45'
-                    result = 0
-            
-                
+        if possible_object != None:
+            for subject in quantified_entities:
+                all_objects_for_subject =  quantified_entities[subject]
+                for object_for_subject in all_objects_for_subject:
+                    try:
+                        if object_for_subject.get_name() in possible_object:
+                        # if possible_object == object_for_subject.get_name():
+                            for transfer_transaction in object_for_subject.m_transfer_transactions:
+                                if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
+                                    #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                                    result = result + transfer_transaction.m_quantity
+                                elif transfer_transaction.m_transferred_by_to == None:
+                                    #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                                    result = result + -transfer_transaction.m_quantity
+                    except:
+                        print 'In exception line 45'
+                        result = 0
+        else:
+            #add all quantities
+            for k,v in quantified_entities.items():
+                for e in v:
+                    for transfer_transaction in e.m_transfer_transactions:
+                        if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
+                            #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                            result = result + transfer_transaction.m_quantity
+                        elif transfer_transaction.m_transferred_by_to == None:
+                            #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                            result = result + -transfer_transaction.m_quantity
+                    
             
             
             
