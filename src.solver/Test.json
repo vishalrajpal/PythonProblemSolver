@@ -1,38 +1,33 @@
 [{
-	"sQuestion": "Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ",
-	"lSolutions": ["47"],
-	"ParentIndex": 35,
+	"ParentIndex": 102,
+	"iIndex": 102,
+	"lEquations": ["X = 7 + 5"],
+	"lSolutions": ["12"],
+	"sQuestion": "Mary had 7 nickels in her bank . Her dad gave her 5 nickels . How many nickels does Mary have now ? ",
 	"Sentences": [{
+		"Sentence": "Mary had 7 nickels in her bank .",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
+			"Sentence": "Mary had 7 nickels in her bank .",
 			"label": "+",
-			"Sentence": "Joan picked 37 oranges ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Sara picked 10 oranges ."
-		}],
-		"Sentence": "Joan picked 37 oranges and Sara picked 10 oranges ."
+			"PredictedLabel":"+",
+			"SyntacticPattern": "NVCNPNN"
+		}]
 	}, {
+		"Sentence": "Her dad gave her 5 nickels .",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
+			"Sentence": "Her dad gave her 5 nickels .",
 			"label": "+",
-			"Sentence": "Alyssa picked 30 pears ."
-		}],
-		"Sentence": "Alyssa picked 30 pears ."
+			"PredictedLabel":"+",
+			"SyntacticPattern": "NNVNCN"
+		}]
 	}, {
+		"Sentence": "How many nickels does Mary have now ?",
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANVVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "all",
+			"Sentence": "How many nickels does Mary have now ?",
 			"label": "?",
-			"Sentence": "How many oranges were picked in total ?"
-		}],
-		"Sentence": "How many oranges were picked in total ?"
-	}],
-	"lEquations": ["X = 37 + 10"],
-	"iIndex": 35
+			"PredictedLabel":"?",
+			"QuestionLabel":"+",
+			"SyntacticPattern": "WANVNV"
+		}]
+	}]
 }]

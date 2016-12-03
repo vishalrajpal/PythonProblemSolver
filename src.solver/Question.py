@@ -135,12 +135,12 @@ class Question:
         if (self.m_evaluating_sentence != None):
             #print self.m_quantified_entities.keys()
             #print self.m_quantified_entities.values()
-#             for k, v in self.m_quantified_entities.items():
-#                 for e in v:
-                    #print e
-                    #print 'transfer transactions'
-#                     for transaction in e.m_transfer_transactions:
-                        #print transaction
+            for k, v in self.m_quantified_entities.items():
+                for e in v:
+                    print e
+                    print 'transfer transactions'
+                    for transaction in e.m_transfer_transactions:
+                        print transaction
             answer = self.m_evaluating_sentence.extract_result()
             #print answer
             return answer

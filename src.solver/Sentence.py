@@ -95,7 +95,7 @@ class Sentence:
 #         ##print self.m_matched_tuples
 #         ##print self.m_dependencies
         self.m_matched_pos = Sentence.PARTS_OF_SPEECH_PATTERN.findall(parse_tree)
-        
+        print self.m_matched_pos
         for matched_pos in self.m_matched_pos:
             word_pos = matched_pos[1].split(" ")
             parts_of_speech = word_pos[0]
@@ -152,7 +152,7 @@ class Sentence:
         spacy_subj = None
         temp_pobj = None
         for token in sentence_parse:
-            ##print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
+            print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
             if token.dep_ == 'pobj':
                 ##print 'found pobj'
                 temp_pobj = token
@@ -169,13 +169,13 @@ class Sentence:
         sentence_svos = findSVOs(sentence_parse)
         ##print spacy_subj
         ##print self.m_has_a_pobj
-        ##print sentence_svos
+        print 'svo:',sentence_svos
         if len(sentence_svos) > 0 :
             transfer_entity_relation = None
             if self.m_is_first_word_an_expletive == False:
                                 
-                ##print sentence_svos[0][0]
-                ##print sentence_svos[0][2]
+                print sentence_svos[0][0]
+                print sentence_svos[0][2]
                 
                 #trying to assign subj and obj from svo
                 self.assign_nsubj(sentence_svos[0][0])
