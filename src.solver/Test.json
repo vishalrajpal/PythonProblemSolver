@@ -9,7 +9,6 @@
 		"SimplifiedSentences": [{
 			"Sentence": "Mary had 7 nickels in her bank .",
 			"label": "+",
-			"PredictedLabel":"+",
 			"SyntacticPattern": "NVCNPNN"
 		}]
 	}, {
@@ -17,7 +16,6 @@
 		"SimplifiedSentences": [{
 			"Sentence": "Her dad gave her 5 nickels .",
 			"label": "+",
-			"PredictedLabel":"+",
 			"SyntacticPattern": "NNVNCN"
 		}]
 	}, {
@@ -25,8 +23,6 @@
 		"SimplifiedSentences": [{
 			"Sentence": "How many nickels does Mary have now ?",
 			"label": "?",
-			"PredictedLabel":"?",
-			"QuestionLabel":"+",
 			"SyntacticPattern": "WANVNV"
 		}]
 	}]

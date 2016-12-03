@@ -5,6 +5,7 @@ class AnswerTests():
     
 #     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_All.json"
     TESTED_QUESTIONS_FILE_PATH = "Test.json"
+
     def __init__(self):
         print 'In init'
     

@@ -206,8 +206,8 @@ class QuestionSentenceSolver:
         quantified_entities = sentence.m_question.get_quantified_entities()
         possible_subjects = []
         possible_object = None
-        sentence_split = sentence.m_sentence_text.split()
-        for word in sentence_split:
+        # sentence_split = sentence.m_sentence_text.split()
+        for word in sentence.m_sentece_words:
             word = word.lower()
             pos = sentence.m_words_pos[word]
             #print pos
@@ -224,7 +224,8 @@ class QuestionSentenceSolver:
                     possible_object = word
 
         result = 0
-        if len(possible_subjects) == 1:
+        # if len(possible_subjects) == 1:
+        if possible_object != None and len(possible_subjects) > 0:
             subject = possible_subjects[0]
             if subject in quantified_entities:
                 subjects_object_entities = quantified_entities[subject]
@@ -236,6 +237,19 @@ class QuestionSentenceSolver:
                     if subjects_object_entity.get_name() == possible_object:
                         result = subjects_object_entity.m_cardinal
                         break
-
+        else:
+            # add all quantities
+            for k, v in quantified_entities.items():
+                for e in v:
+                    for transfer_transaction in e.m_transfer_transactions:
+                        if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
+                            # print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                            result = result + transfer_transaction.m_quantity
+                        elif transfer_transaction.m_transferred_by_to == None:
+                            # print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                            try:
+                                result = result + -transfer_transaction.m_quantity
+                            except:
+                                print 'ERROR: transfer entity issue'
 
         return result

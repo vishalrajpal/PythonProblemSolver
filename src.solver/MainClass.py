@@ -8,13 +8,13 @@ from spacy.en import English
 from AnswerTests import AnswerTests
 from PublicKeys import PublicKeys
 
-corenlp_dir = "/home/niyati/.local/lib/python2.7/stanford-corenlp-full-2016-10-31/"
+# corenlp_dir = "/home/niyati/.local/lib/python2.7/stanford-corenlp-full-2016-10-31/"
 
 class MainClass:
     
     if __name__ == '__main__':
-#         question_sentences_labeler = QuestionSentencesLabeler()
-#         question_sentences_labeler.extract_faulters()
+        # question_sentences_labeler = QuestionSentencesLabeler()
+        # question_sentences_labeler.extract_faulters()
 #         PublicKeys.text2int("two")
         answer_tests = AnswerTests()
         answer_tests.test_answers()
