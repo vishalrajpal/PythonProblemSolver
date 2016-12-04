@@ -3,7 +3,7 @@ import json
 from collections import OrderedDict
 from corenlp import StanfordCoreNLP
 from collections import OrderedDict
-
+from nltk.tag import pos_tag
 
 class Question:
 
@@ -44,7 +44,22 @@ class Question:
                         self.m_coref_dict[sentence_index][src_word] = sink_word
                     except:
                         print 'error Question coref'
-            #print self.m_coref_dict
+            
+#             print self.m_coref_dict
+            
+            pron_to_noun = {}
+            for index in self.m_coref_dict:
+                for word in self.m_coref_dict[index]:
+                    word_rep = self.m_coref_dict[index][word].title()
+#                     print 'word rep'
+#                     print word_rep
+                    pos_t = pos_tag([word_rep])
+                    if word not in pron_to_noun and len(pos_t) > 0 and pos_t[0][1] == 'NNP':
+                        pron_to_noun[word] = self.m_coref_dict[index][word]
+                    elif word in pron_to_noun:
+                        self.m_coref_dict[index][word] = pron_to_noun[word]
+        
+#             print self.m_coref_dict
 #         else:
             #print 'no corefs'
          
