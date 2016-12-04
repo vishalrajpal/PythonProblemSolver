@@ -242,8 +242,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 7 dimes ."
 		}],
 		"Sentence": "His dad gave him 7 dimes ."
@@ -359,13 +359,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 8 dimes ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 4 dimes ."
 		}],
 		"Sentence": "Her dad gave her 8 dimes and her mother gave her 4 dimes ."
@@ -433,8 +433,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 25 quarters ."
 		}],
 		"Sentence": "His dad gave him 25 quarters ."
@@ -507,13 +507,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 39 nickels ."
 		}, {
 			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 31 quarters ."
 		}],
 		"Sentence": "His dad gave him 39 nickels and 31 quarters ."
@@ -576,8 +576,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 49 quarters ."
 		}],
 		"Sentence": "Her dad gave her 49 quarters ."
@@ -677,13 +677,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 39 dimes ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 25 dimes ."
 		}],
 		"Sentence": "Her dad gave her 39 dimes and her mother gave her 25 dimes ."
@@ -926,8 +926,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCPNN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "His sister borrowed 3 of his dimes ."
 		}],
 		"Sentence": "His sister borrowed 3 of his dimes ."
@@ -1431,8 +1431,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 5 nickels ."
 		}],
 		"Sentence": "Her dad gave her 5 nickels ."
@@ -1559,8 +1559,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCPNN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Her sister borrowed 3 of her quarters ."
 		}],
 		"Sentence": "Her sister borrowed 3 of her quarters ."
@@ -3666,8 +3666,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCNPN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "His dad borrowed 75 nickels from Mike ."
 		}],
 		"Sentence": "His dad borrowed 75 nickels from Mike ."
@@ -4036,8 +4036,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Her sister borrowed 4 dimes ."
 		}],
 		"Sentence": "Her sister borrowed 4 dimes ."
@@ -4276,8 +4276,8 @@
 	"Sentences": [{
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVCNPNN",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Sandy had 36 pennies in her bank ."
 		}, {
 			"SyntacticPattern": "NVCNPNN",
@@ -4289,8 +4289,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCNPN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Her dad borrowed 20 nickels from Sandy ."
 		}],
 		"Sentence": "Her dad borrowed 20 nickels from Sandy ."
@@ -4524,8 +4524,8 @@
 	"Sentences": [{
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVCNPNN",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Tim had 7 quarters in his bank ."
 		}, {
 			"SyntacticPattern": "NVCNPNN",
@@ -4537,13 +4537,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 3 nickels ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him  5 pennies ."
 		}],
 		"Sentence": "His dad gave him 3 nickels and 5 pennies ."
@@ -4756,13 +4756,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 9 nickels ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 2 nickels ."
 		}],
 		"Sentence": "Her dad gave her 9 nickels and her mother gave her 2 nickels ."
@@ -4843,13 +4843,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 33 dimes ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 49 nickels ."
 		}],
 		"Sentence": "His dad gave him 33 dimes and 49 nickels ."
@@ -4959,13 +4959,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 27 pennies ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 19 pennies ."
 		}],
 		"Sentence": "Her dad gave her 27 pennies and her mother gave her 19 pennies ."
@@ -4993,8 +4993,8 @@
 			"Sentence": "Mary had 18 baseball cards ."
 		}, {
 			"SyntacticPattern": "NVCNVV",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "8 baseball cards were torn ."
 		}],
 		"Sentence": "Mary had 18 baseball cards , and 8 cards were torn ."
@@ -5421,8 +5421,8 @@
 	"Sentences": [{
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVCNPNN",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Sam had 7 pennies in his bank ."
 		}, {
 			"SyntacticPattern": "NVCNPNN",
@@ -5434,8 +5434,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "His sister borrowed 4 dimes ."
 		}],
 		"Sentence": "His sister borrowed 4 dimes ."
@@ -5495,8 +5495,8 @@
 	"Sentences": [{
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVCNPNN",
-			"PredictedLabel": "i",
-			"label": "i",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Mary had 21 dimes in her bank ."
 		}, {
 			"SyntacticPattern": "NVCNPNN",
@@ -5508,8 +5508,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCNPN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Her dad borrowed 18 pennies from Mary ."
 		}],
 		"Sentence": "Her dad borrowed 18 pennies from Mary ."
@@ -9965,8 +9965,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCAN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 7 more dimes ."
 		}],
 		"Sentence": "His dad gave him 7 more dimes ."
@@ -10082,13 +10082,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 8 dimes ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 4 dimes ."
 		}],
 		"Sentence": "Her dad gave her 8 dimes and her mother gave her 4 dimes ."
@@ -10119,8 +10119,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCAN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "His dad gave him 25 more quarters ."
 		}],
 		"Sentence": "His dad gave him 25 more quarters ."
@@ -10252,13 +10252,13 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 39 dimes ."
 		}, {
 			"SyntacticPattern": "NNVNCN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "her mother gave her 25 dimes ."
 		}],
 		"Sentence": "Her dad gave her 39 dimes and her mother gave her 25 dimes ."
@@ -10626,8 +10626,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCPNN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "His sister borrowed 3 of his dimes ."
 		}],
 		"Sentence": "His sister borrowed 3 of his dimes ."
@@ -11094,8 +11094,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCAN",
-			"PredictedLabel": "+",
-			"label": "+",
+			"PredictedLabel": "-",
+			"label": "-",
 			"Sentence": "Her dad gave her 5 more nickels ."
 		}],
 		"Sentence": "Her dad gave her 5 more nickels ."
@@ -11254,8 +11254,8 @@
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCPNN",
-			"PredictedLabel": "-",
-			"label": "-",
+			"PredictedLabel": "+",
+			"label": "+",
 			"Sentence": "Her sister borrowed 3 of her quarters ."
 		}],
 		"Sentence": "Her sister borrowed 3 of her quarters ."
