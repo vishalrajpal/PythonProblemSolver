@@ -100,7 +100,7 @@
 		"Sentence": "Park workers will plant walnut trees today ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WDNVVVCNPDN",
+			"SyntacticPattern": "WDNVVEVCNPDN",
 			"PredictedLabel": "=",
 			"label": "=",
 			"Sentence": "When the workers are finished there will be 55 walnut trees in the park ."
@@ -721,7 +721,7 @@
 		"Sentence": "Park workers will plant maple trees today ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WDNVVVCNPDN",
+			"SyntacticPattern": "WDNVVEVCNPDN",
 			"PredictedLabel": "=",
 			"label": "=",
 			"Sentence": "When the workers are finished there will be 64 maple trees in the park ."
@@ -4412,7 +4412,7 @@
 		"Sentence": "Park workers will plant short trees today ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WDNVVVCANPDN",
+			"SyntacticPattern": "WDNVVEVCANPDN",
 			"PredictedLabel": "=",
 			"label": "=",
 			"Sentence": "When the workers are finished there will be 95 short trees in the park ."
@@ -5140,7 +5140,7 @@
 		"Sentence": "Park workers will plant maple trees today ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WDNVVVCNPDN",
+			"SyntacticPattern": "WDNVVEVCNPDN",
 			"PredictedLabel": "=",
 			"label": "=",
 			"Sentence": "When the workers are finished there will be 54 maple trees in the park ."
@@ -10413,7 +10413,7 @@
 		"Sentence": "Park workers will plant more maple trees today ."
 	}, {
 		"SimplifiedSentences": [{
-			"SyntacticPattern": "WDNVVVCNPDN",
+			"SyntacticPattern": "WDNVVEVCNPDN",
 			"PredictedLabel": "=",
 			"label": "=",
 			"Sentence": "When the workers are finished there will be 64 maple trees in the park ."
