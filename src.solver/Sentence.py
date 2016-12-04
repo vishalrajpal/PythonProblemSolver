@@ -13,13 +13,15 @@ import unicodedata
 import unirest
 from QuestionSentenceSolver import QuestionSentenceSolver
 from TransferTransaction import TransferTransaction
+from sympy.polys.groebnertools import Num
+from decimal import Decimal
 
 class Sentence:
 
-    # SCORENLP = SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
-    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+#     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
-    PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\"\/?]+)(\){1})')
+    PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\-\"\/?]+)(\){1})')
     NON_ALLOWED_NOUN_CHUNKS = ["how", "many", "much"]
     STRING_TO_DICT_PATTERN = re.compile(r'(\S+)=(".*?"|\S+)')
     SINGULAR_PRONOUN = ['he', 'she', 'it', 'him', 'her', 'his']
@@ -57,6 +59,10 @@ class Sentence:
         self.m_question = question
         self.m_words_pos = OrderedDict()
         self.m_is_first_word_an_expletive = True if self.m_syntactic_pattern[0] == 'E' else False
+        self.m_expletive_index = -1
+        if 'E' in self.m_syntactic_pattern:
+            self.m_expletive_index = self.m_syntactic_pattern.index('E')
+        
         self.m_sentence_index = sentence_index
         self.m_is_pronoun_noun_found = False
         self.m_current_pronoun = None
@@ -68,6 +74,7 @@ class Sentence:
         self.m_question_label = None
         self.m_complex_nouns = []
         self.m_sentece_words = []
+        self.m_words_index = {}
         ##print self.m_predicted_label
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
@@ -83,7 +90,7 @@ class Sentence:
             self.extract_evaluation_entities()
         else:
             self.extract_entities()
-
+            
     def extract_dependencies(self):
         ##print 'in extract dep'
         ###print self.m_sentence_text
@@ -94,13 +101,17 @@ class Sentence:
         self.m_dependencies = current_sentence["dependencies"]
 #         self.m_matched_tuples = Sentence.TEXT_LEMMA_PATTERN.findall(parse_tree)
 #         ##print self.m_matched_tuples
-#         ##print self.m_dependencies
+#         print self.m_dependencies
         self.m_matched_pos = Sentence.PARTS_OF_SPEECH_PATTERN.findall(parse_tree)
-        print self.m_matched_pos
+#         print self.m_matched_pos
+        index_counter = 0
         for matched_pos in self.m_matched_pos:
+            index_counter = index_counter + 1
             word_pos = matched_pos[1].split(" ")
             parts_of_speech = word_pos[0]
             word = word_pos[1].lower()
+#             print word
+            self.m_words_index[word] = index_counter
             self.m_sentece_words.append(word)
             self.m_words_pos[word] = parts_of_speech
             # print word + ":" + parts_of_speech
@@ -112,10 +123,23 @@ class Sentence:
                     self.m_question.add_proper_noun(word)
             if parts_of_speech == 'CD':
                 self.m_has_a_cardinal = True
+                if self.m_expletive_index !=-1:
+                    self.m_is_first_word_an_expletive = True
                 try:
-                    self.m_cardinal = float(word)
+#                     print 1
+#                     print word
+#                     print 2
+#                     print float(word)
+#                     print 3
+#                     print str(float(word))
+                    self.m_cardinal = Decimal(word)
+#                     print self.m_cardinal
                 except:
                     self.m_cardinal = PublicKeys.text2int(word)
+#                     print self.m_cardinal
+                    self.m_words_index[str(self.m_cardinal)] = index_counter
+#                     print 'insert'
+#                     print self.m_words_index[str(self.m_cardinal)]
                 if self.m_predicted_label == '-':
                     self.m_cardinal = -self.m_cardinal
             elif parts_of_speech == 'PRP' or parts_of_speech == 'PRP$':
@@ -154,7 +178,7 @@ class Sentence:
         spacy_subj = None
         temp_pobj = None
         for token in sentence_parse:
-            print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
+#             print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
             if token.dep_ == 'pobj':
                 ##print 'found pobj'
                 temp_pobj = token
@@ -165,19 +189,29 @@ class Sentence:
                 self.assign_poss_entities(token)
             elif token.dep_ == 'compound' or token.dep_ == 'amod':
                 self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
-
+        
+        
+#         if self.m_predicted_label == '=':
+#             for dependency in self.m_dependencies:
+#                 if dependency == 'nmod:in':
+#                     assign
+            
+        
+        
         ##print self.m_complex_nouns
         
         sentence_svos = findSVOs(sentence_parse)
         ##print spacy_subj
         ##print self.m_has_a_pobj
-        print 'svo:',sentence_svos
+#         print 'svo:',sentence_svos
         if len(sentence_svos) > 0 :
             transfer_entity_relation = None
+#             print 'starts with an expl:',self.m_is_first_word_an_expletive
             if self.m_is_first_word_an_expletive == False:
                                 
-                print sentence_svos[0][0]
-                print sentence_svos[0][2]
+#                 print 'svo'
+#                 print sentence_svos[0][0]
+#                 print sentence_svos[0][2]
                 
                 #trying to assign subj and obj from svo
                 self.assign_nsubj(sentence_svos[0][0])
@@ -189,10 +223,12 @@ class Sentence:
                 
                 if self.m_has_a_dobj == False:
                     if self.temp_dobj != None:
+#                         print 'before temp dobj'
                         self.assign_dobj(self.temp_dobj)
                         if self.temp_transfer_entity != None:
                             self.assign_transfer_entity(self.temp_transfer_entity, 'dobj')
                     elif temp_pobj != None:
+#                         print 'before temp pobj'
                         self.assign_dobj(temp_pobj.orth_.lower())
                         #self.assign_dobj(self.m_pobj, 'pobj')
                         self.assign_transfer_entity(sentence_svos[0][2], 'dobj')
@@ -201,6 +237,7 @@ class Sentence:
                 elif self.temp_transfer_entity != None:
                     self.assign_transfer_entity(self.temp_transfer_entity, 'poss')
             else:
+#                 print 'before 2nsd svo'
                 self.assign_dobj(sentence_svos[0][2])
                 
                 if temp_pobj != None:
@@ -209,7 +246,7 @@ class Sentence:
             self.extract_quantified_entities(True, transfer_entity_relation)
         elif spacy_subj != None and temp_pobj != None:
             self.temp_dobj = temp_pobj.orth_
-            ##print 'In spacy' + spacy_subj
+#             print 'In spacy'
             ##print self.temp_dobj
             self.assign_nsubj(spacy_subj)
             self.assign_dobj(self.temp_dobj)
@@ -224,6 +261,7 @@ class Sentence:
         self.m_owner_entity = Entity('nsubj', self.m_nsubj)
         
     def assign_dobj(self, dobj):
+#         print dobj
         if self.is_integer(dobj) == False and dobj not in self.m_question.m_proper_nouns:
             self.m_has_a_dobj = True
             self.m_dobj = dobj
@@ -285,7 +323,11 @@ class Sentence:
         #print self.m_transfer_entity
 #         #print self.m_owner_entity
         
-        if self.m_cardinal != None:
+        if self.m_cardinal != None and self.m_has_an_unknown_quantity == False:
+            self.validate_dobj_index()
+
+#             print self.m_dobj
+            
             lemmatized_dobj = Sentence.LEMMATIZER_MODULE.lemmatize(self.m_dobj)
             if self.m_owner_entity != None:
                 #print self.m_dobj
@@ -352,6 +394,36 @@ class Sentence:
             
         else:
             self.m_object_entity = Entity('dobj', self.m_dobj)
+        
+        
+    def validate_dobj_index(self):
+        num = self.m_cardinal
+#         print self.m_words_index
+#         print num
+#         print self.m_dobj
+        if num < 0:
+            num = -num
+        if self.m_dobj == None:
+            dobj_index = 0
+        else:
+            if self.m_dobj.lower() in self.m_words_index:
+                dobj_index = self.m_words_index[self.m_dobj.lower()]
+            else:
+                dobj_index = 0
+        
+        cardinal_index = self.m_words_index[str(num)] if str(num) in self.m_words_index else self.m_words_index[str(int(num))]
+        if dobj_index < cardinal_index:
+            current_possible_obj = None
+            print 'should validate and change'
+            to_consider_for_objects = []
+            for current_word in self.m_words_index:
+                current_word_index = self.m_words_index[current_word]
+                if current_word_index > cardinal_index and (current_word in self.m_all_nouns or current_word in self.m_all_pronouns):
+                    current_possible_obj = Sentence.LEMMATIZER_MODULE.lemmatize(current_word)
+                    break
+            if current_possible_obj != None:
+                print current_possible_obj
+                self.assign_dobj(unicode(current_possible_obj))
         
     def get_or_merge_entity(self, temp_entity, transfer_transaction):    
         to_merge_entities = self.m_question.add_quantified_entity(temp_entity)

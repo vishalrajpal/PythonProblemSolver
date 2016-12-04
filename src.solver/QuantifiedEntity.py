@@ -7,8 +7,10 @@ class QuantifiedEntity:
         self.m_transactions = []
         self.m_transfer_transactions = []
         self.m_is_transfer_entity = is_transfer_entity
+        self.m_has_an_unknown_quantity = False
         self.m_owner_entity = None
         self.m_equal_to_state = None
+        self.m_transactions.append(cardinal)
         #print self.__str__()
 
     def __str__(self):
@@ -26,6 +28,7 @@ class QuantifiedEntity:
     def perform_operation(self, value, has_an_unknown_entity, transfer_transaction):
         if (has_an_unknown_entity or type(self.m_cardinal) is str):
             self.m_cardinal = str(self.m_cardinal) + " + " + str(value)
+            self.m_has_an_unknown_quantity = True
         else:
             self.m_cardinal = self.m_cardinal + value
             self.m_transfer_transactions.append(transfer_transaction)
@@ -45,7 +48,26 @@ class QuantifiedEntity:
     
     def set_equal_to_state(self, value):
         self.m_equal_to_state = value
-        
+    
+    def get_final_cardinal(self):
+#         print self.m_equal_to_state, self.m_has_an_unknown_quantity
+        if self.m_equal_to_state == None and self.m_has_an_unknown_quantity == False:
+#             print 'in normal'
+            return self.m_cardinal
+        elif self.m_equal_to_state != None and self.m_has_an_unknown_quantity == False:
+#             print 'in no unknown and has equal:',self.m_equal_to_state - self.m_cardinal
+            temp_res = self.m_equal_to_state - self.m_cardinal
+            return -temp_res if temp_res < 0 else temp_res
+        elif self.m_equal_to_state != None and self.m_has_an_unknown_quantity == True:
+#             print 'in both'
+            all_result = 0
+            for v in self.m_transactions:
+                if v != 'X' and v!='-X':
+                    all_result = all_result + float(v)
+                    
+            temp_res = self.m_equal_to_state - all_result
+            return -temp_res if temp_res < 0 else temp_res
+            
     def get_str_rep(self):
         if self.m_equal_to_state != None:
             return self.m_owner_entity.get_name() + " -> " + str(self.m_cardinal) + " = " + str(self.m_equal_to_state) + " " + self.m_object 

@@ -179,30 +179,7 @@ class QuestionSentenceSolver:
 
     @staticmethod
     def solve_for_plus_label(sentence):
-        # sentence_split = sentence.m_sentence_text.split()
-        # lemma_sentence = ''
-        # for sentence_split_word in sentence_split:
-        #     lemma_sentence = lemma_sentence + ' ' + sentence.LEMMATIZER_MODULE.lemmatize(sentence_split_word)
-        # #print lemma_sentence
-        # noun_chunks = sentence.get_noun_chunks(sentence)
-        #
-        # #print noun_chunks
-        # #print 'In solve for plus labels'
-        # possible_subjects = []
-        # possible_object = None
-        # quantified_entities = sentence.m_question.get_quantified_entities()
-        # for noun in noun_chunks:
-        #     noun = noun.lower()
-        #     noun_split = noun.split()
-        #     if len(noun_split) > 1:
-        #         #print 'noun greater than 1'
-        #         for non_allowed in sentence.NON_ALLOWED_NOUN_CHUNKS:
-        #             noun = noun.replace(non_allowed, '')
-        #         noun = noun.strip()
-        #         #print 'replaced noun'
-        #         #print noun
-        #     #print noun
-
+        
         quantified_entities = sentence.m_question.get_quantified_entities()
         possible_subjects = []
         possible_object = None
@@ -224,32 +201,46 @@ class QuestionSentenceSolver:
                     possible_object = word
 
         result = 0
+#         print possible_object
+#         print possible_subjects
         # if len(possible_subjects) == 1:
-        if possible_object != None and len(possible_subjects) > 0:
-            subject = possible_subjects[0]
-            if subject in quantified_entities:
-                subjects_object_entities = quantified_entities[subject]
-
-                for subjects_object_entity in subjects_object_entities:
-                    #print 'during comparison'
-                    #print subjects_object_entity
-                    #print possible_object
-                    if subjects_object_entity.get_name() == possible_object:
-                        result = subjects_object_entity.m_cardinal
-                        break
+        if possible_object != None:
+            if len(possible_subjects) > 0:
+                subject = possible_subjects[0]
+                if subject in quantified_entities:
+                    subjects_object_entities = quantified_entities[subject]
+    
+                    for subjects_object_entity in subjects_object_entities:
+#                         print 'during comparison'
+#                         print subjects_object_entity
+#                         print possible_object
+                        if subjects_object_entity.get_name() == possible_object:
+                            result = subjects_object_entity.get_final_cardinal()
+                            break
+            else:
+                for k,v in quantified_entities.items():
+                    for e in v:
+                        if e.get_name() in possible_object or possible_object in e.get_name():
+                            result = result + e.get_final_cardinal()
         else:
+#             print 'in all'
             # add all quantities
             for k, v in quantified_entities.items():
                 for e in v:
                     for transfer_transaction in e.m_transfer_transactions:
                         if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
                             # print 'adding for ' + subject + str(transfer_transaction.m_quantity)
-                            result = result + transfer_transaction.m_quantity
+                            try:
+                                result = result + transfer_transaction.m_quantity
+                            except:
+                                result = 0
+#                                 print 'ERROR: transfer entity issue'
                         elif transfer_transaction.m_transferred_by_to == None:
                             # print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
                             try:
                                 result = result + -transfer_transaction.m_quantity
                             except:
-                                print 'ERROR: transfer entity issue'
+                                result = 0
+#                                 print 'ERROR: transfer entity issue'
 
         return result

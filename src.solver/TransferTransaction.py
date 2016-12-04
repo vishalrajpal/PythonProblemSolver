@@ -7,4 +7,4 @@ class TransferTransaction:
         self.m_quantity = quantity
         
     def __str__(self):
-        return "Is this a Transfer: {} TransferedBy:{} TransferedObj:{} {}".format(self.m_is_it_a_transfer, self.m_transferred_by_to, self.m_quantity, self.m_transferred_obj)
+        return "Is this a Transfer: {} TransferedObj:{} {}".format(self.m_is_it_a_transfer, self.m_quantity, self.m_transferred_obj)
