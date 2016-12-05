@@ -8,30 +8,30 @@ class QuestionSentencesLabeler:
         self.m_question_count_map = {}
         self.initializeLabelQuestionMap()
         for k,v in self.m_question_label_map.items():
-            if v == '+':
+            if v == 'c':
                 print k + ' --Count:' + str(self.m_question_count_map[k])
         self.labelQuestionSentences()
     
     def initializeLabelQuestionMap(self):
-        with open('QuestionTrainingData.csv', 'rb') as csvfile:    
+        with open('QuestionTestData.csv', 'rb') as csvfile:
             spamreader = csv.reader(csvfile)
             for row in spamreader:
-                if row[2] not in self.m_question_label_map:
-                    self.m_question_label_map[row[2]] = row[1]
-                    self.m_question_count_map[row[2]] = 1                   
-                elif self.m_question_label_map[row[2]] != row[1]:
+                if row[1] not in self.m_question_label_map:
+                    self.m_question_label_map[row[1]] = row[0]
+                    self.m_question_count_map[row[1]] = 1
+                elif self.m_question_label_map[row[1]] != row[0]:
                     print 'error'
-                    print row[2]
-                    print 'current' + self.m_question_label_map[row[2]]
-                    print 'new' + row[1]
+                    print row[1]
+                    print 'current' + self.m_question_label_map[row[1]]
+                    print 'new' + row[0]
                 else:
-                    self.m_question_count_map[row[2]] = self.m_question_count_map[row[2]] + 1
+                    self.m_question_count_map[row[1]] = self.m_question_count_map[row[1]] + 1
                     
             
         
     def labelQuestionSentences(self):
-        self.m_test_dataset_file = "/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json"
-        with open("/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TrainingData.json") as data_file:
+        self.m_test_dataset_file = "/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TestDataPredicted.json"
+        with open(self.m_test_dataset_file) as data_file:
             data = json.load(data_file)
             
         question_label_data = []
@@ -41,13 +41,13 @@ class QuestionSentencesLabeler:
                 simplified_sentences = sentence["SimplifiedSentences"]
                 for simplified_sentence in simplified_sentences:
                     current_sentence_label = simplified_sentence["label"]
-                    simplified_sentence["PredictedLabel"] = current_sentence_label
+                    # simplified_sentence["PredictedLabel"] = current_sentence_label
                     if current_sentence_label == '?':
                         current_sentence_text = simplified_sentence["Sentence"]
                         simplified_sentence["QuestionLabel"] = self.m_question_label_map[current_sentence_text]
-                        if simplified_sentence["QuestionLabel"] == '+':
-                            question_label_data.append(question)
-        with open("TrainingDataQuestionLabeled_Plus.json", 'w') as data_file:
+                        # if simplified_sentence["QuestionLabel"] == 'c':
+                        question_label_data.append(question)
+        with open("TestDataQuestionLabeled.json", 'w') as data_file:
             data = json.dump(question_label_data, data_file)
             
     def extract_faulters(self):

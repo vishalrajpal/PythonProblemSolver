@@ -244,3 +244,6 @@ class QuestionSentenceSolver:
 #                                 print 'ERROR: transfer entity issue'
 
         return result
+
+
+
