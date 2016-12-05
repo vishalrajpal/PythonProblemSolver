@@ -7,8 +7,8 @@ from nltk.tag import pos_tag
 
 class Question:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
-#     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    # SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     def __init__(self, question_json):
         self.m_question_json = question_json    
         self.m_question = self.m_question_json["sQuestion"]    
@@ -18,8 +18,11 @@ class Question:
         self.m_simplified_question = ""
         self.m_coref_dict = {}
         self.m_proper_nouns = set()
+        self.m_quantified_non_entities = set()
+
         self.read_sentences()
-        
+
+
     def extract_corefs(self):
         
         spacy_ent = Sentence.SPACY_PARSER(unicode(self.m_question))
@@ -153,6 +156,9 @@ class Question:
             self.m_quantified_entities[owner_entity_name] = []
         return quantified_entity_exists
 
+    def add_quantified_non_entity(self, quantified_non_entity):
+        self.m_quantified_non_entities.add(quantified_non_entity)
+
     def set_evaluating_sentence(self, sentence):
         ##print 'In set evaluating sentence'
         self.m_evaluating_sentence = sentence
@@ -176,14 +182,15 @@ class Question:
             sentence.parse_sentence()
         
         if (self.m_evaluating_sentence != None):
-            #print self.m_quantified_entities.keys()
-            #print self.m_quantified_entities.values()
-#             for k, v in self.m_quantified_entities.items():
-#                 for e in v:
-# #                     print e
-#                     #print 'transfer transactions'
-#                     for transaction in e.m_transfer_transactions:
-#                         print transaction
+
+            print self.m_quantified_entities.keys()
+            print self.m_quantified_entities.values()
+            for k, v in self.m_quantified_entities.items():
+                for e in v:
+                    print e
+                    print 'transfer transactions'
+                    # for transaction in e.m_transfer_transactions:
+                    #     print transaction
             answer = self.m_evaluating_sentence.extract_result()
             ##print answer
             return answer

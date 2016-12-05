@@ -2,6 +2,7 @@ from corenlp import StanfordCoreNLP
 import json
 import re
 from QuantifiedEntity import QuantifiedEntity
+from QuantifiedNonEntity import QuantifiedNonEntity
 from Entity import Entity
 from collections import OrderedDict
 from PublicKeys import PublicKeys
@@ -12,6 +13,7 @@ from subject_object_extraction import findSVOs
 import unicodedata
 import unirest
 from QuestionSentenceSolver import QuestionSentenceSolver
+from ComparisonSentenceSolver import ComparisonSentenceSolver
 from TransferTransaction import TransferTransaction
 from sympy.polys.groebnertools import Num
 from decimal import Decimal
@@ -20,6 +22,7 @@ class Sentence:
 
     SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
 #     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\-\"\/?]+)(\){1})')
     NON_ALLOWED_NOUN_CHUNKS = ["how", "many", "much"]
@@ -75,7 +78,7 @@ class Sentence:
         self.m_complex_nouns = []
         self.m_sentece_words = []
         self.m_words_index = {}
-        ###print self.m_predicted_label
+
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
             self.m_question_label = sentence_json["QuestionLabel"]
@@ -114,7 +117,7 @@ class Sentence:
             self.m_words_index[word] = index_counter
             self.m_sentece_words.append(word)
             self.m_words_pos[word] = parts_of_speech
-            # #print word + ":" + parts_of_speech
+
             if parts_of_speech in PublicKeys.NOUN_POS:
                 lemma = Sentence.LEMMATIZER_MODULE.lemmatize(word)
                 self.m_all_noun_lemmas.append(lemma)
@@ -178,7 +181,7 @@ class Sentence:
         spacy_subj = None
         temp_pobj = None
         for token in sentence_parse:
-#             print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
+            print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
             if token.dep_ == 'pobj':
                 #print 'found pobj'
                 temp_pobj = token
@@ -202,17 +205,15 @@ class Sentence:
         ###print self.m_complex_nouns
         
         sentence_svos = findSVOs(sentence_parse)
-        ###print spacy_subj
-#         print self.m_has_a_pobj
-#         print 'svo:',sentence_svos
+
         if len(sentence_svos) > 0 :
             transfer_entity_relation = None
 #             #print 'starts with an expl:',self.m_is_first_word_an_expletive
             if self.m_is_first_word_an_expletive == False:
                                 
-#                 print 'svo'
-#                 print sentence_svos[0][0]
-#                 print sentence_svos[0][2]
+                print 'svo'
+                print sentence_svos[0][0]
+                print sentence_svos[0][2]
                 
                 #trying to assign subj and obj from svo
                 self.assign_nsubj(sentence_svos[0][0])
@@ -255,10 +256,19 @@ class Sentence:
             self.assign_dobj(self.temp_dobj)
             self.extract_quantified_entities(False, None)
         elif spacy_subj != None:
+            
             #print 'spacy_subj is not none'
             self.assign_dobj(spacy_subj)
             self.extract_quantified_entities(False, None)
-            
+
+        elif self.m_has_a_cardinal:
+            print 'found nothing should do something.'
+            quantified_non_entity = QuantifiedNonEntity(self.m_cardinal)
+            if spacy_subj != None:
+                self.assign_nsubj(spacy_subj)
+                quantified_non_entity.set_owner_entity(self.m_owner_entity)
+                self.m_question.add_quantified_non_entity(quantified_non_entity)
+
 
     def assign_nsubj(self, subj):
         self.m_has_a_nsubj  = True
@@ -448,7 +458,7 @@ class Sentence:
         cardinal_index = self.m_words_index[str(num)] if str(num) in self.m_words_index else self.m_words_index[str(int(num))]
         if dobj_index < cardinal_index:
             current_possible_obj = None
-#             #print 'should validate and change'
+
             to_consider_for_objects = []
             for current_word in self.m_words_index:
                 current_word_index = self.m_words_index[current_word]
@@ -456,7 +466,6 @@ class Sentence:
                     current_possible_obj = Sentence.LEMMATIZER_MODULE.lemmatize(current_word)
                     break
             if current_possible_obj != None:
-#                 #print current_possible_obj
                 self.assign_dobj(unicode(current_possible_obj))
         
     def get_or_merge_entity(self, temp_entity, transfer_transaction):    
@@ -484,11 +493,12 @@ class Sentence:
     
     def extract_evaluation_entities(self):
         sentence_parse = Sentence.SPACY_PARSER(self.m_sentence_text)
+        # print "in extract evaluating entities"
+        # print sentence_parse
         for token in sentence_parse:
             if token.dep_ == 'compound' or token.dep_ == 'amod':
                 self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
 
-        ##print self.m_complex_nouns
 
         ##print 'In extract evaluating entities'
 #         noun_chunks = self.get_noun_chunks(self.m_sentence_text)
@@ -610,6 +620,8 @@ class Sentence:
             return QuestionSentenceSolver.solve_for_all_label(self)
         elif self.m_question_label == '+':
             return QuestionSentenceSolver.solve_for_plus_label(self)
+        elif self.m_question_label == 'c':
+            return ComparisonSentenceSolver.solve_for_c_label(self)
         else:
             return None
         # if len(self.m_possible_evaluating_subjects) == 1:
