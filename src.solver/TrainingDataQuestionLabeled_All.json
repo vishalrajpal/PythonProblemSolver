@@ -294,7 +294,7 @@
 			"SyntacticPattern": "NVCN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "Jason has 43 blue ."
+			"Sentence": "Jason has 43 blue marbles."
 		}, {
 			"SyntacticPattern": "NVCAN",
 			"PredictedLabel": "+",
@@ -2355,7 +2355,7 @@
 	"lEquations": ["X = 0.125 + 0.5"],
 	"iIndex": 211
 }, {
-	"sQuestion": "A renovation project required 0.16666666666666666 truck-load of sand , 0.3333333333333333 truck-load of dirt , and 0.16666666666666666 truck-load of cement . How many truck-loads of material were needed in all ? ",
+	"sQuestion": "A renovation project required 0.16666666666666666 truckload of sand , 0.3333333333333333 truckload of dirt , and 0.16666666666666666 truckload of cement . How many truckloads of material were needed in all ? ",
 	"lSolutions": ["0.6666666666666666"],
 	"ParentIndex": 233,
 	"Sentences": [{
@@ -2363,17 +2363,17 @@
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.16666666666666666 truck-load of sand ."
+			"Sentence": "A renovation project required 0.16666666666666666 truckload of sand ."
 		}, {
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.3333333333333333 truck-load of dirt ."
+			"Sentence": "A renovation project required 0.3333333333333333 truckload of dirt ."
 		}, {
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.16666666666666666 truck-load of cement ."
+			"Sentence": "A renovation project required 0.16666666666666666 truckload of cement ."
 		}],
 		"Sentence": "A renovation project required 0.16666666666666666 truck-load of sand , 0.3333333333333333 truck-load of dirt , and 0.16666666666666666 truck-load of cement ."
 	}, {
@@ -2382,7 +2382,7 @@
 			"PredictedLabel": "?",
 			"QuestionLabel": "all",
 			"label": "?",
-			"Sentence": "How many truck-loads of material were needed in all ?"
+			"Sentence": "How many truckloads of material were needed in all ?"
 		}],
 		"Sentence": "How many truck-loads of material were needed in all ?"
 	}],
@@ -7214,7 +7214,7 @@
 	"lEquations": ["0.125 + 0.125 + 0.5 = x"],
 	"iIndex": 0
 }, {
-	"sQuestion": "A renovation project required 0.16666666666666666 of a truck-load of sand, 0.3333333333333333 of a truck-load of dirt, and 0.16666666666666666 of a truck-load of cement. How many truck-loads of material were needed in all?",
+	"sQuestion": "A renovation project required 0.16666666666666666 of a truckload of sand, 0.3333333333333333 of a truckload of dirt, and 0.16666666666666666 of a truckload of cement. How many truckloads of material were needed in all?",
 	"lSolutions": [0.6666666666666666],
 	"ParentIndex": 829,
 	"Sentences": [{
@@ -7222,17 +7222,17 @@
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.16666666666666666 truck-load of sand ."
+			"Sentence": "A renovation project required 0.16666666666666666 truckload of sand ."
 		}, {
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.3333333333333333 truck-load of dirt ."
+			"Sentence": "A renovation project required 0.3333333333333333 truckload of dirt ."
 		}, {
 			"SyntacticPattern": "DNVCNPN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "A renovation project required 0.16666666666666666 truck-load of cement ."
+			"Sentence": "A renovation project required 0.16666666666666666 truckload of cement ."
 		}],
 		"Sentence": "A renovation project required 0.16666666666666666 of a truck-load of sand , 0.3333333333333333 of a truck-load of dirt , and 0.16666666666666666 of a truck-load of cement ."
 	}, {
@@ -7241,7 +7241,7 @@
 			"PredictedLabel": "?",
 			"QuestionLabel": "all",
 			"label": "?",
-			"Sentence": "How many truck-loads of material were needed in all ?"
+			"Sentence": "How many truckloads of material were needed in all ?"
 		}],
 		"Sentence": "How many truck-loads of material were needed in all ?"
 	}],

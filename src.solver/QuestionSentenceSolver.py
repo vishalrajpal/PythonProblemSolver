@@ -6,11 +6,11 @@ class QuestionSentenceSolver:
         lemma_sentence = ''
         for sentence_split_word in sentence_split:
             lemma_sentence = lemma_sentence + ' ' + sentence.LEMMATIZER_MODULE.lemmatize(sentence_split_word)
-        #print lemma_sentence
+        ##print lemma_sentence
         noun_chunks = sentence.get_noun_chunks(lemma_sentence)    
 
-        #print noun_chunks
-        #print 'In solve for all labels'
+        ##print noun_chunks
+        ##print 'In solve for all labels'
         possible_subjects = []
         possible_object = None
         quantified_entities = sentence.m_question.get_quantified_entities()
@@ -18,34 +18,34 @@ class QuestionSentenceSolver:
             noun = noun.lower()
             noun_split = noun.split()
             if len(noun_split) > 1:
-                #print 'noun greater than 1'
+                ##print 'noun greater than 1'
                 for non_allowed in sentence.NON_ALLOWED_NOUN_CHUNKS:
                     noun = noun.replace(non_allowed, '')
                 noun = noun.strip()
-                #print 'replaced noun'
-                #print noun
-            #print noun
+                ##print 'replaced noun'
+                ##print noun
+            ##print noun
             noun_split = noun.split()
-            #print noun_split
+            ##print noun_split
             if noun in quantified_entities:
                 possible_subjects.append(noun)
             elif possible_object == None and len(noun_split) == 1 and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, False):
-                #print possible_object
+                ##print possible_object
                 possible_object = noun
             elif QuestionSentenceSolver.is_a_complex_noun(sentence.m_complex_nouns, noun) and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, True):
-                #print possible_object
+                ##print possible_object
                 possible_object = noun
 
-        #print possible_object
+        ##print possible_object
         result = 0
         
-        for k,v in quantified_entities.items():
-            for e in v:
-                print k,":",e
+#         for k,v in quantified_entities.items():
+#             for e in v:
+                #print k,":",e
         
         if possible_object == None:
             possible_object = QuestionSentenceSolver.process_noun_chunks(sentence, sentence.m_sentence_text, quantified_entities)
-            print 'possible object was none: now:', possible_object
+            #print 'possible object was none: now:', possible_object
         
         #string-matching
         if possible_object == None:
@@ -61,13 +61,13 @@ class QuestionSentenceSolver:
                         # if possible_object == object_for_subject.get_name():
                             for transfer_transaction in object_for_subject.m_transfer_transactions:
                                 if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
-                                    #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                                    ##print 'adding for ' + subject + str(transfer_transaction.m_quantity)
                                     result = result + transfer_transaction.m_quantity
                                 elif transfer_transaction.m_transferred_by_to == None:
-                                    #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                                    ##print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
                                     result = result + -transfer_transaction.m_quantity
                     except:
-                        print 'In exception line 45'
+                        #print 'In exception line 45'
                         result = 0
         else:
             #add all quantities
@@ -75,10 +75,10 @@ class QuestionSentenceSolver:
                 for e in v:
                     for transfer_transaction in e.m_transfer_transactions:
                         if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
-                            #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                            ##print 'adding for ' + subject + str(transfer_transaction.m_quantity)
                             result = result + transfer_transaction.m_quantity
                         elif transfer_transaction.m_transferred_by_to == None:
-                            #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                            ##print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
                             result = result + -transfer_transaction.m_quantity
                     
             
@@ -92,9 +92,9 @@ class QuestionSentenceSolver:
 #             all_objects_for_subject =  quantified_entities[subject]
 #             for object_for_subject in all_objects_for_subject:
 #                 if object_for_subject.is_transfer_entity() == False and possible_object == object_for_subject.get_name():
-#                     #print 'adding for ' + subject + str(object_for_subject.m_cardinal)
+#                     ##print 'adding for ' + subject + str(object_for_subject.m_cardinal)
 #                     result = result + object_for_subject.m_cardinal
-        #print result
+        ##print result
         return result
     
     @staticmethod
@@ -112,21 +112,21 @@ class QuestionSentenceSolver:
     
     @staticmethod
     def process_noun_chunks(sentence, text, quantified_entities):
-        print 'In process noun c'
+        #print 'In process noun c'
         possible_object = None
         noun_chunks = sentence.get_noun_chunks(text)
-        print noun_chunks
+        #print noun_chunks
         for noun in noun_chunks:
             noun = noun.lower()
             noun_split = noun.split()
             
                 
             if len(noun_split) > 1:
-                #print 'noun greater than 1'
+                ##print 'noun greater than 1'
                 for non_allowed in sentence.NON_ALLOWED_NOUN_CHUNKS:
                     noun = noun.replace(non_allowed, '')
                 
-                print 'after non allowed:', noun
+                #print 'after non allowed:', noun
                 
                 noun = noun.strip()
                 noun_split = noun.split()                
@@ -137,29 +137,29 @@ class QuestionSentenceSolver:
                     noun = lemmatized_chunk
                 else:
                     noun = sentence.LEMMATIZER_MODULE.lemmatize(noun)
-                print 'final:', noun
+                #print 'final:', noun
                 noun = noun.strip()
             else:
                 noun = sentence.LEMMATIZER_MODULE.lemmatize(noun)
-                print 'replaced noun'
-                #print noun
-            #print noun
+                #print 'replaced noun'
+                ##print noun
+            ##print noun
             noun_split = noun.split()
-            #print noun_split
+            ##print noun_split
             
             if possible_object == None and len(noun_split) == 1 and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, False):
-                #print possible_object
+                ##print possible_object
                 possible_object = noun
             elif QuestionSentenceSolver.is_a_complex_noun(sentence.m_complex_nouns, noun) and QuestionSentenceSolver.is_in_objects(quantified_entities, noun, True):
-                #print possible_object
+                ##print possible_object
                 possible_object = noun
         return possible_object
     
     @staticmethod
     def is_in_objects(quantified_entities, ex_object, is_complex_noun):
-        #print "in is in objects"
-        #print ex_object
-        #print quantified_entities.values()
+        ##print "in is in objects"
+        ##print ex_object
+        ##print quantified_entities.values()
         for v in quantified_entities.values():
             for subjects_object in v:
                 if not is_complex_noun and subjects_object.get_name() == ex_object:
@@ -170,8 +170,8 @@ class QuestionSentenceSolver:
 
     @staticmethod
     def is_a_complex_noun(complex_nouns, ex_object):
-        #print "in is complex noun"
-        #print complex_nouns
+        ##print "in is complex noun"
+        ##print complex_nouns
         for v in complex_nouns:
             if v == ex_object:
                 return True
@@ -193,7 +193,10 @@ class QuestionSentenceSolver:
                 if word in quantified_entities:
                     possible_subjects.append(word)
             elif pos == 'PRP':
+                print 'in prp'
+                print sentence.m_processed_pronoun
                 word = sentence.m_processed_pronoun
+                print word
                 if word in quantified_entities:
                     possible_subjects.append(word)
             elif pos == 'NN' or pos == 'NNS':
@@ -201,8 +204,8 @@ class QuestionSentenceSolver:
                     possible_object = word
 
         result = 0
-#         print possible_object
-#         print possible_subjects
+        #print possible_object
+        #print possible_subjects
         # if len(possible_subjects) == 1:
         if possible_object != None:
             if len(possible_subjects) > 0:
@@ -211,36 +214,60 @@ class QuestionSentenceSolver:
                     subjects_object_entities = quantified_entities[subject]
     
                     for subjects_object_entity in subjects_object_entities:
-#                         print 'during comparison'
-#                         print subjects_object_entity
-#                         print possible_object
+#                         #print 'during comparison'
+#                         #print subjects_object_entity
+#                         #print possible_object
                         if subjects_object_entity.get_name() == possible_object:
                             result = subjects_object_entity.get_final_cardinal()
                             break
+                for k,v in quantified_entities.items():
+                    if k == 'global':
+                        for e in v:
+                            if e.get_name() in possible_object or possible_object in e.get_name():
+                                #print 'In global entity'
+                                result = e.get_final_cardinal() - result                                
+                                result = -result if result < 0 else result
+                                
             else:
                 for k,v in quantified_entities.items():
                     for e in v:
                         if e.get_name() in possible_object or possible_object in e.get_name():
                             result = result + e.get_final_cardinal()
         else:
-#             print 'in all'
+#             #print 'in all'
             # add all quantities
+            global_entity_exists = None
+            equal_to_quantity = None
             for k, v in quantified_entities.items():
-                for e in v:
-                    for transfer_transaction in e.m_transfer_transactions:
-                        if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
-                            # print 'adding for ' + subject + str(transfer_transaction.m_quantity)
-                            try:
-                                result = result + transfer_transaction.m_quantity
-                            except:
-                                result = 0
-#                                 print 'ERROR: transfer entity issue'
-                        elif transfer_transaction.m_transferred_by_to == None:
-                            # print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
-                            try:
-                                result = result + -transfer_transaction.m_quantity
-                            except:
-                                result = 0
-#                                 print 'ERROR: transfer entity issue'
-
+                if k == 'global':
+                    global_entity_exists = True                        
+                else:
+                    for e in v:
+                        if e.m_equal_to_state != None and equal_to_quantity == None:
+                            equal_to_quantity = e.m_equal_to_state
+                        for transfer_transaction in e.m_transfer_transactions:
+                            if transfer_transaction.m_transferred_by_to != None and transfer_transaction.m_quantity > 0:
+                                # #print 'adding for ' + subject + str(transfer_transaction.m_quantity)
+                                try:
+                                    result = result + transfer_transaction.m_quantity
+                                except:
+                                    result = 0
+    #                                 #print 'ERROR: transfer entity issue'
+                            elif transfer_transaction.m_transferred_by_to == None:
+                                # #print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
+                                try:
+                                    result = result + -transfer_transaction.m_quantity
+                                except:
+                                    result = 0
+                    
+            if equal_to_quantity != None:
+                result = equal_to_quantity - result                                
+                result = -result if result < 0 else result
+#                                 #print 'ERROR: transfer entity issue'
+            if global_entity_exists == True:
+                for e in quantified_entities['global']:                    
+                    #print 'In global entity'
+                    result = e.get_final_cardinal() - result                                
+                    result = -result if result < 0 else result
+            
         return result

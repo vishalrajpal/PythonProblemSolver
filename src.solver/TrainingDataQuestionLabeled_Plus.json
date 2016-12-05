@@ -403,7 +403,7 @@
 			"SyntacticPattern": "CNN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "workers plant 2 dogwood trees tomorrow ."
+			"Sentence": "workers will plant 2 dogwood trees tomorrow ."
 		}],
 		"Sentence": "Park workers will plant 3 dogwood trees today and 2 dogwood trees tomorrow ."
 	}, {
@@ -13907,7 +13907,7 @@
 	"lEquations": ["20-(8+3)=x"],
 	"iIndex": 0
 }, {
-	"sQuestion": "The town of Milburg has 5256 grown-ups and 2987 children. How many people live in Milburg?",
+	"sQuestion": "The town of Milburg has 5256 grownups and 2987 children. How many people live in Milburg?",
 	"lSolutions": [8243],
 	"ParentIndex": 890,
 	"Sentences": [{
@@ -13915,14 +13915,14 @@
 			"SyntacticPattern": "DNPNVCN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "The town of Milburg has 5256 grown-ups ."
+			"Sentence": "The town of Milburg has 5256 grownups ."
 		}, {
 			"SyntacticPattern": "DNVCN",
 			"PredictedLabel": "+",
 			"label": "+",
 			"Sentence": "The town has 2987 children ."
 		}],
-		"Sentence": "The town of Milburg has 5256 grown-ups and 2987 children ."
+		"Sentence": "The town of Milburg has 5256 grownups and 2987 children ."
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "WANVPN",
@@ -19876,7 +19876,7 @@
 	"lEquations": ["X=(5.0-4.28)"],
 	"iIndex": 1332
 }, {
-	"sQuestion": " The town of Milburg has 5256 grown-ups and 2987 children. How many people live in Milburg?",
+	"sQuestion": " The town of Milburg has 5256 grownups and 2987 children. How many people live in Milburg?",
 	"lSolutions": [8243],
 	"ParentIndex": 1193,
 	"lAlignments": [25, 44],
@@ -19885,14 +19885,14 @@
 			"SyntacticPattern": "DNPNVCN",
 			"PredictedLabel": "+",
 			"label": "+",
-			"Sentence": "The town of Milburg has 5256 grown-ups ."
+			"Sentence": "The town of Milburg has 5256 grownups ."
 		}, {
 			"SyntacticPattern": "DNVCN",
 			"PredictedLabel": "+",
 			"label": "+",
 			"Sentence": "The town of Milburg has 2987 children ."
 		}],
-		"Sentence": "The town of Milburg has 5256 grown-ups and 2987 children ."
+		"Sentence": "The town of Milburg has 5256 grownups and 2987 children ."
 	}, {
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "WANVPN",
