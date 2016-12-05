@@ -7,8 +7,8 @@ from nltk.tag import pos_tag
 
 class Question:
 
-    # SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
-    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+#     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     def __init__(self, question_json):
         self.m_question_json = question_json    
         self.m_question = self.m_question_json["sQuestion"]    
@@ -19,7 +19,7 @@ class Question:
         self.m_coref_dict = {}
         self.m_proper_nouns = set()
         self.m_quantified_non_entities = set()
-
+        self.m_question_label = None
         self.read_sentences()
 
 
@@ -106,6 +106,9 @@ class Question:
                 self.m_simplified_question = self.m_simplified_question + simplified_sentence["Sentence"]
                 self.m_coref_dict[sentence_counter] = {}
                 sentence_counter = sentence_counter + 1;
+                predicted_label = simplified_sentence["PredictedLabel"]
+                if predicted_label == '?':
+                    self.m_question_label = simplified_sentence["QuestionLabel"]
         self.extract_corefs()
         
         sentence_counter = 0

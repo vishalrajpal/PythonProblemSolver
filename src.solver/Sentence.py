@@ -255,19 +255,20 @@ class Sentence:
             self.assign_nsubj(spacy_subj)
             self.assign_dobj(self.temp_dobj)
             self.extract_quantified_entities(False, None)
-        elif spacy_subj != None:
+        elif spacy_subj != None and self.m_question.m_question_label != 'c':
             
             #print 'spacy_subj is not none'
             self.assign_dobj(spacy_subj)
             self.extract_quantified_entities(False, None)
 
-        elif self.m_has_a_cardinal:
-            print 'found nothing should do something.'
-            quantified_non_entity = QuantifiedNonEntity(self.m_cardinal)
-            if spacy_subj != None:
-                self.assign_nsubj(spacy_subj)
-                quantified_non_entity.set_owner_entity(self.m_owner_entity)
-                self.m_question.add_quantified_non_entity(quantified_non_entity)
+        elif self.m_question.m_question_label == 'c':
+            if self.m_has_a_cardinal:
+                print 'found nothing should do something.'
+                quantified_non_entity = QuantifiedNonEntity(self.m_cardinal)
+                if spacy_subj != None:
+                    self.assign_nsubj(spacy_subj)
+                    quantified_non_entity.set_owner_entity(self.m_owner_entity)
+                    self.m_question.add_quantified_non_entity(quantified_non_entity)
 
 
     def assign_nsubj(self, subj):
