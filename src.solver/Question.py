@@ -191,6 +191,9 @@ class Question:
             for k, v in self.m_quantified_entities.items():
                 for e in v:
                     print e
+                    print 'compound modofiers'
+                    for compound_modifier in e.m_compound_modifiers:
+                        print compound_modifier
                     print 'transfer transactions'
                     # for transaction in e.m_transfer_transactions:
                     #     print transaction

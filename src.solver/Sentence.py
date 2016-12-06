@@ -17,6 +17,7 @@ from ComparisonSentenceSolver import ComparisonSentenceSolver
 from TransferTransaction import TransferTransaction
 from sympy.polys.groebnertools import Num
 from decimal import Decimal
+from CompoundModifier import CompoundModifier
 
 class Sentence:
 
@@ -78,7 +79,7 @@ class Sentence:
         self.m_complex_nouns = []
         self.m_sentece_words = []
         self.m_words_index = {}
-
+        self.m_compound_modifiers = []
         if self.m_predicted_label == '?':
             self.m_question.m_evaluating_sentence = self
             self.m_question_label = sentence_json["QuestionLabel"]
@@ -181,31 +182,27 @@ class Sentence:
         spacy_subj = None
         temp_pobj = None
         for token in sentence_parse:
+            token_dep = token.dep_
             print(token.orth_, token.dep_, token.head.orth_, [t.orth_ for t in token.lefts], [t.orth_ for t in token.rights])
-            if token.dep_ == 'pobj':
-                #print 'found pobj'
+            if token_dep == 'pobj':
                 temp_pobj = token
-#                 self.assign_pobj(token)
-            elif token.dep_ == 'nsubj' or token.dep_ == 'nsubjpass':
-                #print 'found spacy subj', token.orth_
+            elif token_dep == 'nsubj' or token_dep == 'nsubjpass':
                 spacy_subj = token.orth_.lower()
-            elif token.dep_ == 'poss':
+            elif token_dep == 'poss':
                 self.assign_poss_entities(token)
-            elif token.dep_ == 'compound' or token.dep_ == 'amod':
-                self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
-        
-        
-#         if self.m_predicted_label == '=':
-#             for dependency in self.m_dependencies:
-#                 if dependency == 'nmod:in':
-#                     assign
+            elif token_dep == 'compound' or token_dep == 'amod':
+                print 'in compound and amod case'
+                modifier = Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_)
+                compound_dobj = Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_)
+                compound_modifier = CompoundModifier(modifier, compound_dobj)
+                print 'found compound modifier:',modifier,compound_dobj
+                self.m_compound_modifiers.append(compound_modifier)
+                self.m_complex_nouns.append(modifier +  " " + compound_dobj)
+#                 self.temp_dobj = compound_dobj
             
         
-        
-        ###print self.m_complex_nouns
-        
         sentence_svos = findSVOs(sentence_parse)
-
+        print "svos",sentence_svos,len(sentence_svos)
         if len(sentence_svos) > 0 :
             transfer_entity_relation = None
 #             #print 'starts with an expl:',self.m_is_first_word_an_expletive
@@ -250,14 +247,14 @@ class Sentence:
             self.extract_quantified_entities(True, transfer_entity_relation)
         elif spacy_subj != None and temp_pobj != None:
             self.temp_dobj = temp_pobj.orth_
-            #print 'In spacy'
+            print 'In spacy'
             #print self.temp_dobj
             self.assign_nsubj(spacy_subj)
             self.assign_dobj(self.temp_dobj)
             self.extract_quantified_entities(False, None)
         elif spacy_subj != None and self.m_question.m_question_label != 'c':
             
-            #print 'spacy_subj is not none'
+#             print 'spacy_subj is not none'
             self.assign_dobj(spacy_subj)
             self.extract_quantified_entities(False, None)
 
@@ -294,7 +291,7 @@ class Sentence:
                 if self.m_has_a_dobj:
                     break
                 for e in v:
-                    #print 'assigning cardianl d object'
+                    print 'assigning cardianl d object'
                     self.m_has_a_dobj = True
                     self.m_dobj = unicode(e.get_name())
                     self.m_words_pos[e.get_name()] = 'NN'
@@ -360,6 +357,8 @@ class Sentence:
 #             #print self.m_dobj
             
             lemmatized_dobj = Sentence.LEMMATIZER_MODULE.lemmatize(self.m_dobj)
+            compound_modifier = self.get_compound_modifier_for_dobj(self.m_dobj)
+            
             if self.m_owner_entity != None:
                 ##print self.m_dobj
                 ##print type(self.m_dobj)
@@ -382,8 +381,23 @@ class Sentence:
                 transfer_transaction = TransferTransaction(to_create_transfer_entity, self.m_transfer_entity, lemmatized_dobj, transfer_transaction_cardinal)
                 temp_quantified_entity.add_transfer_transaction(transfer_transaction)
                 
-                merge_entities = self.get_or_merge_entity(temp_quantified_entity, transfer_transaction)                                                    
-                self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
+                print 'after merging',compound_modifier
+                if compound_modifier != None:
+                    print 'modifier quantity,'
+                    compound_modifier.set_quantity(owner_modified_cardinal)
+                    temp_quantified_entity.add_compound_modifier(compound_modifier)
+                    for k,v in self.m_question.m_quantified_entities.items():
+                        for e in v:
+                            print 'comparisons:',e.get_name(), compound_modifier.m_dobj
+                            if e.get_name() == compound_modifier.m_dobj:
+                                print 'adding compoung modifier'
+                            e.add_compound_modifier(compound_modifier)
+                merge_entities = self.get_or_merge_entity(temp_quantified_entity, transfer_transaction)
+                
+
+                        
+                                                                    
+#                 self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
             else:
                 self.m_owner_entity = Entity("global", u"global")
                 global_modified_cardinal = self.m_cardinal
@@ -397,8 +411,9 @@ class Sentence:
                 
                 temp_quantified_entity = QuantifiedEntity(global_modified_cardinal, 'dobj', lemmatized_dobj, False)
                 temp_quantified_entity.set_owner_entity(self.m_owner_entity)
-                merge_entities = self.get_or_merge_entity(temp_quantified_entity, None)                                                    
-                self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
+                merge_entities = self.get_or_merge_entity(temp_quantified_entity, None)
+                                                                    
+#                 self.m_quantified_entity = temp_quantified_entity if merge_entities == True else None
                 
                 
             if to_create_transfer_entity and self.m_transfer_entity != None:
@@ -429,6 +444,17 @@ class Sentence:
             self.m_object_entity = Entity('dobj', self.m_dobj)
         
         
+    def get_compound_modifier_for_dobj(self, dobj):
+        dobj = Sentence.LEMMATIZER_MODULE.lemmatize(dobj)
+        print 'In compound modifier for dobj', dobj, len(self.m_compound_modifiers)
+        compound_modifier = None
+        for modifier in self.m_compound_modifiers:
+            print 'modifier dobj',modifier.m_dobj
+            if dobj == modifier.m_dobj:
+                compound_modifier = modifier
+                break
+        return compound_modifier
+    
     def validate_dobj_index(self):
         num = self.m_cardinal
 #         #print self.m_words_index
@@ -498,8 +524,14 @@ class Sentence:
         # print sentence_parse
         for token in sentence_parse:
             if token.dep_ == 'compound' or token.dep_ == 'amod':
+                print 'in compound and amod case'
+                modifier = Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_)
+                compound_dobj = Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_)
+                compound_modifier = CompoundModifier(modifier, compound_dobj)
+                print 'found compound modifier:',modifier,compound_dobj
+                self.m_compound_modifiers.append(compound_modifier)
                 self.m_complex_nouns.append(Sentence.LEMMATIZER_MODULE.lemmatize(token.orth_) +  " " + Sentence.LEMMATIZER_MODULE.lemmatize(token.head.orth_))
-
+                
 
         ##print 'In extract evaluating entities'
 #         noun_chunks = self.get_noun_chunks(self.m_sentence_text)

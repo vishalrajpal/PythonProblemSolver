@@ -1,3 +1,4 @@
+from symbol import comparison
 class QuestionSentenceSolver:
     
     @staticmethod
@@ -80,21 +81,6 @@ class QuestionSentenceSolver:
                         elif transfer_transaction.m_transferred_by_to == None:
                             ##print 'adding for ' + subject + str(-transfer_transaction.m_quantity)
                             result = result + -transfer_transaction.m_quantity
-                    
-            
-            
-            
-            
-            
-                  
-        
-#         for subject in quantified_entities:
-#             all_objects_for_subject =  quantified_entities[subject]
-#             for object_for_subject in all_objects_for_subject:
-#                 if object_for_subject.is_transfer_entity() == False and possible_object == object_for_subject.get_name():
-#                     ##print 'adding for ' + subject + str(object_for_subject.m_cardinal)
-#                     result = result + object_for_subject.m_cardinal
-        ##print result
         return result
     
     @staticmethod
@@ -179,7 +165,7 @@ class QuestionSentenceSolver:
 
     @staticmethod
     def solve_for_plus_label(sentence):
-        
+
         quantified_entities = sentence.m_question.get_quantified_entities()
         possible_subjects = []
         possible_object = None
@@ -202,39 +188,50 @@ class QuestionSentenceSolver:
             elif pos == 'NN' or pos == 'NNS':
                 if possible_object == None and QuestionSentenceSolver.is_in_objects(quantified_entities, word, False):
                     possible_object = word
-
+    
         result = 0
-        #print possible_object
-        #print possible_subjects
+        
+        print 'possible object',possible_object
+        print 'possible subjects',possible_subjects
         # if len(possible_subjects) == 1:
         if possible_object != None:
-            if len(possible_subjects) > 0:
-                subject = possible_subjects[0]
-                if subject in quantified_entities:
-                    subjects_object_entities = quantified_entities[subject]
-    
-                    for subjects_object_entity in subjects_object_entities:
-#                         #print 'during comparison'
-#                         #print subjects_object_entity
-#                         #print possible_object
-                        if subjects_object_entity.get_name() == possible_object:
-                            result = subjects_object_entity.get_final_cardinal()
-                            break
-                for k,v in quantified_entities.items():
-                    if k == 'global':
+#             compound_quantity_found = QuestionSentenceSolver.compound_modifier_exists(sentence, possible_object)
+            compound_quantity_found = None
+            if compound_quantity_found != None:
+                return compound_quantity_found
+            else:
+                if len(possible_subjects) > 0:
+                    subject = possible_subjects[0]
+                    if subject in quantified_entities:
+                        subjects_object_entities = quantified_entities[subject]
+        
+                        for subjects_object_entity in subjects_object_entities:
+    #                         #print 'during comparison'
+    #                         #print subjects_object_entity
+    #                         #print possible_object
+                            if subjects_object_entity.get_name() == possible_object:
+                                result = subjects_object_entity.get_final_cardinal()
+                                break
+                    for k,v in quantified_entities.items():
+                        if k == 'global':
+                            for e in v:
+                                if e.get_name() in possible_object or possible_object in e.get_name():
+                                    #print 'In global entity'
+                                    result = e.get_final_cardinal() - result                                
+                                    result = -result if result < 0 else result
+                    result = -result if result < 0 else result
+                else:
+                    for k,v in quantified_entities.items():
                         for e in v:
                             if e.get_name() in possible_object or possible_object in e.get_name():
-                                #print 'In global entity'
-                                result = e.get_final_cardinal() - result                                
-                                result = -result if result < 0 else result
-                                
-            else:
-                for k,v in quantified_entities.items():
-                    for e in v:
-                        if e.get_name() in possible_object or possible_object in e.get_name():
-                            result = result + e.get_final_cardinal()
+                                if e.m_equal_to_state != None:
+                                    return e.get_final_cardinal()
+                                print e
+                                result = result + e.get_final_cardinal()
+                                print result
+                    print 'result from only possible object,',result
         else:
-#             #print 'in all'
+    #             #print 'in all'
             # add all quantities
             global_entity_exists = None
             equal_to_quantity = None
@@ -263,7 +260,7 @@ class QuestionSentenceSolver:
             if equal_to_quantity != None:
                 result = equal_to_quantity - result                                
                 result = -result if result < 0 else result
-#                                 #print 'ERROR: transfer entity issue'
+    #                                 #print 'ERROR: transfer entity issue'
             if global_entity_exists == True:
                 for e in quantified_entities['global']:                    
                     #print 'In global entity'
@@ -272,5 +269,28 @@ class QuestionSentenceSolver:
             
         return result
 
-
-
+    @staticmethod
+    def compound_modifier_exists(sentence, possible_object):
+        quantity_found = None
+        
+        sentence_object_cm = None
+        for sentence_m in sentence.m_compound_modifiers:
+            if sentence_m.m_dobj == possible_object:
+                sentence_object_cm = sentence_m
+        
+        print 'in compound modifier exists'
+        if sentence_object_cm != None:
+            quantified_entities = sentence.m_question.m_quantified_entities
+            for k,v in quantified_entities.items():
+                print 'key',k
+                for e in v:
+                    print 'q entity:', e.get_name()
+                    quantity_compound_modifiers = e.m_compound_modifiers
+                    for quantity_compound_modifier in quantity_compound_modifiers:
+                        print 'quantity',quantity_compound_modifier
+                        if e.get_name() == sentence_object_cm.m_dobj and sentence_object_cm.m_modifier == quantity_compound_modifier.m_modifier:
+                            print 'match found'
+                            quantity_found = quantity_compound_modifier.m_quantity
+                            return quantity_found
+                        
+        return quantity_found

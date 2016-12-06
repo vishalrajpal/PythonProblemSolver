@@ -33,7 +33,7 @@ class ComparisonSentenceSolver:
             for e in global_entity:
                 result = e.get_final_cardinal() - result
 
-
+        result = -result if result < 0 else result
 
         return result
 

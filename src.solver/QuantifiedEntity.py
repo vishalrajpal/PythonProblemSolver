@@ -10,6 +10,7 @@ class QuantifiedEntity:
         self.m_has_an_unknown_quantity = False
         self.m_owner_entity = None
         self.m_equal_to_state = None
+        self.m_compound_modifiers = []
         self.m_transactions.append(cardinal)
         #print self.__str__()
 
@@ -24,7 +25,21 @@ class QuantifiedEntity:
         
     def get_owner_entity(self):
         return self.m_owner_entity
-        
+    
+    def add_compound_modifier(self, compound_modifier):
+        modifier_already_found = False
+        print compound_modifier
+        for a_modifier in self.m_compound_modifiers:
+            if a_modifier.m_modifier == compound_modifier.m_modifier:
+                print 'modifier has already been found'
+                a_modifier_quantity = a_modifier.m_quantity
+                c_modifier_quantity = compound_modifier.m_quantity
+                a_modifier.m_quantity = a_modifier_quantity + c_modifier_quantity
+                print 'a_modifier modified', a_modifier
+                modifier_already_found = True
+        if modifier_already_found == False:
+            self.m_compound_modifiers.append(compound_modifier)
+    
     def perform_operation(self, value, has_an_unknown_entity, transfer_transaction):
         if (has_an_unknown_entity or type(self.m_cardinal) is str):
             self.m_cardinal = str(self.m_cardinal) + " + " + str(value)
@@ -52,14 +67,14 @@ class QuantifiedEntity:
     def get_final_cardinal(self):
 #         print self.m_equal_to_state, self.m_has_an_unknown_quantity
         if self.m_equal_to_state == None and self.m_has_an_unknown_quantity == False:
-#             print 'in normal'
+            print 'in normal'
             return self.m_cardinal
         elif self.m_equal_to_state != None and self.m_has_an_unknown_quantity == False:
-#             print 'in no unknown and has equal:',self.m_equal_to_state - self.m_cardinal
+            print 'in no unknown and has equal:',self.m_equal_to_state - self.m_cardinal
             temp_res = self.m_equal_to_state - self.m_cardinal
             return -temp_res if temp_res < 0 else temp_res
         elif self.m_equal_to_state != None and self.m_has_an_unknown_quantity == True:
-#             print 'in both'
+            print 'in both'
             all_result = 0
             for v in self.m_transactions:
                 if v != 'X' and v!='-X':
