@@ -1,4 +1,4 @@
-from corenlp import StanfordCoreNLP
+# from corenlp import StanfordCoreNLP
 from TestDataSetReader import TestDataSetReader
 import json
 # from practnlptools.tools import Annotator

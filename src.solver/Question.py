@@ -7,7 +7,7 @@ from nltk.tag import pos_tag
 
 class Question:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
 #     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     def __init__(self, question_json):
         self.m_question_json = question_json    
@@ -30,46 +30,27 @@ class Question:
         for ent in spacy_ent.ents:
             if ent.label_ == 'PERSON':
                 spacy_persons.append(str(ent))
-            #print ent, ent.label, ent.label_
         
         question_parse = json.loads(Question.SCORENLP.parse(self.m_simplified_question))
-        #print question_parse
         if "coref" in question_parse:
             corefs = question_parse["coref"]
             for coref_mappings in corefs:
-                ##print 'coref_mappings'
-                ##print coref_mappings
                 for coref_mapping in coref_mappings:
-                    ##print 'coref mapping:'
-                    ##print coref_mapping
-                    ##print coref_mapping[0]
-                    ##print coref_mapping[1]
                     try:
                         sentence_index = coref_mapping[0][1]
-                        ##print sentence_index
                         src_word = coref_mapping[0][0].lower()
-                        ##print src_word
                         sink_word = coref_mapping[1][0].lower()
-                        ##print sink_word
                         
                         self.m_coref_dict[sentence_index][src_word] = sink_word
                     except:
                         print 'error Question coref'
             
-#             print self.m_coref_dict
-#             print 'spacy persons', spacy_persons
             pron_to_noun = {}
             last_proper_noun = None
             for index in self.m_coref_dict:
                 for word in self.m_coref_dict[index]:
-#                     print 'word in coref:', word
                     word_rep = self.m_coref_dict[index][word].title()                    
-#                     print 'word rep'
-#                     print word_rep
                     pos_t = pos_tag([word_rep])
-#                     print pos_t
-#                     print 'pron to noun',pron_to_noun
-#                     print 'title in spacy:',word_rep.title() in spacy_persons
                     
                     if word not in pron_to_noun:
                         if ((len(pos_t) > 0 and pos_t[0][1] == 'NNP') or (word_rep in spacy_persons)) :
@@ -77,23 +58,9 @@ class Question:
                             last_proper_noun = self.m_coref_dict[index][word]
                         elif last_proper_noun != None:
                             self.m_coref_dict[index][word] = last_proper_noun
-                    
-#                     if word not in pron_to_noun and ((len(pos_t) > 0 and pos_t[0][1] == 'NNP') or (word_rep in spacy_persons)) :
-#                         pron_to_noun[word] = self.m_coref_dict[index][word]
-#                         last_proper_noun = self.m_coref_dict[index][word]
-#                         #print 'proper_noun_found', last_proper_noun
-#                     elif last_proper_noun != None:
-#                         #print 'assigning proper noun:,', index, word
-#                         self.m_coref_dict[index][word] = last_proper_noun
-#                         current_coref = self.m_coref_dict[index][word]
-#                         for w in pron_to_noun:
-#                             if word in w or w in word or current_coref in w or w in current_coref:
-#                                 self.m_coref_dict[index][word] = pron_to_noun[w]
-        
-#         print self.m_coref_dict
-#         else:
-            ##print 'no corefs'
-         
+                    else:
+                        self.m_coref_dict[index][word] = pron_to_noun[word]
+            print self.m_coref_dict
         
     def read_sentences(self):
         

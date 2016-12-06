@@ -2,10 +2,10 @@ import json
 from Question import Question
 from decimal import Decimal
 class AnswerTests():
-    TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_All.json"
-#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_Plus.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_All.json"
+    TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_Plus.json"
 #     TESTED_QUESTIONS_FILE_PATH = "Test.json"
-#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_C.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDat aQuestionLabeled_C.json"
 #     TESTED_QUESTIONS_FILE_PATH = "TestDataQuestionLabeled.json"
     def __init__(self):
         print 'In init'

@@ -21,7 +21,7 @@ from CompoundModifier import CompoundModifier
 
 class Sentence:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
 #     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
 
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
@@ -96,8 +96,8 @@ class Sentence:
             self.extract_entities()
             
     def extract_dependencies(self):
-        ###print 'in extract dep'
-        ####print self.m_sentence_text
+        print 'in extract dep'
+        print self.m_sentence_text
         corenlp_result = json.loads(Sentence.SCORENLP.parse(self.m_sentence_text))
         current_sentence = corenlp_result["sentences"][0]
         parse_tree = current_sentence["parsetree"]
@@ -177,7 +177,7 @@ class Sentence:
             self.m_has_an_unknown_quantity = True
         
     def extract_entities(self):
-        ###print 'in extract entities'
+        print 'in extract entities'
         sentence_parse = Sentence.SPACY_PARSER(self.m_sentence_text)
         spacy_subj = None
         temp_pobj = None
@@ -212,30 +212,33 @@ class Sentence:
                 print sentence_svos[0][0]
                 print sentence_svos[0][2]
                 
-                #trying to assign subj and obj from svo
+#                 trying to assign subj and obj from svo
                 self.assign_nsubj(sentence_svos[0][0])
                 self.assign_dobj(sentence_svos[0][2])
                 
-                #print 'after trying to assign dobj:'
-                #print  self.m_has_a_dobj
-                #print self.m_dobj
-                #print self.temp_dobj
+                print 'after trying to assign subj', self.m_nsubj
+                print 'after trying to assign dobj:'
+                print  'dobj exists?:',self.m_has_a_dobj
+                print 'dobj:',self.m_dobj
+                print 'temp dobj:',self.temp_dobj
                 #print temp_pobj
                 
                 if self.m_has_a_dobj == False:
                     if self.temp_dobj != None:
-                        #print 'before temp dobj'
+                        print 'before temp dobj'
                         self.assign_dobj(self.temp_dobj)
                         if self.temp_transfer_entity != None:
                             self.assign_transfer_entity(self.temp_transfer_entity, 'dobj')
                     elif temp_pobj != None:
-#                         #print 'before temp pobj'
+                        print 'before temp pobj'
                         self.assign_dobj(temp_pobj.orth_.lower())
                         #self.assign_dobj(self.m_pobj, 'pobj')
                         self.assign_transfer_entity(sentence_svos[0][2], 'dobj')
                 elif temp_pobj != None:
+                    print 'in temp dobj != None'
                     self.assign_transfer_entity(temp_pobj.orth_.lower(), 'pobj')
                 elif self.temp_transfer_entity != None:
+                    print 'in temp transfer entity !- None'
                     self.assign_transfer_entity(self.temp_transfer_entity, 'poss')
             else:
 #                 #print 'before 2nsd svo'
@@ -350,16 +353,17 @@ class Sentence:
     def extract_quantified_entities(self, to_create_transfer_entity, transfer_entity_relation):
         ##print self.m_transfer_entity
 #         ##print self.m_owner_entity
-        
+        print 'in extract quantified entities'
         if self.m_cardinal != None and self.m_has_an_unknown_quantity == False:
             self.validate_dobj_index()
-
+            print 'in cardinal case and no unknown quantity'
 #             #print self.m_dobj
             
             lemmatized_dobj = Sentence.LEMMATIZER_MODULE.lemmatize(self.m_dobj)
             compound_modifier = self.get_compound_modifier_for_dobj(self.m_dobj)
             
             if self.m_owner_entity != None:
+                print 'owner entity not none'
                 ##print self.m_dobj
                 ##print type(self.m_dobj)
                 ##print self.m_dobj.lower()
@@ -375,6 +379,7 @@ class Sentence:
                         transfer_transaction_cardinal = "-" + self.m_cardinal
                 else:
                     transfer_transaction_cardinal = -self.m_cardinal
+                print 'after calc transfer cardinal:', transfer_transaction_cardinal
                 temp_quantified_entity = QuantifiedEntity(owner_modified_cardinal, 'dobj', lemmatized_dobj, False)
                 temp_quantified_entity.set_owner_entity(self.m_owner_entity)
                 
@@ -497,7 +502,7 @@ class Sentence:
         
     def get_or_merge_entity(self, temp_entity, transfer_transaction):    
         to_merge_entities = self.m_question.add_quantified_entity(temp_entity)
-        ##print 'to merge?' 
+        print 'to merge?' 
         ##print to_merge_entities
         if to_merge_entities:
             self.merge_entities(temp_entity, transfer_transaction)
