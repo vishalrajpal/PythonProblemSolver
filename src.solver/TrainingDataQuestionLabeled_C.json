@@ -1,2199 +1,3122 @@
-[{
-	"sQuestion": "Milford Lake was originally blue because it only had 809 algae plants . Now there are 3263 algae plants , and the lake has turned green . How many more algae plants are in Milford Lake now ? ",
-	"lSolutions": ["2454.0"],
-	"ParentIndex": 173,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVAPNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Milford Lake was originally blue because it only had 809 algae plants ."
-		}],
-		"Sentence": "Milford Lake was originally blue because it only had 809 algae plants ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "EVCN",
-			"PredictedLabel": "=",
-			"label": "=",
-			"Sentence": "Now there are 3263 algae plants ."
-		}, {
-			"SyntacticPattern": "DNVVA",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "the lake has turned green ."
-		}],
-		"Sentence": "Now there are 3263 algae plants , and the lake has turned green ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more algae plants are in Milford Lake now ?"
-		}],
-		"Sentence": "How many more algae plants are in Milford Lake now ?"
-	}],
-	"lEquations": ["X = 3263.0 - 809.0"],
-	"iIndex": 173
-}, {
-	"sQuestion": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called. Frank finished just 0.3333333333333333 pie . How much more pie did Erik eat than Frank ? ",
-	"lSolutions": ["0.3333333333333333"],
-	"ParentIndex": 177,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "PDANNVPCNPNVV",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 pie before time was called ."
-		}],
-		"Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "Frank finished just 0.3333333333333333 pie ."
-		}],
-		"Sentence": "Frank finished just 0.3333333333333333 pie ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WNVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more pie did Erik eat than Frank ?"
-		}],
-		"Sentence": "How much more pie did Erik eat than Frank ?"
-	}],
-	"lEquations": ["X = 0.6666666666666666 - 0.3333333333333333"],
-	"iIndex": 177
-}, {
-	"sQuestion": "A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants . How much more did the tailor cut off the skirt than the pants ? ",
-	"lSolutions": ["0.25"],
-	"ParentIndex": 178,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANCNPDN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "A tailor cut 0.75 inch off a skirt ."
-		}, {
-			"SyntacticPattern": "DCNPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "A tailor cut 0.5 inch off a pair of pants ."
-		}],
-		"Sentence": "A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNVDNPDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more did the tailor cut off the skirt than the pants ?"
-		}],
-		"Sentence": "How much more did the tailor cut off the skirt than the pants ?"
-	}],
-	"lEquations": ["X = 0.75 - 0.5"],
-	"iIndex": 178
-}, {
-	"sQuestion": "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap . How much farther did Darnel sprint than jog ? ",
-	"lSolutions": ["0.125"],
-	"ParentIndex": 180,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Darnel sprinted 0.875 lap ."
-		}, {
-			"SyntacticPattern": "NVDNPNCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Darnel then took a break by jogging 0.75 lap ."
-		}],
-		"Sentence": "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Darnel sprint than jog ?"
-		}],
-		"Sentence": "How much farther did Darnel sprint than jog ?"
-	}],
-	"lEquations": ["X = 0.875 - 0.75"],
-	"iIndex": 180
-}, {
-	"sQuestion": "A marine biologist measured 1 fish that was 0.3 foot long and a second fish that was 0.2 foot long . How much longer was the first fish ? ",
-	"lSolutions": ["0.1"],
-	"ParentIndex": 181,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A marine biologist measured 1 fish that was 0.3 foot long ."
-		}, {
-			"SyntacticPattern": "DANVDANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A marine biologist measured a second fish that was 0.2 foot long ."
-		}],
-		"Sentence": "A marine biologist measured 1 fish that was 0.3 foot long and a second fish that was 0.2 foot long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the first fish ?"
-		}],
-		"Sentence": "How much longer was the first fish ?"
-	}],
-	"lEquations": ["X = 0.3 - 0.2"],
-	"iIndex": 181
-}, {
-	"sQuestion": "Dina made cookies . She used 0.625 cup of flour and 0.25 cup of sugar . How much more flour than sugar did Dina use ? ",
-	"lSolutions": ["0.375"],
-	"ParentIndex": 191,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Dina made cookies ."
-		}],
-		"Sentence": "Dina made cookies ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.625 cup of flour ."
-		}, {
-			"SyntacticPattern": "NVCNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.25 cup of sugar ."
-		}],
-		"Sentence": "She used 0.625 cup of flour and 0.25 cup of sugar ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANPNVNV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more flour than sugar did Dina use ?"
-		}],
-		"Sentence": "How much more flour than sugar did Dina use ?"
-	}],
-	"lEquations": ["X = 0.625 - 0.25"],
-	"iIndex": 191
-}, {
-	"sQuestion": "Jenny ran 0.6 mile and walked 0.4 mile . How much farther did Jenny run than walk ? ",
-	"lSolutions": ["0.2"],
-	"ParentIndex": 193,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jenny ran 0.6 mile ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jenny walked 0.4 mile ."
-		}],
-		"Sentence": "Jenny ran 0.6 mile and walked 0.4 mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Jenny run than walk ?"
-		}],
-		"Sentence": "How much farther did Jenny run than walk ?"
-	}],
-	"lEquations": ["X = 0.6 - 0.4"],
-	"iIndex": 193
-}, {
-	"sQuestion": "Suzie found 2 worms in the yard and measured them with a ruler . 1 worm was 0.8 inch long . The other worm was 0.1 inch long . How much longer was the longer worm ? ",
-	"lSolutions": ["0.7"],
-	"ParentIndex": 195,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Suzie found 2 worms in the yard ."
-		}, {
-			"SyntacticPattern": "NVNPDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Suzie measured them with a ruler ."
-		}],
-		"Sentence": "Suzie found 2 worms in the yard and measured them with a ruler ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "CNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "1 worm was 0.8 inch long ."
-		}],
-		"Sentence": "1 worm was 0.8 inch long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The other worm was 0.1 inch long ."
-		}],
-		"Sentence": "The other worm was 0.1 inch long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the longer worm ?"
-		}],
-		"Sentence": "How much longer was the longer worm ?"
-	}],
-	"lEquations": ["X = 0.8 - 0.1"],
-	"iIndex": 195
-}, {
-	"sQuestion": "Vince 's bus ride to school is 0.625 mile and Zachary 's bus ride is 0.5 mile . How much longer is Vince 's bus ride than Zachary 's ? ",
-	"lSolutions": ["0.125"],
-	"ParentIndex": 197,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNPNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Vince 's bus ride to school is 0.625 mile ."
-		}, {
-			"SyntacticPattern": "NNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Zachary 's bus ride is 0.5 mile ."
-		}],
-		"Sentence": "Vince 's bus ride to school is 0.625 mile and Zachary 's bus ride is 0.5 mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVNNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
-		}],
-		"Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
-	}],
-	"lEquations": ["X = 0.625 - 0.5"],
-	"iIndex": 197
-}, {
-	"sQuestion": "At the beach , Miki and her sister both built sandcastles and then measured their heights . Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall . How much taller was Miki 's sandcastle than her sister 's ? ",
-	"lSolutions": ["0.3333333333333333"],
-	"ParentIndex": 201,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNNNNVNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "At the beach Miki and her sister both built sandcastles and then measured their heights ."
-		}],
-		"Sentence": "At the beach , Miki and her sister both built sandcastles and then measured their heights ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall ."
-		}, {
-			"SyntacticPattern": "NNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "her sister 's was 0.5 foot tall ."
-		}],
-		"Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNNPNN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
-		}],
-		"Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
-	}],
-	"lEquations": ["X = 0.8333333333333334 - 0.5"],
-	"iIndex": 201
-}, {
-	"sQuestion": "Greg and Sharon own neighboring cornfields . Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre . How many more acres did Greg harvest than Sharon ? ",
-	"lSolutions": ["0.3"],
-	"ParentIndex": 205,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NAVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Greg and Sharon own neighboring cornfields ."
-		}],
-		"Sentence": "Greg and Sharon own neighboring cornfields ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Greg harvested 0.4 acre of corn on Monday ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Sharon harvested 0.1 acre ."
-		}],
-		"Sentence": "Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more acres did Greg harvest than Sharon ?"
-		}],
-		"Sentence": "How many more acres did Greg harvest than Sharon ?"
-	}],
-	"lEquations": ["X = 0.4 - 0.1"],
-	"iIndex": 205
-}, {
-	"sQuestion": "Eve ran 0.7 mile and walked 0.6 mile . How much farther did Eve run than walk ? ",
-	"lSolutions": ["0.1"],
-	"ParentIndex": 208,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Eve ran 0.7 mile ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Eve walked 0.6 mile ."
-		}],
-		"Sentence": "Eve ran 0.7 mile and walked 0.6 mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Eve run than walk ?"
-		}],
-		"Sentence": "How much farther did Eve run than walk ?"
-	}],
-	"lEquations": ["X = 0.7 - 0.6"],
-	"iIndex": 208
-}, {
-	"sQuestion": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home . How much farther did Craig ride than walk ? ",
-	"lSolutions": ["3.6666666666666665"],
-	"ParentIndex": 237,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "This afternoon Craig left school ."
-		}, {
-			"SyntacticPattern": "NVDNCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Craig rode the bus 3.8333333333333335 miles ."
-		}, {
-			"SyntacticPattern": "NVCNPVN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Craig then walked 0.16666666666666666 mile to get home ."
-		}],
-		"Sentence": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Craig ride than walk ?"
-		}],
-		"Sentence": "How much farther did Craig ride than walk ?"
-	}],
-	"lEquations": ["X = 3.8333333333333335 - 0.16666666666666666"],
-	"iIndex": 237
-}, {
-	"sQuestion": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound . How much more does the chemistry textbook weigh than the geometry textbook ? ",
-	"lSolutions": ["6.5"],
-	"ParentIndex": 238,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds ."
-		}, {
-			"SyntacticPattern": "NNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "her geometry textbook weighs 0.625 pound ."
-		}],
-		"Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNVPDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
-		}],
-		"Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
-	}],
-	"lEquations": ["X = 7.125 - 0.625"],
-	"iIndex": 238
-}, {
-	"sQuestion": "Professor Ellison weighed 2 pieces of metal for an experiment . The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound . How much more did the piece of iron weigh than the piece of aluminum ? ",
-	"lSolutions": ["10.333333333333334"],
-	"ParentIndex": 244,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPNPDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Professor Ellison weighed 2 pieces of metal for an experiment ."
-		}],
-		"Sentence": "Professor Ellison weighed 2 pieces of metal for an experiment ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNPNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The piece of iron weighed 11.166666666666666 pounds ."
-		}, {
-			"SyntacticPattern": "DNPNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the piece of aluminum weighed 0.8333333333333334 pound ."
-		}],
-		"Sentence": "The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNPNVPDNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
-		}],
-		"Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
-	}],
-	"lEquations": ["X = 11.166666666666666 - 0.8333333333333334"],
-	"iIndex": 244
-}, {
-	"sQuestion": "At the beach , Janet and her sister both built sandcastles and then measured their heights . Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall . How much taller was Janet 's sandcastle than her sister 's ? ",
-	"lSolutions": ["1.3333333333333333"],
-	"ParentIndex": 247,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DDNNNNVNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "At the beach Janet and her sister both built sandcastles and then measured their heights ."
-		}],
-		"Sentence": "At the beach , Janet and her sister both built sandcastles and then measured their heights ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall ."
-		}, {
-			"SyntacticPattern": "NNNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "her sister 's sandcastle was 2.3333333333333335 feet tall ."
-		}],
-		"Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNNPNN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
-		}],
-		"Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
-	}],
-	"lEquations": ["X = 3.6666666666666665 - 2.3333333333333335"],
-	"iIndex": 247
-}, {
-	"sQuestion": "Nicole found an orange caterpillar and a green caterpillar in her backyard . The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long . How much longer was the green caterpillar than the orange caterpillar ? ",
-	"lSolutions": ["1.8333333333333335"],
-	"ParentIndex": 248,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Nicole found an orange caterpillar in her backyard ."
-		}, {
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Nicole found a green caterpillar in her backyard ."
-		}],
-		"Sentence": "Nicole found an orange caterpillar and a green caterpillar in her backyard ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The green caterpillar was 3 inches long ."
-		}, {
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the orange caterpillar was 1.1666666666666667 inches long ."
-		}],
-		"Sentence": "The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
-		}],
-		"Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
-	}],
-	"lEquations": ["X = 3.0 - 1.1666666666666667"],
-	"iIndex": 248
-}, {
-	"sQuestion": "Irene just bought a new lamp for her bedside table . The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall . How much taller is the new lamp than the old lamp ? ",
-	"lSolutions": ["1.3333333333333333"],
-	"ParentIndex": 251,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Irene just bought a new lamp for her bedside table ."
-		}],
-		"Sentence": "Irene just bought a new lamp for her bedside table ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The old lamp was 1 foot tall ."
-		}, {
-			"SyntacticPattern": "DANVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the new lamp is 2.3333333333333335 feet tall ."
-		}],
-		"Sentence": "The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller is the new lamp than the old lamp ?"
-		}],
-		"Sentence": "How much taller is the new lamp than the old lamp ?"
-	}],
-	"lEquations": ["X = 2.3333333333333335 - 1.0"],
-	"iIndex": 251
-}, {
-	"sQuestion": "Ezra drew a white line that was 7.666666666666667 inches long . Then he drew a blue line that was 3.3333333333333335 inches long . How much longer was the white line than the blue line ? ",
-	"lSolutions": ["4.333333333333333"],
-	"ParentIndex": 252,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
-		}],
-		"Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
-		}],
-		"Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the white line than the blue line ?"
-		}],
-		"Sentence": "How much longer was the white line than the blue line ?"
-	}],
-	"lEquations": ["X = 7.666666666666667 - 3.3333333333333335"],
-	"iIndex": 252
-}, {
-	"sQuestion": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles . How much farther did Wendy run than walk ? ",
-	"lSolutions": ["10.666666666666666"],
-	"ParentIndex": 254,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Wendy ran 19.833333333333332 miles ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Wendy walked 9.166666666666666 miles ."
-		}],
-		"Sentence": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Wendy run than walk ?"
-		}],
-		"Sentence": "How much farther did Wendy run than walk ?"
-	}],
-	"lEquations": ["X = 19.833333333333332 - 9.166666666666666"],
-	"iIndex": 254
-}, {
-	"sQuestion": "Oscar's bus ride to school is 0.75 of a mile and Charlie's bus ride is 0.25 of a mile. How much longer is Oscar's bus ride than Charlie's?",
-	"lSolutions": [0.5],
-	"ParentIndex": 770,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNPNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Oscar 's bus ride to school is 0.75 of a mile ."
-		}, {
-			"SyntacticPattern": "NNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Charlie 's bus ride is 0.25 of a mile ."
-		}],
-		"Sentence": "Oscar 's bus ride to school is 0.75 of a mile and Charlie 's bus ride is 0.25 of a mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVNNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer is Oscar 's bus ride than Charlie 's ?"
-		}],
-		"Sentence": "How much longer is Oscar 's bus ride than Charlie 's ?"
-	}],
-	"lEquations": ["0.75 - 0.25 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "At a pie-eating contest, Erik got through 0.6666666666666666 of a pie before time was called; Frank finished just 0.3333333333333333 of a pie. How much more pie did Erik eat than Frank?",
-	"lSolutions": [0.3333333333333333],
-	"ParentIndex": 773,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "PDANNVPCPDNPNVV",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 of a pie before time was called ; Frank finished just 0.3333333333333333 of a pie ."
-		}, {
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "Frank finished just 0.3333333333333333 of a pie ."
-		}],
-		"Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 of a pie before time was called ; Frank finished just 0.3333333333333333 of a pie ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WNVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more pie did Erik eat than Frank ?"
-		}],
-		"Sentence": "How much more pie did Erik eat than Frank ?"
-	}],
-	"lEquations": ["0.6666666666666666 - 0.3333333333333333 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "A tailor cut 0.75 of an inch off a skirt and 0.5 of an inch off a pair of pants. How much more did the tailor cut off the skirt than the pants?",
-	"lSolutions": [0.25],
-	"ParentIndex": 774,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANCPDNPDN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "A tailor cut 0.75 of an inch off a skirt ."
-		}, {
-			"SyntacticPattern": "DANCPDNPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "A tailor cut 0.5 of an inch off a pair of pants ."
-		}],
-		"Sentence": "A tailor cut 0.75 of an inch off a skirt and 0.5 of an inch off a pair of pants ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNVDNPDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more did the tailor cut off the skirt than the pants ?"
-		}],
-		"Sentence": "How much more did the tailor cut off the skirt than the pants ?"
-	}],
-	"lEquations": ["0.75 - 0.5 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Darnel sprinted 0.875 of a lap and then took a break by jogging 0.75 of a lap. How much farther did Darnel sprint than jog?",
-	"lSolutions": [0.125],
-	"ParentIndex": 776,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Darnel sprinted 0.875 of a lap ."
-		}, {
-			"SyntacticPattern": "NVDNPNCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Darnel then took a break by jogging 0.75 of a lap ."
-		}],
-		"Sentence": "Darnel sprinted 0.875 of a lap and then took a break by jogging 0.75 of a lap ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Darnel sprint than jog ?"
-		}],
-		"Sentence": "How much farther did Darnel sprint than jog ?"
-	}],
-	"lEquations": ["0.875 - 0.75 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "A marine biologist measured one fish that was 0.3 of a foot long and a second fish that was 0.2 of a foot long. How much longer was the first fish?",
-	"lSolutions": [0.1],
-	"ParentIndex": 777,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A marine biologist measured one fish that was 0.3 of a foot long ."
-		}, {
-			"SyntacticPattern": "DANVDANVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A marine biologist measured a second fish that was 0.2 of a foot long ."
-		}],
-		"Sentence": "A marine biologist measured one fish that was 0.3 of a foot long and a second fish that was 0.2 of a foot long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the first fish ?"
-		}],
-		"Sentence": "How much longer was the first fish ?"
-	}],
-	"lEquations": ["0.3 - 0.2 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Mandy made an apple pie. She used 0.6666666666666666 of a tablespoon of cinnamon and 0.5 of a tablespoon of nutmeg. How much more cinnamon than nutmeg did Mandy use?",
-	"lSolutions": [0.16666666666666666],
-	"ParentIndex": 781,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Mandy made an apple pie ."
-		}],
-		"Sentence": "Mandy made an apple pie ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.6666666666666666 of a tablespoon of cinnamon ."
-		}, {
-			"SyntacticPattern": "NVCPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.5 of a tablespoon of nutmeg ."
-		}],
-		"Sentence": "She used 0.6666666666666666 of a tablespoon of cinnamon and 0.5 of a tablespoon of nutmeg ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANPNVNV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more cinnamon than nutmeg did Mandy use ?"
-		}],
-		"Sentence": "How much more cinnamon than nutmeg did Mandy use ?"
-	}],
-	"lEquations": ["0.6666666666666666 - 0.5 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?",
-	"lSolutions": [0.2],
-	"ParentIndex": 786,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Stanley ran 0.4 of a mile ."
-		}, {
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Stanley walked 0.2 of a mile ."
-		}],
-		"Sentence": "Stanley ran 0.4 of a mile and walked 0.2 of a mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Stanley run than walk ?"
-		}],
-		"Sentence": "How much farther did Stanley run than walk ?"
-	}],
-	"lEquations": ["0.4 - 0.2 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Dina made cookies. She used 0.625 of a cup of flour and 0.25 of a cup of sugar. How much more flour than sugar did Dina use?",
-	"lSolutions": [0.375],
-	"ParentIndex": 787,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Dina made cookies ."
-		}],
-		"Sentence": "Dina made cookies ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.625 of a cup of flour ."
-		}, {
-			"SyntacticPattern": "NVCPDNPN",
-			"PredictedLabel": "-",
-			"label": "-",
-			"Sentence": "She used 0.25 of a cup of sugar ."
-		}],
-		"Sentence": "She used 0.625 of a cup of flour and 0.25 of a cup of sugar ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WANPNVNV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more flour than sugar did Dina use ?"
-		}],
-		"Sentence": "How much more flour than sugar did Dina use ?"
-	}],
-	"lEquations": ["0.625 - 0.25 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Jenny ran 0.6 of a mile and walked 0.4 of a mile. How much farther did Jenny run than walk?",
-	"lSolutions": [0.2],
-	"ParentIndex": 789,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jenny ran 0.6 of a mile ."
-		}, {
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jenny walked 0.4 of a mile ."
-		}],
-		"Sentence": "Jenny ran 0.6 of a mile and walked 0.4 of a mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Jenny run than walk ?"
-		}],
-		"Sentence": "How much farther did Jenny run than walk ?"
-	}],
-	"lEquations": ["0.6 - 0.4 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Suzie found two worms in the yard and measured them with a ruler. One worm was 0.8 of an inch long. The other worm was 0.1 of an inch long. How much longer was the longer worm?",
-	"lSolutions": [0.7],
-	"ParentIndex": 791,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Suzie found two worms in the yard ."
-		}, {
-			"SyntacticPattern": "NVNPDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Suzie measured them with a ruler ."
-		}],
-		"Sentence": "Suzie found two worms in the yard and measured them with a ruler ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "CNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "One worm was 0.8 of an inch long ."
-		}],
-		"Sentence": "One worm was 0.8 of an inch long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The other worm was 0.1 of an inch long ."
-		}],
-		"Sentence": "The other worm was 0.1 of an inch long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the longer worm ?"
-		}],
-		"Sentence": "How much longer was the longer worm ?"
-	}],
-	"lEquations": ["0.8 - 0.1 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Vince's bus ride to school is 0.625 of a mile and Zachary's bus ride is 0.5 of a mile. How much longer is Vince's bus ride than Zachary's?",
-	"lSolutions": [0.125],
-	"ParentIndex": 793,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNPNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Vince 's bus ride to school is 0.625 of a mile ."
-		}, {
-			"SyntacticPattern": "NNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Zachary 's bus ride is 0.5 of a mile ."
-		}],
-		"Sentence": "Vince 's bus ride to school is 0.625 of a mile and Zachary 's bus ride is 0.5 of a mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVNNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
-		}],
-		"Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
-	}],
-	"lEquations": ["0.625 - 0.5 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "At the beach, Miki and her sister both built sandcastles and then measured their heights. Miki's sandcastle was 0.8333333333333334 of a foot tall and her sister's was 0.5 of a foot tall. How much taller was Miki's sandcastle than her sister's?",
-	"lSolutions": [0.3333333333333333],
-	"ParentIndex": 797,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNNNNVNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "At the beach Miki and her sister both built sandcastles and then measured their heights ."
-		}],
-		"Sentence": "At the beach , Miki and her sister both built sandcastles and then measured their heights ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall ."
-		}, {
-			"SyntacticPattern": "NNNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "her sister 's sandcastle was 0.5 foot tall ."
-		}],
-		"Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNNPNN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
-		}],
-		"Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
-	}],
-	"lEquations": ["0.8333333333333334 - 0.5 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Greg and Sharon own neighboring cornfields. Greg harvested 0.4 of an acre of corn on Monday and Sharon harvested 0.1 of an acre. How many more acres did Greg harvest than Sharon?",
-	"lSolutions": [0.3],
-	"ParentIndex": 801,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNAVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Greg and Sharon own neighboring cornfields ."
-		}],
-		"Sentence": "Greg and Sharon own neighboring cornfields ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDNPNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Greg harvested 0.4 of an acre of corn on Monday ."
-		}, {
-			"SyntacticPattern": "NVCPDNPNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Sharon harvested 0.1 of an acre of corn on Monday ."
-		}],
-		"Sentence": "Greg harvested 0.4 of an acre of corn on Monday and Sharon harvested 0.1 of an acre ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more acres did Greg harvest than Sharon ?"
-		}],
-		"Sentence": "How many more acres did Greg harvest than Sharon ?"
-	}],
-	"lEquations": ["0.4 + 0.1 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Eve ran 0.7 of a mile and walked 0.6 of a mile. How much farther did Eve run than walk?",
-	"lSolutions": [0.1],
-	"ParentIndex": 804,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Eve ran 0.7 of a mile ."
-		}, {
-			"SyntacticPattern": "NVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Eve walked 0.6 of a mile ."
-		}],
-		"Sentence": "Eve ran 0.7 of a mile and walked 0.6 of a mile ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Eve run than walk ?"
-		}],
-		"Sentence": "How much farther did Eve run than walk ?"
-	}],
-	"lEquations": ["0.7 + 0.6 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "This afternoon Craig left school, rode the bus 3.8333333333333335 miles, and then walked 0.16666666666666666 of a mile to get home. How much farther did Craig ride than walk?",
-	"lSolutions": [3.6666666666666665],
-	"ParentIndex": 833,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "This afternoon Craig left school ."
-		}, {
-			"SyntacticPattern": "NVDNCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Craig rode the bus 3.8333333333333335 miles ."
-		}, {
-			"SyntacticPattern": "NVCPDNPVN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Craig then walked 0.16666666666666666 of a mile to get home ."
-		}],
-		"Sentence": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 of a mile to get home ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Craig ride than walk ?"
-		}],
-		"Sentence": "How much farther did Craig ride than walk ?"
-	}],
-	"lEquations": ["3.8333333333333335 - 0.16666666666666666 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Kelly's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 of a pound. How much more does the chemistry textbook weigh than the geometry textbook?",
-	"lSolutions": [6.5],
-	"ParentIndex": 834,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCNPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds of a pound ."
-		}, {
-			"SyntacticPattern": "NNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Kelly 's geometry textbook weighs 0.625 of a pound ."
-		}],
-		"Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 of a pound ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNVPDN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
-		}],
-		"Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
-	}],
-	"lEquations": ["7.125 - 0.625 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Professor Ellison weighed two pieces of metal for an experiment. The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 of a pound. How much more did the piece of iron weigh than the piece of aluminum?",
-	"lSolutions": [10.333333333333334],
-	"ParentIndex": 840,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPNPDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Professor Ellison weighed two pieces of metal for an experiment ."
-		}],
-		"Sentence": "Professor Ellison weighed two pieces of metal for an experiment ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNPNVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The piece of iron weighed 11.166666666666666 pounds ."
-		}, {
-			"SyntacticPattern": "DNPNVCPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the piece of aluminum weighed 0.8333333333333334 of a pound ."
-		}],
-		"Sentence": "The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 of a pound ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDNPNVPDNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
-		}],
-		"Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
-	}],
-	"lEquations": ["11.166666666666666 - 0.8333333333333334 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "At the beach, Janet and her sister both built sandcastles and then measured their heights. Janet's sandcastle was 3.6666666666666665 feet tall and her sister's was 2.3333333333333335 feet tall. How much taller was Janet's sandcastle than her sister's?",
-	"lSolutions": [1.3333333333333333],
-	"ParentIndex": 843,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DDNNNNVNVN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "At the beach Janet and her sister both built sandcastles and then measured their heights ."
-		}],
-		"Sentence": "At the beach , Janet and her sister both built sandcastles and then measured their heights ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall ."
-		}, {
-			"SyntacticPattern": "NNNVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "her sister 's sandcastle was 2.3333333333333335 feet tall ."
-		}],
-		"Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNNPNN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
-		}],
-		"Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
-	}],
-	"lEquations": ["3.6666666666666665 - 2.3333333333333335 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Nicole found an orange caterpillar and a green caterpillar in her backyard. The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long. How much longer was the green caterpillar than the orange caterpillar?",
-	"lSolutions": [1.8333333333333335],
-	"ParentIndex": 844,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Nicole found an orange caterpillar in her backyard ."
-		}, {
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Nicole found a green caterpillar in her backyard ."
-		}],
-		"Sentence": "Nicole found an orange caterpillar and a green caterpillar in her backyard ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The green caterpillar was 3 inches long ."
-		}, {
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the orange caterpillar was 1.1666666666666667 inches long ."
-		}],
-		"Sentence": "The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
-		}],
-		"Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
-	}],
-	"lEquations": ["3 - 1.1666666666666667 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Irene just bought a new lamp for her bedside table. The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall. How much taller is the new lamp than the old lamp?",
-	"lSolutions": [1.3333333333333333],
-	"ParentIndex": 847,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANPNN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Irene just bought a new lamp for her bedside table ."
-		}],
-		"Sentence": "Irene just bought a new lamp for her bedside table ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The old lamp was 1 foot tall ."
-		}, {
-			"SyntacticPattern": "DANVCNA",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the new lamp is 2.3333333333333335 feet tall ."
-		}],
-		"Sentence": "The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much taller is the new lamp than the old lamp ?"
-		}],
-		"Sentence": "How much taller is the new lamp than the old lamp ?"
-	}],
-	"lEquations": ["2.3333333333333335 - 1 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Ezra drew a white line that was 7.666666666666667 inches long. Then he drew a blue line that was 3.3333333333333335 inches long. How much longer was the white line than the blue line?",
-	"lSolutions": [4.333333333333333],
-	"ParentIndex": 848,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
-		}],
-		"Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVDANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
-		}],
-		"Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDANPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much longer was the white line than the blue line ?"
-		}],
-		"Sentence": "How much longer was the white line than the blue line ?"
-	}],
-	"lEquations": ["7.666666666666667 - 3.3333333333333335 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles. How much farther did Wendy run than walk?",
-	"lSolutions": [10.666666666666666],
-	"ParentIndex": 850,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Wendy ran 19.833333333333332 miles ."
-		}, {
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Wendy walked 9.166666666666666 miles ."
-		}],
-		"Sentence": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther did Wendy run than walk ?"
-		}],
-		"Sentence": "How much farther did Wendy run than walk ?"
-	}],
-	"lEquations": ["19.833333333333332 - 9.166666666666666 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Kenji and his classmates placed colored blocks on a scale during a science lab. The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds. How much more did the yellow block weigh than the green block?",
-	"lSolutions": [0.2],
-	"ParentIndex": 851,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NNNVVNPDNPDN",
-			"PredictedLabel": "i",
-			"label": "i",
-			"Sentence": "Kenji his classmates placed colored blocks on a scale during a science lab ."
-		}],
-		"Sentence": "Kenji and his classmates placed colored blocks on a scale during a science lab ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "The yellow block weighed 0.6 pounds ."
-		}, {
-			"SyntacticPattern": "DANVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "the green block weighed 0.4 pounds ."
-		}],
-		"Sentence": "The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WVDANVPDAN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more did the yellow block weigh than the green block ?"
-		}],
-		"Sentence": "How much more did the yellow block weigh than the green block ?"
-	}],
-	"lEquations": ["0.6 - 0.4 = x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Karen has 639 crayons. Cindy has 504 crayons. How many more crayons does Karen have than Cindy?",
-	"lSolutions": [135],
-	"ParentIndex": 874,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Karen has 639 crayons ."
-		}],
-		"Sentence": "Karen has 639 crayons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Cindy has 504 crayons ."
-		}],
-		"Sentence": "Cindy has 504 crayons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more crayons does Karen have than Cindy ?"
-		}],
-		"Sentence": "How many more crayons does Karen have than Cindy ?"
-	}],
-	"lEquations": ["639-504=x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "James has 1222 balloons. Amy has 513 balloons. How many more balloons does James have than Amy?",
-	"lSolutions": [208],
-	"ParentIndex": 885,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "James has 1222 balloons ."
-		}],
-		"Sentence": "James has 1222 balloons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Amy has 513 balloons ."
-		}],
-		"Sentence": "Amy has 513 balloons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more balloons does James have than Amy ?"
-		}],
-		"Sentence": "How many more balloons does James have than Amy ?"
-	}],
-	"lEquations": ["1222-513=x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "A pet supply store has 600 bags of dog food and 327 bags of cat food. How many more bags of dog food are there than cat food?",
-	"lSolutions": [273],
-	"ParentIndex": 898,
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A pet supply store has 600 bags of dog food ."
-		}, {
-			"SyntacticPattern": "DNVNVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A pet supply store has 327 bags of cat food ."
-		}],
-		"Sentence": "A pet supply store has 600 bags of dog food and 327 bags of cat food ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANPNVEPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more bags of dog food are there than cat food ?"
-		}],
-		"Sentence": "How many more bags of dog food are there than cat food ?"
-	}],
-	"lEquations": ["600-327=x"],
-	"iIndex": 0
-}, {
-	"sQuestion": "Anne weighs 67 pounds. Douglas weighs 52 pounds. How much heavier is Anne than Douglas?",
-	"lSolutions": [15],
-	"ParentIndex": 956,
-	"lAlignments": [12, 38],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Anne weighs 67 pounds ."
-		}],
-		"Sentence": "Anne weighs 67 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Douglas weighs 52 pounds ."
-		}],
-		"Sentence": "Douglas weighs 52 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Anne than Douglas ?"
-		}],
-		"Sentence": "How much heavier is Anne than Douglas ?"
-	}],
-	"lEquations": ["X=(67.0-52.0)"],
-	"iIndex": 104
-}, {
-	"sQuestion": "Jessica weighs 49 pounds. Thomas weighs 44 pounds. How much heavier is Jessica than Thomas?",
-	"lSolutions": [5],
-	"ParentIndex": 957,
-	"lAlignments": [15, 40],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jessica weighs 49 pounds ."
-		}],
-		"Sentence": "Jessica weighs 49 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Thomas weighs 44 pounds ."
-		}],
-		"Sentence": "Thomas weighs 44 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Jessica than Thomas ?"
-		}],
-		"Sentence": "How much heavier is Jessica than Thomas ?"
-	}],
-	"lEquations": ["X=(49.0-44.0)"],
-	"iIndex": 105
-}, {
-	"sQuestion": "Donna weighs 69 pounds. Willie weighs 51 pounds. How much heavier is Donna than Willie?",
-	"lSolutions": [18],
-	"ParentIndex": 960,
-	"lAlignments": [13, 38],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Donna weighs 69 pounds ."
-		}],
-		"Sentence": "Donna weighs 69 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Willie weighs 51 pounds ."
-		}],
-		"Sentence": "Willie weighs 51 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Donna than Willie ?"
-		}],
-		"Sentence": "How much heavier is Donna than Willie ?"
-	}],
-	"lEquations": ["X=(69.0-51.0)"],
-	"iIndex": 108
-}, {
-	"sQuestion": "John weighs 81 pounds. Roy weighs 4 pounds. How much heavier is John than Roy?",
-	"lSolutions": [77],
-	"ParentIndex": 972,
-	"lAlignments": [12, 34],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "John weighs 81 pounds ."
-		}],
-		"Sentence": "John weighs 81 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Roy weighs 4 pounds ."
-		}],
-		"Sentence": "Roy weighs 4 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is John than Roy ?"
-		}],
-		"Sentence": "How much heavier is John than Roy ?"
-	}],
-	"lEquations": ["X=(81.0-4.0)"],
-	"iIndex": 123
-}, {
-	"sQuestion": "Mildred weighs 59 pounds. Carol weighs 9 pounds. How much heavier is Mildred than Carol?",
-	"lSolutions": [50],
-	"ParentIndex": 978,
-	"lAlignments": [15, 39],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Mildred weighs 59 pounds ."
-		}],
-		"Sentence": "Mildred weighs 59 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Carol weighs 9 pounds ."
-		}],
-		"Sentence": "Carol weighs 9 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Mildred than Carol ?"
-		}],
-		"Sentence": "How much heavier is Mildred than Carol ?"
-	}],
-	"lEquations": ["X=(59.0-9.0)"],
-	"iIndex": 137
-}, {
-	"sQuestion": "Bridget weighs 39 pounds. Martha weighs 2 pounds. How much heavier is Bridget than Martha?",
-	"lSolutions": [37],
-	"ParentIndex": 983,
-	"lAlignments": [15, 40],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Bridget weighs 39 pounds ."
-		}],
-		"Sentence": "Bridget weighs 39 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Martha weighs 2 pounds ."
-		}],
-		"Sentence": "Martha weighs 2 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Bridget than Martha ?"
-		}],
-		"Sentence": "How much heavier is Bridget than Martha ?"
-	}],
-	"lEquations": ["X=(39.0-2.0)"],
-	"iIndex": 146
-}, {
-	"sQuestion": "Heather weighs 87 pounds. Emily weighs 9 pounds. Elizabeth weighs 8 pounds. How much heavier is Heather than Emily?",
-	"lSolutions": [78],
-	"ParentIndex": 1056,
-	"lAlignments": [15, 39],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Heather weighs 87 pounds ."
-		}],
-		"Sentence": "Heather weighs 87 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Emily weighs 9 pounds ."
-		}],
-		"Sentence": "Emily weighs 9 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Elizabeth weighs 8 pounds ."
-		}],
-		"Sentence": "Elizabeth weighs 8 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Heather than Emily ?"
-		}],
-		"Sentence": "How much heavier is Heather than Emily ?"
-	}],
-	"lEquations": ["X=(87.0-9.0)"],
-	"iIndex": 755
-}, {
-	"sQuestion": "Heather weighs 87 pounds. Emily weighs 9 pounds. Elizabeth weighs 8 pounds. How much heavier is Heather than Emily?",
-	"lSolutions": [78],
-	"ParentIndex": 1057,
-	"lAlignments": [15, 39],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Heather weighs 87 pounds ."
-		}],
-		"Sentence": "Heather weighs 87 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Emily weighs 9 pounds ."
-		}],
-		"Sentence": "Emily weighs 9 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Elizabeth weighs 8 pounds ."
-		}],
-		"Sentence": "Elizabeth weighs 8 pounds ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAVNPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much heavier is Heather than Emily ?"
-		}],
-		"Sentence": "How much heavier is Heather than Emily ?"
-	}],
-	"lEquations": ["X=(87.0-9.0)"],
-	"iIndex": 755
-}, {
-	"sQuestion": " There are 6 birds and 3 nests. How many more birds are there than nests?",
-	"lSolutions": [3],
-	"ParentIndex": 1064,
-	"lAlignments": [11, 23],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "EVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "There are 6 birds ."
-		}, {
-			"SyntacticPattern": "EVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "There are 3 nests ."
-		}],
-		"Sentence": "There are 6 birds and 3 nests ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVEPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more birds are there than nests ?"
-		}],
-		"Sentence": "How many more birds are there than nests ?"
-	}],
-	"lEquations": ["X=(6.0-3.0)"],
-	"iIndex": 1141
-}, {
-	"sQuestion": " There are 4 squirrels in a tree with 2 nuts. How many more squirrels are there than nuts?",
-	"lSolutions": [2],
-	"ParentIndex": 1069,
-	"lAlignments": [11, 38],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "EVCNPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "There are 4 squirrels in a tree ."
-		}, {
-			"SyntacticPattern": "PDNPCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "in a tree with 2 nuts ."
-		}],
-		"Sentence": "There are 4 squirrels in a tree with 2 nuts ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVEPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more squirrels are there than nuts ?"
-		}],
-		"Sentence": "How many more squirrels are there than nuts ?"
-	}],
-	"lEquations": ["X=(4.0-2.0)"],
-	"iIndex": 1146
-}, {
-	"sQuestion": " At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock Elementary School received 17 inches of snow. How much more snow  did Mrs. Hilt's house have?",
-	"lSolutions": [12],
-	"ParentIndex": 1071,
-	"lAlignments": [33, 93],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "PNNEVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "At Mrs. Hilt 's house there was 29 inches of snow ."
-		}, {
-			"SyntacticPattern": "PNNVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Brecknock Elementary School received 17 inches of snow ."
-		}],
-		"Sentence": "At Mrs. Hilt 's house , there was 29 inches of snow , and Brecknock Elementary School received 17 inches of snow ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WNVNNV",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much more snow did Mrs. Hilt 's house have ?"
-		}],
-		"Sentence": "How much more snow did Mrs. Hilt 's house have ?"
-	}],
-	"lEquations": ["X=(29.0-17.0)"],
-	"iIndex": 1148
-}, {
-	"sQuestion": " Alyssa had 129 cookies. Aiyanna has 140. How many more cookies does Aiyanna have than Alyssa?",
-	"lSolutions": [11],
-	"ParentIndex": 1105,
-	"lAlignments": [37, 12],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Alyssa had 129 cookies ."
-		}],
-		"Sentence": "Alyssa had 129 cookies ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Aiyanna has 140 cookies ."
-		}],
-		"Sentence": "Aiyanna has 140 cookies ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more cookies does Aiyanna have than Alyssa ?"
-		}],
-		"Sentence": "How many more cookies does Aiyanna have than Alyssa ?"
-	}],
-	"lEquations": ["X=(140.0-129.0)"],
-	"iIndex": 1187
-}, {
-	"sQuestion": " Mrs. Sheridan has 11 cats. Mrs. Garrett has 24 cats. How many more cats does Mrs. Garrett have than Mrs. Sheridan?",
-	"lSolutions": [13],
-	"ParentIndex": 1113,
-	"lAlignments": [45, 19],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Mrs. Sheridan has 11 cats ."
-		}],
-		"Sentence": "Mrs. Sheridan has 11 cats ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Mrs. Garrett has 24 cats ."
-		}],
-		"Sentence": "Mrs. Garrett has 24 cats ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more cats does Mrs. Garrett have than Mrs. Sheridan ?"
-		}],
-		"Sentence": "How many more cats does Mrs. Garrett have than Mrs. Sheridan ?"
-	}],
-	"lEquations": ["X=(24.0-11.0)"],
-	"iIndex": 1195
-}, {
-	"sQuestion": " Mrs. Santiago has 58 red roses. Mrs. Garrett has 24. How many more red roses does Mrs. Santiago have than Mrs. Garrett?",
-	"lSolutions": [34],
-	"ParentIndex": 1117,
-	"lAlignments": [19, 50],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCAN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Mrs. Santiago has 58 red roses ."
-		}],
-		"Sentence": "Mrs. Santiago has 58 red roses ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Mrs. Garrett has 24 roses ."
-		}],
-		"Sentence": "Mrs. Garrett has 24 roses ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more red roses does Mrs. Santiago have than Mrs. Garrett ?"
-		}],
-		"Sentence": "How many more red roses does Mrs. Santiago have than Mrs. Garrett ?"
-	}],
-	"lEquations": ["X=(58.0-24.0)"],
-	"iIndex": 1199
-}, {
-	"sQuestion": " Bobby has 142 books. Kristi has 78 books. How many more books does Bobby have than Kristi?",
-	"lSolutions": [64],
-	"ParentIndex": 1128,
-	"lAlignments": [11, 33],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Bobby has 142 books ."
-		}],
-		"Sentence": "Bobby has 142 books ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Kristi has 78 books ."
-		}],
-		"Sentence": "Kristi has 78 books ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more books does Bobby have than Kristi ?"
-		}],
-		"Sentence": "How many more books does Bobby have than Kristi ?"
-	}],
-	"lEquations": ["X=(142.0-78.0)"],
-	"iIndex": 1210
-}, {
-	"sQuestion": " James has 232 balloons. Amy has 101 balloons. How many more balloons does James have than Amy?",
-	"lSolutions": [131],
-	"ParentIndex": 1149,
-	"lAlignments": [11, 33],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "James has 232 balloons ."
-		}],
-		"Sentence": "James has 232 balloons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Amy has 101 balloons ."
-		}],
-		"Sentence": "Amy has 101 balloons ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more balloons does James have than Amy ?"
-		}],
-		"Sentence": "How many more balloons does James have than Amy ?"
-	}],
-	"lEquations": ["X=(232.0-101.0)"],
-	"iIndex": 1232
-}, {
-	"sQuestion": " Zach scored 42 points in the football game. Ben scored 21 points. How many more points did Zach score?",
-	"lSolutions": [21],
-	"ParentIndex": 1162,
-	"lAlignments": [13, 56],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPDN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Zach scored 42 points in the football game ."
-		}],
-		"Sentence": "Zach scored 42 points in the football game ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Ben scored 21 points ."
-		}],
-		"Sentence": "Ben scored 21 points ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more points did Zach score ?"
-		}],
-		"Sentence": "How many more points did Zach score ?"
-	}],
-	"lEquations": ["X=(42.0-21.0)"],
-	"iIndex": 1251
-}, {
-	"sQuestion": " A pet supply store has 600 bags of dog food and 327 bags of cat food. How many more bags of dog food are there than cat food?",
-	"lSolutions": [273],
-	"ParentIndex": 1202,
-	"lAlignments": [24, 49],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "DNVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A pet supply store has 600 bags of dog food ."
-		}, {
-			"SyntacticPattern": "DNVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "A pet supply store has 327 bags of cat food ."
-		}],
-		"Sentence": "A pet supply store has 600 bags of dog food and 327 bags of cat food ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANPNVEPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more bags of dog food are there than cat food ?"
-		}],
-		"Sentence": "How many more bags of dog food are there than cat food ?"
-	}],
-	"lEquations": ["X=(600.0-327.0)"],
-	"iIndex": 1356
-}, {
-	"sQuestion": " Beka flew 873 miles to visit her aunt. Jackson flew 563 miles to visit his aunt. How many more miles did Beka fly than Jackson?",
-	"lSolutions": [310],
-	"ParentIndex": 1211,
-	"lAlignments": [11, 53],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPVNN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Beka flew 873 miles to visit her aunt ."
-		}],
-		"Sentence": "Beka flew 873 miles to visit her aunt ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPVNN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Jackson flew 563 miles to visit his aunt ."
-		}],
-		"Sentence": "Jackson flew 563 miles to visit his aunt ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAANVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How many more miles did Beka fly than Jackson ?"
-		}],
-		"Sentence": "How many more miles did Beka fly than Jackson ?"
-	}],
-	"lEquations": ["X=(873.0-563.0)"],
-	"iIndex": 1400
-}, {
-	"sQuestion": " John walks 0.7 miles to school and Nina walks 0.4 miles to school. How much farther does John walk than Nina?",
-	"lSolutions": [0.3],
-	"ParentIndex": 1221,
-	"lAlignments": [12, 47],
-	"Sentences": [{
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "NVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "John walks 0.7 miles to school ."
-		}, {
-			"SyntacticPattern": "NVCNPN",
-			"PredictedLabel": "+",
-			"label": "+",
-			"Sentence": "Nina walks 0.4 miles to school ."
-		}],
-		"Sentence": "John walks 0.7 miles to school and Nina walks 0.4 miles to school ."
-	}, {
-		"SimplifiedSentences": [{
-			"SyntacticPattern": "WAVNVPN",
-			"PredictedLabel": "?",
-			"QuestionLabel": "c",
-			"label": "?",
-			"Sentence": "How much farther does John walk than Nina ?"
-		}],
-		"Sentence": "How much farther does John walk than Nina ?"
-	}],
-	"lEquations": ["X=(0.7-0.4)"],
-	"iIndex": 1411
-}]
+[
+  {
+    "sQuestion": "Milford Lake was originally blue because it only had 809 algae plants . Now there are 3263 algae plants , and the lake has turned green . How many more algae plants are in Milford Lake now ? ",
+    "lSolutions": [
+      "2454.0"
+    ],
+    "ParentIndex": 173,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVAPNVCN",
+            "label": "+",
+            "Sentence": "Milford Lake was originally blue because it only had 809 algae plants ."
+          }
+        ],
+        "Sentence": "Milford Lake was originally blue because it only had 809 algae plants ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "EVCN",
+            "label": "=",
+            "Sentence": "Now there are 3263 algae plants ."
+          },
+          {
+            "SyntacticPattern": "DNVVA",
+            "label": "i",
+            "Sentence": "the lake has turned green ."
+          }
+        ],
+        "Sentence": "Now there are 3263 algae plants , and the lake has turned green ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more algae plants are in Milford Lake now ?"
+          }
+        ],
+        "Sentence": "How many more algae plants are in Milford Lake now ?"
+      }
+    ],
+    "lEquations": [
+      "X = 3263.0 - 809.0"
+    ],
+    "iIndex": 173
+  },
+  {
+    "sQuestion": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called. Frank finished just 0.3333333333333333 pie . How much more pie did Erik eat than Frank ? ",
+    "lSolutions": [
+      "0.3333333333333333"
+    ],
+    "ParentIndex": 177,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PDANNVPCNPNVV",
+            "label": "-",
+            "Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 pie before time was called ."
+          }
+        ],
+        "Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "-",
+            "Sentence": "Frank finished just 0.3333333333333333 pie ."
+          }
+        ],
+        "Sentence": "Frank finished just 0.3333333333333333 pie ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WNVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more pie did Erik eat than Frank ?"
+          }
+        ],
+        "Sentence": "How much more pie did Erik eat than Frank ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.6666666666666666 - 0.3333333333333333"
+    ],
+    "iIndex": 177
+  },
+  {
+    "sQuestion": "A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants . How much more did the tailor cut off the skirt than the pants ? ",
+    "lSolutions": [
+      "0.25"
+    ],
+    "ParentIndex": 178,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANCNPDN",
+            "label": "-",
+            "Sentence": "A tailor cut 0.75 inch off a skirt ."
+          },
+          {
+            "SyntacticPattern": "DCNPDNPN",
+            "label": "-",
+            "Sentence": "A tailor cut 0.5 inch off a pair of pants ."
+          }
+        ],
+        "Sentence": "A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNVDNPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more did the tailor cut off the skirt than the pants ?"
+          }
+        ],
+        "Sentence": "How much more did the tailor cut off the skirt than the pants ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.75 - 0.5"
+    ],
+    "iIndex": 178
+  },
+  {
+    "sQuestion": "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap . How much farther did Darnel sprint than jog ? ",
+    "lSolutions": [
+      "0.125"
+    ],
+    "ParentIndex": 180,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Darnel sprinted 0.875 lap ."
+          },
+          {
+            "SyntacticPattern": "NVDNPNCN",
+            "label": "+",
+            "Sentence": "Darnel then took a break by jogging 0.75 lap ."
+          }
+        ],
+        "Sentence": "Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Darnel sprint than jog ?"
+          }
+        ],
+        "Sentence": "How much farther did Darnel sprint than jog ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.875 - 0.75"
+    ],
+    "iIndex": 180
+  },
+  {
+    "sQuestion": "A marine biologist measured 1 fish that was 0.3 foot long and a second fish that was 0.2 foot long . How much longer was the first fish ? ",
+    "lSolutions": [
+      "0.1"
+    ],
+    "ParentIndex": 181,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCNVCN",
+            "label": "+",
+            "Sentence": "A marine biologist measured 1 fish that was 0.3 foot long ."
+          },
+          {
+            "SyntacticPattern": "DANVDANVCN",
+            "label": "+",
+            "Sentence": "A marine biologist measured a second fish that was 0.2 foot long ."
+          }
+        ],
+        "Sentence": "A marine biologist measured 1 fish that was 0.3 foot long and a second fish that was 0.2 foot long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the first fish ?"
+          }
+        ],
+        "Sentence": "How much longer was the first fish ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.3 - 0.2"
+    ],
+    "iIndex": 181
+  },
+  {
+    "sQuestion": "Dina made cookies . She used 0.625 cup of flour and 0.25 cup of sugar . How much more flour than sugar did Dina use ? ",
+    "lSolutions": [
+      "0.375"
+    ],
+    "ParentIndex": 191,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVN",
+            "label": "i",
+            "Sentence": "Dina made cookies ."
+          }
+        ],
+        "Sentence": "Dina made cookies ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPN",
+            "label": "-",
+            "Sentence": "She used 0.625 cup of flour ."
+          },
+          {
+            "SyntacticPattern": "NVCNPN",
+            "label": "-",
+            "Sentence": "She used 0.25 cup of sugar ."
+          }
+        ],
+        "Sentence": "She used 0.625 cup of flour and 0.25 cup of sugar ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANPNVNV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more flour than sugar did Dina use ?"
+          }
+        ],
+        "Sentence": "How much more flour than sugar did Dina use ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.625 - 0.25"
+    ],
+    "iIndex": 191
+  },
+  {
+    "sQuestion": "Jenny ran 0.6 mile and walked 0.4 mile . How much farther did Jenny run than walk ? ",
+    "lSolutions": [
+      "0.2"
+    ],
+    "ParentIndex": 193,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Jenny ran 0.6 mile ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Jenny walked 0.4 mile ."
+          }
+        ],
+        "Sentence": "Jenny ran 0.6 mile and walked 0.4 mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Jenny run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Jenny run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.6 - 0.4"
+    ],
+    "iIndex": 193
+  },
+  {
+    "sQuestion": "Suzie found 2 worms in the yard and measured them with a ruler . 1 worm was 0.8 inch long . The other worm was 0.1 inch long . How much longer was the longer worm ? ",
+    "lSolutions": [
+      "0.7"
+    ],
+    "ParentIndex": 195,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "+",
+            "Sentence": "Suzie found 2 worms in the yard ."
+          },
+          {
+            "SyntacticPattern": "NVNPDN",
+            "label": "i",
+            "Sentence": "Suzie measured them with a ruler ."
+          }
+        ],
+        "Sentence": "Suzie found 2 worms in the yard and measured them with a ruler ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "CNVCN",
+            "label": "+",
+            "Sentence": "1 worm was 0.8 inch long ."
+          }
+        ],
+        "Sentence": "1 worm was 0.8 inch long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "The other worm was 0.1 inch long ."
+          }
+        ],
+        "Sentence": "The other worm was 0.1 inch long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the longer worm ?"
+          }
+        ],
+        "Sentence": "How much longer was the longer worm ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.8 - 0.1"
+    ],
+    "iIndex": 195
+  },
+  {
+    "sQuestion": "Vince 's bus ride to school is 0.625 mile and Zachary 's bus ride is 0.5 mile . How much longer is Vince 's bus ride than Zachary 's ? ",
+    "lSolutions": [
+      "0.125"
+    ],
+    "ParentIndex": 197,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNPNVCN",
+            "label": "+",
+            "Sentence": "Vince 's bus ride to school is 0.625 mile ."
+          },
+          {
+            "SyntacticPattern": "NNVCN",
+            "label": "+",
+            "Sentence": "Zachary 's bus ride is 0.5 mile ."
+          }
+        ],
+        "Sentence": "Vince 's bus ride to school is 0.625 mile and Zachary 's bus ride is 0.5 mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVNNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
+          }
+        ],
+        "Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.625 - 0.5"
+    ],
+    "iIndex": 197
+  },
+  {
+    "sQuestion": "At the beach , Miki and her sister both built sandcastles and then measured their heights . Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall . How much taller was Miki 's sandcastle than her sister 's ? ",
+    "lSolutions": [
+      "0.3333333333333333"
+    ],
+    "ParentIndex": 201,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNNNNVNVN",
+            "label": "i",
+            "Sentence": "At the beach Miki and her sister both built sandcastles and then measured their heights ."
+          }
+        ],
+        "Sentence": "At the beach , Miki and her sister both built sandcastles and then measured their heights ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCNA",
+            "label": "+",
+            "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall ."
+          },
+          {
+            "SyntacticPattern": "NNVCNA",
+            "label": "+",
+            "Sentence": "her sister 's was 0.5 foot tall ."
+          }
+        ],
+        "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNNPNN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
+          }
+        ],
+        "Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.8333333333333334 - 0.5"
+    ],
+    "iIndex": 201
+  },
+  {
+    "sQuestion": "Greg and Sharon own neighboring cornfields . Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre . How many more acres did Greg harvest than Sharon ? ",
+    "lSolutions": [
+      "0.3"
+    ],
+    "ParentIndex": 205,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NAVN",
+            "label": "i",
+            "Sentence": "Greg and Sharon own neighboring cornfields ."
+          }
+        ],
+        "Sentence": "Greg and Sharon own neighboring cornfields ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPNPN",
+            "label": "+",
+            "Sentence": "Greg harvested 0.4 acre of corn on Monday ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Sharon harvested 0.1 acre ."
+          }
+        ],
+        "Sentence": "Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more acres did Greg harvest than Sharon ?"
+          }
+        ],
+        "Sentence": "How many more acres did Greg harvest than Sharon ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.4 - 0.1"
+    ],
+    "iIndex": 205
+  },
+  {
+    "sQuestion": "Eve ran 0.7 mile and walked 0.6 mile . How much farther did Eve run than walk ? ",
+    "lSolutions": [
+      "0.1"
+    ],
+    "ParentIndex": 208,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Eve ran 0.7 mile ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Eve walked 0.6 mile ."
+          }
+        ],
+        "Sentence": "Eve ran 0.7 mile and walked 0.6 mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Eve run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Eve run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.7 - 0.6"
+    ],
+    "iIndex": 208
+  },
+  {
+    "sQuestion": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home . How much farther did Craig ride than walk ? ",
+    "lSolutions": [
+      "3.6666666666666665"
+    ],
+    "ParentIndex": 237,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVN",
+            "label": "i",
+            "Sentence": "This afternoon Craig left school ."
+          },
+          {
+            "SyntacticPattern": "NVDNCN",
+            "label": "+",
+            "Sentence": "Craig rode the bus 3.8333333333333335 miles ."
+          },
+          {
+            "SyntacticPattern": "NVCNPVN",
+            "label": "+",
+            "Sentence": "Craig then walked 0.16666666666666666 mile to get home ."
+          }
+        ],
+        "Sentence": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Craig ride than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Craig ride than walk ?"
+      }
+    ],
+    "lEquations": [
+      "X = 3.8333333333333335 - 0.16666666666666666"
+    ],
+    "iIndex": 237
+  },
+  {
+    "sQuestion": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound . How much more does the chemistry textbook weigh than the geometry textbook ? ",
+    "lSolutions": [
+      "6.5"
+    ],
+    "ParentIndex": 238,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCN",
+            "label": "+",
+            "Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds ."
+          },
+          {
+            "SyntacticPattern": "NNVCN",
+            "label": "+",
+            "Sentence": "her geometry textbook weighs 0.625 pound ."
+          }
+        ],
+        "Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNVPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
+          }
+        ],
+        "Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
+      }
+    ],
+    "lEquations": [
+      "X = 7.125 - 0.625"
+    ],
+    "iIndex": 238
+  },
+  {
+    "sQuestion": "Professor Ellison weighed 2 pieces of metal for an experiment . The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound . How much more did the piece of iron weigh than the piece of aluminum ? ",
+    "lSolutions": [
+      "10.333333333333334"
+    ],
+    "ParentIndex": 244,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPNPDN",
+            "label": "i",
+            "Sentence": "Professor Ellison weighed 2 pieces of metal for an experiment ."
+          }
+        ],
+        "Sentence": "Professor Ellison weighed 2 pieces of metal for an experiment ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNPNVCN",
+            "label": "+",
+            "Sentence": "The piece of iron weighed 11.166666666666666 pounds ."
+          },
+          {
+            "SyntacticPattern": "DNPNVCN",
+            "label": "+",
+            "Sentence": "the piece of aluminum weighed 0.8333333333333334 pound ."
+          }
+        ],
+        "Sentence": "The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNPNVPDNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
+          }
+        ],
+        "Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
+      }
+    ],
+    "lEquations": [
+      "X = 11.166666666666666 - 0.8333333333333334"
+    ],
+    "iIndex": 244
+  },
+  {
+    "sQuestion": "At the beach , Janet and her sister both built sandcastles and then measured their heights . Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall . How much taller was Janet 's sandcastle than her sister 's ? ",
+    "lSolutions": [
+      "1.3333333333333333"
+    ],
+    "ParentIndex": 247,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DDNNNNVNVN",
+            "label": "i",
+            "Sentence": "At the beach Janet and her sister both built sandcastles and then measured their heights ."
+          }
+        ],
+        "Sentence": "At the beach , Janet and her sister both built sandcastles and then measured their heights ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCNA",
+            "label": "+",
+            "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall ."
+          },
+          {
+            "SyntacticPattern": "NNNVCNA",
+            "label": "+",
+            "Sentence": "her sister 's sandcastle was 2.3333333333333335 feet tall ."
+          }
+        ],
+        "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNNPNN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
+          }
+        ],
+        "Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
+      }
+    ],
+    "lEquations": [
+      "X = 3.6666666666666665 - 2.3333333333333335"
+    ],
+    "iIndex": 247
+  },
+  {
+    "sQuestion": "Nicole found an orange caterpillar and a green caterpillar in her backyard . The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long . How much longer was the green caterpillar than the orange caterpillar ? ",
+    "lSolutions": [
+      "1.8333333333333335"
+    ],
+    "ParentIndex": 248,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Nicole found an orange caterpillar in her backyard ."
+          },
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Nicole found a green caterpillar in her backyard ."
+          }
+        ],
+        "Sentence": "Nicole found an orange caterpillar and a green caterpillar in her backyard ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "The green caterpillar was 3 inches long ."
+          },
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "the orange caterpillar was 1.1666666666666667 inches long ."
+          }
+        ],
+        "Sentence": "The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
+          }
+        ],
+        "Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
+      }
+    ],
+    "lEquations": [
+      "X = 3.0 - 1.1666666666666667"
+    ],
+    "iIndex": 248
+  },
+  {
+    "sQuestion": "Irene just bought a new lamp for her bedside table . The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall . How much taller is the new lamp than the old lamp ? ",
+    "lSolutions": [
+      "1.3333333333333333"
+    ],
+    "ParentIndex": 251,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Irene just bought a new lamp for her bedside table ."
+          }
+        ],
+        "Sentence": "Irene just bought a new lamp for her bedside table ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCNA",
+            "label": "+",
+            "Sentence": "The old lamp was 1 foot tall ."
+          },
+          {
+            "SyntacticPattern": "DANVCNA",
+            "label": "+",
+            "Sentence": "the new lamp is 2.3333333333333335 feet tall ."
+          }
+        ],
+        "Sentence": "The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller is the new lamp than the old lamp ?"
+          }
+        ],
+        "Sentence": "How much taller is the new lamp than the old lamp ?"
+      }
+    ],
+    "lEquations": [
+      "X = 2.3333333333333335 - 1.0"
+    ],
+    "iIndex": 251
+  },
+  {
+    "sQuestion": "Ezra drew a white line that was 7.666666666666667 inches long . Then he drew a blue line that was 3.3333333333333335 inches long . How much longer was the white line than the blue line ? ",
+    "lSolutions": [
+      "4.333333333333333"
+    ],
+    "ParentIndex": 252,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANVCN",
+            "label": "+",
+            "Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
+          }
+        ],
+        "Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANVCN",
+            "label": "+",
+            "Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
+          }
+        ],
+        "Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the white line than the blue line ?"
+          }
+        ],
+        "Sentence": "How much longer was the white line than the blue line ?"
+      }
+    ],
+    "lEquations": [
+      "X = 7.666666666666667 - 3.3333333333333335"
+    ],
+    "iIndex": 252
+  },
+  {
+    "sQuestion": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles . How much farther did Wendy run than walk ? ",
+    "lSolutions": [
+      "10.666666666666666"
+    ],
+    "ParentIndex": 254,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Wendy ran 19.833333333333332 miles ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Wendy walked 9.166666666666666 miles ."
+          }
+        ],
+        "Sentence": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Wendy run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Wendy run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "X = 19.833333333333332 - 9.166666666666666"
+    ],
+    "iIndex": 254
+  },
+  {
+    "sQuestion": "Oscar's bus ride to school is 0.75 of a mile and Charlie's bus ride is 0.25 of a mile. How much longer is Oscar's bus ride than Charlie's?",
+    "lSolutions": [
+      0.5
+    ],
+    "ParentIndex": 770,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNPNVCPDN",
+            "label": "+",
+            "Sentence": "Oscar 's bus ride to school is 0.75 of a mile ."
+          },
+          {
+            "SyntacticPattern": "NNVCPDN",
+            "label": "+",
+            "Sentence": "Charlie 's bus ride is 0.25 of a mile ."
+          }
+        ],
+        "Sentence": "Oscar 's bus ride to school is 0.75 of a mile and Charlie 's bus ride is 0.25 of a mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVNNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer is Oscar 's bus ride than Charlie 's ?"
+          }
+        ],
+        "Sentence": "How much longer is Oscar 's bus ride than Charlie 's ?"
+      }
+    ],
+    "lEquations": [
+      "0.75 - 0.25 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "At a pie-eating contest, Erik got through 0.6666666666666666 of a pie before time was called; Frank finished just 0.3333333333333333 of a pie. How much more pie did Erik eat than Frank?",
+    "lSolutions": [
+      0.3333333333333333
+    ],
+    "ParentIndex": 773,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PDANNVPCPDNPNVV",
+            "label": "-",
+            "Sentence": "At a pie-eating contest Erik got through 0.6666666666666666 of a pie before time was called ; Frank finished just 0.3333333333333333 of a pie ."
+          },
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "-",
+            "Sentence": "Frank finished just 0.3333333333333333 of a pie ."
+          }
+        ],
+        "Sentence": "At a pie-eating contest , Erik got through 0.6666666666666666 of a pie before time was called ; Frank finished just 0.3333333333333333 of a pie ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WNVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more pie did Erik eat than Frank ?"
+          }
+        ],
+        "Sentence": "How much more pie did Erik eat than Frank ?"
+      }
+    ],
+    "lEquations": [
+      "0.6666666666666666 - 0.3333333333333333 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "A tailor cut 0.75 of an inch off a skirt and 0.5 of an inch off a pair of pants. How much more did the tailor cut off the skirt than the pants?",
+    "lSolutions": [
+      0.25
+    ],
+    "ParentIndex": 774,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANCPDNPDN",
+            "label": "-",
+            "Sentence": "A tailor cut 0.75 of an inch off a skirt ."
+          },
+          {
+            "SyntacticPattern": "DANCPDNPDNPN",
+            "label": "-",
+            "Sentence": "A tailor cut 0.5 of an inch off a pair of pants ."
+          }
+        ],
+        "Sentence": "A tailor cut 0.75 of an inch off a skirt and 0.5 of an inch off a pair of pants ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNVDNPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more did the tailor cut off the skirt than the pants ?"
+          }
+        ],
+        "Sentence": "How much more did the tailor cut off the skirt than the pants ?"
+      }
+    ],
+    "lEquations": [
+      "0.75 - 0.5 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Darnel sprinted 0.875 of a lap and then took a break by jogging 0.75 of a lap. How much farther did Darnel sprint than jog?",
+    "lSolutions": [
+      0.125
+    ],
+    "ParentIndex": 776,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Darnel sprinted 0.875 of a lap ."
+          },
+          {
+            "SyntacticPattern": "NVDNPNCPDN",
+            "label": "+",
+            "Sentence": "Darnel then took a break by jogging 0.75 of a lap ."
+          }
+        ],
+        "Sentence": "Darnel sprinted 0.875 of a lap and then took a break by jogging 0.75 of a lap ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Darnel sprint than jog ?"
+          }
+        ],
+        "Sentence": "How much farther did Darnel sprint than jog ?"
+      }
+    ],
+    "lEquations": [
+      "0.875 - 0.75 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "A marine biologist measured one fish that was 0.3 of a foot long and a second fish that was 0.2 of a foot long. How much longer was the first fish?",
+    "lSolutions": [
+      0.1
+    ],
+    "ParentIndex": 777,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCNVCPDN",
+            "label": "+",
+            "Sentence": "A marine biologist measured one fish that was 0.3 of a foot long ."
+          },
+          {
+            "SyntacticPattern": "DANVDANVCPDN",
+            "label": "+",
+            "Sentence": "A marine biologist measured a second fish that was 0.2 of a foot long ."
+          }
+        ],
+        "Sentence": "A marine biologist measured one fish that was 0.3 of a foot long and a second fish that was 0.2 of a foot long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the first fish ?"
+          }
+        ],
+        "Sentence": "How much longer was the first fish ?"
+      }
+    ],
+    "lEquations": [
+      "0.3 - 0.2 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Mandy made an apple pie. She used 0.6666666666666666 of a tablespoon of cinnamon and 0.5 of a tablespoon of nutmeg. How much more cinnamon than nutmeg did Mandy use?",
+    "lSolutions": [
+      0.16666666666666666
+    ],
+    "ParentIndex": 781,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDN",
+            "label": "i",
+            "Sentence": "Mandy made an apple pie ."
+          }
+        ],
+        "Sentence": "Mandy made an apple pie ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDNPN",
+            "label": "-",
+            "Sentence": "She used 0.6666666666666666 of a tablespoon of cinnamon ."
+          },
+          {
+            "SyntacticPattern": "NVCPDNPN",
+            "label": "-",
+            "Sentence": "She used 0.5 of a tablespoon of nutmeg ."
+          }
+        ],
+        "Sentence": "She used 0.6666666666666666 of a tablespoon of cinnamon and 0.5 of a tablespoon of nutmeg ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANPNVNV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more cinnamon than nutmeg did Mandy use ?"
+          }
+        ],
+        "Sentence": "How much more cinnamon than nutmeg did Mandy use ?"
+      }
+    ],
+    "lEquations": [
+      "0.6666666666666666 - 0.5 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?",
+    "lSolutions": [
+      0.2
+    ],
+    "ParentIndex": 786,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Stanley ran 0.4 of a mile ."
+          },
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Stanley walked 0.2 of a mile ."
+          }
+        ],
+        "Sentence": "Stanley ran 0.4 of a mile and walked 0.2 of a mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Stanley run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Stanley run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "0.4 - 0.2 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Dina made cookies. She used 0.625 of a cup of flour and 0.25 of a cup of sugar. How much more flour than sugar did Dina use?",
+    "lSolutions": [
+      0.375
+    ],
+    "ParentIndex": 787,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVN",
+            "label": "i",
+            "Sentence": "Dina made cookies ."
+          }
+        ],
+        "Sentence": "Dina made cookies ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDNPN",
+            "label": "-",
+            "Sentence": "She used 0.625 of a cup of flour ."
+          },
+          {
+            "SyntacticPattern": "NVCPDNPN",
+            "label": "-",
+            "Sentence": "She used 0.25 of a cup of sugar ."
+          }
+        ],
+        "Sentence": "She used 0.625 of a cup of flour and 0.25 of a cup of sugar ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANPNVNV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more flour than sugar did Dina use ?"
+          }
+        ],
+        "Sentence": "How much more flour than sugar did Dina use ?"
+      }
+    ],
+    "lEquations": [
+      "0.625 - 0.25 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Jenny ran 0.6 of a mile and walked 0.4 of a mile. How much farther did Jenny run than walk?",
+    "lSolutions": [
+      0.2
+    ],
+    "ParentIndex": 789,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Jenny ran 0.6 of a mile ."
+          },
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Jenny walked 0.4 of a mile ."
+          }
+        ],
+        "Sentence": "Jenny ran 0.6 of a mile and walked 0.4 of a mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Jenny run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Jenny run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "0.6 - 0.4 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Suzie found two worms in the yard and measured them with a ruler. One worm was 0.8 of an inch long. The other worm was 0.1 of an inch long. How much longer was the longer worm?",
+    "lSolutions": [
+      0.7
+    ],
+    "ParentIndex": 791,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "+",
+            "Sentence": "Suzie found two worms in the yard ."
+          },
+          {
+            "SyntacticPattern": "NVNPDN",
+            "label": "i",
+            "Sentence": "Suzie measured them with a ruler ."
+          }
+        ],
+        "Sentence": "Suzie found two worms in the yard and measured them with a ruler ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "CNVCPDN",
+            "label": "+",
+            "Sentence": "One worm was 0.8 of an inch long ."
+          }
+        ],
+        "Sentence": "One worm was 0.8 of an inch long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCPDN",
+            "label": "+",
+            "Sentence": "The other worm was 0.1 of an inch long ."
+          }
+        ],
+        "Sentence": "The other worm was 0.1 of an inch long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the longer worm ?"
+          }
+        ],
+        "Sentence": "How much longer was the longer worm ?"
+      }
+    ],
+    "lEquations": [
+      "0.8 - 0.1 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Vince's bus ride to school is 0.625 of a mile and Zachary's bus ride is 0.5 of a mile. How much longer is Vince's bus ride than Zachary's?",
+    "lSolutions": [
+      0.125
+    ],
+    "ParentIndex": 793,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNPNVCPDN",
+            "label": "+",
+            "Sentence": "Vince 's bus ride to school is 0.625 of a mile ."
+          },
+          {
+            "SyntacticPattern": "NNVCPDN",
+            "label": "+",
+            "Sentence": "Zachary 's bus ride is 0.5 of a mile ."
+          }
+        ],
+        "Sentence": "Vince 's bus ride to school is 0.625 of a mile and Zachary 's bus ride is 0.5 of a mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVNNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
+          }
+        ],
+        "Sentence": "How much longer is Vince 's bus ride than Zachary 's ?"
+      }
+    ],
+    "lEquations": [
+      "0.625 - 0.5 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "At the beach, Miki and her sister both built sandcastles and then measured their heights. Miki's sandcastle was 0.8333333333333334 of a foot tall and her sister's was 0.5 of a foot tall. How much taller was Miki's sandcastle than her sister's?",
+    "lSolutions": [
+      0.3333333333333333
+    ],
+    "ParentIndex": 797,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNNNNVNVN",
+            "label": "i",
+            "Sentence": "At the beach Miki and her sister both built sandcastles and then measured their heights ."
+          }
+        ],
+        "Sentence": "At the beach , Miki and her sister both built sandcastles and then measured their heights ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCNA",
+            "label": "+",
+            "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall ."
+          },
+          {
+            "SyntacticPattern": "NNNVCNA",
+            "label": "+",
+            "Sentence": "her sister 's sandcastle was 0.5 foot tall ."
+          }
+        ],
+        "Sentence": "Miki 's sandcastle was 0.8333333333333334 foot tall and her sister 's was 0.5 foot tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNNPNN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
+          }
+        ],
+        "Sentence": "How much taller was Miki 's sandcastle than her sister 's ?"
+      }
+    ],
+    "lEquations": [
+      "0.8333333333333334 - 0.5 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Greg and Sharon own neighboring cornfields. Greg harvested 0.4 of an acre of corn on Monday and Sharon harvested 0.1 of an acre. How many more acres did Greg harvest than Sharon?",
+    "lSolutions": [
+      0.3
+    ],
+    "ParentIndex": 801,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNAVN",
+            "label": "i",
+            "Sentence": "Greg and Sharon own neighboring cornfields ."
+          }
+        ],
+        "Sentence": "Greg and Sharon own neighboring cornfields ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDNPNPN",
+            "label": "+",
+            "Sentence": "Greg harvested 0.4 of an acre of corn on Monday ."
+          },
+          {
+            "SyntacticPattern": "NVCPDNPNPN",
+            "label": "+",
+            "Sentence": "Sharon harvested 0.1 of an acre of corn on Monday ."
+          }
+        ],
+        "Sentence": "Greg harvested 0.4 of an acre of corn on Monday and Sharon harvested 0.1 of an acre ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more acres did Greg harvest than Sharon ?"
+          }
+        ],
+        "Sentence": "How many more acres did Greg harvest than Sharon ?"
+      }
+    ],
+    "lEquations": [
+      "0.4 + 0.1 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Eve ran 0.7 of a mile and walked 0.6 of a mile. How much farther did Eve run than walk?",
+    "lSolutions": [
+      0.1
+    ],
+    "ParentIndex": 804,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Eve ran 0.7 of a mile ."
+          },
+          {
+            "SyntacticPattern": "NVCPDN",
+            "label": "+",
+            "Sentence": "Eve walked 0.6 of a mile ."
+          }
+        ],
+        "Sentence": "Eve ran 0.7 of a mile and walked 0.6 of a mile ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Eve run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Eve run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "0.7 + 0.6 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "This afternoon Craig left school, rode the bus 3.8333333333333335 miles, and then walked 0.16666666666666666 of a mile to get home. How much farther did Craig ride than walk?",
+    "lSolutions": [
+      3.6666666666666665
+    ],
+    "ParentIndex": 833,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVN",
+            "label": "i",
+            "Sentence": "This afternoon Craig left school ."
+          },
+          {
+            "SyntacticPattern": "NVDNCN",
+            "label": "+",
+            "Sentence": "Craig rode the bus 3.8333333333333335 miles ."
+          },
+          {
+            "SyntacticPattern": "NVCPDNPVN",
+            "label": "+",
+            "Sentence": "Craig then walked 0.16666666666666666 of a mile to get home ."
+          }
+        ],
+        "Sentence": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 of a mile to get home ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Craig ride than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Craig ride than walk ?"
+      }
+    ],
+    "lEquations": [
+      "3.8333333333333335 - 0.16666666666666666 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Kelly's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 of a pound. How much more does the chemistry textbook weigh than the geometry textbook?",
+    "lSolutions": [
+      6.5
+    ],
+    "ParentIndex": 834,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCNPDN",
+            "label": "+",
+            "Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds of a pound ."
+          },
+          {
+            "SyntacticPattern": "NNVCPDN",
+            "label": "+",
+            "Sentence": "Kelly 's geometry textbook weighs 0.625 of a pound ."
+          }
+        ],
+        "Sentence": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 of a pound ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNVPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
+          }
+        ],
+        "Sentence": "How much more does the chemistry textbook weigh than the geometry textbook ?"
+      }
+    ],
+    "lEquations": [
+      "7.125 - 0.625 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Professor Ellison weighed two pieces of metal for an experiment. The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 of a pound. How much more did the piece of iron weigh than the piece of aluminum?",
+    "lSolutions": [
+      10.333333333333334
+    ],
+    "ParentIndex": 840,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPNPDN",
+            "label": "i",
+            "Sentence": "Professor Ellison weighed two pieces of metal for an experiment ."
+          }
+        ],
+        "Sentence": "Professor Ellison weighed two pieces of metal for an experiment ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNPNVCN",
+            "label": "+",
+            "Sentence": "The piece of iron weighed 11.166666666666666 pounds ."
+          },
+          {
+            "SyntacticPattern": "DNPNVCPDN",
+            "label": "+",
+            "Sentence": "the piece of aluminum weighed 0.8333333333333334 of a pound ."
+          }
+        ],
+        "Sentence": "The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 of a pound ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDNPNVPDNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
+          }
+        ],
+        "Sentence": "How much more did the piece of iron weigh than the piece of aluminum ?"
+      }
+    ],
+    "lEquations": [
+      "11.166666666666666 - 0.8333333333333334 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "At the beach, Janet and her sister both built sandcastles and then measured their heights. Janet's sandcastle was 3.6666666666666665 feet tall and her sister's was 2.3333333333333335 feet tall. How much taller was Janet's sandcastle than her sister's?",
+    "lSolutions": [
+      1.3333333333333333
+    ],
+    "ParentIndex": 843,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DDNNNNVNVN",
+            "label": "i",
+            "Sentence": "At the beach Janet and her sister both built sandcastles and then measured their heights ."
+          }
+        ],
+        "Sentence": "At the beach , Janet and her sister both built sandcastles and then measured their heights ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNVCNA",
+            "label": "+",
+            "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall ."
+          },
+          {
+            "SyntacticPattern": "NNNVCNA",
+            "label": "+",
+            "Sentence": "her sister 's sandcastle was 2.3333333333333335 feet tall ."
+          }
+        ],
+        "Sentence": "Janet 's sandcastle was 3.6666666666666665 feet tall and her sister 's was 2.3333333333333335 feet tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNNPNN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
+          }
+        ],
+        "Sentence": "How much taller was Janet 's sandcastle than her sister 's ?"
+      }
+    ],
+    "lEquations": [
+      "3.6666666666666665 - 2.3333333333333335 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Nicole found an orange caterpillar and a green caterpillar in her backyard. The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long. How much longer was the green caterpillar than the orange caterpillar?",
+    "lSolutions": [
+      1.8333333333333335
+    ],
+    "ParentIndex": 844,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Nicole found an orange caterpillar in her backyard ."
+          },
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Nicole found a green caterpillar in her backyard ."
+          }
+        ],
+        "Sentence": "Nicole found an orange caterpillar and a green caterpillar in her backyard ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "The green caterpillar was 3 inches long ."
+          },
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "the orange caterpillar was 1.1666666666666667 inches long ."
+          }
+        ],
+        "Sentence": "The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
+          }
+        ],
+        "Sentence": "How much longer was the green caterpillar than the orange caterpillar ?"
+      }
+    ],
+    "lEquations": [
+      "3 - 1.1666666666666667 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Irene just bought a new lamp for her bedside table. The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall. How much taller is the new lamp than the old lamp?",
+    "lSolutions": [
+      1.3333333333333333
+    ],
+    "ParentIndex": 847,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANPNN",
+            "label": "i",
+            "Sentence": "Irene just bought a new lamp for her bedside table ."
+          }
+        ],
+        "Sentence": "Irene just bought a new lamp for her bedside table ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCNA",
+            "label": "+",
+            "Sentence": "The old lamp was 1 foot tall ."
+          },
+          {
+            "SyntacticPattern": "DANVCNA",
+            "label": "+",
+            "Sentence": "the new lamp is 2.3333333333333335 feet tall ."
+          }
+        ],
+        "Sentence": "The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much taller is the new lamp than the old lamp ?"
+          }
+        ],
+        "Sentence": "How much taller is the new lamp than the old lamp ?"
+      }
+    ],
+    "lEquations": [
+      "2.3333333333333335 - 1 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Ezra drew a white line that was 7.666666666666667 inches long. Then he drew a blue line that was 3.3333333333333335 inches long. How much longer was the white line than the blue line?",
+    "lSolutions": [
+      4.333333333333333
+    ],
+    "ParentIndex": 848,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANVCN",
+            "label": "+",
+            "Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
+          }
+        ],
+        "Sentence": "Ezra drew a white line that was 7.666666666666667 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVDANVCN",
+            "label": "+",
+            "Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
+          }
+        ],
+        "Sentence": "Then he drew a blue line that was 3.3333333333333335 inches long ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDANPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much longer was the white line than the blue line ?"
+          }
+        ],
+        "Sentence": "How much longer was the white line than the blue line ?"
+      }
+    ],
+    "lEquations": [
+      "7.666666666666667 - 3.3333333333333335 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles. How much farther did Wendy run than walk?",
+    "lSolutions": [
+      10.666666666666666
+    ],
+    "ParentIndex": 850,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Wendy ran 19.833333333333332 miles ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Wendy walked 9.166666666666666 miles ."
+          }
+        ],
+        "Sentence": "Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther did Wendy run than walk ?"
+          }
+        ],
+        "Sentence": "How much farther did Wendy run than walk ?"
+      }
+    ],
+    "lEquations": [
+      "19.833333333333332 - 9.166666666666666 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Kenji and his classmates placed colored blocks on a scale during a science lab. The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds. How much more did the yellow block weigh than the green block?",
+    "lSolutions": [
+      0.2
+    ],
+    "ParentIndex": 851,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NNNVVNPDNPDN",
+            "label": "i",
+            "Sentence": "Kenji his classmates placed colored blocks on a scale during a science lab ."
+          }
+        ],
+        "Sentence": "Kenji and his classmates placed colored blocks on a scale during a science lab ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "The yellow block weighed 0.6 pounds ."
+          },
+          {
+            "SyntacticPattern": "DANVCN",
+            "label": "+",
+            "Sentence": "the green block weighed 0.4 pounds ."
+          }
+        ],
+        "Sentence": "The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WVDANVPDAN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more did the yellow block weigh than the green block ?"
+          }
+        ],
+        "Sentence": "How much more did the yellow block weigh than the green block ?"
+      }
+    ],
+    "lEquations": [
+      "0.6 - 0.4 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Karen has 639 crayons. Cindy has 504 crayons. How many more crayons does Karen have than Cindy?",
+    "lSolutions": [
+      135
+    ],
+    "ParentIndex": 874,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Karen has 639 crayons ."
+          }
+        ],
+        "Sentence": "Karen has 639 crayons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Cindy has 504 crayons ."
+          }
+        ],
+        "Sentence": "Cindy has 504 crayons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more crayons does Karen have than Cindy ?"
+          }
+        ],
+        "Sentence": "How many more crayons does Karen have than Cindy ?"
+      }
+    ],
+    "lEquations": [
+      "639-504=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "James has 1222 balloons. Amy has 513 balloons. How many more balloons does James have than Amy?",
+    "lSolutions": [
+      208
+    ],
+    "ParentIndex": 885,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "James has 1222 balloons ."
+          }
+        ],
+        "Sentence": "James has 1222 balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Amy has 513 balloons ."
+          }
+        ],
+        "Sentence": "Amy has 513 balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more balloons does James have than Amy ?"
+          }
+        ],
+        "Sentence": "How many more balloons does James have than Amy ?"
+      }
+    ],
+    "lEquations": [
+      "1222-513=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "A pet supply store has 600 bags of dog food and 327 bags of cat food. How many more bags of dog food are there than cat food?",
+    "lSolutions": [
+      273
+    ],
+    "ParentIndex": 898,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A pet supply store has 600 bags of dog food ."
+          },
+          {
+            "SyntacticPattern": "DNVNVCNPN",
+            "label": "+",
+            "Sentence": "A pet supply store has 327 bags of cat food ."
+          }
+        ],
+        "Sentence": "A pet supply store has 600 bags of dog food and 327 bags of cat food ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANPNVEPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more bags of dog food are there than cat food ?"
+          }
+        ],
+        "Sentence": "How many more bags of dog food are there than cat food ?"
+      }
+    ],
+    "lEquations": [
+      "600-327=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Anne weighs 67 pounds. Douglas weighs 52 pounds. How much heavier is Anne than Douglas?",
+    "lSolutions": [
+      15
+    ],
+    "ParentIndex": 956,
+    "lAlignments": [
+      12,
+      38
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Anne weighs 67 pounds ."
+          }
+        ],
+        "Sentence": "Anne weighs 67 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Douglas weighs 52 pounds ."
+          }
+        ],
+        "Sentence": "Douglas weighs 52 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Anne than Douglas ?"
+          }
+        ],
+        "Sentence": "How much heavier is Anne than Douglas ?"
+      }
+    ],
+    "lEquations": [
+      "X=(67.0-52.0)"
+    ],
+    "iIndex": 104
+  },
+  {
+    "sQuestion": "Jessica weighs 49 pounds. Thomas weighs 44 pounds. How much heavier is Jessica than Thomas?",
+    "lSolutions": [
+      5
+    ],
+    "ParentIndex": 957,
+    "lAlignments": [
+      15,
+      40
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Jessica weighs 49 pounds ."
+          }
+        ],
+        "Sentence": "Jessica weighs 49 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Thomas weighs 44 pounds ."
+          }
+        ],
+        "Sentence": "Thomas weighs 44 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Jessica than Thomas ?"
+          }
+        ],
+        "Sentence": "How much heavier is Jessica than Thomas ?"
+      }
+    ],
+    "lEquations": [
+      "X=(49.0-44.0)"
+    ],
+    "iIndex": 105
+  },
+  {
+    "sQuestion": "Donna weighs 69 pounds. Willie weighs 51 pounds. How much heavier is Donna than Willie?",
+    "lSolutions": [
+      18
+    ],
+    "ParentIndex": 960,
+    "lAlignments": [
+      13,
+      38
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Donna weighs 69 pounds ."
+          }
+        ],
+        "Sentence": "Donna weighs 69 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Willie weighs 51 pounds ."
+          }
+        ],
+        "Sentence": "Willie weighs 51 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Donna than Willie ?"
+          }
+        ],
+        "Sentence": "How much heavier is Donna than Willie ?"
+      }
+    ],
+    "lEquations": [
+      "X=(69.0-51.0)"
+    ],
+    "iIndex": 108
+  },
+  {
+    "sQuestion": "John weighs 81 pounds. Roy weighs 4 pounds. How much heavier is John than Roy?",
+    "lSolutions": [
+      77
+    ],
+    "ParentIndex": 972,
+    "lAlignments": [
+      12,
+      34
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "John weighs 81 pounds ."
+          }
+        ],
+        "Sentence": "John weighs 81 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Roy weighs 4 pounds ."
+          }
+        ],
+        "Sentence": "Roy weighs 4 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is John than Roy ?"
+          }
+        ],
+        "Sentence": "How much heavier is John than Roy ?"
+      }
+    ],
+    "lEquations": [
+      "X=(81.0-4.0)"
+    ],
+    "iIndex": 123
+  },
+  {
+    "sQuestion": "Mildred weighs 59 pounds. Carol weighs 9 pounds. How much heavier is Mildred than Carol?",
+    "lSolutions": [
+      50
+    ],
+    "ParentIndex": 978,
+    "lAlignments": [
+      15,
+      39
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Mildred weighs 59 pounds ."
+          }
+        ],
+        "Sentence": "Mildred weighs 59 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Carol weighs 9 pounds ."
+          }
+        ],
+        "Sentence": "Carol weighs 9 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Mildred than Carol ?"
+          }
+        ],
+        "Sentence": "How much heavier is Mildred than Carol ?"
+      }
+    ],
+    "lEquations": [
+      "X=(59.0-9.0)"
+    ],
+    "iIndex": 137
+  },
+  {
+    "sQuestion": "Bridget weighs 39 pounds. Martha weighs 2 pounds. How much heavier is Bridget than Martha?",
+    "lSolutions": [
+      37
+    ],
+    "ParentIndex": 983,
+    "lAlignments": [
+      15,
+      40
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Bridget weighs 39 pounds ."
+          }
+        ],
+        "Sentence": "Bridget weighs 39 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Martha weighs 2 pounds ."
+          }
+        ],
+        "Sentence": "Martha weighs 2 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Bridget than Martha ?"
+          }
+        ],
+        "Sentence": "How much heavier is Bridget than Martha ?"
+      }
+    ],
+    "lEquations": [
+      "X=(39.0-2.0)"
+    ],
+    "iIndex": 146
+  },
+  {
+    "sQuestion": "Heather weighs 87 pounds. Emily weighs 9 pounds. Elizabeth weighs 8 pounds. How much heavier is Heather than Emily?",
+    "lSolutions": [
+      78
+    ],
+    "ParentIndex": 1056,
+    "lAlignments": [
+      15,
+      39
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Heather weighs 87 pounds ."
+          }
+        ],
+        "Sentence": "Heather weighs 87 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Emily weighs 9 pounds ."
+          }
+        ],
+        "Sentence": "Emily weighs 9 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Elizabeth weighs 8 pounds ."
+          }
+        ],
+        "Sentence": "Elizabeth weighs 8 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Heather than Emily ?"
+          }
+        ],
+        "Sentence": "How much heavier is Heather than Emily ?"
+      }
+    ],
+    "lEquations": [
+      "X=(87.0-9.0)"
+    ],
+    "iIndex": 755
+  },
+  {
+    "sQuestion": "Heather weighs 87 pounds. Emily weighs 9 pounds. Elizabeth weighs 8 pounds. How much heavier is Heather than Emily?",
+    "lSolutions": [
+      78
+    ],
+    "ParentIndex": 1057,
+    "lAlignments": [
+      15,
+      39
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Heather weighs 87 pounds ."
+          }
+        ],
+        "Sentence": "Heather weighs 87 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Emily weighs 9 pounds ."
+          }
+        ],
+        "Sentence": "Emily weighs 9 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Elizabeth weighs 8 pounds ."
+          }
+        ],
+        "Sentence": "Elizabeth weighs 8 pounds ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVNPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much heavier is Heather than Emily ?"
+          }
+        ],
+        "Sentence": "How much heavier is Heather than Emily ?"
+      }
+    ],
+    "lEquations": [
+      "X=(87.0-9.0)"
+    ],
+    "iIndex": 755
+  },
+  {
+    "sQuestion": " There are 6 birds and 3 nests. How many more birds are there than nests?",
+    "lSolutions": [
+      3
+    ],
+    "ParentIndex": 1064,
+    "lAlignments": [
+      11,
+      23
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "EVCN",
+            "label": "+",
+            "Sentence": "There are 6 birds ."
+          },
+          {
+            "SyntacticPattern": "EVCN",
+            "label": "+",
+            "Sentence": "There are 3 nests ."
+          }
+        ],
+        "Sentence": "There are 6 birds and 3 nests ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVEPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more birds are there than nests ?"
+          }
+        ],
+        "Sentence": "How many more birds are there than nests ?"
+      }
+    ],
+    "lEquations": [
+      "X=(6.0-3.0)"
+    ],
+    "iIndex": 1141
+  },
+  {
+    "sQuestion": " There are 4 squirrels in a tree with 2 nuts. How many more squirrels are there than nuts?",
+    "lSolutions": [
+      2
+    ],
+    "ParentIndex": 1069,
+    "lAlignments": [
+      11,
+      38
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "EVCNPDN",
+            "label": "+",
+            "Sentence": "There are 4 squirrels in a tree ."
+          },
+          {
+            "SyntacticPattern": "PDNPCN",
+            "label": "+",
+            "Sentence": "in a tree with 2 nuts ."
+          }
+        ],
+        "Sentence": "There are 4 squirrels in a tree with 2 nuts ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVEPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more squirrels are there than nuts ?"
+          }
+        ],
+        "Sentence": "How many more squirrels are there than nuts ?"
+      }
+    ],
+    "lEquations": [
+      "X=(4.0-2.0)"
+    ],
+    "iIndex": 1146
+  },
+  {
+    "sQuestion": " At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock Elementary School received 17 inches of snow. How much more snow  did Mrs. Hilt's house have?",
+    "lSolutions": [
+      12
+    ],
+    "ParentIndex": 1071,
+    "lAlignments": [
+      33,
+      93
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNEVCNPN",
+            "label": "+",
+            "Sentence": "At Mrs. Hilt 's house there was 29 inches of snow ."
+          },
+          {
+            "SyntacticPattern": "PNNVCNPN",
+            "label": "+",
+            "Sentence": "Brecknock Elementary School received 17 inches of snow ."
+          }
+        ],
+        "Sentence": "At Mrs. Hilt 's house , there was 29 inches of snow , and Brecknock Elementary School received 17 inches of snow ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WNVNNV",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much more snow did Mrs. Hilt 's house have ?"
+          }
+        ],
+        "Sentence": "How much more snow did Mrs. Hilt 's house have ?"
+      }
+    ],
+    "lEquations": [
+      "X=(29.0-17.0)"
+    ],
+    "iIndex": 1148
+  },
+  {
+    "sQuestion": " Alyssa had 129 cookies. Aiyanna has 140. How many more cookies does Aiyanna have than Alyssa?",
+    "lSolutions": [
+      11
+    ],
+    "ParentIndex": 1105,
+    "lAlignments": [
+      37,
+      12
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Alyssa had 129 cookies ."
+          }
+        ],
+        "Sentence": "Alyssa had 129 cookies ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Aiyanna has 140 cookies ."
+          }
+        ],
+        "Sentence": "Aiyanna has 140 cookies ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more cookies does Aiyanna have than Alyssa ?"
+          }
+        ],
+        "Sentence": "How many more cookies does Aiyanna have than Alyssa ?"
+      }
+    ],
+    "lEquations": [
+      "X=(140.0-129.0)"
+    ],
+    "iIndex": 1187
+  },
+  {
+    "sQuestion": " Mrs. Sheridan has 11 cats. Mrs. Garrett has 24 cats. How many more cats does Mrs. Garrett have than Mrs. Sheridan?",
+    "lSolutions": [
+      13
+    ],
+    "ParentIndex": 1113,
+    "lAlignments": [
+      45,
+      19
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Mrs. Sheridan has 11 cats ."
+          }
+        ],
+        "Sentence": "Mrs. Sheridan has 11 cats ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Mrs. Garrett has 24 cats ."
+          }
+        ],
+        "Sentence": "Mrs. Garrett has 24 cats ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more cats does Mrs. Garrett have than Mrs. Sheridan ?"
+          }
+        ],
+        "Sentence": "How many more cats does Mrs. Garrett have than Mrs. Sheridan ?"
+      }
+    ],
+    "lEquations": [
+      "X=(24.0-11.0)"
+    ],
+    "iIndex": 1195
+  },
+  {
+    "sQuestion": " Mrs. Santiago has 58 red roses. Mrs. Garrett has 24. How many more red roses does Mrs. Santiago have than Mrs. Garrett?",
+    "lSolutions": [
+      34
+    ],
+    "ParentIndex": 1117,
+    "lAlignments": [
+      19,
+      50
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCAN",
+            "label": "+",
+            "Sentence": "Mrs. Santiago has 58 red roses ."
+          }
+        ],
+        "Sentence": "Mrs. Santiago has 58 red roses ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Mrs. Garrett has 24 roses ."
+          }
+        ],
+        "Sentence": "Mrs. Garrett has 24 roses ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more red roses does Mrs. Santiago have than Mrs. Garrett ?"
+          }
+        ],
+        "Sentence": "How many more red roses does Mrs. Santiago have than Mrs. Garrett ?"
+      }
+    ],
+    "lEquations": [
+      "X=(58.0-24.0)"
+    ],
+    "iIndex": 1199
+  },
+  {
+    "sQuestion": " 29 birds were sitting in a tree. Some more fly up to the tree. Then there were 42 birds in the tree. How many more flew up to the tree?",
+    "lSolutions": [
+      13
+    ],
+    "ParentIndex": 1119,
+    "lAlignments": [
+      80,
+      1
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "CNVVPDN",
+            "label": "+",
+            "Sentence": "29 birds were sitting in a tree ."
+          }
+        ],
+        "Sentence": "29 birds were sitting in a tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANPDN",
+            "label": "+",
+            "Sentence": "Some more fly up to the tree ."
+          }
+        ],
+        "Sentence": "Some more fly up to the tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "EVCNPDN",
+            "label": "=",
+            "Sentence": "Then there were 42 birds in the tree ."
+          }
+        ],
+        "Sentence": "Then there were 42 birds in the tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more flew up to the tree ?"
+          }
+        ],
+        "Sentence": "How many more flew up to the tree ?"
+      }
+    ],
+    "lEquations": [
+      "X=(42.0-29.0)"
+    ],
+    "iIndex": 1201
+  },
+  {
+    "sQuestion": " Bobby has 142 books. Kristi has 78 books. How many more books does Bobby have than Kristi?",
+    "lSolutions": [
+      64
+    ],
+    "ParentIndex": 1128,
+    "lAlignments": [
+      11,
+      33
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Bobby has 142 books ."
+          }
+        ],
+        "Sentence": "Bobby has 142 books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Kristi has 78 books ."
+          }
+        ],
+        "Sentence": "Kristi has 78 books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more books does Bobby have than Kristi ?"
+          }
+        ],
+        "Sentence": "How many more books does Bobby have than Kristi ?"
+      }
+    ],
+    "lEquations": [
+      "X=(142.0-78.0)"
+    ],
+    "iIndex": 1210
+  },
+  {
+    "sQuestion": " James has 232 balloons. Amy has 101 balloons. How many more balloons does James have than Amy?",
+    "lSolutions": [
+      131
+    ],
+    "ParentIndex": 1149,
+    "lAlignments": [
+      11,
+      33
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "James has 232 balloons ."
+          }
+        ],
+        "Sentence": "James has 232 balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Amy has 101 balloons ."
+          }
+        ],
+        "Sentence": "Amy has 101 balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more balloons does James have than Amy ?"
+          }
+        ],
+        "Sentence": "How many more balloons does James have than Amy ?"
+      }
+    ],
+    "lEquations": [
+      "X=(232.0-101.0)"
+    ],
+    "iIndex": 1232
+  },
+  {
+    "sQuestion": " Zach scored 42 points in the football game. Ben scored 21 points. How many more points did Zach score?",
+    "lSolutions": [
+      21
+    ],
+    "ParentIndex": 1162,
+    "lAlignments": [
+      13,
+      56
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "+",
+            "Sentence": "Zach scored 42 points in the football game ."
+          }
+        ],
+        "Sentence": "Zach scored 42 points in the football game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Ben scored 21 points ."
+          }
+        ],
+        "Sentence": "Ben scored 21 points ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more points did Zach score ?"
+          }
+        ],
+        "Sentence": "How many more points did Zach score ?"
+      }
+    ],
+    "lEquations": [
+      "X=(42.0-21.0)"
+    ],
+    "iIndex": 1251
+  },
+  {
+    "sQuestion": " 231 birds were sitting in a tree. Some more fly up to the tree. Then there were 312 birds in the tree. How many more fly up to the tree?",
+    "lSolutions": [
+      81
+    ],
+    "ParentIndex": 1173,
+    "lAlignments": [
+      81,
+      1
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "CNVVPDN",
+            "label": "+",
+            "Sentence": "231 birds were sitting in a tree ."
+          }
+        ],
+        "Sentence": "231 birds were sitting in a tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DANPDN",
+            "label": "+",
+            "Sentence": "Some more fly up to the tree ."
+          }
+        ],
+        "Sentence": "Some more fly up to the tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "EVCNPDN",
+            "label": "=",
+            "Sentence": "Then there were 312 birds in the tree ."
+          }
+        ],
+        "Sentence": "Then there were 312 birds in the tree ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAAVPDN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more fly up to the tree ?"
+          }
+        ],
+        "Sentence": "How many more fly up to the tree ?"
+      }
+    ],
+    "lEquations": [
+      "X=(312.0-231.0)"
+    ],
+    "iIndex": 1264
+  },
+  {
+    "sQuestion": " A pet supply store has 600 bags of dog food and 327 bags of cat food. How many more bags of dog food are there than cat food?",
+    "lSolutions": [
+      273
+    ],
+    "ParentIndex": 1202,
+    "lAlignments": [
+      24,
+      49
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A pet supply store has 600 bags of dog food ."
+          },
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A pet supply store has 327 bags of cat food ."
+          }
+        ],
+        "Sentence": "A pet supply store has 600 bags of dog food and 327 bags of cat food ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANPNVEPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more bags of dog food are there than cat food ?"
+          }
+        ],
+        "Sentence": "How many more bags of dog food are there than cat food ?"
+      }
+    ],
+    "lEquations": [
+      "X=(600.0-327.0)"
+    ],
+    "iIndex": 1356
+  },
+  {
+    "sQuestion": " Beka flew 873 miles to visit her aunt. Jackson flew 563 miles to visit his aunt. How many more miles did Beka fly than Jackson?",
+    "lSolutions": [
+      310
+    ],
+    "ParentIndex": 1211,
+    "lAlignments": [
+      11,
+      53
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPVNN",
+            "label": "+",
+            "Sentence": "Beka flew 873 miles to visit her aunt ."
+          }
+        ],
+        "Sentence": "Beka flew 873 miles to visit her aunt ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPVNN",
+            "label": "+",
+            "Sentence": "Jackson flew 563 miles to visit his aunt ."
+          }
+        ],
+        "Sentence": "Jackson flew 563 miles to visit his aunt ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How many more miles did Beka fly than Jackson ?"
+          }
+        ],
+        "Sentence": "How many more miles did Beka fly than Jackson ?"
+      }
+    ],
+    "lEquations": [
+      "X=(873.0-563.0)"
+    ],
+    "iIndex": 1400
+  },
+  {
+    "sQuestion": " John walks 0.7 miles to school and Nina walks 0.4 miles to school. How much farther does John walk than Nina?",
+    "lSolutions": [
+      0.3
+    ],
+    "ParentIndex": 1221,
+    "lAlignments": [
+      12,
+      47
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCNPN",
+            "label": "+",
+            "Sentence": "John walks 0.7 miles to school ."
+          },
+          {
+            "SyntacticPattern": "NVCNPN",
+            "label": "+",
+            "Sentence": "Nina walks 0.4 miles to school ."
+          }
+        ],
+        "Sentence": "John walks 0.7 miles to school and Nina walks 0.4 miles to school ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAVNVPN",
+            "QuestionLabel": "c",
+            "label": "?",
+            "Sentence": "How much farther does John walk than Nina ?"
+          }
+        ],
+        "Sentence": "How much farther does John walk than Nina ?"
+      }
+    ],
+    "lEquations": [
+      "X=(0.7-0.4)"
+    ],
+    "iIndex": 1411
+  }
+]

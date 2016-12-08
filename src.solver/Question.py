@@ -74,7 +74,8 @@ class Question:
                 self.m_coref_dict[sentence_counter] = {}
                 sentence_counter = sentence_counter + 1;
                 predicted_label = simplified_sentence["PredictedLabel"]
-                if predicted_label == '?':
+                question_label_string = "QuestionLabel"
+                if predicted_label == '?' and question_label_string in simplified_sentence:
                     self.m_question_label = simplified_sentence["QuestionLabel"]
         self.extract_corefs()
         
@@ -158,12 +159,17 @@ class Question:
             for k, v in self.m_quantified_entities.items():
                 for e in v:
                     print e
-                    print 'compound modofiers'
+                    print 'quantity compound modofiers'
                     for compound_modifier in e.m_compound_modifiers:
                         print compound_modifier
                     print 'transfer transactions'
                     # for transaction in e.m_transfer_transactions:
                     #     print transaction
+                    
+            for sentence in self.m_sentences:
+                print 'sentence cms', sentence
+                for cm in sentence.m_compound_modifiers:
+                    print cm
             answer = self.m_evaluating_sentence.extract_result()
             ##print answer
             return answer

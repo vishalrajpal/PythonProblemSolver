@@ -18,6 +18,7 @@ from TransferTransaction import TransferTransaction
 from sympy.polys.groebnertools import Num
 from decimal import Decimal
 from CompoundModifier import CompoundModifier
+from ButConjunctionSentenceSolver import ButConjunctionSentenceSolver
 
 class Sentence:
 
@@ -80,7 +81,8 @@ class Sentence:
         self.m_sentece_words = []
         self.m_words_index = {}
         self.m_compound_modifiers = []
-        if self.m_predicted_label == '?':
+        question_label_string = "QuestionLabel"
+        if self.m_predicted_label == '?' and question_label_string in sentence_json:
             self.m_question.m_evaluating_sentence = self
             self.m_question_label = sentence_json["QuestionLabel"]
         
@@ -506,6 +508,9 @@ class Sentence:
         ##print to_merge_entities
         if to_merge_entities:
             self.merge_entities(temp_entity, transfer_transaction)
+        elif self.m_predicted_label == '=':
+            temp_entity.flip_equal_to_state()
+            
         return to_merge_entities
                     
     def merge_entities(self, temp_quantified_entity, transfer_transaction):
@@ -660,6 +665,8 @@ class Sentence:
             return QuestionSentenceSolver.solve_for_plus_label(self)
         elif self.m_question_label == 'c':
             return ComparisonSentenceSolver.solve_for_c_label(self)
+        elif self.m_question_label == 'b':
+            return ButConjunctionSentenceSolver.solve_for_but_label(self)
         else:
             return None
         # if len(self.m_possible_evaluating_subjects) == 1:

@@ -1,0 +1,1784 @@
+[
+  {
+    "sQuestion": "Fred went to 36 basketball games this year , but missed 35 . He went to 11 games last year . How many basketball games did Fred go to in total ? ",
+    "lSolutions": [
+      "47"
+    ],
+    "ParentIndex": 36,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNDN",
+            "label": "+",
+            "Sentence": "Fred went to 36 basketball games this year ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "-",
+            "Sentence": "Fred missed 35 games ."
+          }
+        ],
+        "Sentence": "Fred went to 36 basketball games this year , but missed 35 games ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNAN",
+            "label": "+",
+            "Sentence": "He went to 11 games last year ."
+          }
+        ],
+        "Sentence": "He went to 11 games last year ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVPPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many basketball games did Fred go to in total ?"
+          }
+        ],
+        "Sentence": "How many basketball games did Fred go to in total ?"
+      }
+    ],
+    "lEquations": [
+      "X = 36 + 11"
+    ],
+    "iIndex": 36
+  },
+  {
+    "sQuestion": "Tom found 7 seashells but 4 were broken . How many unbroken seashells did Tom find ? ",
+    "lSolutions": [
+      "3"
+    ],
+    "ParentIndex": 68,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Tom found 7 seashells ."
+          },
+          {
+            "SyntacticPattern": "NVCNVV",
+            "label": "-",
+            "Sentence": "4 seashells were broken ."
+          }
+        ],
+        "Sentence": "Tom found 7 seashells but 4 seashells were broken ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many unbroken seashells did Tom find ?"
+          }
+        ],
+        "Sentence": "How many unbroken seashells did Tom find ?"
+      }
+    ],
+    "lEquations": [
+      "X = 7 - 4"
+    ],
+    "iIndex": 68
+  },
+  {
+    "sQuestion": "Joan has 8 orange balloons but lost 2 of them . How many orange balloons does Joan have now ? ",
+    "lSolutions": [
+      "6"
+    ],
+    "ParentIndex": 71,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCAN",
+            "label": "+",
+            "Sentence": "Joan has 8 orange balloons ."
+          },
+          {
+            "SyntacticPattern": "NVCPN",
+            "label": "-",
+            "Sentence": "Joan lost 2 of them ."
+          }
+        ],
+        "Sentence": "Joan has 8 orange balloons but lost 2 of them ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many orange balloons does Joan have now ?"
+          }
+        ],
+        "Sentence": "How many orange balloons does Joan have now ?"
+      }
+    ],
+    "lEquations": [
+      "X = 8 - 2"
+    ],
+    "iIndex": 71
+  },
+  {
+    "sQuestion": "Sam grew 4 watermelons , but the rabbits ate 3 watermelons . How many watermelons does Sam have ? ",
+    "lSolutions": [
+      "1"
+    ],
+    "ParentIndex": 100,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Sam grew 4 watermelons ."
+          },
+          {
+            "SyntacticPattern": "DNVCN",
+            "label": "-",
+            "Sentence": "the rabbits ate 3 watermelons ."
+          }
+        ],
+        "Sentence": "Sam grew 4 watermelons , but the rabbits ate 3 watermelons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many watermelons does Sam have ?"
+          }
+        ],
+        "Sentence": "How many watermelons does Sam have ?"
+      }
+    ],
+    "lEquations": [
+      "X = 4 - 3"
+    ],
+    "iIndex": 100
+  },
+  {
+    "sQuestion": "Joan has 9 blue balloons but lost 2 of them . How many blue balloons does Joan have now ? ",
+    "lSolutions": [
+      "7"
+    ],
+    "ParentIndex": 114,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCANPN",
+            "label": "+",
+            "Sentence": "Joan has 9 blue balloons ."
+          },
+          {
+            "SyntacticPattern": "NVCPN",
+            "label": "-",
+            "Sentence": "Joan lost 2 of them ."
+          }
+        ],
+        "Sentence": "Joan has 9 blue balloons but lost 2 of them ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many blue balloons does Joan have now ?"
+          }
+        ],
+        "Sentence": "How many blue balloons does Joan have now ?"
+      }
+    ],
+    "lEquations": [
+      "X = 9 - 2"
+    ],
+    "iIndex": 114
+  },
+  {
+    "sQuestion": "While taking inventory at her pastry shop , Kelly realizes that she had 0.4 box of baking powder yesterday , but the supply is now down to 0.3 box . How much more baking powder did Kelly have yesterday ? ",
+    "lSolutions": [
+      "0.1"
+    ],
+    "ParentIndex": 203,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PVNPNNNVPNVCNPVNN",
+            "label": "+",
+            "Sentence": "While taking inventory at her pastry shop Kelly realizes that she had 0.4 box of baking powder yesterday ."
+          },
+          {
+            "SyntacticPattern": "PVNPNNDNVPCN",
+            "label": "-",
+            "Sentence": "While taking inventory at her pastry shop the supply is now down to 0.3 box ."
+          }
+        ],
+        "Sentence": "While taking inventory at her pastry shop , Kelly realizes that she had 0.4 box of baking powder yesterday , but the supply is now down to 0.3 box ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much more baking powder did Kelly have yesterday ?"
+          }
+        ],
+        "Sentence": "How much more baking powder did Kelly have yesterday ?"
+      }
+    ],
+    "lEquations": [
+      "X = 0.4 - 0.3"
+    ],
+    "iIndex": 203
+  },
+  {
+    "sQuestion": "Mike found 6 seashells and 4 starfish , but 4 of the seashells were broken . How many unbroken seashells did Mike find ? ",
+    "lSolutions": [
+      "2"
+    ],
+    "ParentIndex": 306,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Mike found 6 seashells ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "i",
+            "Sentence": "Mike found 4 starfish ."
+          },
+          {
+            "SyntacticPattern": "NVCPDNVV",
+            "label": "-",
+            "Sentence": "4 of the seashells were broken ."
+          }
+        ],
+        "Sentence": "Mike found 6 seashells and 4 starfish , but 4 of the seashells were broken ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many unbroken seashells did Mike find ?"
+          }
+        ],
+        "Sentence": "How many unbroken seashells did Mike find ?"
+      }
+    ],
+    "lEquations": [
+      "X = 6 - 4"
+    ],
+    "iIndex": 306
+  },
+  {
+    "sQuestion": "Jessica grew 35 watermelons and 30 carrots , but the rabbits ate 27 watermelons . How many watermelons does Jessica have ? ",
+    "lSolutions": [
+      "8"
+    ],
+    "ParentIndex": 309,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Jessica grew 35 watermelons ."
+          },
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "i",
+            "Sentence": "Jessica grew 30 carrots ."
+          },
+          {
+            "SyntacticPattern": "DNVCN",
+            "label": "-",
+            "Sentence": "the rabbits ate 27 watermelons ."
+          }
+        ],
+        "Sentence": "Jessica grew 35 watermelons and 30 carrots , but the rabbits ate 27 watermelons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many watermelons does Jessica have ?"
+          }
+        ],
+        "Sentence": "How many watermelons does Jessica have ?"
+      }
+    ],
+    "lEquations": [
+      "X = 35 - 27"
+    ],
+    "iIndex": 309
+  },
+  {
+    "sQuestion": "Tom went to 4 hockey games this year , but missed 7 . He went to 9 games last year . How many hockey games did Tom go to in all ? ",
+    "lSolutions": [
+      "13"
+    ],
+    "ParentIndex": 345,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNDN",
+            "label": "+",
+            "Sentence": "Tom went to 4 hockey games this year ."
+          },
+          {
+            "SyntacticPattern": "NVCNDN",
+            "label": "i",
+            "Sentence": "Tom missed 7 hockey games this year ."
+          }
+        ],
+        "Sentence": "Tom went to 4 hockey games this year , but missed 7 games ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNAN",
+            "label": "+",
+            "Sentence": "He went to 9 games last year ."
+          }
+        ],
+        "Sentence": "He went to 9 games last year ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVPPD",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many hockey games did Tom go to in all ?"
+          }
+        ],
+        "Sentence": "How many hockey games did Tom go to in all ?"
+      }
+    ],
+    "lEquations": [
+      "X = 4 + 9"
+    ],
+    "iIndex": 345
+  },
+  {
+    "sQuestion": "Mike went to 15 basketball games this year , but missed 41 . He went to 39 games last year . How many basketball games did Mike go to in total ? ",
+    "lSolutions": [
+      "54"
+    ],
+    "ParentIndex": 365,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNDN",
+            "label": "+",
+            "Sentence": "Mike went to 15 basketball games this year ."
+          },
+          {
+            "SyntacticPattern": "NVCNDN",
+            "label": "i",
+            "Sentence": "Mike missed 41 basketball games this year ."
+          }
+        ],
+        "Sentence": "Mike went to 15 basketball games this year , but missed 41 games ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNAN",
+            "label": "+",
+            "Sentence": "He went to 39 basketball games last year ."
+          }
+        ],
+        "Sentence": "He went to 39 games last year ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVPPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many basketball games did Mike go to in total ?"
+          }
+        ],
+        "Sentence": "How many basketball games did Mike go to in total ?"
+      }
+    ],
+    "lEquations": [
+      "X = 15 + 39"
+    ],
+    "iIndex": 365
+  },
+  {
+    "sQuestion": "Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? ",
+    "lSolutions": [
+      "39"
+    ],
+    "ParentIndex": 369,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNDN",
+            "label": "+",
+            "Sentence": "Alyssa went to 11 soccer games this year ."
+          },
+          {
+            "SyntacticPattern": "NVCNDN",
+            "label": "i",
+            "Sentence": "Alyssa missed 12 soccer games this year ."
+          }
+        ],
+        "Sentence": "Alyssa went to 11 soccer games this year , but missed 12 games ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVPCNAN",
+            "label": "+",
+            "Sentence": "She went to 13 soccer games last year ."
+          },
+          {
+            "SyntacticPattern": "NVPVPCNAN",
+            "label": "+",
+            "Sentence": "She plans to go to 15 soccer games next year ."
+          }
+        ],
+        "Sentence": "She went to 13 games last year and plans to go to 15 games next year ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANNVPPD",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many soccer games will Alyssa go to in all ?"
+          }
+        ],
+        "Sentence": "How many soccer games will Alyssa go to in all ?"
+      }
+    ],
+    "lEquations": [
+      "X = 11 + 13 + 15"
+    ],
+    "iIndex": 369
+  },
+  {
+    "sQuestion": "Sally has 9 orange balloons and 4 blue balloons . She lost 2 of the orange balloons . How many orange balloons does Sally have now ? ",
+    "lSolutions": [
+      "7"
+    ],
+    "ParentIndex": 385,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Sally has 9 orange balloons ."
+          },
+          {
+            "SyntacticPattern": "NVCAN",
+            "label": "i",
+            "Sentence": "Sally has 4 blue balloons ."
+          }
+        ],
+        "Sentence": "Sally has 9 orange balloons and 4 blue balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCPDAN",
+            "label": "-",
+            "Sentence": "She lost 2 of the orange balloons ."
+          }
+        ],
+        "Sentence": "She lost 2 of the orange balloons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many orange balloons does Sally have now ?"
+          }
+        ],
+        "Sentence": "How many orange balloons does Sally have now ?"
+      }
+    ],
+    "lEquations": [
+      "X = 9 - 2"
+    ],
+    "iIndex": 385
+  },
+  {
+    "sQuestion": " Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      19
+    ],
+    "ParentIndex": 419,
+    "lAlignments": [
+      11,
+      47,
+      73
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Henry had 11 dollars ."
+          }
+        ],
+        "Sentence": "Henry had 11 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 18 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 10 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 18 more dollars but spent 10 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((11.0+18.0)-10.0)"
+    ],
+    "iIndex": 23
+  },
+  {
+    "sQuestion": " Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      15
+    ],
+    "ParentIndex": 433,
+    "lAlignments": [
+      11,
+      47,
+      73
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Roger had 29 dollars ."
+          }
+        ],
+        "Sentence": "Roger had 29 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 20 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 34 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 20 more dollars but spent 34 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((29.0+20.0)-34.0)"
+    ],
+    "iIndex": 37
+  },
+  {
+    "sQuestion": " Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      1
+    ],
+    "ParentIndex": 438,
+    "lAlignments": [
+      12,
+      48,
+      74
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Oliver had 35 dollars ."
+          }
+        ],
+        "Sentence": "Oliver had 35 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 50 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 84 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 50 more dollars but spent 84 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((35.0+50.0)-84.0)"
+    ],
+    "iIndex": 42
+  },
+  {
+    "sQuestion": " Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      1
+    ],
+    "ParentIndex": 448,
+    "lAlignments": [
+      12,
+      48,
+      74
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Oliver had 35 dollars ."
+          }
+        ],
+        "Sentence": "Oliver had 35 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 50 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 84 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 50 more dollars but spent 84 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((35.0+50.0)-84.0)"
+    ],
+    "iIndex": 52
+  },
+  {
+    "sQuestion": " George had 30 dollars. For his birthday he got 16 more dollars but spent 38 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      8
+    ],
+    "ParentIndex": 463,
+    "lAlignments": [
+      12,
+      48,
+      74
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "George had 30 dollars ."
+          }
+        ],
+        "Sentence": "George had 30 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 16 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 38 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 16 more dollars but spent 38 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((30.0+16.0)-38.0)"
+    ],
+    "iIndex": 67
+  },
+  {
+    "sQuestion": " Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? ",
+    "lSolutions": [
+      35
+    ],
+    "ParentIndex": 495,
+    "lAlignments": [
+      10,
+      46,
+      71
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Cody had 45 dollars ."
+          }
+        ],
+        "Sentence": "Cody had 45 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNNNVCN",
+            "label": "+",
+            "Sentence": "For his birthday he got 9 more dollars ."
+          },
+          {
+            "SyntacticPattern": "NVCNPDN",
+            "label": "-",
+            "Sentence": "he spent 19 dollars on a new game ."
+          }
+        ],
+        "Sentence": "For his birthday he got 9 more dollars but spent 19 dollars on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much money does he have now ?"
+          }
+        ],
+        "Sentence": "How much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((45.0+9.0)-19.0)"
+    ],
+    "iIndex": 99
+  },
+  {
+    "sQuestion": " A teacher had 6 worksheets to grade. If she graded 4, but then another 18 were turned in, how many worksheets would she have to grade? ",
+    "lSolutions": [
+      20
+    ],
+    "ParentIndex": 502,
+    "lAlignments": [
+      15,
+      72,
+      52
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A teacher had 6 worksheets to grade ."
+          }
+        ],
+        "Sentence": "A teacher had 6 worksheets to grade ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If she graded 4 worksheets ."
+          },
+          {
+            "SyntacticPattern": "DCNVV",
+            "label": "+",
+            "Sentence": "then another 18 worksheets were turned in ."
+          },
+          {
+            "SyntacticPattern": "WANNVPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many worksheets would she have to grade ? ."
+          }
+        ],
+        "Sentence": "If she graded 4 worksheets , but then another 18 worksheets were turned in , how many worksheets would she have to grade ?"
+      }
+    ],
+    "lEquations": [
+      "X=((6.0+18.0)-4.0)"
+    ],
+    "iIndex": 106
+  },
+  {
+    "sQuestion": " A teacher had 7 worksheets to grade. If she graded 2, but then another 46 were turned in, how many worksheets would she have to grade? ",
+    "lSolutions": [
+      51
+    ],
+    "ParentIndex": 506,
+    "lAlignments": [
+      15,
+      72,
+      52
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "i",
+            "Sentence": "A teacher had 7 worksheets to grade ."
+          }
+        ],
+        "Sentence": "A teacher had 7 worksheets to grade ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If she graded 2 worksheets ."
+          },
+          {
+            "SyntacticPattern": "NVDCNVV",
+            "label": "+",
+            "Sentence": "then another 46 worksheets were turned in ."
+          },
+          {
+            "SyntacticPattern": "WANNVPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many worksheets would she have to grade ? ."
+          }
+        ],
+        "Sentence": "If she graded 2 worksheets , but then another 46 worksheets were turned in , how many worksheets would she have to grade ?"
+      }
+    ],
+    "lEquations": [
+      "X=((7.0+46.0)-2.0)"
+    ],
+    "iIndex": 110
+  },
+  {
+    "sQuestion": " Adam had 5 dollars. At the store he spent $2 on a new game. If he got another 5 dollars for his allowance, how much money does he have now? ",
+    "lSolutions": [
+      8
+    ],
+    "ParentIndex": 513,
+    "lAlignments": [
+      10,
+      79,
+      44
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Adam had 5 dollars ."
+          }
+        ],
+        "Sentence": "Adam had 5 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PDNNVCPDAN",
+            "label": "-",
+            "Sentence": "At the store he spent $ 2 on a new game ."
+          }
+        ],
+        "Sentence": "At the store he spent $ 2 on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVDCNPNN",
+            "label": "+",
+            "Sentence": "If he got another 5 dollars for his allowance ."
+          },
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how much money does he have now ? ."
+          }
+        ],
+        "Sentence": "If he got another 5 dollars for his allowance , how much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((5.0+5.0)-2.0)"
+    ],
+    "iIndex": 117
+  },
+  {
+    "sQuestion": " Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total? ",
+    "lSolutions": [
+      79
+    ],
+    "ParentIndex": 518,
+    "lAlignments": [
+      10,
+      73,
+      46
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCVN",
+            "label": "+",
+            "Sentence": "Faye had 34 coloring books ."
+          }
+        ],
+        "Sentence": "Faye had 34 coloring books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCPN",
+            "label": "-",
+            "Sentence": "If she gave away 3 of coloring books ."
+          },
+          {
+            "SyntacticPattern": "NVCA",
+            "label": "+",
+            "Sentence": "she then bought 48 more coloring books ."
+          },
+          {
+            "SyntacticPattern": "WANVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many would she have total ? ."
+          }
+        ],
+        "Sentence": "If she gave away 3 of them , but then bought 48 more , how many would she have total ?"
+      }
+    ],
+    "lEquations": [
+      "X=((34.0+48.0)-3.0)"
+    ],
+    "iIndex": 122
+  },
+  {
+    "sQuestion": " A teacher had 38 worksheets to grade. If she graded 4, but then another 15 were turned in, how many worksheets would she have to grade? ",
+    "lSolutions": [
+      49
+    ],
+    "ParentIndex": 520,
+    "lAlignments": [
+      15,
+      73,
+      53
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A teacher had 38 worksheets to grade ."
+          }
+        ],
+        "Sentence": "A teacher had 38 worksheets to grade ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If she graded 4 worksheets ."
+          },
+          {
+            "SyntacticPattern": "NVDCNVV",
+            "label": "+",
+            "Sentence": "then another 15 worksheets were turned in ."
+          },
+          {
+            "SyntacticPattern": "WANNVPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many worksheets would she have to grade ? ."
+          }
+        ],
+        "Sentence": "If she graded 4 worksheets , but then another 15 worksheets were turned in , how many worksheets would she have to grade ?"
+      }
+    ],
+    "lEquations": [
+      "X=((38.0+15.0)-4.0)"
+    ],
+    "iIndex": 124
+  },
+  {
+    "sQuestion": " A book store had 4 books in the bargin bin. If they sold 3 books, but then put 10 more in the bin, how many books would be in the bin? ",
+    "lSolutions": [
+      11
+    ],
+    "ParentIndex": 523,
+    "lAlignments": [
+      18,
+      80,
+      58
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPDN",
+            "label": "+",
+            "Sentence": "A book store had 4 books in the bargin bin ."
+          }
+        ],
+        "Sentence": "A book store had 4 books in the bargin bin ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If they sold 3 books ."
+          },
+          {
+            "SyntacticPattern": "NVCAPDN",
+            "label": "+",
+            "Sentence": "they then put 10 more books in the bin ."
+          },
+          {
+            "SyntacticPattern": "WANVPDN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many books would be in the bin ? ."
+          }
+        ],
+        "Sentence": "If they sold 3 books , but then put 10 more in the bin , how many books would be in the bin ?"
+      }
+    ],
+    "lEquations": [
+      "X=((4.0+10.0)-3.0)"
+    ],
+    "iIndex": 127
+  },
+  {
+    "sQuestion": " Bianca had 45 coloring books. If she gave away 6 of them, but then bought 20 more, how many would she have total? ",
+    "lSolutions": [
+      59
+    ],
+    "ParentIndex": 526,
+    "lAlignments": [
+      12,
+      75,
+      48
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCVN",
+            "label": "+",
+            "Sentence": "Bianca had 45 coloring books ."
+          }
+        ],
+        "Sentence": "Bianca had 45 coloring books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCPN",
+            "label": "-",
+            "Sentence": "If she gave away 6 of coloring books ."
+          },
+          {
+            "SyntacticPattern": "NVCA",
+            "label": "+",
+            "Sentence": "she then bought 20 more coloring books ."
+          },
+          {
+            "SyntacticPattern": "WANVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many would she have total ? ."
+          }
+        ],
+        "Sentence": "If she gave away 6 of them , but then bought 20 more , how many would she have total ?"
+      }
+    ],
+    "lEquations": [
+      "X=((45.0+20.0)-6.0)"
+    ],
+    "iIndex": 130
+  },
+  {
+    "sQuestion": " A teacher had 29 worksheets to grade. If she graded 25, but then another 29 were turned in, how many worksheets would she have to grade? ",
+    "lSolutions": [
+      33
+    ],
+    "ParentIndex": 540,
+    "lAlignments": [
+      15,
+      74,
+      53
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A teacher had 29 worksheets to grade ."
+          }
+        ],
+        "Sentence": "A teacher had 29 worksheets to grade ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If she graded 25 worksheets ."
+          },
+          {
+            "SyntacticPattern": "DCNVV",
+            "label": "+",
+            "Sentence": "then another 29 worksheets were turned in ."
+          },
+          {
+            "SyntacticPattern": "WANNVPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many worksheets would she have to grade ? ."
+          }
+        ],
+        "Sentence": "If she graded 25 worksheets , but then another 29 worksheets were turned in , how many worksheets would she have to grade ?"
+      }
+    ],
+    "lEquations": [
+      "X=((29.0+29.0)-25.0)"
+    ],
+    "iIndex": 144
+  },
+  {
+    "sQuestion": " A teacher had 34 worksheets to grade. If she graded 7, but then another 36 were turned in, how many worksheets would she have to grade? ",
+    "lSolutions": [
+      63
+    ],
+    "ParentIndex": 548,
+    "lAlignments": [
+      15,
+      73,
+      53
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "DNVCNPN",
+            "label": "+",
+            "Sentence": "A teacher had 34 worksheets to grade ."
+          }
+        ],
+        "Sentence": "A teacher had 34 worksheets to grade ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCN",
+            "label": "-",
+            "Sentence": "If she graded 7 worksheets ."
+          },
+          {
+            "SyntacticPattern": "DCNVV",
+            "label": "+",
+            "Sentence": "then another 36 worksheets were turned in ."
+          },
+          {
+            "SyntacticPattern": "WANNVPN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many worksheets would she have to grade ? ."
+          }
+        ],
+        "Sentence": "If she graded 7 worksheets , but then another 36 worksheets were turned in , how many worksheets would she have to grade ?"
+      }
+    ],
+    "lEquations": [
+      "X=((34.0+36.0)-7.0)"
+    ],
+    "iIndex": 152
+  },
+  {
+    "sQuestion": " Emily had 7 coloring books. If she gave away 2 of them, but then bought 14 more, how many would she have total? ",
+    "lSolutions": [
+      19
+    ],
+    "ParentIndex": 550,
+    "lAlignments": [
+      11,
+      73,
+      46
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCVN",
+            "label": "+",
+            "Sentence": "Emily had 7 coloring books ."
+          }
+        ],
+        "Sentence": "Emily had 7 coloring books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCPN",
+            "label": "-",
+            "Sentence": "If she gave away 2 of coloring books ."
+          },
+          {
+            "SyntacticPattern": "NVCAN",
+            "label": "+",
+            "Sentence": "she then bought 14 more coloring books."
+          },
+          {
+            "SyntacticPattern": "WANVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many coloring books would she have total ? ."
+          }
+        ],
+        "Sentence": "If she gave away 2 of them , but then bought 14 more , how many would she have total ?"
+      }
+    ],
+    "lEquations": [
+      "X=((7.0+14.0)-2.0)"
+    ],
+    "iIndex": 154
+  },
+  {
+    "sQuestion": " Frank had 11 dollars. At the store he spent $3 on a new game. If he got another 14 dollars for his allowance, how much money does he have now? ",
+    "lSolutions": [
+      22
+    ],
+    "ParentIndex": 574,
+    "lAlignments": [
+      11,
+      81,
+      46
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Frank had 11 dollars ."
+          }
+        ],
+        "Sentence": "Frank had 11 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PDNNVCPDAN",
+            "label": "-",
+            "Sentence": "At the store he spent $ 3 on a new game ."
+          }
+        ],
+        "Sentence": "At the store he spent $ 3 on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVDCNPNN",
+            "label": "+",
+            "Sentence": "If he got another 14 dollars for his allowance ."
+          },
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how much money does he have now ? ."
+          }
+        ],
+        "Sentence": "If he got another 14 dollars for his allowance , how much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((11.0+14.0)-3.0)"
+    ],
+    "iIndex": 178
+  },
+  {
+    "sQuestion": " Debby had 30 coloring books. If she gave away 7 of them, but then bought 35 more, how many would she have total? ",
+    "lSolutions": [
+      58
+    ],
+    "ParentIndex": 578,
+    "lAlignments": [
+      11,
+      74,
+      47
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCVN",
+            "label": "+",
+            "Sentence": "Debby had 30 coloring books ."
+          }
+        ],
+        "Sentence": "Debby had 30 coloring books ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVCPN",
+            "label": "-",
+            "Sentence": "If she gave away 7 of them ."
+          },
+          {
+            "SyntacticPattern": "NVCA",
+            "label": "+",
+            "Sentence": "she then bought 35 more ."
+          },
+          {
+            "SyntacticPattern": "WANVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how many would she have total ? ."
+          }
+        ],
+        "Sentence": "If she gave away 7 of them , but then bought 35 more , how many would she have total ?"
+      }
+    ],
+    "lEquations": [
+      "X=((30.0+35.0)-7.0)"
+    ],
+    "iIndex": 182
+  },
+  {
+    "sQuestion": " John had 5 dollars. At the store he spent $2 on a new game. If he got another 26 dollars for his allowance, how much money does he have now? ",
+    "lSolutions": [
+      29
+    ],
+    "ParentIndex": 594,
+    "lAlignments": [
+      10,
+      79,
+      44
+    ],
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "John had 5 dollars ."
+          }
+        ],
+        "Sentence": "John had 5 dollars ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PDNNVCPDAN",
+            "label": "-",
+            "Sentence": "At the store he spent $ 2 on a new game ."
+          }
+        ],
+        "Sentence": "At the store he spent $ 2 on a new game ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PNVDCNPNN",
+            "label": "+",
+            "Sentence": "If he got another 26 dollars for his allowance ."
+          },
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "how much money does he have now ? ."
+          }
+        ],
+        "Sentence": "If he got another 26 dollars for his allowance , how much money does he have now ?"
+      }
+    ],
+    "lEquations": [
+      "X=((5.0+26.0)-2.0)"
+    ],
+    "iIndex": 198
+  },
+  {
+    "sQuestion": "Tom found 7 seashells but 4 were broken.  How many unbroken seashells did Tom find ?",
+    "lSolutions": [
+      3
+    ],
+    "ParentIndex": 655,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Tom found 7 seashells ."
+          },
+          {
+            "SyntacticPattern": "CNVV",
+            "label": "-",
+            "Sentence": "4 seashells were broken ."
+          }
+        ],
+        "Sentence": "Tom found 7 seashells but 4 seashells were broken ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many unbroken seashells did Tom find ?"
+          }
+        ],
+        "Sentence": "How many unbroken seashells did Tom find ?"
+      }
+    ],
+    "lEquations": [
+      "7=4+x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Sam grew 4 watermelons, but the rabbits ate 3 watermelons. How many watermelons does Sam have left ?",
+    "lSolutions": [
+      1
+    ],
+    "ParentIndex": 690,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Sam grew 4 watermelons ."
+          },
+          {
+            "SyntacticPattern": "DNVCN",
+            "label": "-",
+            "Sentence": "the rabbits ate 3 watermelons ."
+          }
+        ],
+        "Sentence": "Sam grew 4 watermelons , but the rabbits ate 3 watermelons ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many watermelons does Sam have left ?"
+          }
+        ],
+        "Sentence": "How many watermelons does Sam have left ?"
+      }
+    ],
+    "lEquations": [
+      "4-3=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Dan found 7 seashells but 3 were broken.  How many unbroken seashells did Dan find ?",
+    "lSolutions": [
+      4
+    ],
+    "ParentIndex": 705,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Dan found 7 seashells ."
+          },
+          {
+            "SyntacticPattern": "NVCNVV",
+            "label": "-",
+            "Sentence": "3 seashells were broken ."
+          }
+        ],
+        "Sentence": "Dan found 7 seashells but 3 seashells were broken ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many unbroken seashells did Dan find ?"
+          }
+        ],
+        "Sentence": "How many unbroken seashells did Dan find ?"
+      }
+    ],
+    "lEquations": [
+      "7=3+x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Joan has 9 blue balloons  but lost 2 of them. How many blue balloons does Joan have now ?",
+    "lSolutions": [
+      7
+    ],
+    "ParentIndex": 706,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCAN",
+            "label": "+",
+            "Sentence": "Joan has 9 blue balloons ."
+          },
+          {
+            "SyntacticPattern": "NVCPN",
+            "label": "-",
+            "Sentence": "Joan lost 2 of them ."
+          }
+        ],
+        "Sentence": "Joan has 9 blue balloons but lost 2 of them ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WAANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many blue balloons does Joan have now ?"
+          }
+        ],
+        "Sentence": "How many blue balloons does Joan have now ?"
+      }
+    ],
+    "lEquations": [
+      "9-2=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Sara grew 43 pumpkins, but the rabbits ate 23 pumpkins. How many pumpkins does Sara have left ?",
+    "lSolutions": [
+      20
+    ],
+    "ParentIndex": 712,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Sara grew 43 pumpkins ."
+          },
+          {
+            "SyntacticPattern": "DNVCN",
+            "label": "-",
+            "Sentence": "the rabbits ate 23 pumpkins ."
+          }
+        ],
+        "Sentence": "Sara grew 43 pumpkins , but the rabbits ate 23 pumpkins ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many pumpkins does Sara have left ?"
+          }
+        ],
+        "Sentence": "How many pumpkins does Sara have left ?"
+      }
+    ],
+    "lEquations": [
+      "43-23=x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "While taking inventory at her pastry shop, Kelly realizes that she had 0.4 of a box of baking powder yesterday, but the supply is now down to 0.3 of a box. How much more baking powder did Kelly have yesterday?",
+    "lSolutions": [
+      0.1
+    ],
+    "ParentIndex": 799,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "PVNPNNNVPNVCPDNPVNN",
+            "label": "+",
+            "Sentence": "While taking inventory at her pastry shop Kelly realizes that she had 0.4 of a box of baking powder yesterday ."
+          },
+          {
+            "SyntacticPattern": "PVNPNNDNVPCPDN",
+            "label": "-",
+            "Sentence": "While taking inventory at her pastry shop the supply is now down to 0.3 of a box ."
+          }
+        ],
+        "Sentence": "While taking inventory at her pastry shop , Kelly realizes that she had 0.4 of a box of baking powder yesterday , but the supply is now down to 0.3 of a box ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNVN",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How much more baking powder did Kelly have yesterday ?"
+          }
+        ],
+        "Sentence": "How much more baking powder did Kelly have yesterday ?"
+      }
+    ],
+    "lEquations": [
+      "0.4 - 0.3 = x"
+    ],
+    "iIndex": 0
+  },
+  {
+    "sQuestion": "Ellen had 380 legos, but Ellen lost 57 of them. How many legos does Ellen have now?",
+    "lSolutions": [
+      323
+    ],
+    "ParentIndex": 871,
+    "Sentences": [
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "NVCN",
+            "label": "+",
+            "Sentence": "Ellen had 380 legos ."
+          },
+          {
+            "SyntacticPattern": "NVCPN",
+            "label": "-",
+            "Sentence": "Ellen lost 57 of them ."
+          }
+        ],
+        "Sentence": "Ellen had 380 legos , but Ellen lost 57 of them ."
+      },
+      {
+        "SimplifiedSentences": [
+          {
+            "SyntacticPattern": "WANVNV",
+            "QuestionLabel": "b",
+            "label": "?",
+            "Sentence": "How many legos does Ellen have now ?"
+          }
+        ],
+        "Sentence": "How many legos does Ellen have now ?"
+      }
+    ],
+    "lEquations": [
+      "380-57=x"
+    ],
+    "iIndex": 0
+  }
+]

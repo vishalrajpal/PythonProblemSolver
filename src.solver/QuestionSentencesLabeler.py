@@ -8,12 +8,11 @@ class QuestionSentencesLabeler:
         self.m_question_count_map = {}
         self.initializeLabelQuestionMap()
         for k,v in self.m_question_label_map.items():
-            if v == 'c':
-                print k + ' --Count:' + str(self.m_question_count_map[k])
+            print k + ' --Count:' + str(self.m_question_count_map[k])
         self.labelQuestionSentences()
     
     def initializeLabelQuestionMap(self):
-        with open('QuestionTestData.csv', 'rb') as csvfile:
+        with open('QuestionTrainingData.csv', 'rb') as csvfile:
             spamreader = csv.reader(csvfile)
             for row in spamreader:
                 if row[1] not in self.m_question_label_map:
@@ -30,7 +29,8 @@ class QuestionSentencesLabeler:
             
         
     def labelQuestionSentences(self):
-        self.m_test_dataset_file = "/Users/acharya.n/Desktop/ArithmeticProblemSolver/target/classes/dataset/TestDataPredicted.json"
+#         self.m_test_dataset_file = "/Users/rajpav/git/ArithmeticProblemSolver/target/classes/dataset/HosseiniTestData_DS1_Predicted.json"
+        self.m_test_dataset_file = "HosseiniTestData_DS3_Predicted.json"
         with open(self.m_test_dataset_file) as data_file:
             data = json.load(data_file)
             
@@ -44,10 +44,12 @@ class QuestionSentencesLabeler:
                     # simplified_sentence["PredictedLabel"] = current_sentence_label
                     if current_sentence_label == '?':
                         current_sentence_text = simplified_sentence["Sentence"]
-                        simplified_sentence["QuestionLabel"] = self.m_question_label_map[current_sentence_text]
-                        # if simplified_sentence["QuestionLabel"] == 'c':
+                        if current_sentence_text in self.m_question_label_map:
+                            simplified_sentence["QuestionLabel"] = self.m_question_label_map[current_sentence_text]
+                        else:
+                            print 'error:',current_sentence_text
                         question_label_data.append(question)
-        with open("TestDataQuestionLabeled.json", 'w') as data_file:
+        with open("HosseiniTestData_DS3_Predicted_Labeled.json", 'w') as data_file:
             data = json.dump(question_label_data, data_file)
             
     def extract_faulters(self):

@@ -7,11 +7,8 @@ class QuestionSentenceSolver:
         lemma_sentence = ''
         for sentence_split_word in sentence_split:
             lemma_sentence = lemma_sentence + ' ' + sentence.LEMMATIZER_MODULE.lemmatize(sentence_split_word)
-        ##print lemma_sentence
         noun_chunks = sentence.get_noun_chunks(lemma_sentence)    
 
-        ##print noun_chunks
-        ##print 'In solve for all labels'
         possible_subjects = []
         possible_object = None
         quantified_entities = sentence.m_question.get_quantified_entities()
@@ -19,13 +16,10 @@ class QuestionSentenceSolver:
             noun = noun.lower()
             noun_split = noun.split()
             if len(noun_split) > 1:
-                ##print 'noun greater than 1'
                 for non_allowed in sentence.NON_ALLOWED_NOUN_CHUNKS:
                     noun = noun.replace(non_allowed, '')
                 noun = noun.strip()
-                ##print 'replaced noun'
-                ##print noun
-            ##print noun
+               
             noun_split = noun.split()
             ##print noun_split
             if noun in quantified_entities:
@@ -263,9 +257,8 @@ class QuestionSentenceSolver:
     #                                 #print 'ERROR: transfer entity issue'
             if global_entity_exists == True:
                 for e in quantified_entities['global']:                    
-                    #print 'In global entity'
                     result = e.get_final_cardinal() - result                                
-                    result = -result if result < 0 else result
+            result = -result if result < 0 else result
             
         return result
 

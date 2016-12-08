@@ -3,10 +3,13 @@ from Question import Question
 from decimal import Decimal
 class AnswerTests():
 #     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_All.json"
-    TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_Plus.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_Plus.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_Plus_Backup.json"
 #     TESTED_QUESTIONS_FILE_PATH = "Test.json"
-#     TESTED_QUESTIONS_FILE_PATH = "TrainingDat aQuestionLabeled_C.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_C.json"
 #     TESTED_QUESTIONS_FILE_PATH = "TestDataQuestionLabeled.json"
+#     TESTED_QUESTIONS_FILE_PATH = "TrainingDataLabeled_But.json"
+    TESTED_QUESTIONS_FILE_PATH = "Hosseini/HosseiniTestData_DS3_Predicted_Labeled.json"
     def __init__(self):
         print 'In init'
     
@@ -20,28 +23,35 @@ class AnswerTests():
         for question in tested_questions:
 #             print 'reading tested questions json'
             new_question = Question(question)
-            answer = Decimal(new_question.solve())
-            expected_answer = Decimal(question["lSolutions"][0])
-            print 'in tests'
-            print "actual answer:", float(answer)
-            print "expected answer:", float(expected_answer)
-            
-            if answer == 0.0:  
-                print 'in answer 0'   
-                answer = self.get_answer_from_quants(new_question)
+            solved_answer = new_question.solve()
+            if solved_answer != None:
+                answer = Decimal(solved_answer)
+                expected_answer = Decimal(question["lSolutions"][0])
+                print 'in tests'
+                print "actual answer:", float(answer)
+                print "expected answer:", float(expected_answer)
                 
-                print 'new answer', answer
-            print float(answer) != float(expected_answer)
-            print Decimal(answer) != Decimal(expected_answer)
-            print round(answer,2) == round(expected_answer,2)
-            if float(answer) == float(expected_answer) or round(answer,2) == round(expected_answer,2):
-                'just'
+                if answer == 0.0:  
+                    print 'in answer 0'   
+                    answer = self.get_answer_from_quants(new_question)
+                    
+                    print 'new answer', answer
+                print float(answer) != float(expected_answer)
+                print Decimal(answer) != Decimal(expected_answer)
+                print round(answer,2) == round(expected_answer,2)
+                if float(answer) == float(expected_answer) or round(answer,2) == round(expected_answer,2):
+                    'just'
+                else:
+                    parent_index = str(question["ParentIndex"])
+                    if answer == 0.0:
+                        zero_count.append(parent_index)
+                    elif answer < 0:
+                        neg_count.append(parent_index)
+                    print str(question["ParentIndex"])
+                    incorrects.append(str(question["ParentIndex"]))
+                    incorrect = incorrect + 1
             else:
                 parent_index = str(question["ParentIndex"])
-                if answer == 0.0:
-                    zero_count.append(parent_index)
-                elif answer < 0:
-                    neg_count.append(parent_index)
                 print str(question["ParentIndex"])
                 incorrects.append(str(question["ParentIndex"]))
                 incorrect = incorrect + 1

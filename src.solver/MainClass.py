@@ -13,7 +13,7 @@ from PublicKeys import PublicKeys
 class MainClass:
     
     if __name__ == '__main__':
-        # question_sentences_labeler = QuestionSentencesLabeler()
+#         question_sentences_labeler = QuestionSentencesLabeler()
         # question_sentences_labeler.extract_faulters()
 #         PublicKeys.text2int("two")
         answer_tests = AnswerTests()

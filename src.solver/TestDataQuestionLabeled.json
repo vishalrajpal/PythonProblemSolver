@@ -109,9 +109,9 @@
 		"Sentence": "Dan gave her 41 new Pokemon cards .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVNCAN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Dan gave her 41 new Pokemon cards .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "Sally bought 20 Pokemon cards .",
@@ -1720,9 +1720,9 @@
 		"Sentence": "Her dad borrowed 271 quarters from Sara .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVCNPN",
-			"PredictedLabel": "-",
+			"PredictedLabel": "+",
 			"Sentence": "Her dad borrowed 271 quarters from Sara .",
-			"label": "-"
+			"label": "+"
 		}]
 	}, {
 		"Sentence": "How many quarters does she have now ?",
@@ -2839,9 +2839,9 @@
 			"label": "-"
 		}, {
 			"SyntacticPattern": "NNVNCANPN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "then her sister gave her 21 more pieces of candy .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "How many pieces of candy does Robin have now ?",
@@ -3737,9 +3737,9 @@
 		"Sentence": "Her dad gave her 49 more quarters .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCAN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Her dad gave her 49 more quarters .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "How many quarters does she have now ?",
@@ -4026,7 +4026,7 @@
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "WANVNVPPD",
 			"PredictedLabel": "?",
-			"QuestionLabel": "+",
+			"QuestionLabel": "all",
 			"Sentence": "How many football games did Melanie go to in all ?",
 			"label": "?"
 		}]
@@ -4459,19 +4459,19 @@
 	"lEquations": ["1426+x=2000"],
 	"iIndex": 0
 }, {
-	"sQuestion": "Carrie's mom gave her $91 to go shopping. She bought a sweater for $24, a T-shirt for $6, and a pair of shoes for $11. How much money does Carrie have left?",
+	"sQuestion": "Carrie's mom gave her $91 to go shopping. She bought a sweater for $24, a Tshirt for $6, and a pair of shoes for $11. How much money does Carrie have left?",
 	"lSolutions": [50],
 	"ParentIndex": 757,
 	"Sentences": [{
 		"Sentence": "Carrie 's mom gave her $ 91 to go shopping .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNCPVN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Carrie 's mom gave her $ 91 to go shopping .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
-		"Sentence": "She bought a sweater for $ 24 , a T-shirt for $ 6 , and a pair of shoes for $ 11 .",
+		"Sentence": "She bought a sweater for $ 24 , a Tshirt for $ 6 , and a pair of shoes for $ 11 .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVDNPC",
 			"PredictedLabel": "+",
@@ -4480,7 +4480,7 @@
 		}, {
 			"SyntacticPattern": "NVDNPC",
 			"PredictedLabel": "+",
-			"Sentence": "She bought a T-shirt for $ 6 .",
+			"Sentence": "She bought a Tshirt for $ 6 .",
 			"label": "+"
 		}, {
 			"SyntacticPattern": "NVDNPNPC",
@@ -4618,9 +4618,9 @@
 			"label": "+"
 		}, {
 			"SyntacticPattern": "NNVNC",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Dalton's uncle gave Dalton $ 13 .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "How much more money does Dalton need to buy the jump rope , the game , and the ball ?",
@@ -4844,7 +4844,7 @@
 	"lEquations": ["0.2 + 0.4 + 0.1 = x"],
 	"iIndex": 0
 }, {
-	"sQuestion": "On her vacation last summer, Trisha walked all over New York City to buy souvenirs. First, she walked 0.1111111111111111 of a mile from her hotel to a postcard shop. Then she walked 0.1111111111111111 of a mile from the postcard shop to a T-shirt shop and 0.6666666666666666 of a mile from the T-shirt shop back to the hotel. How many miles did Trisha walk in all?",
+	"sQuestion": "On her vacation last summer, Trisha walked all over New York City to buy souvenirs. First, she walked 0.1111111111111111 of a mile from her hotel to a postcard shop. Then she walked 0.1111111111111111 of a mile from the postcard shop to a Tshirt shop and 0.6666666666666666 of a mile from the Tshirt shop back to the hotel. How many miles did Trisha walk in all?",
 	"lSolutions": [0.8888888888888888],
 	"ParentIndex": 814,
 	"Sentences": [{
@@ -4864,16 +4864,16 @@
 			"label": "+"
 		}]
 	}, {
-		"Sentence": "Then she walked 0.1111111111111111 of a mile from the postcard shop to a T-shirt shop and 0.6666666666666666 of a mile from the T-shirt shop back to the hotel .",
+		"Sentence": "Then she walked 0.1111111111111111 of a mile from the postcard shop to a Tshirt shop and 0.6666666666666666 of a mile from the Tshirt shop back to the hotel .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVCPDNPDNPDN",
 			"PredictedLabel": "+",
-			"Sentence": "Then she walked 0.1111111111111111 of a mile from the postcard shop to a T-shirt shop .",
+			"Sentence": "Then she walked 0.1111111111111111 of a mile from the postcard shop to a Tshirt shop .",
 			"label": "+"
 		}, {
 			"SyntacticPattern": "NVCPDNPDNVPDN",
 			"PredictedLabel": "+",
-			"Sentence": "she walked 0.6666666666666666 of a mile from the T-shirt shop back to the hotel .",
+			"Sentence": "she walked 0.6666666666666666 of a mile from the Tshirt shop back to the hotel .",
 			"label": "+"
 		}]
 	}, {
@@ -6464,9 +6464,9 @@
 		"Sentence": "Ben gave him 18 more fish .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVNCAN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Ben gave him 18 more fish .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "Now he has 49 fish .",
@@ -6614,9 +6614,9 @@
 		"Sentence": "Her brother gave her some more pieces .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NNVNDANPN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Her brother gave her some more pieces of gum .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "Now Robin has 44 pieces in all .",
@@ -7013,9 +7013,9 @@
 		"Sentence": "Robert gave her 109 more markers .",
 		"SimplifiedSentences": [{
 			"SyntacticPattern": "NVNCAN",
-			"PredictedLabel": "+",
+			"PredictedLabel": "-",
 			"Sentence": "Robert gave her 109 more markers .",
-			"label": "+"
+			"label": "-"
 		}]
 	}, {
 		"Sentence": "How many markers does Megan have altogether ?",
