@@ -13,8 +13,8 @@ from PublicKeys import PublicKeys
 class MainClass:
     
     if __name__ == '__main__':
-#         question_sentences_labeler = QuestionSentencesLabeler()
-        # question_sentences_labeler.extract_faulters()
+        # question_sentences_labeler = QuestionSentencesLabeler()
+        # question_sentences_labeler.relabel_questions([163, 168, 179, 183, 184, 185, 186, 188, 191, 192, 195, 196, 197, 199, 200, 201, 203, 204, 205, 206, 207, 210, 211, 212, 213, 214, 215, 217, 218, 219, 220, 221, 222, 223, 224, 225, 230, 231, 232, 233, 235, 236, 237, 238, 239, 244, 245, 246, 247, 249, 250, 251, 252, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 271, 272, 273, 274, 194])
 #         PublicKeys.text2int("two")
         answer_tests = AnswerTests()
         answer_tests.test_answers()

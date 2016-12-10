@@ -7,8 +7,8 @@ from nltk.tag import pos_tag
 
 class Question:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
-#     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    # SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
     def __init__(self, question_json):
         self.m_question_json = question_json    
         self.m_question = self.m_question_json["sQuestion"]    

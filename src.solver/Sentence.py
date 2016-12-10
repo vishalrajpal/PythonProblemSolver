@@ -19,11 +19,12 @@ from sympy.polys.groebnertools import Num
 from decimal import Decimal
 from CompoundModifier import CompoundModifier
 from ButConjunctionSentenceSolver import ButConjunctionSentenceSolver
+from UnknownSentenceSolver import UnknownSentenceSolver
 
 class Sentence:
 
-    SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
-#     SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
+    # SCORENLP = StanfordCoreNLP("/Users/rajpav/anaconda2/lib/python2.7/site-packages/stanford-corenlp-full-2016-10-31")
+    SCORENLP = StanfordCoreNLP("/Users/acharya.n/anaconda2/lib/python2.7/stanford-corenlp-full-2016-10-31")
 
     TEXT_LEMMA_PATTERN = re.compile('(\[{1})([a-zA-Z0-9.= $_<>\"\/?]+)(\]{1})')
     PARTS_OF_SPEECH_PATTERN = re.compile('(\({1})([a-zA-Z0-9.= $_<>\-\"\/?]+)(\){1})')
@@ -667,6 +668,8 @@ class Sentence:
             return ComparisonSentenceSolver.solve_for_c_label(self)
         elif self.m_question_label == 'b':
             return ButConjunctionSentenceSolver.solve_for_but_label(self)
+        elif self.m_question_label == 'u':
+            return UnknownSentenceSolver.solve_for_unknown_label(self)
         else:
             return None
         # if len(self.m_possible_evaluating_subjects) == 1:

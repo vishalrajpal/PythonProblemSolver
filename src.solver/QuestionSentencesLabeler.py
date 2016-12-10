@@ -4,28 +4,29 @@ import csv
 class QuestionSentencesLabeler:
     
     def __init__(self):
-        self.m_question_label_map = {}
-        self.m_question_count_map = {}
-        self.initializeLabelQuestionMap()
-        for k,v in self.m_question_label_map.items():
-            print k + ' --Count:' + str(self.m_question_count_map[k])
-        self.labelQuestionSentences()
-    
-    def initializeLabelQuestionMap(self):
-        with open('QuestionTrainingData.csv', 'rb') as csvfile:
-            spamreader = csv.reader(csvfile)
-            for row in spamreader:
-                if row[1] not in self.m_question_label_map:
-                    self.m_question_label_map[row[1]] = row[0]
-                    self.m_question_count_map[row[1]] = 1
-                elif self.m_question_label_map[row[1]] != row[0]:
-                    print 'error'
-                    print row[1]
-                    print 'current' + self.m_question_label_map[row[1]]
-                    print 'new' + row[0]
-                else:
-                    self.m_question_count_map[row[1]] = self.m_question_count_map[row[1]] + 1
-                    
+        print "in question labeler"
+    #     self.m_question_label_map = {}
+    #     self.m_question_count_map = {}
+    #     self.initializeLabelQuestionMap()
+    #     for k,v in self.m_question_label_map.items():
+    #         print k + ' --Count:' + str(self.m_question_count_map[k])
+    #     self.labelQuestionSentences()
+    #
+    # def initializeLabelQuestionMap(self):
+    #     with open('QuestionTrainingData.csv', 'rb') as csvfile:
+    #         spamreader = csv.reader(csvfile)
+    #         for row in spamreader:
+    #             if row[1] not in self.m_question_label_map:
+    #                 self.m_question_label_map[row[1]] = row[0]
+    #                 self.m_question_count_map[row[1]] = 1
+    #             elif self.m_question_label_map[row[1]] != row[0]:
+    #                 print 'error'
+    #                 print row[1]
+    #                 print 'current' + self.m_question_label_map[row[1]]
+    #                 print 'new' + row[0]
+    #             else:
+    #                 self.m_question_count_map[row[1]] = self.m_question_count_map[row[1]] + 1
+    #
             
         
     def labelQuestionSentences(self):
@@ -79,3 +80,29 @@ class QuestionSentencesLabeler:
             print k,":",v
         
         print "Total:",total_count
+
+    def relabel_questions(self, list_of_indices):
+        incorrect_count = 0
+        print list_of_indices
+        with open("Hosseini/HosseiniTestData_DS2_Predicted_Labeled_Plus.json") as data_file:
+            data = json.load(data_file)
+
+        for question in data:
+            parentIndex = question["ParentIndex"]
+            sentences = question["Sentences"]
+            print parentIndex
+            if parentIndex in list_of_indices:
+                incorrect_count = incorrect_count + 1
+                for sentence in sentences:
+                    simplified_sentences = sentence["SimplifiedSentences"]
+                    for simplified_sentence in simplified_sentences:
+                        current_sentence_label = simplified_sentence["label"]
+                        if current_sentence_label == '?':
+                            simplified_sentence["QuestionLabel"] = "+"
+
+
+        print incorrect_count
+
+        with open("Hosseini/HosseiniTestData_DS2_Predicted_Labeled_C.json", 'w') as data_file:
+            data = json.dump(data, data_file)
+

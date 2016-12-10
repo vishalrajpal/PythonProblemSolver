@@ -9,7 +9,7 @@ class AnswerTests():
 #     TESTED_QUESTIONS_FILE_PATH = "TrainingDataQuestionLabeled_C.json"
 #     TESTED_QUESTIONS_FILE_PATH = "TestDataQuestionLabeled.json"
 #     TESTED_QUESTIONS_FILE_PATH = "TrainingDataLabeled_But.json"
-    TESTED_QUESTIONS_FILE_PATH = "Hosseini/HosseiniTestData_DS3_Predicted_Labeled.json"
+    TESTED_QUESTIONS_FILE_PATH = "Hosseini/HosseiniTestData_DS2_Predicted_Labeled_C.json"
     def __init__(self):
         print 'In init'
     
