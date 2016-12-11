@@ -1,0 +1,3955 @@
+[{
+	"sQuestion": "Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ? ",
+	"lSolutions": ["43"],
+	"ParentIndex": 1,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Joan found 70 seashells on the beach ."
+		}],
+		"Sentence": "Joan found 70 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNDPNN",
+			"label": "-",
+			"Sentence": "she gave Sam some of her seashells ."
+		}],
+		"Sentence": "she gave Sam some of her seashells ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "=",
+			"Sentence": "She has 27 seashell ."
+		}],
+		"Sentence": "She has 27 seashell ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many seashells did she give to Sam ?"
+		}],
+		"Sentence": "How many seashells did she give to Sam ?"
+	}],
+	"lEquations": ["X = 70 - 27"],
+	"iIndex": 1
+}, {
+	"sQuestion": "There were 28 bales of hay in the barn . Tim stacked bales in the barn today . There are now 54 bales of hay in the barn . How many bales did he store in the barn ? ",
+	"lSolutions": ["26"],
+	"ParentIndex": 2,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPNPDN",
+			"label": "+",
+			"Sentence": "There were 28 bales of hay in the barn ."
+		}],
+		"Sentence": "There were 28 bales of hay in the barn ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNPDNN",
+			"label": "+",
+			"Sentence": "Tim stacked bales in the barn today ."
+		}],
+		"Sentence": "Tim stacked bales in the barn today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPNPDN",
+			"label": "=",
+			"Sentence": "There are now 54 bales of hay in the barn ."
+		}],
+		"Sentence": "There are now 54 bales of hay in the barn ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPDN",
+			"label": "?",
+			"Sentence": "How many bales did he store in the barn ?"
+		}],
+		"Sentence": "How many bales did he store in the barn ?"
+	}],
+	"lEquations": ["X = 54 - 28"],
+	"iIndex": 2
+}, {
+	"sQuestion": "Mary is baking a cake . The recipe wants 8 cups of flour . She already put in 2 cups . How many cups does she need to add ? ",
+	"lSolutions": ["6"],
+	"ParentIndex": 3,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVVDN",
+			"label": "i",
+			"Sentence": "Mary is baking a cake ."
+		}],
+		"Sentence": "Mary is baking a cake ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPN",
+			"label": "+",
+			"Sentence": "The recipe wants 8 cups of flour ."
+		}],
+		"Sentence": "The recipe wants 8 cups of flour ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCN",
+			"label": "-",
+			"Sentence": "She already put in 2 cups ."
+		}],
+		"Sentence": "She already put in 2 cups ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPV",
+			"label": "?",
+			"Sentence": "How many cups does she need to add ?"
+		}],
+		"Sentence": "How many cups does she need to add ?"
+	}],
+	"lEquations": ["X = 8 - 2"],
+	"iIndex": 3
+}, {
+	"sQuestion": "Sara 's high school played 12 basketball games this year . The team won most of their games . They were defeated during 4 games . How many games did they win ? ",
+	"lSolutions": ["8"],
+	"ParentIndex": 4,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NANVCNDN",
+			"label": "+",
+			"Sentence": "Sara 's high school played 12 basketball games this year ."
+		}],
+		"Sentence": "Sara 's high school played 12 basketball games this year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVAPNN",
+			"label": "i",
+			"Sentence": "The team won most of their games ."
+		}],
+		"Sentence": "The team won most of their games ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVVPCN",
+			"label": "-",
+			"Sentence": "They were defeated during 4 games ."
+		}],
+		"Sentence": "They were defeated during 4 games ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many games did they win ?"
+		}],
+		"Sentence": "How many games did they win ?"
+	}],
+	"lEquations": ["X = 12 - 4"],
+	"iIndex": 4
+}, {
+	"sQuestion": "There are 22 walnut trees currently in the park . Park workers will plant walnut trees today . When the workers are finished there will be 55 walnut trees in the park . How many walnut trees did the workers plant today ? ",
+	"lSolutions": ["33"],
+	"ParentIndex": 5,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 22 walnut trees currently in the park ."
+		}],
+		"Sentence": "There are 22 walnut trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNN",
+			"label": "+",
+			"Sentence": "Park workers will plant walnut trees today ."
+		}],
+		"Sentence": "Park workers will plant walnut trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WDNVVVCNPDN",
+			"label": "=",
+			"Sentence": "When the workers are finished there will be 55 walnut trees in the park ."
+		}],
+		"Sentence": "When the workers are finished there will be 55 walnut trees in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVDNN",
+			"label": "?",
+			"Sentence": "How many walnut trees did the workers plant today ?"
+		}],
+		"Sentence": "How many walnut trees did the workers plant today ?"
+	}],
+	"lEquations": ["X = 55 - 22"],
+	"iIndex": 5
+}, {
+	"sQuestion": "Mike had 34 peaches at his roadside fruit dish . He went to the orchard and picked peaches to stock up . There are now 86 peaches . how many did he pick ? ",
+	"lSolutions": ["52"],
+	"ParentIndex": 6,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Mike had 34 peaches at his roadside fruit dish ."
+		}],
+		"Sentence": "Mike had 34 peaches at his roadside fruit dish ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPDN",
+			"label": "i",
+			"Sentence": "He went to the orchard ."
+		}, {
+			"SyntacticPattern": "NVNPV",
+			"label": "+",
+			"Sentence": "He picked peaches to stock up ."
+		}],
+		"Sentence": "He went to the orchard and picked peaches to stock up ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCN",
+			"label": "=",
+			"Sentence": "There are now 86 peaches ."
+		}],
+		"Sentence": "There are now 86 peaches ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAVNV",
+			"label": "?",
+			"Sentence": "how many did he pick ?"
+		}],
+		"Sentence": "how many did he pick ?"
+	}],
+	"lEquations": ["X = 86 - 34"],
+	"iIndex": 6
+}, {
+	"sQuestion": "There were 6 roses in the vase . Mary cut some roses from her flower garden . There are now 16 roses in the vase . How many roses did she cut ? ",
+	"lSolutions": ["10"],
+	"ParentIndex": 7,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There were 6 roses in the vase ."
+		}],
+		"Sentence": "There were 6 roses in the vase ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPNN",
+			"label": "-",
+			"Sentence": "Mary cut some roses from her flower garden ."
+		}],
+		"Sentence": "Mary cut some roses from her flower garden ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "=",
+			"Sentence": "There are now 16 roses in the vase ."
+		}],
+		"Sentence": "There are now 16 roses in the vase ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many roses did she cut ?"
+		}],
+		"Sentence": "How many roses did she cut ?"
+	}],
+	"lEquations": ["X = 16 - 6"],
+	"iIndex": 7
+}, {
+	"sQuestion": "Joan went to 4 football games this year . She went to 9 games last year . How many football games did Joan go to in all ? ",
+	"lSolutions": ["13"],
+	"ParentIndex": 8,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNDN",
+			"label": "+",
+			"Sentence": "Joan went to 4 football games this year ."
+		}],
+		"Sentence": "Joan went to 4 football games this year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNAN",
+			"label": "+",
+			"Sentence": "She went to 9 games last year ."
+		}],
+		"Sentence": "She went to 9 games last year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPPD",
+			"label": "?",
+			"Sentence": "How many football games did Joan go to in all ?"
+		}],
+		"Sentence": "How many football games did Joan go to in all ?"
+	}],
+	"lEquations": ["X = 4 + 9"],
+	"iIndex": 8
+}, {
+	"ParentIndex": 9,
+	"iIndex": 9,
+	"lEquations": ["X = 9 + 8"],
+	"lSolutions": ["17"],
+	"sQuestion": "Tom has 9 yellow balloons and Sara has 8 yellow balloons . How many yellow balloons do they have in total ? ",
+	"Sentences": [{
+		"Sentence": "Tom has 9 yellow balloons and Sara has 8 yellow balloons .",
+		"SimplifiedSentences": [{
+			"Sentence": "Tom has 9 yellow balloons .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}, {
+			"Sentence": "Sara has 8 yellow balloons .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}]
+	}, {
+		"Sentence": "How many yellow balloons do they have in total ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many yellow balloons do they have in total ?",
+			"label": "?",
+			"SyntacticPattern": "WAANVNVPN"
+		}]
+	}]
+}, {
+	"sQuestion": "There are 4 walnut trees currently in the park . Park workers will plant 6 walnut trees today . How many walnut trees will the park have when the workers are finished ? ",
+	"lSolutions": ["10"],
+	"ParentIndex": 10,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 4 walnut trees currently in the park ."
+		}],
+		"Sentence": "There are 4 walnut trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 6 walnut trees today ."
+		}],
+		"Sentence": "Park workers will plant 6 walnut trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 4 + 6"],
+	"iIndex": 10
+}, {
+	"sQuestion": "Sam had 9 dimes in his bank . His dad gave him 7 dimes . How many dimes does Sam have now ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 11,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sam had 9 dimes in his bank ."
+		}],
+		"Sentence": "Sam had 9 dimes in his bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "His dad gave him 7 dimes ."
+		}],
+		"Sentence": "His dad gave him 7 dimes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many dimes does Sam have now ?"
+		}],
+		"Sentence": "How many dimes does Sam have now ?"
+	}],
+	"lEquations": ["X = 9 + 7"],
+	"iIndex": 11
+}, {
+	"sQuestion": "Alyssa 's dog had puppies . She gave 7 to her friends . She now has 5 puppies . How many puppies did she have to start with ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 12,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVN",
+			"label": "+",
+			"Sentence": "Alyssa 's dog had puppies ."
+		}],
+		"Sentence": "Alyssa 's dog had puppies ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "-",
+			"Sentence": "She gave 7 puppies to her friends ."
+		}],
+		"Sentence": "She gave 7 puppies to her friends ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "=",
+			"Sentence": "She now has 5 puppies ."
+		}],
+		"Sentence": "She now has 5 puppies ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPVP",
+			"label": "?",
+			"Sentence": "How many puppies did she have to start with ?"
+		}],
+		"Sentence": "How many puppies did she have to start with ?"
+	}],
+	"lEquations": ["X = 7 + 5"],
+	"iIndex": 12
+}, {
+	"sQuestion": "A restaurant served 9 pizzas during lunch and 6 during dinner today . How many pizzas were served today ? ",
+	"lSolutions": ["15"],
+	"ParentIndex": 13,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 9 pizzas during lunch today ."
+		}, {
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 6 pizzas during dinner today ."
+		}],
+		"Sentence": "A restaurant served 9 pizzas during lunch and 6 pizzas during dinner today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVN",
+			"label": "?",
+			"Sentence": "How many pizzas were served today ?"
+		}],
+		"Sentence": "How many pizzas were served today ?"
+	}],
+	"lEquations": ["X = 9 + 6 "],
+	"iIndex": 13
+}, {
+	"sQuestion": "There are 2 pencils in the drawer . Tim placed 3 pencils in the drawer . How many pencils are now there in total ? ",
+	"lSolutions": ["5"],
+	"ParentIndex": 14,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 2 pencils in the drawer ."
+		}],
+		"Sentence": "There are 2 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Tim placed 3 pencils in the drawer ."
+		}],
+		"Sentence": "Tim placed 3 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many pencils are now there in total ?"
+		}],
+		"Sentence": "How many pencils are now there in total ?"
+	}],
+	"lEquations": ["X = 2 + 3"],
+	"iIndex": 14
+}, {
+	"sQuestion": "Joan found 6 seashells and Jessica found 8 seashells on the beach . How many seashells did they find together ? ",
+	"lSolutions": ["14"],
+	"ParentIndex": 15,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Joan found 6 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Jessica found 8 seashells on the beach ."
+		}],
+		"Sentence": "Joan found 6 seashells and Jessica found 8 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 6 + 8"],
+	"iIndex": 15
+}, {
+	"sQuestion": "Sandy grew 6 carrots . Sam grew 3 carrots . How many carrots did they grow in total ? ",
+	"lSolutions": ["9"],
+	"ParentIndex": 16,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sandy grew 6 carrots ."
+		}],
+		"Sentence": "Sandy grew 6 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sam grew 3 carrots ."
+		}],
+		"Sentence": "Sam grew 3 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many carrots did they grow in total ?"
+		}],
+		"Sentence": "How many carrots did they grow in total ?"
+	}],
+	"lEquations": ["X = 6 + 3"],
+	"iIndex": 16
+}, {
+	"sQuestion": "Benny picked 2 apples and Dan picked 9 apples from the apple tree . How many apples were picked in total ? ",
+	"lSolutions": ["11"],
+	"ParentIndex": 17,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Benny picked 2 apples from the tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Dan picked 9 apples from the apple tree ."
+		}],
+		"Sentence": "Benny picked 2 apples and Dan picked 9 apples from the apple tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many apples were picked in total ?"
+		}],
+		"Sentence": "How many apples were picked in total ?"
+	}],
+	"lEquations": ["X = 2 + 9"],
+	"iIndex": 17
+}, {
+	"sQuestion": "Sally found 9 seashells , Tom found 7 seashells , and Jessica found 5 seashells on the beach . How many seashells did they find together ? ",
+	"lSolutions": ["21"],
+	"ParentIndex": 18,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sally found 9 seashells ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tom found 7 seashells ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Jessica found 5 seashells on the beach ."
+		}],
+		"Sentence": "Sally found 9 seashells , Tom found 7 seashells , and Jessica found 5 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 9 + 7 + 5"],
+	"iIndex": 18
+}, {
+	"sQuestion": "Tim 's cat had kittens . He gave 3 to Jessica and 6 to Sara . He now has 9 kittens . How many kittens did he have to start with ? ",
+	"lSolutions": ["18"],
+	"ParentIndex": 19,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVN",
+			"label": "+",
+			"Sentence": "Tim 's cat had kittens ."
+		}],
+		"Sentence": "Tim 's cat had kittens ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPN",
+			"label": "-",
+			"Sentence": "He gave 3 kittens to Jessica ."
+		}, {
+			"SyntacticPattern": "NVCNPN",
+			"label": "-",
+			"Sentence": "He gave 6 kittens to Sara ."
+		}],
+		"Sentence": "He gave 3 kittens to Jessica and 6 kittens to Sara ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "=",
+			"Sentence": "He now has 9 kittens ."
+		}],
+		"Sentence": "He now has 9 kittens ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPVP",
+			"label": "?",
+			"Sentence": "How many kittens did he have to start with ?"
+		}],
+		"Sentence": "How many kittens did he have to start with ?"
+	}],
+	"lEquations": ["X = 3 + 6 + 9"],
+	"iIndex": 19
+}, {
+	"sQuestion": "Joan has 9 blue balloons , Sally has 5 blue balloons , and Jessica has 2 blue balloons . How many blue balloons do they have in total ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 20,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Joan has 9 blue balloons ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Sally has 5 blue balloons ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Jessica has 2 blue balloons ."
+		}],
+		"Sentence": "Joan has 9 blue balloons , Sally has 5 blue balloons , and Jessica has 2 blue balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNVPN",
+			"label": "?",
+			"Sentence": "How many blue balloons do they have in total ?"
+		}],
+		"Sentence": "How many blue balloons do they have in total ?"
+	}],
+	"lEquations": ["X = 9 + 5 + 2"],
+	"iIndex": 20
+}, {
+	"sQuestion": "Melanie had 7 dimes in her bank . Her dad gave her 8 dimes and her mother gave her 4 dimes . How many dimes does Melanie have now ? ",
+	"lSolutions": ["19"],
+	"ParentIndex": 21,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Melanie had 7 dimes in her bank ."
+		}],
+		"Sentence": "Melanie had 7 dimes in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "Her dad gave her 8 dimes ."
+		}, {
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "her mother gave her 4 dimes ."
+		}],
+		"Sentence": "Her dad gave her 8 dimes and her mother gave her 4 dimes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many dimes does Melanie have now ?"
+		}],
+		"Sentence": "How many dimes does Melanie have now ?"
+	}],
+	"lEquations": ["X = 7 + 8 + 4"],
+	"iIndex": 21
+}, {
+	"sQuestion": "A restaurant served 5 cakes during lunch and 6 during dinner today . The restaurant served 3 cakes yesterday . How many cakes were served in total ? ",
+	"lSolutions": ["14"],
+	"ParentIndex": 22,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 5 cakes during lunch today ."
+		}, {
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 6 cakes during dinner today ."
+		}],
+		"Sentence": "A restaurant served 5 cakes during lunch and 6 cakes during dinner today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNN",
+			"label": "+",
+			"Sentence": "The restaurant served 3 cakes yesterday ."
+		}],
+		"Sentence": "The restaurant served 3 cakes yesterday ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many cakes were served in total ?"
+		}],
+		"Sentence": "How many cakes were served in total ?"
+	}],
+	"lEquations": ["X = 5 + 6 + 3"],
+	"iIndex": 22
+}, {
+	"sQuestion": "Melanie picked 4 plums , Dan picked 9 plums , and Sally picked 3 plums from the plum tree . How many plums were picked in total ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 23,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Melanie picked 4 plums ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Dan picked 9 plums ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sally picked 3 plums from the plum tree ."
+		}],
+		"Sentence": "Melanie picked 4 plums , Dan picked 9 plums , and Sally picked 3 plums from the plum tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many plums were picked in total ?"
+		}],
+		"Sentence": "How many plums were picked in total ?"
+	}],
+	"lEquations": ["X = 4 + 9 + 3"],
+	"iIndex": 23
+}, {
+	"sQuestion": "There are 7 dogwood trees currently in the park . Park workers will plant 3 dogwood trees today and 2 dogwood trees tomorrow . How many dogwood trees will the park have when the workers are finished ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 24,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 7 dogwood trees currently in the park ."
+		}],
+		"Sentence": "There are 7 dogwood trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 3 dogwood trees today ."
+		}, {
+			"SyntacticPattern": "CNN",
+			"label": "+",
+			"Sentence": "workers plant 2 dogwood trees tomorrow ."
+		}],
+		"Sentence": "Park workers will plant 3 dogwood trees today and 2 dogwood trees tomorrow ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 7 + 3 + 2"],
+	"iIndex": 24
+}, {
+	"sQuestion": "Sara grew 4 onions , Sally grew 5 onions , and Fred grew 9 onions . How many onions did they grow in all ? ",
+	"lSolutions": ["18"],
+	"ParentIndex": 25,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sara grew 4 onions ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sally grew 5 onions ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred grew 9 onions ."
+		}],
+		"Sentence": "Sara grew 4 onions , Sally grew 5 onions , and Fred grew 9 onions ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"label": "?",
+			"Sentence": "How many onions did they grow in all ?"
+		}],
+		"Sentence": "How many onions did they grow in all ?"
+	}],
+	"lEquations": ["X = 4 + 5 + 9"],
+	"iIndex": 25
+}, {
+	"sQuestion": "Jason has 43 blue and 16 red marbles . Tom has 24 blue marbles . How many blue marbles do they have in all ? ",
+	"lSolutions": ["67"],
+	"ParentIndex": 26,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason has 43 blue ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Jason has 16 red marbles ."
+		}],
+		"Sentence": "Jason has 43 blue and 16 red marbles ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Tom has 24 blue marbles ."
+		}],
+		"Sentence": "Tom has 24 blue marbles ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNVPD",
+			"label": "?",
+			"Sentence": "How many blue marbles do they have in all ?"
+		}],
+		"Sentence": "How many blue marbles do they have in all ?"
+	}],
+	"lEquations": ["X = 43 + 24"],
+	"iIndex": 26
+}, {
+	"sQuestion": "Sam found 18 seashells and Mary found 47 seashells on the beach . How many seashells did they find together ? ",
+	"lSolutions": ["65"],
+	"ParentIndex": 27,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sam found 18 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Mary found 47 seashells on the beach ."
+		}],
+		"Sentence": "Sam found 18 seashells and Mary found 47 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 18 + 47"],
+	"iIndex": 27
+}, {
+	"sQuestion": "Jason grew 23 watermelons and 18 turnips . Nancy grew 28 watermelons . How many watermelons did they grow in total ? ",
+	"lSolutions": ["51"],
+	"ParentIndex": 28,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason grew 23 watermelons ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason grew 18 turnips ."
+		}],
+		"Sentence": "Jason grew 23 watermelons and 18 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Nancy grew 28 watermelons ."
+		}],
+		"Sentence": "Nancy grew 28 watermelons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many watermelons did they grow in total ?"
+		}],
+		"Sentence": "How many watermelons did they grow in total ?"
+	}],
+	"lEquations": ["X = 23 + 28"],
+	"iIndex": 28
+}, {
+	"sQuestion": "There are 11 rulers and 34 crayons in the drawer . Tim placed 14 rulers in the drawer . How many rulers are now there in all ? ",
+	"lSolutions": ["25"],
+	"ParentIndex": 29,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 11 rulers in the drawer ."
+		}, {
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are rulers 34 crayons in the drawer ."
+		}],
+		"Sentence": "There are 11 rulers and 34 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Tim placed 14 rulers in the drawer ."
+		}],
+		"Sentence": "Tim placed 14 rulers in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPD",
+			"label": "?",
+			"Sentence": "How many rulers are now there in all ?"
+		}],
+		"Sentence": "How many rulers are now there in all ?"
+	}],
+	"lEquations": ["X = 11 + 14"],
+	"iIndex": 29
+}, {
+	"sQuestion": "Sara picked 45 pears and Sally picked 11 pears from the pear tree . How many pears were picked in total ? ",
+	"lSolutions": ["56"],
+	"ParentIndex": 30,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sara picked 45 pears from the tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sally picked 11 pears from the pear tree ."
+		}],
+		"Sentence": "Sara picked 45 pears and Sally picked 11 pears from the pear tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many pears were picked in total ?"
+		}],
+		"Sentence": "How many pears were picked in total ?"
+	}],
+	"lEquations": ["X = 45 + 11"],
+	"iIndex": 30
+}, {
+	"sQuestion": "Keith has 20 books . Jason has 21 books . How many books do they have together ? ",
+	"lSolutions": ["41"],
+	"ParentIndex": 31,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Keith has 20 books ."
+		}],
+		"Sentence": "Keith has 20 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason has 21 books ."
+		}],
+		"Sentence": "Jason has 21 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 20 + 21"],
+	"iIndex": 31
+}, {
+	"sQuestion": "Jason had 49 quarters in his bank . His dad gave him 25 quarters . How many quarters does he have now ? ",
+	"lSolutions": ["74"],
+	"ParentIndex": 32,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Jason had 49 quarters in his bank ."
+		}],
+		"Sentence": "Jason had 49 quarters in his bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "His dad gave him 25 quarters ."
+		}],
+		"Sentence": "His dad gave him 25 quarters ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many quarters does he have now ?"
+		}],
+		"Sentence": "How many quarters does he have now ?"
+	}],
+	"lEquations": ["X = 49 + 25"],
+	"iIndex": 32
+}, {
+	"sQuestion": "Tom found 15 seashells and Fred found 43 seashells on the beach . When they cleaned them , they discovered that 29 were cracked . How many seashells did they find together ? ",
+	"lSolutions": ["58"],
+	"ParentIndex": 33,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Tom found 15 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Fred found 43 seashells on the beach ."
+		}],
+		"Sentence": "Tom found 15 seashells and Fred found 43 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WNVN",
+			"label": "i",
+			"Sentence": "When they cleaned them ."
+		}, {
+			"SyntacticPattern": "NVPCNVV",
+			"label": "-",
+			"Sentence": "they discovered that 29 seashells were cracked ."
+		}],
+		"Sentence": "When they cleaned them , they discovered that 29 them were cracked ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 15 + 43"],
+	"iIndex": 33
+}, {
+	"sQuestion": "Sara has 31 red and 15 green balloons . Sandy has 24 red balloons . How many red balloons do they have in total ? ",
+	"lSolutions": ["55"],
+	"ParentIndex": 34,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sara has 31 red balloons ."
+		}, {
+			"SyntacticPattern": "NVCNAN",
+			"label": "+",
+			"Sentence": "Sara has 15 green balloons ."
+		}],
+		"Sentence": "Sara has 31 red and 15 green balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Sandy has 24 red balloons ."
+		}],
+		"Sentence": "Sandy has 24 red balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNVPN",
+			"label": "?",
+			"Sentence": "How many red balloons do they have in total ?"
+		}],
+		"Sentence": "How many red balloons do they have in total ?"
+	}],
+	"lEquations": ["X = 31 + 24"],
+	"iIndex": 34
+}, {
+	"sQuestion": "Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ",
+	"lSolutions": ["47"],
+	"ParentIndex": 35,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Joan picked 37 oranges ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sara picked 10 oranges ."
+		}],
+		"Sentence": "Joan picked 37 oranges and Sara picked 10 oranges ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Alyssa picked 30 pears ."
+		}],
+		"Sentence": "Alyssa picked 30 pears ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many oranges were picked in total ?"
+		}],
+		"Sentence": "How many oranges were picked in total ?"
+	}],
+	"lEquations": ["X = 37 + 10"],
+	"iIndex": 35
+}, {
+	"sQuestion": "Fred went to 36 basketball games this year , but missed 35 . He went to 11 games last year . How many basketball games did Fred go to in total ? ",
+	"lSolutions": ["47"],
+	"ParentIndex": 36,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNDN",
+			"label": "+",
+			"Sentence": "Fred went to 36 basketball games this year ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "-",
+			"Sentence": "Fred missed 35 games ."
+		}],
+		"Sentence": "Fred went to 36 basketball games this year , but missed 35 games ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNAN",
+			"label": "+",
+			"Sentence": "He went to 11 games last year ."
+		}],
+		"Sentence": "He went to 11 games last year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPPN",
+			"label": "?",
+			"Sentence": "How many basketball games did Fred go to in total ?"
+		}],
+		"Sentence": "How many basketball games did Fred go to in total ?"
+	}],
+	"lEquations": ["X = 36 + 11"],
+	"iIndex": 36
+}, {
+	"sQuestion": "There are 33 pencils and 44 crayons in the drawer . Joan placed 27 pencils in the drawer . How many pencils are now there in total ? ",
+	"lSolutions": ["60"],
+	"ParentIndex": 37,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 33 pencils in the drawer ."
+		}, {
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 44 crayons in the drawer ."
+		}],
+		"Sentence": "There are 33 pencils and 44 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Joan placed 27 pencils in the drawer ."
+		}],
+		"Sentence": "Joan placed 27 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many pencils are now there in total ?"
+		}],
+		"Sentence": "How many pencils are now there in total ?"
+	}],
+	"lEquations": ["X = 33 + 27 "],
+	"iIndex": 37
+}, {
+	"sQuestion": "Sam had 49 pennies and 24 nickels in his bank . His dad gave him 39 nickels and 31 quarters . How many nickels does he have now ? ",
+	"lSolutions": ["63"],
+	"ParentIndex": 38,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sam had 49 pennies in his bank ."
+		}, {
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sam had 24 nickels in his bank ."
+		}],
+		"Sentence": "Sam had 49 pennies and 24 nickels in his bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "His dad gave him 39 nickels ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "-",
+			"Sentence": "His dad gave him 31 quarters ."
+		}],
+		"Sentence": "His dad gave him 39 nickels and 31 quarters ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many nickels does he have now ?"
+		}],
+		"Sentence": "How many nickels does he have now ?"
+	}],
+	"lEquations": ["X = 24 + 39"],
+	"iIndex": 38
+}, {
+	"sQuestion": "Dan grew 42 turnips and 38 cantelopes . Jessica grew 47 turnips . How many turnips did they grow in total ? ",
+	"lSolutions": ["89"],
+	"ParentIndex": 39,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Dan grew 42 turnips ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Dan grew 38 cantelopes ."
+		}],
+		"Sentence": "Dan grew 42 turnips and 38 cantelopes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jessica grew 47 turnips ."
+		}],
+		"Sentence": "Jessica grew 47 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many turnips did they grow in total ?"
+		}],
+		"Sentence": "How many turnips did they grow in total ?"
+	}],
+	"lEquations": ["X = 42 + 47"],
+	"iIndex": 39
+}, {
+	"sQuestion": "There are 33 walnut trees currently in the park . Park workers will plant 44 walnut trees today . How many walnut trees will the park have when the workers are finished ? ",
+	"lSolutions": ["77"],
+	"ParentIndex": 40,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 33 walnut trees currently in the park ."
+		}],
+		"Sentence": "There are 33 walnut trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 44 walnut trees today ."
+		}],
+		"Sentence": "Park workers will plant 44 walnut trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 33 + 44"],
+	"iIndex": 40
+}, {
+	"sQuestion": "Sara had 21 quarters in her bank . Her dad gave her 49 quarters . How many quarters does she have now ? ",
+	"lSolutions": ["70"],
+	"ParentIndex": 41,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sara had 21 quarters in her bank ."
+		}],
+		"Sentence": "Sara had 21 quarters in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "Her dad gave her 49 quarters ."
+		}],
+		"Sentence": "Her dad gave her 49 quarters ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many quarters does she have now ?"
+		}],
+		"Sentence": "How many quarters does she have now ?"
+	}],
+	"lEquations": ["X = 21 + 49"],
+	"iIndex": 41
+}, {
+	"sQuestion": "There are 41 pencils in the drawer . Mike placed 30 pencils in the drawer . How many pencils are now there in total ? ",
+	"lSolutions": ["71"],
+	"ParentIndex": 42,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 41 pencils in the drawer ."
+		}],
+		"Sentence": "There are 41 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Mike placed 30 pencils in the drawer ."
+		}],
+		"Sentence": "Mike placed 30 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many pencils are now there in total ?"
+		}],
+		"Sentence": "How many pencils are now there in total ?"
+	}],
+	"lEquations": ["X = 41 + 30"],
+	"iIndex": 42
+}, {
+	"sQuestion": "Joan has 10 books . Tom has 38 books . How many books do they have together ? ",
+	"lSolutions": ["48"],
+	"ParentIndex": 43,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Joan has 10 books ."
+		}],
+		"Sentence": "Joan has 10 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tom has 38 books ."
+		}],
+		"Sentence": "Tom has 38 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 10 + 38"],
+	"iIndex": 43
+}, {
+	"ParentIndex": 44,
+	"iIndex": 44,
+	"lEquations": ["X = 40 + 41"],
+	"lSolutions": ["81"],
+	"sQuestion": "Joan has 40 blue balloons and Melanie has 41 blue balloons . How many blue balloons do they have in total ? ",
+	"Sentences": [{
+		"Sentence": "Joan has 40 blue balloons and Melanie has 41 blue balloons .",
+		"SimplifiedSentences": [{
+			"Sentence": "Joan has 40 blue balloons .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}, {
+			"Sentence": "Melanie has 41 blue balloons .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}]
+	}, {
+		"Sentence": "How many blue balloons do they have in total ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many blue balloons do they have in total ?",
+			"label": "?",
+			"SyntacticPattern": "WAANVNVPN"
+		}]
+	}]
+}, {
+	"sQuestion": "Fred grew 38 cantelopes . Tim grew 44 cantelopes . How many cantelopes did they grow in total ? ",
+	"lSolutions": ["82"],
+	"ParentIndex": 45,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred grew 38 cantelopes ."
+		}],
+		"Sentence": "Fred grew 38 cantelopes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tim grew 44 cantelopes ."
+		}],
+		"Sentence": "Tim grew 44 cantelopes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many cantelopes did they grow in total ?"
+		}],
+		"Sentence": "How many cantelopes did they grow in total ?"
+	}],
+	"lEquations": ["X = 38 + 44"],
+	"iIndex": 45
+}, {
+	"sQuestion": "Sam went to 14 football games this year . He went to 29 games last year . How many football games did Sam go to in all ? ",
+	"lSolutions": ["43"],
+	"ParentIndex": 46,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNDN",
+			"label": "+",
+			"Sentence": "Sam went to 14 football games this year ."
+		}],
+		"Sentence": "Sam went to 14 football games this year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNAN",
+			"label": "+",
+			"Sentence": "He went to 29 games last year ."
+		}],
+		"Sentence": "He went to 29 games last year ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPPD",
+			"label": "?",
+			"Sentence": "How many football games did Sam go to in all ?"
+		}],
+		"Sentence": "How many football games did Sam go to in all ?"
+	}],
+	"lEquations": ["X = 14 + 29"],
+	"iIndex": 46
+}, {
+	"sQuestion": "Mary found 18 seashells and Jessica found 41 seashells on the beach . How many seashells did they find together ? ",
+	"lSolutions": ["59"],
+	"ParentIndex": 47,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Mary found 18 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Jessica found 41 seashells on the beach ."
+		}],
+		"Sentence": "Mary found 18 seashells and Jessica found 41 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells did they find together ?"
+		}],
+		"Sentence": "How many seashells did they find together ?"
+	}],
+	"lEquations": ["X = 18 + 41"],
+	"iIndex": 47
+}, {
+	"sQuestion": "There are 39 dogwood trees currently in the park . Park workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow . How many dogwood trees will the park have when the workers are finished ? ",
+	"lSolutions": ["100"],
+	"ParentIndex": 48,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 39 dogwood trees currently in the park ."
+		}],
+		"Sentence": "There are 39 dogwood trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 41 dogwood trees today ."
+		}, {
+			"SyntacticPattern": "NNCNNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 20 dogwood trees tomorrow ."
+		}],
+		"Sentence": "Park workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 39 + 41 + 20"],
+	"iIndex": 48
+}, {
+	"sQuestion": "Sandy has 10 books , Benny has 24 books , and Tim has 33 books . How many books do they have together ? ",
+	"lSolutions": ["67"],
+	"ParentIndex": 49,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sandy has 10 books ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Benny has 24 books ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tim has 33 books ."
+		}],
+		"Sentence": "Sandy has 10 books , Benny has 24 books , and Tim has 33 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 10 + 24 + 33"],
+	"iIndex": 49
+}, {
+	"sQuestion": "Jason picked 46 pears , Keith picked 47 pears , and Mike picked 12 pears from the pear tree . How many pears were picked in total ? ",
+	"lSolutions": ["105"],
+	"ParentIndex": 50,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason picked 46 pears from the pear tree ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Keith picked 47 pears from the pear tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Mike picked 12 pears from the pear tree ."
+		}],
+		"Sentence": "Jason picked 46 pears , Keith picked 47 pears , and Mike picked 12 pears from the pear tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many pears were picked in total ?"
+		}],
+		"Sentence": "How many pears were picked in total ?"
+	}],
+	"lEquations": ["X = 46 + 47 + 12"],
+	"iIndex": 50
+}, {
+	"sQuestion": "Keith grew 29 cantelopes , Fred grew 16 cantelopes , and Jason grew 20 cantelopes . How many cantelopes did they grow in total ? ",
+	"lSolutions": ["65"],
+	"ParentIndex": 51,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Keith grew 29 cantelopes ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred grew 16 cantelopes ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason grew 20 cantelopes ."
+		}],
+		"Sentence": "Keith grew 29 cantelopes , Fred grew 16 cantelopes , and Jason grew 20 cantelopes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many cantelopes did they grow in total ?"
+		}],
+		"Sentence": "How many cantelopes did they grow in total ?"
+	}],
+	"lEquations": ["X = 29 + 16 + 20"],
+	"iIndex": 51
+}, {
+	"sQuestion": "Melanie had 19 dimes in her bank . Her dad gave her 39 dimes and her mother gave her 25 dimes . How many dimes does Melanie have now ? ",
+	"lSolutions": ["83"],
+	"ParentIndex": 52,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Melanie had 19 dimes in her bank ."
+		}],
+		"Sentence": "Melanie had 19 dimes in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "Her dad gave her 39 dimes ."
+		}, {
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "her mother gave her 25 dimes ."
+		}],
+		"Sentence": "Her dad gave her 39 dimes and her mother gave her 25 dimes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many dimes does Melanie have now ?"
+		}],
+		"Sentence": "How many dimes does Melanie have now ?"
+	}],
+	"lEquations": ["X = 19 + 39 + 25"],
+	"iIndex": 52
+}, {
+	"sQuestion": "Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons . How many blue balloons do they have in all ? ",
+	"lSolutions": ["104"],
+	"ParentIndex": 53,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Alyssa has 37 blue balloons ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Sandy has 28 blue balloons ."
+		}, {
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Sally has 39 blue balloons ."
+		}],
+		"Sentence": "Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNVPD",
+			"label": "?",
+			"Sentence": "How many blue balloons do they have in all ?"
+		}],
+		"Sentence": "How many blue balloons do they have in all ?"
+	}],
+	"lEquations": ["X = 37 + 28 + 39"],
+	"iIndex": 53
+}, {
+	"sQuestion": "Sally had 27 Pokemon cards . Dan gave her 41 new Pokemon cards . Sally bought 20 Pokemon cards . How many Pokemon cards does Sally have now ? ",
+	"lSolutions": ["88"],
+	"ParentIndex": 54,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sally had 27 Pokemon cards ."
+		}],
+		"Sentence": "Sally had 27 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNCAN",
+			"label": "-",
+			"Sentence": "Dan gave her 41 new Pokemon cards ."
+		}],
+		"Sentence": "Dan gave her 41 new Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sally bought 20 Pokemon cards ."
+		}],
+		"Sentence": "Sally bought 20 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many Pokemon cards does Sally have now ?"
+		}],
+		"Sentence": "How many Pokemon cards does Sally have now ?"
+	}],
+	"lEquations": ["X = 27 + 41 + 20"],
+	"iIndex": 54
+}, {
+	"sQuestion": "Jason went to 11 football games this month . He went to 17 games last month , and plans to go to 16 games next month . How many games will he attend in all ? ",
+	"lSolutions": ["44"],
+	"ParentIndex": 55,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNDN",
+			"label": "+",
+			"Sentence": "Jason went to 11 football games this month ."
+		}],
+		"Sentence": "Jason went to 11 football games this month ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPCNAN",
+			"label": "+",
+			"Sentence": "He went to 17 games last month ."
+		}, {
+			"SyntacticPattern": "NVNPVPCNAN",
+			"label": "+",
+			"Sentence": "He plans to go to 16 games next month ."
+		}],
+		"Sentence": "He went to 17 games last month , and plans to go to 16 games next month ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANNVPD",
+			"label": "?",
+			"Sentence": "How many games will he attend in all ?"
+		}],
+		"Sentence": "How many games will he attend in all ?"
+	}],
+	"lEquations": ["X = 11 + 17 + 16"],
+	"iIndex": 55
+}, {
+	"sQuestion": "There are 43 pencils in the drawer and 19 pencils on the desk . Dan placed 16 pencils on the desk . How many pencils are now there in total ? ",
+	"lSolutions": ["78"],
+	"ParentIndex": 56,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 43 pencils in the drawer ."
+		}, {
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 19 pencils on the desk ."
+		}],
+		"Sentence": "There are 43 pencils in the drawer and 19 pencils on the desk ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Dan placed 16 pencils on the desk ."
+		}],
+		"Sentence": "Dan placed 16 pencils on the desk ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many pencils are now there in total ?"
+		}],
+		"Sentence": "How many pencils are now there in total ?"
+	}],
+	"lEquations": ["X = 43 + 19 + 16"],
+	"iIndex": 56
+}, {
+	"sQuestion": "Mike has 35 books in his library . He bought several books at a yard sale over the weekend . He now has 56 books in his library . How many books did he buy at the yard sale ? ",
+	"lSolutions": ["21"],
+	"ParentIndex": 57,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Mike has 35 books in his library ."
+		}],
+		"Sentence": "Mike has 35 books in his library ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVANPDNPDN",
+			"label": "+",
+			"Sentence": "He bought several books at a yard sale over the weekend ."
+		}],
+		"Sentence": "He bought several books at a yard sale over the weekend ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "=",
+			"Sentence": "He now has 56 books in his library ."
+		}],
+		"Sentence": "He now has 56 books in his library ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPDN",
+			"label": "?",
+			"Sentence": "How many books did he buy at the yard sale ?"
+		}],
+		"Sentence": "How many books did he buy at the yard sale ?"
+	}],
+	"lEquations": ["35 + X = 56"],
+	"iIndex": 57
+}, {
+	"sQuestion": "There are 53 maple trees currently in the park . Park workers will plant maple trees today . When the workers are finished there will be 64 maple trees in the park . How many maple trees did the workers plant today ? ",
+	"lSolutions": ["11"],
+	"ParentIndex": 58,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCANPDN",
+			"label": "+",
+			"Sentence": "There are 53 maple trees currently in the park ."
+		}],
+		"Sentence": "There are 53 maple trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNN",
+			"label": "+",
+			"Sentence": "Park workers will plant maple trees today ."
+		}],
+		"Sentence": "Park workers will plant maple trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WDNVVVCNPDN",
+			"label": "=",
+			"Sentence": "When the workers are finished there will be 64 maple trees in the park ."
+		}],
+		"Sentence": "When the workers are finished there will be 64 maple trees in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVDNN",
+			"label": "?",
+			"Sentence": "How many maple trees did the workers plant today ?"
+		}],
+		"Sentence": "How many maple trees did the workers plant today ?"
+	}],
+	"lEquations": ["53 + X = 64"],
+	"iIndex": 58
+}, {
+	"ParentIndex": 59,
+	"iIndex": 59,
+	"lEquations": ["56 - X = 22"],
+	"lSolutions": ["34"],
+	"sQuestion": "Dan found 56 seashells on the beach , he gave Jessica some of his seashells . He now has 22 seashell . How many seashells did he give to Jessica ? ",
+	"Sentences": [{
+		"Sentence": "Dan found 56 seashells on the beach , he gave Jessica some of his seashells .",
+		"SimplifiedSentences": [{
+			"Sentence": "Dan found 56 seashells on the beach .",
+			"label": "+",
+			"SyntacticPattern": "NVCNPDN"
+		}, {
+			"Sentence": "he gave Jessica some of his seashells .",
+			"label": "-",
+			"SyntacticPattern": "NVNDPNN"
+		}]
+	}, {
+		"Sentence": "He now has 22 seashell .",
+		"SimplifiedSentences": [{
+			"Sentence": "He now has 22 seashell .",
+			"label": "=",
+			"SyntacticPattern": "NVCN"
+		}]
+	}, {
+		"Sentence": "How many seashells did he give to Jessica ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many seashells did he give to Jessica ?",
+			"label": "?",
+			"SyntacticPattern": "WANVNVPN"
+		}]
+	}]
+}, {
+	"sQuestion": "Sally had 13 peaches at her roadside fruit dish . She went to the orchard and picked peaches to stock up . There are now 55 peaches . how many did she pick ? ",
+	"lSolutions": ["42"],
+	"ParentIndex": 60,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sally had 13 peaches at her roadside fruit dish ."
+		}],
+		"Sentence": "Sally had 13 peaches at her roadside fruit dish ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPDN",
+			"label": "i",
+			"Sentence": "She went to the orchard ."
+		}, {
+			"SyntacticPattern": "NVNPV",
+			"label": "+",
+			"Sentence": "She picked peaches to stock up ."
+		}],
+		"Sentence": "She went to the orchard and picked peaches to stock up ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCN",
+			"label": "=",
+			"Sentence": "There are now 55 peaches ."
+		}],
+		"Sentence": "There are now 55 peaches ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAVNV",
+			"label": "?",
+			"Sentence": "how many did she pick ?"
+		}],
+		"Sentence": "how many did she pick ?"
+	}],
+	"lEquations": ["13 + X = 55"],
+	"iIndex": 60
+}, {
+	"sQuestion": "Benny received 67 dollars for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 33 dollars over , how much did he spent on the baseball gear ? ",
+	"lSolutions": ["34"],
+	"ParentIndex": 61,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Benny received 67 dollars for his birthday ."
+		}],
+		"Sentence": "Benny received 67 dollars for his birthday ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPDVN",
+			"label": "i",
+			"Sentence": "He went to a sporting goods store ."
+		}, {
+			"SyntacticPattern": "NVDONNCNO",
+			"label": "+",
+			"Sentence": "He bought a baseball glove ."
+		}, {
+			"SyntacticPattern": "NVN",
+			"label": "+",
+			"Sentence": "He bought baseball ."
+		}, {
+			"SyntacticPattern": "NVN",
+			"label": "+",
+			"Sentence": "He bought bat ."
+		}],
+		"Sentence": "He went to a sporting goods store and bought a baseball glove , baseball , and bat ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNP",
+			"label": "-",
+			"Sentence": "He had 33 dollars over ."
+		}, {
+			"SyntacticPattern": "WVNVPDN",
+			"label": "?",
+			"Sentence": "how much did he spent on the baseball gear ? ."
+		}],
+		"Sentence": "He had 33 dollars over , how much did he spent on the baseball gear ?"
+	}],
+	"lEquations": ["67 - X = 33"],
+	"iIndex": 61
+}, {
+	"sQuestion": "There were 3 roses in the vase . Alyssa cut some roses from her flower garden . There are now 14 roses in the vase . How many roses did she cut ? ",
+	"lSolutions": ["11"],
+	"ParentIndex": 62,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There were 3 roses in the vase ."
+		}],
+		"Sentence": "There were 3 roses in the vase ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPNN",
+			"label": "-",
+			"Sentence": "Alyssa cut some roses from her flower garden ."
+		}],
+		"Sentence": "Alyssa cut some roses from her flower garden ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "=",
+			"Sentence": "There are now 14 roses in the vase ."
+		}],
+		"Sentence": "There are now 14 roses in the vase ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many roses did she cut ?"
+		}],
+		"Sentence": "How many roses did she cut ?"
+	}],
+	"lEquations": ["3 + X = 14"],
+	"iIndex": 62
+}, {
+	"sQuestion": "Last week Tom had 74 dollars . He washed cars over the weekend and now has 86 dollars . How much money did he make washing cars ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 63,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "ANNVCN",
+			"label": "+",
+			"Sentence": "Last week Tom had 74 dollars ."
+		}],
+		"Sentence": "Last week Tom had 74 dollars ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNPDN",
+			"label": "i",
+			"Sentence": "He washed cars over the weekend ."
+		}, {
+			"SyntacticPattern": "NVCN",
+			"label": "=",
+			"Sentence": "He now has 86 dollars ."
+		}],
+		"Sentence": "He washed cars over the weekend and now has 86 dollars ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVVN",
+			"label": "?",
+			"Sentence": "How much money did he make washing cars ?"
+		}],
+		"Sentence": "How much money did he make washing cars ?"
+	}],
+	"lEquations": ["74 + X = 86"],
+	"iIndex": 63
+}, {
+	"sQuestion": "There were 73 bales of hay in the barn . Jason stacked bales in the barn today . There are now 96 bales of hay in the barn . How many bales did he store in the barn ? ",
+	"lSolutions": ["23"],
+	"ParentIndex": 64,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPNPDN",
+			"label": "+",
+			"Sentence": "There were 73 bales of hay in the barn ."
+		}],
+		"Sentence": "There were 73 bales of hay in the barn ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNPDNN",
+			"label": "+",
+			"Sentence": "Jason stacked bales in the barn today ."
+		}],
+		"Sentence": "Jason stacked bales in the barn today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPNPDN",
+			"label": "=",
+			"Sentence": "There are now 96 bales of hay in the barn ."
+		}],
+		"Sentence": "There are now 96 bales of hay in the barn ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPDN",
+			"label": "?",
+			"Sentence": "How many bales did he store in the barn ?"
+		}],
+		"Sentence": "How many bales did he store in the barn ?"
+	}],
+	"lEquations": ["73 + X = 96"],
+	"iIndex": 64
+}, {
+	"sQuestion": "Nancy grew 6 potatoes . Sandy grew 7 potatoes . How many potatoes did they grow in total ? ",
+	"lSolutions": ["13"],
+	"ParentIndex": 65,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Nancy grew 6 potatoes ."
+		}],
+		"Sentence": "Nancy grew 6 potatoes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sandy grew 7 potatoes ."
+		}],
+		"Sentence": "Sandy grew 7 potatoes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many potatoes did they grow in total ?"
+		}],
+		"Sentence": "How many potatoes did they grow in total ?"
+	}],
+	"lEquations": ["X = 6 + 7"],
+	"iIndex": 65
+}, {
+	"sQuestion": "There are 9 crayons in the drawer . Benny placed 3 crayons in the drawer . How many crayons are now there in total ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 66,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 9 crayons in the drawer ."
+		}],
+		"Sentence": "There are 9 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Benny placed 3 crayons in the drawer ."
+		}],
+		"Sentence": "Benny placed 3 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many crayons are now there in total ?"
+		}],
+		"Sentence": "How many crayons are now there in total ?"
+	}],
+	"lEquations": ["X = 9 + 3"],
+	"iIndex": 66
+}, {
+	"sQuestion": "There are 5 oak trees currently in the park . Park workers will plant 4 oak trees today . How many oak trees will the park have when the workers are finished ? ",
+	"lSolutions": ["9"],
+	"ParentIndex": 67,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 5 oak trees currently in the park ."
+		}],
+		"Sentence": "There are 5 oak trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 4 oak trees today ."
+		}],
+		"Sentence": "Park workers will plant 4 oak trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many oak trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many oak trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 5 + 4"],
+	"iIndex": 67
+}, {
+	"sQuestion": "Tom found 7 seashells but 4 were broken . How many unbroken seashells did Tom find ? ",
+	"lSolutions": ["3"],
+	"ParentIndex": 68,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tom found 7 seashells ."
+		}, {
+			"SyntacticPattern": "NVCNVV",
+			"label": "-",
+			"Sentence": "4 seashells were broken ."
+		}],
+		"Sentence": "Tom found 7 seashells but 4 seashells were broken ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNV",
+			"label": "?",
+			"Sentence": "How many unbroken seashells did Tom find ?"
+		}],
+		"Sentence": "How many unbroken seashells did Tom find ?"
+	}],
+	"lEquations": ["X = 7 - 4"],
+	"iIndex": 68
+}, {
+	"sQuestion": "Sally picked 7 lemons and Mary picked 9 lemons from the lemon tree . How many lemons were picked in total ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 69,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDAN",
+			"label": "+",
+			"Sentence": "Sally picked 7 lemons from the lemon tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDAN",
+			"label": "+",
+			"Sentence": "Mary picked 9 lemons from the lemon tree ."
+		}],
+		"Sentence": "Sally picked 7 lemons and Mary picked 9 lemons from the lemon tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many lemons were picked in total ?"
+		}],
+		"Sentence": "How many lemons were picked in total ?"
+	}],
+	"lEquations": ["X = 7 + 9"],
+	"iIndex": 69
+}, {
+	"sQuestion": "A restaurant served 6 cakes during lunch and 9 during dinner today . How many cakes were served today ? ",
+	"lSolutions": ["15"],
+	"ParentIndex": 70,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 6 cakes during lunch today ."
+		}, {
+			"SyntacticPattern": "DNVCNPNN",
+			"label": "+",
+			"Sentence": "A restaurant served 9 cakes during dinner today ."
+		}],
+		"Sentence": "A restaurant served 6 cakes during lunch and 9 cakes during dinner today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVN",
+			"label": "?",
+			"Sentence": "How many cakes were served today ?"
+		}],
+		"Sentence": "How many cakes were served today ?"
+	}],
+	"lEquations": ["X = 6 + 9"],
+	"iIndex": 70
+}, {
+	"sQuestion": "Joan has 8 orange balloons but lost 2 of them . How many orange balloons does Joan have now ? ",
+	"lSolutions": ["6"],
+	"ParentIndex": 71,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Joan has 8 orange balloons ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Joan lost 2 of them ."
+		}],
+		"Sentence": "Joan has 8 orange balloons but lost 2 of them ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNV",
+			"label": "?",
+			"Sentence": "How many orange balloons does Joan have now ?"
+		}],
+		"Sentence": "How many orange balloons does Joan have now ?"
+	}],
+	"lEquations": ["X = 8 - 2"],
+	"iIndex": 71
+}, {
+	"sQuestion": "Fred had 7 dimes in his bank . His sister borrowed 3 of his dimes . How many dimes does Fred have now ? ",
+	"lSolutions": ["4"],
+	"ParentIndex": 72,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Fred had 7 dimes in his bank ."
+		}],
+		"Sentence": "Fred had 7 dimes in his bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVCPNN",
+			"label": "+",
+			"Sentence": "His sister borrowed 3 of his dimes ."
+		}],
+		"Sentence": "His sister borrowed 3 of his dimes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many dimes does Fred have now ?"
+		}],
+		"Sentence": "How many dimes does Fred have now ?"
+	}],
+	"lEquations": ["X = 7 - 3"],
+	"iIndex": 72
+}, {
+	"sQuestion": "Joan 's cat had 8 kittens . She gave 2 to her friends . How many kittens does she have now ? ",
+	"lSolutions": ["6"],
+	"ParentIndex": 73,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVCN",
+			"label": "+",
+			"Sentence": "Joan 's cat had 8 kittens ."
+		}],
+		"Sentence": "Joan 's cat had 8 kittens ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "-",
+			"Sentence": "She gave 2 kittens to her friends ."
+		}],
+		"Sentence": "She gave 2 kittens to her friends ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many kittens does she have now ?"
+		}],
+		"Sentence": "How many kittens does she have now ?"
+	}],
+	"lEquations": ["X = 8 - 2"],
+	"iIndex": 73
+}, {
+	"sQuestion": "There are 34 dogwood trees currently in the park . Park workers will plant 49 dogwood trees today . How many dogwood trees will the park have when the workers are finished ? ",
+	"lSolutions": ["83"],
+	"ParentIndex": 74,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 34 dogwood trees currently in the park ."
+		}],
+		"Sentence": "There are 34 dogwood trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 49 dogwood trees today ."
+		}],
+		"Sentence": "Park workers will plant 49 dogwood trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many dogwood trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 34 + 49"],
+	"iIndex": 74
+}, {
+	"sQuestion": "There are 27 pencils in the drawer . Nancy placed 45 pencils in the drawer . How many pencils are now there in total ? ",
+	"lSolutions": ["72"],
+	"ParentIndex": 75,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 27 pencils in the drawer ."
+		}],
+		"Sentence": "There are 27 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Nancy placed 45 pencils in the drawer ."
+		}],
+		"Sentence": "Nancy placed 45 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPN",
+			"label": "?",
+			"Sentence": "How many pencils are now there in total ?"
+		}],
+		"Sentence": "How many pencils are now there in total ?"
+	}],
+	"lEquations": ["X = 27 + 45"],
+	"iIndex": 75
+}, {
+	"sQuestion": "Sam found 35 seashells on the beach , he gave Joan 18 of the seashells . How many seashells does he now have ? ",
+	"lSolutions": ["17"],
+	"ParentIndex": 76,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sam found 35 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Joan 18 of the seashells ."
+		}],
+		"Sentence": "Sam found 35 seashells on the beach , he gave Joan 18 of the seashells ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells does he now have ?"
+		}],
+		"Sentence": "How many seashells does he now have ?"
+	}],
+	"lEquations": ["X = 35 - 18"],
+	"iIndex": 76
+}, {
+	"sQuestion": "Tim has 22 books . Mike has 20 books . How many books do they have together ? ",
+	"lSolutions": ["42"],
+	"ParentIndex": 77,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tim has 22 books ."
+		}],
+		"Sentence": "Tim has 22 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Mike has 20 books ."
+		}],
+		"Sentence": "Mike has 20 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 22 + 20"],
+	"iIndex": 77
+}, {
+	"sQuestion": "Mike has 87 baseball cards . Sam bought 13 of Mike 's baseball cards . How many baseball cards does Mike have now ? ",
+	"lSolutions": ["74"],
+	"ParentIndex": 78,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Mike has 87 baseball cards ."
+		}],
+		"Sentence": "Mike has 87 baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "+",
+			"Sentence": "Sam bought 13 of Mike 's baseball cards ."
+		}],
+		"Sentence": "Sam bought 13 of Mike 's baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many baseball cards does Mike have now ?"
+		}],
+		"Sentence": "How many baseball cards does Mike have now ?"
+	}],
+	"lEquations": ["X = 87 - 13"],
+	"iIndex": 78
+}, {
+	"sQuestion": "Sandy grew 51 pumpkins . Mike grew 23 pumpkins . How many pumpkins did they grow in total ? ",
+	"lSolutions": ["74"],
+	"ParentIndex": 79,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sandy grew 51 pumpkins ."
+		}],
+		"Sentence": "Sandy grew 51 pumpkins ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Mike grew 23 pumpkins ."
+		}],
+		"Sentence": "Mike grew 23 pumpkins ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How many pumpkins did they grow in total ?"
+		}],
+		"Sentence": "How many pumpkins did they grow in total ?"
+	}],
+	"lEquations": ["X = 51 + 23"],
+	"iIndex": 79
+}, {
+	"sQuestion": "Tim has 44 books . Sam has 52 books . How many books do they have together ? ",
+	"lSolutions": ["96"],
+	"ParentIndex": 80,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tim has 44 books ."
+		}],
+		"Sentence": "Tim has 44 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sam has 52 books ."
+		}],
+		"Sentence": "Sam has 52 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 44 + 52"],
+	"iIndex": 80
+}, {
+	"sQuestion": "Dan has 64 violet marbles , he gave Mary 14 of the marbles . How many violet marbles does he now have ? ",
+	"lSolutions": ["50"],
+	"ParentIndex": 81,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Dan has 64 violet marbles ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Mary 14 of the marbles ."
+		}],
+		"Sentence": "Dan has 64 violet marbles , he gave Mary 14 of the marbles ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many violet marbles does he now have ?"
+		}],
+		"Sentence": "How many violet marbles does he now have ?"
+	}],
+	"lEquations": ["X = 64 - 14"],
+	"iIndex": 81
+}, {
+	"sQuestion": "There are 25 popular trees currently in the park . Park workers will plant 73 popular trees today . How many popular trees will the park have when the workers are finished ? ",
+	"lSolutions": ["98"],
+	"ParentIndex": 82,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCANPDN",
+			"label": "+",
+			"Sentence": "There are 25 popular trees currently in the park ."
+		}],
+		"Sentence": "There are 25 popular trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCANN",
+			"label": "+",
+			"Sentence": "Park workers will plant 73 popular trees today ."
+		}],
+		"Sentence": "Park workers will plant 73 popular trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many popular trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many popular trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 25 + 73"],
+	"iIndex": 82
+}, {
+	"sQuestion": "There are 54 scissors in the drawer . Keith placed 22 scissors in the drawer . How many scissors are now there in all ? ",
+	"lSolutions": ["76"],
+	"ParentIndex": 83,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 54 scissors in the drawer ."
+		}],
+		"Sentence": "There are 54 scissors in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Keith placed 22 scissors in the drawer ."
+		}],
+		"Sentence": "Keith placed 22 scissors in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPD",
+			"label": "?",
+			"Sentence": "How many scissors are now there in all ?"
+		}],
+		"Sentence": "How many scissors are now there in all ?"
+	}],
+	"lEquations": ["X = 54 + 22"],
+	"iIndex": 83
+}, {
+	"sQuestion": "Alyssa picked 42 pears and Nancy picked 17 pears from the pear tree . How many pears were picked in all ? ",
+	"lSolutions": ["59"],
+	"ParentIndex": 84,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Alyssa picked 42 pears from the tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Nancy picked 17 pears from the pear tree ."
+		}],
+		"Sentence": "Alyssa picked 42 pears and Nancy picked 17 pears from the pear tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPD",
+			"label": "?",
+			"Sentence": "How many pears were picked in all ?"
+		}],
+		"Sentence": "How many pears were picked in all ?"
+	}],
+	"lEquations": ["X = 42 + 17"],
+	"iIndex": 84
+}, {
+	"sQuestion": "Sam had 98 pennies in his bank . He spent 93 of his pennies . How many pennies does he have now ? ",
+	"lSolutions": ["5"],
+	"ParentIndex": 85,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sam had 98 pennies in his bank ."
+		}],
+		"Sentence": "Sam had 98 pennies in his bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "-",
+			"Sentence": "He spent 93 of his pennies ."
+		}],
+		"Sentence": "He spent 93 of his pennies ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many pennies does he have now ?"
+		}],
+		"Sentence": "How many pennies does he have now ?"
+	}],
+	"lEquations": ["X = 98 - 93"],
+	"iIndex": 85
+}, {
+	"sQuestion": "Joan found 79 seashells on the beach , she gave Mike 63 of the seashells . How many seashells does she now have ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 86,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Joan found 79 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "she gave Mike 63 of the seashells ."
+		}],
+		"Sentence": "Joan found 79 seashells on the beach , she gave Mike 63 of the seashells ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells does she now have ?"
+		}],
+		"Sentence": "How many seashells does she now have ?"
+	}],
+	"lEquations": ["X = 79 - 63"],
+	"iIndex": 86
+}, {
+	"sQuestion": "Sam has 110 books . Joan has 102 books . How many books do they have together ? ",
+	"lSolutions": ["212"],
+	"ParentIndex": 87,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sam has 110 books ."
+		}],
+		"Sentence": "Sam has 110 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Joan has 102 books ."
+		}],
+		"Sentence": "Joan has 102 books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books do they have together ?"
+		}],
+		"Sentence": "How many books do they have together ?"
+	}],
+	"lEquations": ["X = 110 + 102"],
+	"iIndex": 87
+}, {
+	"sQuestion": "Mary picked 122 oranges and Jason picked 105 oranges from the orange tree . How many oranges were picked in total ? ",
+	"lSolutions": ["227"],
+	"ParentIndex": 88,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDAN",
+			"label": "+",
+			"Sentence": "Mary picked 122 oranges from the orange tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDAN",
+			"label": "+",
+			"Sentence": "Jason picked 105 oranges from the orange tree ."
+		}],
+		"Sentence": "Mary picked 122 oranges and Jason picked 105 oranges from the orange tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many oranges were picked in total ?"
+		}],
+		"Sentence": "How many oranges were picked in total ?"
+	}],
+	"lEquations": ["X = 122 + 105"],
+	"iIndex": 88
+}, {
+	"sQuestion": "Sally had 760 quarters in her bank . She spent 418 of her quarters . How many quarters does she have now ? ",
+	"lSolutions": ["342"],
+	"ParentIndex": 89,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Sally had 760 quarters in her bank ."
+		}],
+		"Sentence": "Sally had 760 quarters in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "-",
+			"Sentence": "She spent 418 of her quarters ."
+		}],
+		"Sentence": "She spent 418 of her quarters ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many quarters does she have now ?"
+		}],
+		"Sentence": "How many quarters does she have now ?"
+	}],
+	"lEquations": ["X = 760 - 418"],
+	"iIndex": 89
+}, {
+	"sQuestion": "Melanie grew 139 turnips . Benny grew 113 turnips . How many turnips did they grow in all ? ",
+	"lSolutions": ["252"],
+	"ParentIndex": 90,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Melanie grew 139 turnips ."
+		}],
+		"Sentence": "Melanie grew 139 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Benny grew 113 turnips ."
+		}],
+		"Sentence": "Benny grew 113 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"label": "?",
+			"Sentence": "How many turnips did they grow in all ?"
+		}],
+		"Sentence": "How many turnips did they grow in all ?"
+	}],
+	"lEquations": ["X = 139 + 113"],
+	"iIndex": 90
+}, {
+	"sQuestion": "Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ",
+	"lSolutions": ["452"],
+	"ParentIndex": 91,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason has 676 Pokemon cards ."
+		}],
+		"Sentence": "Jason has 676 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "+",
+			"Sentence": "Alyssa bought 224 of Jason 's Pokemon cards ."
+		}],
+		"Sentence": "Alyssa bought 224 of Jason 's Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many Pokemon cards does Jason have now ?"
+		}],
+		"Sentence": "How many Pokemon cards does Jason have now ?"
+	}],
+	"lEquations": ["X = 676 - 224"],
+	"iIndex": 91
+}, {
+	"sQuestion": "There are 107 walnut trees currently in the park . Park workers will plant 104 walnut trees today . How many walnut trees will the park have when the workers are finished ? ",
+	"lSolutions": ["211"],
+	"ParentIndex": 92,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 107 walnut trees currently in the park ."
+		}],
+		"Sentence": "There are 107 walnut trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNN",
+			"label": "+",
+			"Sentence": "Park workers will plant 104 walnut trees today ."
+		}],
+		"Sentence": "Park workers will plant 104 walnut trees today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many walnut trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 107 + 104"],
+	"iIndex": 92
+}, {
+	"sQuestion": "Fred has 709 green balloons , he gave Sandy 221 of the balloons . How many green balloons does he now have ? ",
+	"lSolutions": ["488"],
+	"ParentIndex": 93,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Fred has 709 green balloons ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Sandy 221 of the balloons ."
+		}],
+		"Sentence": "Fred has 709 green balloons , he gave Sandy 221 of the balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNV",
+			"label": "?",
+			"Sentence": "How many green balloons does he now have ?"
+		}],
+		"Sentence": "How many green balloons does he now have ?"
+	}],
+	"lEquations": ["X = 709 - 221"],
+	"iIndex": 93
+}, {
+	"sQuestion": "There are 115 pencils in the drawer . Sara placed 100 pencils in the drawer . How many pencils are now there in all ? ",
+	"lSolutions": ["215"],
+	"ParentIndex": 94,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 115 pencils in the drawer ."
+		}],
+		"Sentence": "There are 115 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sara placed 100 pencils in the drawer ."
+		}],
+		"Sentence": "Sara placed 100 pencils in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPD",
+			"label": "?",
+			"Sentence": "How many pencils are now there in all ?"
+		}],
+		"Sentence": "How many pencils are now there in all ?"
+	}],
+	"lEquations": ["X = 115 + 100"],
+	"iIndex": 94
+}, {
+	"sQuestion": "Jason has 3 Pokemon cards . Benny bought 2 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ",
+	"lSolutions": ["1"],
+	"ParentIndex": 95,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Jason has 3 Pokemon cards ."
+		}],
+		"Sentence": "Jason has 3 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "+",
+			"Sentence": "Benny bought 2 of Jason 's Pokemon cards ."
+		}],
+		"Sentence": "Benny bought 2 of Jason 's Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many Pokemon cards does Jason have now ?"
+		}],
+		"Sentence": "How many Pokemon cards does Jason have now ?"
+	}],
+	"lEquations": ["X = 3 - 2"],
+	"iIndex": 95
+}, {
+	"sQuestion": "Mike has 8 orange marbles , he gave Sam 4 of the marbles . How many orange marbles does he now have ? ",
+	"lSolutions": ["4"],
+	"ParentIndex": 96,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCAN",
+			"label": "+",
+			"Sentence": "Mike has 8 orange marbles ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Sam 4 of the marbles ."
+		}],
+		"Sentence": "Mike has 8 orange marbles , he gave Sam 4 of the marbles ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNV",
+			"label": "?",
+			"Sentence": "How many orange marbles does he now have ?"
+		}],
+		"Sentence": "How many orange marbles does he now have ?"
+	}],
+	"lEquations": ["X = 8 - 4"],
+	"iIndex": 96
+}, {
+	"sQuestion": "Joan had 5 dimes in her bank . She spent 2 of her dimes . How many dimes does she have now ? ",
+	"lSolutions": ["3"],
+	"ParentIndex": 97,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Joan had 5 dimes in her bank ."
+		}],
+		"Sentence": "Joan had 5 dimes in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "-",
+			"Sentence": "She spent 2 of her dimes ."
+		}],
+		"Sentence": "She spent 2 of her dimes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many dimes does she have now ?"
+		}],
+		"Sentence": "How many dimes does she have now ?"
+	}],
+	"lEquations": ["X = 5 - 2"],
+	"iIndex": 97
+}, {
+	"sQuestion": "There are 2 orchid bushes currently in the park . Park workers will plant 4 orchid bushes today . How many orchid bushes will the park have when the workers are finished ? ",
+	"lSolutions": ["6"],
+	"ParentIndex": 98,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCANPDN",
+			"label": "+",
+			"Sentence": "There are 2 orchid bushes currently in the park ."
+		}],
+		"Sentence": "There are 2 orchid bushes currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCANN",
+			"label": "+",
+			"Sentence": "Park workers will plant 4 orchid bushes today ."
+		}],
+		"Sentence": "Park workers will plant 4 orchid bushes today ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many orchid bushes will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many orchid bushes will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 2 + 4"],
+	"iIndex": 98
+}, {
+	"sQuestion": "Sara picked 6 pears and Tim picked 5 pears from the pear tree . How many pears were picked in total ? ",
+	"lSolutions": ["11"],
+	"ParentIndex": 99,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Sara picked 6 pears from the pear tree ."
+		}, {
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Tim picked 5 pears from the pear tree ."
+		}],
+		"Sentence": "Sara picked 6 pears and Tim picked 5 pears from the pear tree ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVVPN",
+			"label": "?",
+			"Sentence": "How many pears were picked in total ?"
+		}],
+		"Sentence": "How many pears were picked in total ?"
+	}],
+	"lEquations": ["X = 6 + 5"],
+	"iIndex": 99
+}, {
+	"sQuestion": "Sam grew 4 watermelons , but the rabbits ate 3 watermelons . How many watermelons does Sam have ? ",
+	"lSolutions": ["1"],
+	"ParentIndex": 100,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sam grew 4 watermelons ."
+		}, {
+			"SyntacticPattern": "DNVCN",
+			"label": "-",
+			"Sentence": "the rabbits ate 3 watermelons ."
+		}],
+		"Sentence": "Sam grew 4 watermelons , but the rabbits ate 3 watermelons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many watermelons does Sam have ?"
+		}],
+		"Sentence": "How many watermelons does Sam have ?"
+	}],
+	"lEquations": ["X = 4 - 3"],
+	"iIndex": 100
+}, {
+	"sQuestion": "Jason had Pokemon cards . He gave 9 to his friends . He now has 4 Pokemon cards . How many Pokemon cards did he have to start with ? ",
+	"lSolutions": ["13"],
+	"ParentIndex": 101,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVN",
+			"label": "+",
+			"Sentence": "Jason had Pokemon cards ."
+		}],
+		"Sentence": "Jason had Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "-",
+			"Sentence": "He gave 9 cards to his friends ."
+		}],
+		"Sentence": "He gave 9 cards to his friends ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "=",
+			"Sentence": "He now has 4 Pokemon cards ."
+		}],
+		"Sentence": "He now has 4 Pokemon cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPVP",
+			"label": "?",
+			"Sentence": "How many Pokemon cards did he have to start with ?"
+		}],
+		"Sentence": "How many Pokemon cards did he have to start with ?"
+	}],
+	"lEquations": ["X - 9 = 4"],
+	"iIndex": 101
+}, {
+	"sQuestion": "Mary had 7 nickels in her bank . Her dad gave her 5 nickels . How many nickels does Mary have now ? ",
+	"lSolutions": ["12"],
+	"ParentIndex": 102,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Mary had 7 nickels in her bank ."
+		}],
+		"Sentence": "Mary had 7 nickels in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVNCN",
+			"label": "-",
+			"Sentence": "Her dad gave her 5 nickels ."
+		}],
+		"Sentence": "Her dad gave her 5 nickels ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many nickels does Mary have now ?"
+		}],
+		"Sentence": "How many nickels does Mary have now ?"
+	}],
+	"lEquations": ["X = 7 + 5"],
+	"iIndex": 102
+}, {
+	"sQuestion": "Keith grew 6 turnips . Alyssa grew 9 turnips . How many turnips did they grow in all ? ",
+	"lSolutions": ["15"],
+	"ParentIndex": 103,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Keith grew 6 turnips ."
+		}],
+		"Sentence": "Keith grew 6 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Alyssa grew 9 turnips ."
+		}],
+		"Sentence": "Alyssa grew 9 turnips ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"label": "?",
+			"Sentence": "How many turnips did they grow in all ?"
+		}],
+		"Sentence": "How many turnips did they grow in all ?"
+	}],
+	"lEquations": ["X = 6 + 9"],
+	"iIndex": 103
+}, {
+	"ParentIndex": 104,
+	"iIndex": 104,
+	"lEquations": ["X = 9 + 3"],
+	"lSolutions": ["12"],
+	"sQuestion": "Mary has 9 yellow marbles and Joan has 3 yellow marbles . How many yellow marbles do they have in all ? ",
+	"Sentences": [{
+		"Sentence": "Mary has 9 yellow marbles and Joan has 3 yellow marbles .",
+		"SimplifiedSentences": [{
+			"Sentence": "Mary has 9 yellow marbles .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}, {
+			"Sentence": "Joan has 3 yellow marbles .",
+			"label": "+",
+			"SyntacticPattern": "NVCAN"
+		}]
+	}, {
+		"Sentence": "How many yellow marbles do they have in all ?",
+		"SimplifiedSentences": [{
+			"Sentence": "How many yellow marbles do they have in all ?",
+			"label": "?",
+			"SyntacticPattern": "WAANVNVPD"
+		}]
+	}]
+}, {
+	"sQuestion": "Sally grew 6 carrots . Fred grew 4 carrots . How many carrots did they grow in all ? ",
+	"lSolutions": ["10"],
+	"ParentIndex": 105,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sally grew 6 carrots ."
+		}],
+		"Sentence": "Sally grew 6 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred grew 4 carrots ."
+		}],
+		"Sentence": "Fred grew 4 carrots ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPD",
+			"label": "?",
+			"Sentence": "How many carrots did they grow in all ?"
+		}],
+		"Sentence": "How many carrots did they grow in all ?"
+	}],
+	"lEquations": ["X = 6 + 4"],
+	"iIndex": 105
+}, {
+	"sQuestion": "Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ",
+	"lSolutions": ["3"],
+	"ParentIndex": 106,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Tom found 5 seashells on the beach ."
+		}],
+		"Sentence": "Tom found 5 seashells on the beach ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Jessica 2 of the seashells ."
+		}],
+		"Sentence": "he gave Jessica 2 of the seashells ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells does he now have ?"
+		}],
+		"Sentence": "How many seashells does he now have ?"
+	}],
+	"lEquations": ["X = 5 - 2"],
+	"iIndex": 106
+}, {
+	"sQuestion": "Fred has 5 baseball cards . Melanie bought 3 of Fred 's baseball cards . How many baseball cards does Fred have now ? ",
+	"lSolutions": ["2"],
+	"ParentIndex": 107,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred has 5 baseball cards ."
+		}],
+		"Sentence": "Fred has 5 baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "+",
+			"Sentence": "Melanie bought 3 of Fred 's baseball cards ."
+		}],
+		"Sentence": "Melanie bought 3 of Fred 's baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many baseball cards does Fred have now ?"
+		}],
+		"Sentence": "How many baseball cards does Fred have now ?"
+	}],
+	"lEquations": ["X = 5 - 3"],
+	"iIndex": 107
+}, {
+	"sQuestion": "Mary had 8 potatoes in the garden . The rabbits ate 3 of the potatoes . How many potatoes does Mary now have ? ",
+	"lSolutions": ["5"],
+	"ParentIndex": 108,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Mary had 8 potatoes in the garden ."
+		}],
+		"Sentence": "Mary had 8 potatoes in the garden ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCPDN",
+			"label": "-",
+			"Sentence": "The rabbits ate 3 of the potatoes ."
+		}],
+		"Sentence": "The rabbits ate 3 of the potatoes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many potatoes does Mary now have ?"
+		}],
+		"Sentence": "How many potatoes does Mary now have ?"
+	}],
+	"lEquations": ["X = 8 - 3"],
+	"iIndex": 108
+}, {
+	"sQuestion": "There are 9 oak trees currently in the park . Park workers had to cut down 2 oak trees that were damaged . How many oak trees will the park have when the workers are finished ? ",
+	"lSolutions": ["7"],
+	"ParentIndex": 109,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 9 oak trees currently in the park ."
+		}],
+		"Sentence": "There are 9 oak trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPVCNVV",
+			"label": "-",
+			"Sentence": "Park workers had to cut down 2 oak trees that were damaged ."
+		}],
+		"Sentence": "Park workers had to cut down 2 oak trees that were damaged ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANDNVWDNVV",
+			"label": "?",
+			"Sentence": "How many oak trees will the park have when the workers are finished ?"
+		}],
+		"Sentence": "How many oak trees will the park have when the workers are finished ?"
+	}],
+	"lEquations": ["X = 9 - 2"],
+	"iIndex": 109
+}, {
+	"sQuestion": "Jessica had 8 quarters in her bank . Her sister borrowed 3 of her quarters . How many quarters does Jessica have now ? ",
+	"lSolutions": ["5"],
+	"ParentIndex": 110,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPNN",
+			"label": "+",
+			"Sentence": "Jessica had 8 quarters in her bank ."
+		}],
+		"Sentence": "Jessica had 8 quarters in her bank ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NNVCPNN",
+			"label": "+",
+			"Sentence": "Her sister borrowed 3 of her quarters ."
+		}],
+		"Sentence": "Her sister borrowed 3 of her quarters ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many quarters does Jessica have now ?"
+		}],
+		"Sentence": "How many quarters does Jessica have now ?"
+	}],
+	"lEquations": ["X = 8 - 3"],
+	"iIndex": 110
+}, {
+	"sQuestion": "A restaurant made 9 hamburgers to serve during lunch . Only 3 were actually served . How many hamburgers were over from lunch ? ",
+	"lSolutions": ["6"],
+	"ParentIndex": 111,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "DNVCNPVPN",
+			"label": "+",
+			"Sentence": "A restaurant made 9 hamburgers to serve during lunch ."
+		}],
+		"Sentence": "A restaurant made 9 hamburgers to serve during lunch ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "CNVV",
+			"label": "-",
+			"Sentence": "Only 3 hamburgers were actually served ."
+		}],
+		"Sentence": "Only 3 hamburgers were actually served ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPPN",
+			"label": "?",
+			"Sentence": "How many hamburgers were over from lunch ?"
+		}],
+		"Sentence": "How many hamburgers were over from lunch ?"
+	}],
+	"lEquations": ["X = 9 - 3"],
+	"iIndex": 111
+}, {
+	"sQuestion": "There are 7 crayons in the drawer . Mary took 3 crayons out of the drawer . How many crayons are there now ? ",
+	"lSolutions": ["4"],
+	"ParentIndex": 112,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 7 crayons in the drawer ."
+		}],
+		"Sentence": "There are 7 crayons in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPPDN",
+			"label": "-",
+			"Sentence": "Mary took 3 crayons out of the drawer ."
+		}],
+		"Sentence": "Mary took 3 crayons out of the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVE",
+			"label": "?",
+			"Sentence": "How many crayons are there now ?"
+		}],
+		"Sentence": "How many crayons are there now ?"
+	}],
+	"lEquations": ["X = 7 - 3"],
+	"iIndex": 112
+}, {
+	"sQuestion": "Dan picked 9 limes and gave Sara 4 of the limes . How many limes does Dan have now ? ",
+	"lSolutions": ["5"],
+	"ParentIndex": 113,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Dan picked 9 limes ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "Dan gave Sara 4 of the limes ."
+		}],
+		"Sentence": "Dan picked 9 limes and gave Sara 4 of the limes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many limes does Dan have now ?"
+		}],
+		"Sentence": "How many limes does Dan have now ?"
+	}],
+	"lEquations": ["X = 9 - 4"],
+	"iIndex": 113
+}, {
+	"sQuestion": "Joan has 9 blue balloons but lost 2 of them . How many blue balloons does Joan have now ? ",
+	"lSolutions": ["7"],
+	"ParentIndex": 114,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCANPN",
+			"label": "+",
+			"Sentence": "Joan has 9 blue balloons ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Joan lost 2 of them ."
+		}],
+		"Sentence": "Joan has 9 blue balloons but lost 2 of them ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WAANVNV",
+			"label": "?",
+			"Sentence": "How many blue balloons does Joan have now ?"
+		}],
+		"Sentence": "How many blue balloons does Joan have now ?"
+	}],
+	"lEquations": ["X = 9 - 2"],
+	"iIndex": 114
+}, {
+	"sQuestion": "Joan picked 43 apples from the orchard , and gave 27 apples to Melanie . How many apples does Joan have now ? ",
+	"lSolutions": ["16"],
+	"ParentIndex": 115,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Joan picked 43 apples from the orchard ."
+		}, {
+			"SyntacticPattern": "NVCNPN",
+			"label": "-",
+			"Sentence": "Joan gave 27 apples to Melanie ."
+		}],
+		"Sentence": "Joan picked 43 apples from the orchard , and gave 27 apples to Melanie ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many apples does Joan have now ?"
+		}],
+		"Sentence": "How many apples does Joan have now ?"
+	}],
+	"lEquations": ["X = 43 - 27"],
+	"iIndex": 115
+}, {
+	"sQuestion": "Tom has 30 violet balloons , he gave Fred 16 of the balloons . How many violet balloons does he now have ? ",
+	"lSolutions": ["14"],
+	"ParentIndex": 116,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Tom has 30 violet balloons ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Fred 16 of the balloons ."
+		}],
+		"Sentence": "Tom has 30 violet balloons , he gave Fred 16 of the balloons ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many violet balloons does he now have ?"
+		}],
+		"Sentence": "How many violet balloons does he now have ?"
+	}],
+	"lEquations": ["X = 30 - 16"],
+	"iIndex": 116
+}, {
+	"sQuestion": "Fred has 40 baseball cards . Keith bought 22 of Fred 's baseball cards . How many baseball cards does Fred have now ? ",
+	"lSolutions": ["18"],
+	"ParentIndex": 117,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Fred has 40 baseball cards ."
+		}],
+		"Sentence": "Fred has 40 baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPNN",
+			"label": "+",
+			"Sentence": "Keith bought 22 of Fred 's baseball cards ."
+		}],
+		"Sentence": "Keith bought 22 of Fred 's baseball cards ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many baseball cards does Fred have now ?"
+		}],
+		"Sentence": "How many baseball cards does Fred have now ?"
+	}],
+	"lEquations": ["X = 40 - 22"],
+	"iIndex": 117
+}, {
+	"sQuestion": "Fred found 47 seashells on the beach , he gave Jessica 25 of the seashells . How many seashells does he now have ? ",
+	"lSolutions": ["22"],
+	"ParentIndex": 118,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "+",
+			"Sentence": "Fred found 47 seashells on the beach ."
+		}, {
+			"SyntacticPattern": "NVNCPDN",
+			"label": "-",
+			"Sentence": "he gave Jessica 25 of the seashells ."
+		}],
+		"Sentence": "Fred found 47 seashells on the beach , he gave Jessica 25 of the seashells ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many seashells does he now have ?"
+		}],
+		"Sentence": "How many seashells does he now have ?"
+	}],
+	"lEquations": ["X = 47 - 25"],
+	"iIndex": 118
+}, {
+	"sQuestion": "Sara grew 43 pumpkins , but the rabbits ate 23 pumpkins . How many pumpkins does Sara have ? ",
+	"lSolutions": ["20"],
+	"ParentIndex": 119,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCN",
+			"label": "+",
+			"Sentence": "Sara grew 43 pumpkins ."
+		}, {
+			"SyntacticPattern": "DNVCN",
+			"label": "-",
+			"Sentence": "the rabbits ate 23 pumpkins ."
+		}],
+		"Sentence": "Sara grew 43 pumpkins , but the rabbits ate 23 pumpkins ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many pumpkins does Sara have ?"
+		}],
+		"Sentence": "How many pumpkins does Sara have ?"
+	}],
+	"lEquations": ["X = 43 - 23"],
+	"iIndex": 119
+}, {
+	"sQuestion": "Joan decided to sell all of her old books . She gathered up 33 books to sell . She sold 26 books in a yard sale . How many books does Joan now have ? ",
+	"lSolutions": ["7"],
+	"ParentIndex": 120,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPVDPNAN",
+			"label": "i",
+			"Sentence": "Joan decided to sell all of her old books ."
+		}],
+		"Sentence": "Joan decided to sell all of her old books ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPV",
+			"label": "+",
+			"Sentence": "She gathered up 33 books to sell ."
+		}],
+		"Sentence": "She gathered up 33 books to sell ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "-",
+			"Sentence": "She sold 26 books in a yard sale ."
+		}],
+		"Sentence": "She sold 26 books in a yard sale ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNV",
+			"label": "?",
+			"Sentence": "How many books does Joan now have ?"
+		}],
+		"Sentence": "How many books does Joan now have ?"
+	}],
+	"lEquations": ["X = 33 - 26"],
+	"iIndex": 120
+}, {
+	"sQuestion": "There are 46 rulers in the drawer . Tim took 25 rulers from the drawer . How many rulers are now in the drawer ? ",
+	"lSolutions": ["21"],
+	"ParentIndex": 121,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 46 rulers in the drawer ."
+		}],
+		"Sentence": "There are 46 rulers in the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCNPDN",
+			"label": "-",
+			"Sentence": "Tim took 25 rulers from the drawer ."
+		}],
+		"Sentence": "Tim took 25 rulers from the drawer ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPDN",
+			"label": "?",
+			"Sentence": "How many rulers are now in the drawer ?"
+		}],
+		"Sentence": "How many rulers are now in the drawer ?"
+	}],
+	"lEquations": ["X = 46 - 25"],
+	"iIndex": 121
+}, {
+	"sQuestion": "There are 33 oak trees currently in the park . Park workers had to cut down 18 oak trees that were damaged . How many oak trees will be in the park when the workers are finished ? ",
+	"lSolutions": ["15"],
+	"ParentIndex": 122,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "EVCNPDN",
+			"label": "+",
+			"Sentence": "There are 33 oak trees currently in the park ."
+		}],
+		"Sentence": "There are 33 oak trees currently in the park ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPVCNVV",
+			"label": "-",
+			"Sentence": "Park workers had to cut down 18 oak trees that were damaged ."
+		}],
+		"Sentence": "Park workers had to cut down 18 oak trees that were damaged ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVPDNWDNVV",
+			"label": "?",
+			"Sentence": "How many oak trees will be in the park when the workers are finished ?"
+		}],
+		"Sentence": "How many oak trees will be in the park when the workers are finished ?"
+	}],
+	"lEquations": ["X = 33 - 18"],
+	"iIndex": 122
+}, {
+	"sQuestion": "Joan purchased a basketball game for $ 5.20 , and a racing game for $ 4.23 . How much did Joan spend on video games ? ",
+	"lSolutions": ["9.43"],
+	"ParentIndex": 123,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "Joan purchased a basketball game for $ 5.20 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "Joan purchased a racing game for $ 4.23 ."
+		}],
+		"Sentence": "Joan purchased a basketball game for $ 5.20 , and a racing game for $ 4.23 ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WVNVPN",
+			"label": "?",
+			"Sentence": "How much did Joan spend on video games ?"
+		}],
+		"Sentence": "How much did Joan spend on video games ?"
+	}],
+	"lEquations": ["X = 5.20 + 4.23"],
+	"iIndex": 123
+}, {
+	"sQuestion": "Mike joined his school 's band . He bought a trumpet for $ 145.16 , and a song book which was $ 5.84 . How much did Mike spend at the music store ? ",
+	"lSolutions": ["151"],
+	"ParentIndex": 124,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNNN",
+			"label": "i",
+			"Sentence": "Mike joined his school 's band ."
+		}],
+		"Sentence": "Mike joined his school 's band ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "He bought a trumpet for $ 145.16 ."
+		}, {
+			"SyntacticPattern": "VDNVC",
+			"label": "+",
+			"Sentence": "He bought a song book which was $ 5.84 ."
+		}],
+		"Sentence": "He bought a trumpet for $ 145.16 , and a song book which was $ 5.84 ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WVNVPDN",
+			"label": "?",
+			"Sentence": "How much did Mike spend at the music store ?"
+		}],
+		"Sentence": "How much did Mike spend at the music store ?"
+	}],
+	"lEquations": ["X = 145.16 + 5.84"],
+	"iIndex": 124
+}, {
+	"sQuestion": "Alyssa bought some toys . She bought a football for $ 5.71 , and spent $ 6.59 on marbles . In total , how much did Alyssa spend on toys ? ",
+	"lSolutions": ["12.3"],
+	"ParentIndex": 125,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDN",
+			"label": "i",
+			"Sentence": "Alyssa bought some toys ."
+		}],
+		"Sentence": "Alyssa bought some toys ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "She bought a football for $ 5.71 ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "She spent $ 6.59 on marbles ."
+		}],
+		"Sentence": "She bought a football for $ 5.71 , and spent $ 6.59 on marbles ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PAWAVNVPN",
+			"label": "?",
+			"Sentence": "In total how much did Alyssa spend on toys ? ."
+		}],
+		"Sentence": "In total , how much did Alyssa spend on toys ?"
+	}],
+	"lEquations": ["X = 5.71 + 6.59"],
+	"iIndex": 125
+}, {
+	"sQuestion": "Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",
+	"lSolutions": ["21.95"],
+	"ParentIndex": 126,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "Jessica spent $ 10.22 on a cat toy ."
+		}, {
+			"SyntacticPattern": "DNVNC",
+			"label": "+",
+			"Sentence": "a cage cost her $ 11.73 ."
+		}],
+		"Sentence": "Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDANPNN",
+			"label": "?",
+			"Sentence": "What was the total cost of Jessica 's purchases ?"
+		}],
+		"Sentence": "What was the total cost of Jessica 's purchases ?"
+	}],
+	"lEquations": ["X = 10.22 + 11.73"],
+	"iIndex": 126
+}, {
+	"sQuestion": "Sara got fast food for lunch . Sara spent $ 5.36 on a hotdog and $ 5.10 on a salad . What was the total of the lunch bill ? ",
+	"lSolutions": ["10.46"],
+	"ParentIndex": 127,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVANPN",
+			"label": "i",
+			"Sentence": "Sara got fast food for lunch ."
+		}],
+		"Sentence": "Sara got fast food for lunch ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "Sara spent $ 5.36 on a hotdog ."
+		}, {
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "Sara spent $ 5.10 on a salad ."
+		}],
+		"Sentence": "Sara spent $ 5.36 on a hotdog and $ 5.10 on a salad ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPDN",
+			"label": "?",
+			"Sentence": "What was the total of the lunch bill ?"
+		}],
+		"Sentence": "What was the total of the lunch bill ?"
+	}],
+	"lEquations": ["X = 5.36 + 5.10"],
+	"iIndex": 127
+}, {
+	"sQuestion": "Jason went to the mall on Saturday to buy clothes . He spent $ 14.28 on shorts and $ 4.74 on a jacket . In total , how much money did Jason spend on clothing ? ",
+	"lSolutions": ["19.02"],
+	"ParentIndex": 128,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPDNPNPVN",
+			"label": "i",
+			"Sentence": "Jason went to the mall on Saturday to buy clothes ."
+		}],
+		"Sentence": "Jason went to the mall on Saturday to buy clothes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "He spent $ 14.28 on shorts jacket ."
+		}, {
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "He spent $ 4.74 on a jacket ."
+		}],
+		"Sentence": "He spent $ 14.28 on shorts and $ 4.74 on a jacket ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PAWANVNVPN",
+			"label": "?",
+			"Sentence": "In total how much money did Jason spend on clothing ? ."
+		}],
+		"Sentence": "In total , how much money did Jason spend on clothing ?"
+	}],
+	"lEquations": ["X = 14.28 + 4.74"],
+	"iIndex": 128
+}, {
+	"sQuestion": "Alyssa loves eating fruits . Alyssa paid $ 12.08 for grapes , and $ 9.85 for cherries . In total , how much money did Alyssa spend ? ",
+	"lSolutions": ["21.93"],
+	"ParentIndex": 129,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVVN",
+			"label": "i",
+			"Sentence": "Alyssa loves eating fruits ."
+		}],
+		"Sentence": "Alyssa loves eating fruits ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Alyssa paid $ 12.08 for grapes ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Alyssa paid $ 9.85 for cherries ."
+		}],
+		"Sentence": "Alyssa paid $ 12.08 for grapes , and $ 9.85 for cherries ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PAWANVNV",
+			"label": "?",
+			"Sentence": "In total how much money did Alyssa spend ? ."
+		}],
+		"Sentence": "In total , how much money did Alyssa spend ?"
+	}],
+	"lEquations": ["X = 12.08 + 9.85"],
+	"iIndex": 129
+}, {
+	"sQuestion": "Mary loves eating fruits . Mary paid $ 11.08 for berries , $ 14.33 for apples , and $ 9.31 for peaches . In total , how much money did she spend ? ",
+	"lSolutions": ["34.72"],
+	"ParentIndex": 130,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVVN",
+			"label": "i",
+			"Sentence": "Mary loves eating fruits ."
+		}],
+		"Sentence": "Mary loves eating fruits ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Mary paid $ 11.08 for berries ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Mary paid $ 14.33 for apples ."
+		}, {
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "Mary paid $ 9.31 for peaches ."
+		}],
+		"Sentence": "Mary paid $ 11.08 for berries , $ 14.33 for apples , and $ 9.31 for peaches ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PAWANVNV",
+			"label": "?",
+			"Sentence": "In total how much money did she spend ? ."
+		}],
+		"Sentence": "In total , how much money did she spend ?"
+	}],
+	"lEquations": ["X = 11.08 + 14.33 + 9.31"],
+	"iIndex": 130
+}, {
+	"sQuestion": "Sandy went to the mall to buy clothes . She spent $ 13.99 on shorts , $ 12.14 on a shirt , and $ 7.43 on a jacket . How much money did Sandy spend on clothes ? ",
+	"lSolutions": ["33.56"],
+	"ParentIndex": 131,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVPDNPVN",
+			"label": "i",
+			"Sentence": "Sandy went to the mall to buy clothes ."
+		}],
+		"Sentence": "Sandy went to the mall to buy clothes ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVCPN",
+			"label": "-",
+			"Sentence": "She spent $ 13.99 on shorts ."
+		}, {
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "She spent $ 12.14 on a shirt ."
+		}, {
+			"SyntacticPattern": "NVCPDN",
+			"label": "-",
+			"Sentence": "She spent $ 7.43 on a jacket ."
+		}],
+		"Sentence": "She spent $ 13.99 on shorts , $ 12.14 on a shirt , and $ 7.43 on a jacket ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WANVNVPN",
+			"label": "?",
+			"Sentence": "How much money did Sandy spend on clothes ?"
+		}],
+		"Sentence": "How much money did Sandy spend on clothes ?"
+	}],
+	"lEquations": ["X = 13.99 + 12.14 + 7.43"],
+	"iIndex": 131
+}, {
+	"sQuestion": "Jason joined his school 's band . He bought a flute for $ 142.46 , a music tool for $ 8.89 , and a song book for $ 7 . How much did Jason spend at the music store ? ",
+	"lSolutions": ["158.35"],
+	"ParentIndex": 132,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNNN",
+			"label": "i",
+			"Sentence": "Jason joined his school 's band ."
+		}],
+		"Sentence": "Jason joined his school 's band ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "He bought a flute for $ 142.46 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "He bought a music tool for $ 8.89 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "He bought a song book for $ 7 ."
+		}],
+		"Sentence": "He bought a flute for $ 142.46 , a music tool for $ 8.89 , and a song book for $ 7 ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WVNVPDN",
+			"label": "?",
+			"Sentence": "How much did Jason spend at the music store ?"
+		}],
+		"Sentence": "How much did Jason spend at the music store ?"
+	}],
+	"lEquations": ["X = 142.46 + 8.89 + 7"],
+	"iIndex": 132
+}, {
+	"sQuestion": "Tom purchased a football game for $ 14.02 , a strategy game for $ 9.46 , and a Batman game for $ 12.04 . How much did Tom spend on video games ? ",
+	"lSolutions": ["35.52"],
+	"ParentIndex": 133,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "Tom purchased a football game for $ 14.02 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "Tom purchased a strategy game for $ 9.46 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "Tom purchased a Batman game for $ 12.04 ."
+		}],
+		"Sentence": "Tom purchased a football game for $ 14.02 , a strategy game for $ 9.46 , and a Batman game for $ 12.04 ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "WVNVPN",
+			"label": "?",
+			"Sentence": "How much did Tom spend on video games ?"
+		}],
+		"Sentence": "How much did Tom spend on video games ?"
+	}],
+	"lEquations": ["X = 14.02 + 9.46 + 12.04"],
+	"iIndex": 133
+}, {
+	"sQuestion": "Mike bought some toys . He bought marbles for $ 9.05 , a football for $ 4.95 , and spent $ 6.52 on a baseball . In total , how much did Mike spend on toys ? ",
+	"lSolutions": ["20.52"],
+	"ParentIndex": 134,
+	"Sentences": [{
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVDN",
+			"label": "i",
+			"Sentence": "Mike bought some toys ."
+		}],
+		"Sentence": "Mike bought some toys ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "NVNPC",
+			"label": "+",
+			"Sentence": "He bought marbles for $ 9.05 ."
+		}, {
+			"SyntacticPattern": "NVDNPC",
+			"label": "+",
+			"Sentence": "He bought a football for $ 4.95 ."
+		}, {
+			"SyntacticPattern": "NVCPDN",
+			"label": "+",
+			"Sentence": "He spent $ 6.52 on a baseball ."
+		}],
+		"Sentence": "He bought marbles for $ 9.05 , a football for $ 4.95 , and spent $ 6.52 on a baseball ."
+	}, {
+		"SimplifiedSentences": [{
+			"SyntacticPattern": "PAWAVNVPN",
+			"label": "?",
+			"Sentence": "In total how much did Mike spend on toys ? ."
+		}],
+		"Sentence": "In total , how much did Mike spend on toys ?"
+	}],
+	"lEquations": ["X = 9.05 + 4.95 + 6.52"],
+	"iIndex": 134
+}]

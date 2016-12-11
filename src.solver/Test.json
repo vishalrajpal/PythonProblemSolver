@@ -1,40 +1,29 @@
-[{ 
-	"ParentIndex": 1,
-	"iIndex": 1,
-	"lEquations": ["X = 70 - 27"],
-	"lSolutions": ["43"],
-	"sQuestion": "Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ? ",
+[{
+	"ParentIndex": 102,
+	"iIndex": 102,
+	"lEquations": ["X = 7 + 5"],
+	"lSolutions": ["12"],
+	"sQuestion": "Mary had 7 nickels in her bank . Her dad gave her 5 nickels . How many nickels does Mary have now ? ",
 	"Sentences": [{
-		"Sentence": "Joan found 70 seashells on the beach .",
+		"Sentence": "Mary had 7 nickels in her bank .",
 		"SimplifiedSentences": [{
-			"Sentence": "Joan found 70 seashells on the beach .",
+			"Sentence": "Mary had 7 nickels in her bank .",
 			"label": "+",
-			"PredictedLabel": "+",
-			"SyntacticPattern": "NVCNPDN"
+			"SyntacticPattern": "NVCNPNN"
 		}]
 	}, {
-		"Sentence": "she gave Sam some of her seashells .",
+		"Sentence": "Her dad gave her 5 nickels .",
 		"SimplifiedSentences": [{
-			"Sentence": "she gave Sam some of her seashells .",
-			"label": "-",
-			"PredictedLabel": "-",
-			"SyntacticPattern": "NVNDPNN"
+			"Sentence": "Her dad gave her 5 nickels .",
+			"label": "+",
+			"SyntacticPattern": "NNVNCN"
 		}]
 	}, {
-		"Sentence": "She has 27 seashell .",
+		"Sentence": "How many nickels does Mary have now ?",
 		"SimplifiedSentences": [{
-			"Sentence": "She has 27 seashell .",
-			"label": "=",
-			"PredictedLabel": "=",
-			"SyntacticPattern": "NVCN"
-		}]
-	}, {
-		"Sentence": "How many seashells did she give to Sam ?",
-		"SimplifiedSentences": [{
-			"Sentence": "How many seashells did she give to Sam ?",
+			"Sentence": "How many nickels does Mary have now ?",
 			"label": "?",
-			"PredictedLabel": "?",
-			"SyntacticPattern": "WANVNVPN"
+			"SyntacticPattern": "WANVNV"
 		}]
 	}]
 }]
