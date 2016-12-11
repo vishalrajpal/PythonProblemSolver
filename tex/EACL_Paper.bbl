@@ -1,0 +1,52 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Hosseini \bgroup et al.\egroup }2014]{ARIS:14}
+Mohammad~Javad Hosseini, Hannaneh Hajishirzi, Oren Etzioni, and Nate Kushman.
+\newblock 2014.
+\newblock Learning to solve arithmetic word problems with verb categorization.
+\newblock In Alessandro Moschitti, Bo~Pang, and Walter Daelemans, editors, {\em
+  Proceedings of the 2014 Conference on Empirical Methods in Natural Language
+  Processing, {EMNLP} 2014, October 25-29, 2014, Doha, Qatar, {A} meeting of
+  SIGDAT, a Special Interest Group of the {ACL}}, pages 523--533. {ACL}.
+
+\bibitem[\protect\citename{Koncel-Kedziorski \bgroup et al.\egroup
+  }2016]{MAWPS}
+Rik Koncel-Kedziorski, Subhro Roy, Aida Amini, Nate Kushman, and Hannaneh
+  Hajishirzi.
+\newblock 2016.
+\newblock Mawps: A math word problem repository.
+\newblock In {\em Proceedings of the 2016 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 1152--1157, San Diego, California, June. Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Kushman \bgroup et al.\egroup }2014]{Kushman:14}
+Nate Kushman, Yoav Artzi, Luke Zettlemoyer, and Regina Barzilay.
+\newblock 2014.
+\newblock Learning to automatically solve algebra word problems.
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 271--281,
+  Baltimore, Maryland, June. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Miller}1995]{WordNet:95}
+George~A. Miller.
+\newblock 1995.
+\newblock Wordnet: A lexical database for english.
+\newblock {\em Commun. ACM}, 38(11):39--41, November.
+
+\bibitem[\protect\citename{Roy and Roth}2015]{RoyR:15}
+Subhro Roy and Dan Roth.
+\newblock 2015.
+\newblock Solving general arithmetic word problems.
+\newblock In Lluís Màrquez, Chris Callison-Burch, Jian Su, Daniele Pighin,
+  and Yuval Marton, editors, {\em EMNLP}, pages 1743--1752. The Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Roy \bgroup et al.\egroup }2015]{RoyT:15}
+Subhro Roy, Tim Vieira, and Dan Roth.
+\newblock 2015.
+\newblock Reasoning about quantities in natural language.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  3:1--13.
+
+\end{thebibliography}

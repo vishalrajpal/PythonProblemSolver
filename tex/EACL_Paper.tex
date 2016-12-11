@@ -1,0 +1,351 @@
+\documentclass[11pt]{article}
+\usepackage{eacl2017}
+\usepackage{times}
+\usepackage{array}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{tabularx}
+\eaclfinalcopy
+
+\captionsetup[table]{name=Figure}
+
+\begin{document}
+\title{Operator Prediction through Sentence Simplification for Solving Arithmetic Word Problems}
+
+\author{First Author \\
+  Affiliation / Address line 1 \\
+  {\tt email@domain} \\\And
+  Second Author \\
+  Affiliation / Address line 1 \\
+  {\tt email@domain} \\}
+
+\date{}
+\maketitle
+
+\begin{abstract}
+This paper presents a sentence simplification approach in learning to solve arithmetic word problems. The approach performs a thorough analysis to map each sentence in the word problem to a simplified sentence . The objective of our approach is to use the basic properties of the language to simplify sentences and then classify the simplified sentences to their operators. We simplify the sentence until it represents a single operation. Using the predicted operators for each simplified sentence we build an equation and solve the problem. We train our classifier on MAWPS (A Math Word Problem Repository)~\cite{MAWPS} dataset and achieve an accuracy of 82.57\%.  Experimental results show that our method outperforms existing systems, achieving state of the art performance on benchmark datasets of arithmetic word problems.
+\end{abstract}
+
+\section{Introduction}
+Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. For example it will be difficult to extract quantities from the sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1} in order to solve the problem.
+
+To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem , we extract an equation using the coherent set of simplified sentences and their predicted operators.
+\begin{table}[h]
+\begin{tabularx}{7.9cm}{|c|c|}
+\hline 
+\multicolumn{2}{|c|}{\bf{Example Word Problem}} \\ \hline
+\multicolumn{2}{|p{7cm}|}{A spaceship traveled 0.5 light-year from Earth to Planet X and 0.1 light-year from Planet X to Planet Y. How many light-years did the spaceship travel in all ?} \\ \hline
+\multicolumn{1}{|m{5cm}|}{\bf \centering Simplified Sentence} & \multicolumn{1}{m{2cm}|}{\bf \centering Predicted Operations} \\ \hline
+\multicolumn{1}{|m{5cm}|}{A spaceship traveled 0.5 light-year from Earth to Planet X.} & \multicolumn{1}{m{2cm}|}{\centering + 0.5 light-year} \\ \hline
+\multicolumn{1}{|m{5cm}|}{A spaceship traveled 0.1 light-year from Planet X to Planet Y.} & \multicolumn{1}{m{2cm}|}{\centering + 0.1 light-year} \\ \hline
+\multicolumn{2}{|m{7cm}|}{\centering \textbf{Equation:}  + 0.5 light-year + 0.1 light-year} \\ \hline
+\end{tabularx}
+\caption{\label{figure:1} Equation Extraction from Simplified Sentences }
+\end{table}
+
+\section{Related Work}
+There have been a number of attempts to solve arithmetic word problems through machine learning (ML). All of the approaches that are not template based (e.g., ~\cite{ARIS:14}, ~\cite{RoyT:15} and ~\cite{RoyR:15}) use different methods to extract similar information. Based on different ways the information is represented, an equation is generated for the problem text. The template based method of ~\cite{Kushman:14} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems (e.g., ~\cite{ARIS:14} and ~\cite{RoyT:15}) while others (e.g., ~\cite{RoyR:15} and ~\cite{Kushman:14}) can also solve problems that require multiplication/division operations. Our approach uses the idea of sentence simplification to predict operators and handles addition and subtraction problems.
+
+\section{Our Method}
+In this section we describe how our system maps an arithmetic word problem to an equation. It consists of three main steps:
+\begin{enumerate}
+\item Extract simplified sentences from complex word problems using the simplification rules. 
+\item Train a model to classify operators for each simplified sentence.
+\item Solve the problem by updating the world states with the learned verb categories and forming equations.
+\end{enumerate}
+
+\subsection{Sentence Simplification and Problem Decomposition}
+Sentences in an arithmetic word problem are sometimes complex. Hence, it is difficult to extract information from such sentences. Even more challenging is to predict the impact of the sentence on the result. We extract a total of 1218 addition subtraction problems from the MAWPS repository ~\cite{MAWPS} and execute sentence simplification on all of them. We also release a dataset of simplified sentences for these word problems.\footnote{URL not provided to maintain anonymity.} We create a mapping for each sentence in the problem text to its simplified sentences by extracting their relational dependencies from the Stanford dependency parser. Currently, our system simplifies sentences based on conjunctions and punctuation characters such as comma. There are certain rules when simplifying the sentence as described in Section \ref{sec:SimplificationRules}.
+
+\textbf{Notation:} Given a problem text $\mathbf{S}$, let the sentences in the $\mathbf{S}$ be $\mathbf{<s_{1},..., s_{n}>}$. Each sentence $\mathbf{s_{i}}$ will be simplified to \begin{math}m\end{math} simplified sentences. Let the simplified sentences of $\mathbf{s_{i}}$ be $\mathit{<k_{1},..., k_{m}>}$.
+
+\subsubsection{Rules for Simplifying Sentences}\label{sec:SimplificationRules}
+When the conjunction \textit{"and"} or  the punctuation character \textit{","} is encountered, our system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before these elements while the second sentence is the part after them. Notably, after the split there may be some words which would be required in the second sentence. Consider the sentence in Figure \ref{figure:2}: 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+$\mathbf{s}$: The school cafeteria ordered 42 red apples and 7 green apples for students lunches.\\
+\hline
+\end{tabular}
+\caption{Example Sentence}
+\label{figure:2}
+\end{table}
+
+In s, the split based on \textit{"and"} will result in two sentences as shown below:
+\\
+\\
+$\mathit{k_{1}}$:\textit{The school cafeteria ordered 42 red apples}\\
+$\mathit{k_{2}}$:\textit{7 green apples for students lunches}
+\\
+\\
+Here $\mathit{k_{1}}$ has a subject and a verb while $\mathit{k_{2}}$ does not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
+
+\subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
+\begin{enumerate}
+\item \label{rule:1}
+If $\mathit{k_{1}}$ starts with an existential and has a verb after it and if $\mathit{k_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:3}:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+ $\mathbf{s}$\textbf{: There were 2 siamese cats and 4 house cats.}\\
+\hline
+$\mathit{k_{1}}$: There were 2 siamese cats.\\
+\hline
+$\mathit{k_{2}}$: There were 2 house cats.\\
+\hline
+\end{tabular}
+\caption{Example sentence for Rule \ref{rule:1}}.
+\label{figure:3}
+\end{table}
+
+The expletive and verb were added to $\mathit{k_{2}}$ based on the simplification rule mentioned above.
+
+\item \label{rule:2}
+If $\mathit{k_{1}}$ starts with a noun, and if $\mathit{k_{2}}$ starts with a verb, the noun from the former will be distributed to the latter. Refer to an example in Figure \ref{figure:4}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+ $\mathbf{s}$\textbf{: Joan ate 2 oranges and threw 3 apples.}\\
+\hline
+$\mathit{k_{1}}$: Joan ate 2 oranges.\\
+\hline
+$\mathit{k_{2}}$: Joan threw 3 apples.\\
+\hline
+\end{tabular}
+\caption{Example sentence for Rule \ref{rule:2}.}
+\label{figure:4}
+\end{table}
+
+\item  \label{rule:3}
+If $\mathit{k_{1}}$ starts with a noun and $\mathit{k_{2}}$ has a \textit{noun verb} pattern, do nothing.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+ $\mathbf{s}$\textbf{: Tom has 9 yellow balloons and Sara has 8 yellow balloons.}\\
+\hline
+$\mathit{k_{1}}$: Tom has 9 yellow balloons.\\
+\hline
+$\mathit{k_{2}}$: Sara has 8 yellow balloons.\\
+\hline
+\end{tabular}
+\caption{Example sentence for Rule  \ref{rule:3}.}
+\label{figure:5}
+\end{table}
+
+In the example presented in Figure \ref{figure:5}, No words from $\mathit{k_{1}}$ were added to $\mathit{k_{2}}$ since it had the \textit{noun verb (Sara has)} pattern.
+
+\item \label{rule:4}
+If $\mathit{k_{2}}$ contains a preposition at the end and $\mathit{k_{1}}$ does not, it will be distributed from $\mathit{k_{2}}$ to $\mathit{k_{1}}$. Consider the example presented in Figure \ref{figure:6}:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+ $\mathbf{s}$\textbf{: Joan found 6 seashells and Jessica found 8 seashells on the beach.}\\
+\hline
+$\mathit{k_{1}}$: Joan found 6 seashells on the beach.\\
+\hline
+$\mathit{k_{2}}$: Jessica found 8 seashells on the beach.\\
+\hline
+\end{tabular}
+\caption{Example sentence for Rule  \ref{rule:4}.}
+\label{figure:6}
+\end{table}
+
+After splitting the sentence based on \textit{and}, the preposition and the words after it \textit{on the beach} were added to the first sentence.
+
+\item
+Based on the output by the dependency parser and our rules, there might be some words which might not have been identified. But we still need those words in the simplified sentences. Therefore, the sentence simplification system identifies all such words. If these words appear before the conjunction, they are added to $\mathit{k_{1}}$ at the correct index and if they appear after the conjunction, they are added to $\mathit{k_{2}}$.
+
+\end{enumerate}
+
+\section{Operation Prediction Classifier}
+
+After all the sentences are simplified, we randomly divide the dataset into training and testing in the ratio of 3:1. We train our model using Random Forest classifier that predicts one of the following classes for each simplified sentence in the word problem:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{2cm} | m{5cm} |}
+\hline
+\textbf{Class Label} & \textbf{Description}\\ \hline
++ & Addition Operation.\\ \hline
+- & Subtraction Operation\\ \hline
+? & Fragment asking some question\\ \hline
+= & Assignment Operation\\ \hline
+i & Irrelevant information for solving the word problem \\ \hline
+\end{tabular}
+\caption{Class Labels for Operator Prediction Classifier}
+\label{figure:7}
+\end{table}
+
+\subsection{Features}
+\subsubsection{Position based}
+The index of simplified sentence in the question is important to determine the operation that sentence will perform. We take 2 such features into consideration as shown in Figure \ref{figure:8}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{3cm} | m{4cm} |}
+\hline
+\textbf{Feature} & \textbf{Description}\\ \hline
+IsItAFirstSentence & Most word problems in the training data had a positive operation in the first sentence.\\ \hline
+IsItALastSentence & Almost always the last sentence in the word problem is a question sentence.\\ \hline
+\end{tabular}
+\caption{Position based Features}
+\label{figure:8}
+\end{table}
+
+\subsubsection{Relation based}
+Existence of some important dependency relations is used as a feature. Refer to Figure \ref{figure:9} for the list of relation based features:
+\begin{table}[H]
+\begin{tabular}{|m{2cm} | m{5cm}|}
+\hline 
+\textbf{Feature} & \textbf{Description}\\ \hline
+nsubj & \multirow{2}{5cm}{\centering The sentence is more likely to perform an operation in the presence of these two relations.} \\[10pt]
+\cline{1-1} 
+ dobj & \\[10pt]
+\hline
+\end{tabular}
+\caption{Relation based Features}
+\label{figure:9}
+\end{table}
+
+\subsubsection{Parts of Speech based}
+Existence of some Parts of Speech of the words in the sentence is used as a feature. Refer to Figure \ref{figure:10} for the list of POS based features:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ | m{3cm} | m{4cm} |}
+\hline
+\textbf{Feature} & \textbf{Description}\\ \hline
+CD: Cardinal & \multirow{8}{4cm}{\centering The sentence is more likely to perform an operation in the presence of these Parts of Speech.} \\
+\cline{1-1} 
+WRB: WH-Adverb & \\
+\cline{1-1} 
+EX: Expletive & \\ 
+\cline{1-1} 
+RBR: Comparative Adverb & \\ 
+\cline{1-1} 
+RBS: Superlative Adverb & \\ 
+\cline{1-1} 
+VBD: Past tense Verb & \\ 
+\cline{1-1} 
+VB: Base form Verb & \\ 
+\hline
+\end{tabular}
+\caption{Position based Features}
+\label{figure:10}
+\end{table}
+
+\subsubsection{Verb Similarity based}
+A \textit{Positive Verb} is a verb which indicates that the subject in the sentence is gaining some quantified object. A \textit{Negative Verb} is a verb which indicates that the subject is losing something. We extract the most frequent verbs in  $\mathit{+}$ and $\mathit{-}$ labeled sentences. Based on the frequencies we extract 13 significantly differentiating verbs for each class. The similarity of the lemma of these verbs to the action verb in the sentence is then used as a feature. Therefore, we have a total of 26 such features. The similarity score is calculated based on the WUP word similarity using WordNet~\cite{WordNet:95}.
+
+\section{Word Problem Solver}
+\subsection{Using Operator Prediction Results}
+Based on the predicted operators for each simplified sentence, we create a representation for every subject having one or more objects. Refer to Figure \ref{figure:11} for details:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | m{7cm} | }
+\hline
+ $\mathbf{w}$\textbf{: Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ?}\\
+\hline
+$\mathit{k_{1}}$: Joan found 70 seashells on the beach.\\
+\hline
+$\mathit{k_{2}}$: she gave Sam some of her seashells .\\
+\hline
+$\mathit{k_{3}}$: She has 27 seashell .\\
+\hline
+$\mathit{k_{4}}$: How many seashells did she give to Sam ?\\
+\hline
+\end{tabular}
+\caption{Example Word Problem}
+\label{figure:11}
+\end{table}
+
+The representation of the above simplified sentences would be as shown in Figure \ref{figure:12}:
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |p{1.3cm}|p{1.7cm}|p{3.7cm}| }
+\hline
+\textbf{Sentence} & \textbf{Predicted Operator} & \textbf{Representation} \\ \hline
+$\mathit{k_{1}}$ & $\mathit{+}$ & $\mathit{Joan > 70}$\textit{seashell} \\ \hline
+$\mathit{k_{2}}$ & $\mathit{-}$ & $\mathit{Joan> 70 - X}$\textit{seashell} $\mathit{Sam > +X}\textit{seashell}$ \\ \hline
+$\mathit{k_{3}}$ & $\mathit{=}$ & $\mathit{Joan > 70 - X = 27}$ \textit{seashell}\\ \hline
+\end{tabular}
+\caption{Example Word Problem}
+\label{figure:11}
+\end{table}
+
+
+
+We use Spacy\footnote{https://spacy.io} to extract dependency relations and attempt to extract equation for a word problem based on the subject and object identified in the question sentence. There are 4 scenarios we consider:
+\begin{enumerate}
+\item If the question sentence has a singular subject and an object, we map the subject to one of the entities in our representation and output the result.
+\item If the question sentence has a plural subject (For Example: \textit{they}) and an object, we perform all the identified operations for that object.
+\item If the question sentence has a comparative adjective and multiple subjects or multiple objects, we output the result by subtracting the smaller quantity from the greater one.
+\item If the question sentence does not fall in any one of the above cases, we perform all the identified operations in our representation and output the result.
+\end{enumerate}
+
+
+\section{Experimental Results}
+\subsection{Operator Prediction Classifier}
+Out of 1218 simplified word problems, we use 1015 to train our classifier and the remaining 203 to test. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|m{0.8cm}|m{1.4cm}|m{1.4cm}|m{1.4cm}|m{1cm}|}
+\hline
+\textbf{Class} & \textbf{Training Count} & \textbf{Testing Count} & \textbf{Precision} & \textbf{Recall} \\ \hline
+$\mathit{+}$ & 1811 & 375 & 96.23 & 74.93 \\ \hline
+$\mathit{-}$ & 528 & 102 & 85.57 & 87.25 \\ \hline
+$\mathit{?}$ & 1015 & 203 & 100 & 100 \\ \hline
+$\mathit{=}$ & 113 & 28 & 25 & 53.57 \\ \hline
+$\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
+\multicolumn{5}{|m{7cm}|}{\textbf{Accuracy: 82.57}\%} \\ \hline
+\end{tabular}
+\caption{Operator Prediction Results}
+\label{figure:12}
+\end{table}
+
+\subsection{Word Problem Solver}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|m{3.5cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|}
+\hline
+ & \textbf{MA1} & \textbf{IXL} & \textbf{MA2} & \textbf{Total} \\ \hline
+~\newcite{ARIS:14} & 83.6 & 75.0 & 74.4 & 77.7 \\ \hline
+~\newcite{RoyR:15} & - & - & - & 78.0 \\ \hline
+~\newcite{Kushman:14} & 89.6 & 51.1 & 51.2 & 64.0 \\ \hline
+  & \textbf{93.0} & 52.0 & \textbf{81.0} & 75.33 \\ \hline
+\end{tabular}
+\caption{Solver Results for AI2 Dataset}
+\label{figure:13}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|m{3cm}|m{2cm}|m{2cm}|}
+\hline
+ & \textbf{Training} & \textbf{Testing} \\ \hline
+ \textbf{Count} & 1015 & 203 \\ \hline
+ \textbf{Accuracy} & 90.14 & \textbf{91.62} \\ \hline
+\end{tabular}
+\caption{Solver Results for MAWPS Dataset}
+\label{figure:14}
+\end{table}
+
+\section{Conclusion}\label{sec:conclusion}
+This paper presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of sentence simplification for operator predictions. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed a particular problem type before.
+
+\bibliography{EACL_Paper.bib}
+\bibliographystyle{eacl2017.bst}
+\end{document}

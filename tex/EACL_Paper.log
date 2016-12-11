@@ -1,0 +1,381 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 DEC 2016 13:23
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**EACL_Paper.tex
+(./EACL_Paper.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./eacl2017.sty
+Conference Style for EACL 2017 -- released August 8th, 2016
+\titlebox=\skip43
+\aclrulerbox=\box26
+\aclrulercount=\count87
+\aclruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count88
+\cv@tot=\count89
+\cv@tmpc@=\count90
+\cv@tmpc=\count91
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen106
+\extrarowheight=\dimen107
+\NC@list=\toks14
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count92
+\float@exts=\toks15
+\float@box=\box28
+\@float@everytoks=\toks16
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\captionmargin=\dimen108
+\captionmargin@=\dimen109
+\captionwidth=\dimen110
+\caption@tempdima=\dimen111
+\caption@indent=\dimen112
+\caption@parindent=\dimen113
+\caption@hangindent=\dimen114
+)
+\c@ContinuedFloat=\count93
+Package caption Info: float package is loaded.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen115
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen116
+\TX@old@table=\dimen117
+\TX@old@col=\dimen118
+\TX@target=\dimen119
+\TX@delta=\dimen120
+\TX@cols=\count94
+\TX@ftn=\toks18
+)
+(./EACL_Paper.aux
+
+LaTeX Warning: Label `figure:11' multiply defined.
+
+)
+\openout1 = `EACL_Paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 13.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 24.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1132) in paragraph at lines 27--28
+\OT1/ptm/m/n/10.95 bench-mark datasets of arith-metic word
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 43--43
+[][] 
+ []
+
+
+Overfull \hbox (5.69048pt too wide) in paragraph at lines 43--44
+[][] 
+ []
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 59.
+
+Underfull \hbox (badness 1325) in paragraph at lines 59--60
+\OT1/ptm/m/n/10.95 Sentences in an arith-metic word prob-lem are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--85
+
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 77--85
+[]$\OT1/ptm/m/n/10.95 :\OT1/ptm/m/it/10.95 The school cafe-te-ria or-dered 42 r
+ed ap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--85
+
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 77--85
+\OT1/ptm/m/n/10.95 Here $[]$ has a sub-ject and a verb while $[]$
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 77--85
+\OT1/ptm/m/n/10.95 does not have them, mak-ing it an im-proper
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
+Overfull \hbox (5.28314pt too wide) in paragraph at lines 177--186
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 198--198
+[]|\OT1/ptm/m/n/10.95 Most word prob-lems in
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 198--198
+\OT1/ptm/m/n/10.95 the train-ing data had a
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 199--199
+[]|\OT1/ptm/m/n/10.95 Almost al-ways the last
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\OT1/ptm/m/n/10.95 sen-tence in the word
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 199--199
+\OT1/ptm/m/n/10.95 prob-lem is a ques-tion
+ []
+
+
+Overfull \hbox (5.28314pt too wide) in paragraph at lines 195--201
+ [][] 
+ []
+
+
+Overfull \vbox (13.60002pt too high) detected at line 211
+ []
+
+
+Overfull \hbox (5.28314pt too wide) in paragraph at lines 208--216
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+[]|\OT1/ptm/m/n/10.95 RBS: Su-perla-tive
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 238--238
+[]|\OT1/ptm/m/n/10.95 VBD: Past tense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]|\OT1/ptm/m/n/10.95 VB: Base form
+ []
+
+
+Overfull \hbox (5.28314pt too wide) in paragraph at lines 225--243
+ [][] 
+ []
+
+[3]
+Overfull \hbox (4.3689pt too wide) in paragraph at lines 278--278
+[]|\OT1/ptm/b/n/10.95 Sentence| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/ptm/b/n/10.95 Predicted
+ []
+
+
+Overfull \hbox (3.9147pt too wide) in paragraph at lines 280--280
+[]|$[]$\OT1/ptm/m/it/10.95 seashell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+[]|$[]$
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 276--283
+ [][] 
+ []
+
+
+Overfull \hbox (2.18141pt too wide) in paragraph at lines 306--306
+[]|\OT1/ptm/b/n/10.95 Class| 
+ []
+
+
+Overfull \hbox (0.7355pt too wide) in paragraph at lines 306--306
+[]|\OT1/ptm/b/n/10.95 Training
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[]|\OT1/ptm/b/n/10.95 Testing
+ []
+
+
+Overfull \hbox (3.15541pt too wide) in paragraph at lines 306--306
+[]|\OT1/ptm/b/n/10.95 Precision| 
+ []
+
+
+Overfull \hbox (0.73953pt too wide) in paragraph at lines 306--306
+[]|\OT1/ptm/b/n/10.95 Recall| 
+ []
+
+
+Overfull \hbox (14.0299pt too wide) in paragraph at lines 304--314
+ [][] 
+ []
+
+
+Overfull \hbox (3.80074pt too wide) in paragraph at lines 324--324
+[]|\OT1/ptm/b/n/10.95 MA1| 
+ []
+
+
+Overfull \hbox (3.80074pt too wide) in paragraph at lines 324--324
+[]|\OT1/ptm/b/n/10.95 MA2| 
+ []
+
+
+Overfull \hbox (4.01967pt too wide) in paragraph at lines 324--324
+[]|\OT1/ptm/b/n/10.95 Total| 
+ []
+
+
+Overfull \hbox (4.72061pt too wide) in paragraph at lines 328--328
+[]|\OT1/ptm/m/n/10.95 75.33| 
+ []
+
+
+Overfull \hbox (22.56584pt too wide) in paragraph at lines 322--330
+ [][] 
+ []
+
+
+Overfull \hbox (17.68312pt too wide) in paragraph at lines 336--342
+ [][] 
+ []
+
+[4] (./EACL_Paper.bbl
+Underfull \hbox (badness 2418) in paragraph at lines 4--11
+[]\OT1/ptm/m/n/10 Mohammad Javad Hos-seini, Han-naneh Ha-jishirzi,
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+) [5] (./EACL_Paper.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred when \iffalse on line 331 was incomplete) 
+Here is how much of TeX's memory you used:
+ 1730 strings out of 493014
+ 27633 string characters out of 6133351
+ 103485 words of memory out of 5000000
+ 5282 multiletter control sequences out of 15000+600000
+ 30820 words of font info for 65 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,13n,39p,913b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/201
+6/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on EACL_Paper.pdf (5 pages, 134948 bytes).
+PDF statistics:
+ 65 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
