@@ -6,7 +6,7 @@
 \usepackage{caption}
 \usepackage{multirow}
 \usepackage{tabularx}
-\eaclfinalcopy
+%\eaclfinalcopy
 
 \captionsetup[table]{name=Figure}
 
@@ -24,11 +24,11 @@
 \maketitle
 
 \begin{abstract}
-This paper presents a sentence simplification approach in learning to solve arithmetic word problems. The approach performs a thorough analysis to map each sentence in the word problem to a simplified sentence . The objective of our approach is to use the basic properties of the language to simplify sentences and then classify the simplified sentences to their operators. We simplify the sentence until it represents a single operation. Using the predicted operators for each simplified sentence we build an equation and solve the problem. We train our classifier on MAWPS (A Math Word Problem Repository)~\cite{MAWPS} dataset and achieve an accuracy of 82.57\%.  Experimental results show that our method outperforms existing systems, achieving state of the art performance on benchmark datasets of arithmetic word problems.
+This paper presents a sentence simplification approach in learning to solve arithmetic word problems. The approach performs a thorough analysis to map each sentence in the word problem to a simplified sentence. The objective of our approach is to use the basic properties of the English language to simplify sentences and then classify the simplified sentences to their operators. We simplify the sentence until it represents a single operation. Using the predicted operators for each simplified sentence we build an equation and solve the problem. We train our classifier on MAWPS (A Math Word Problem Repository)~\cite{MAWPS} dataset and achieve an accuracy of 82.57\%. We show that our method performs relatively better than other methods, achieving state of the art performance on benchmark datasets.
 \end{abstract}
 
 \section{Introduction}
-Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. For example it will be difficult to extract quantities from the sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1} in order to solve the problem.
+Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. It will be difficult to extract accurate information from the unsimplified sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1} in order to solve the problem.
 
 To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem , we extract an equation using the coherent set of simplified sentences and their predicted operators.
 \begin{table}[h]
@@ -325,7 +325,7 @@ $\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
 ~\newcite{ARIS:14} & 83.6 & 75.0 & 74.4 & 77.7 \\ \hline
 ~\newcite{RoyR:15} & - & - & - & 78.0 \\ \hline
 ~\newcite{Kushman:14} & 89.6 & 51.1 & 51.2 & 64.0 \\ \hline
-  & \textbf{93.0} & 52.0 & \textbf{81.0} & 75.33 \\ \hline
+\textbf{Proposed Method} & \textbf{93.0} & 52.0 & \textbf{81.0} & 75.33 \\ \hline
 \end{tabular}
 \caption{Solver Results for AI2 Dataset}
 \label{figure:13}
