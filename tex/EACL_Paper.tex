@@ -343,6 +343,40 @@ $\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
 \label{figure:14}
 \end{table}
 
+\section{Error Analysis}
+\subsection{Sentence Simplification}
+We analysed the errors in sentence simplification system where minimal manual internvention was required to simplify the sentences correctly. We present our analysis in Figure \ref{figure:15}. There were few word problems in the dataset where the conjunction \textit{and} was missing so the sentence could not be simplified at all. There were around 2\% of word problems that had adjective implicitly added to the object mentioned later in the sentence. For such sentences the nouns from the second simplified sentence is not attached to the adjective in the first simplified sentence. Finally, we also have sentences starting with conditional words like \textit{if} and \textit{when} that are not simplified since the system could not identify the subject, object and verb correctly in the sentence.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|m{1cm}|m{3cm}|m{3cm}|}
+\hline
+ \textbf{Error Type} & \textbf{Example}  & \textbf{Simplified Sentence}\\ \hline
+ Dataset error 2\% & Joan has 5 apples Mary has 2 apples. & Joan has 5 apples Mary has 2 apples. \\ \hline
+Attaching adjectives 2\% & Joan has 5 blue and 2 red marbles. & Joan has 5 blue. Joan has 2 red marbles. \\ \hline
+Conditional start 3\% & If her fund was worth 1472 before , how much is it worth now ? & If her fund was worth 1472 before, how much is it worth now ? \\ \hline
+\end{tabular}
+\caption{Sentence simplification errors}
+\label{figure:15}
+\end{table}
+
+\subsection{Solver}
+There are 4 major classes of errors for the solver. In the first category, the parser is not able to correctly identify the subject and object in the sentence. The second category refers to errors that require set completion knowledge. For example, played can be divided into win and lose. Also, we find irrelevant information with cardinals that add to errors in the solver. For example, to identify the count of cards, it is not required to know how many of them were torn.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|m{2cm}|m{4 cm}|}
+\hline
+ \textbf{Error Type} & \textbf{Example}\\ \hline
+Parsing Issues 15\% & Sally had 27 Pokemon cards. Dan gave her 41 new Pokemon cards. How many Pokemon cards does Sally have now? \\ \hline
+Set Completion 5\% & Sara’s school played 12 games this year. They won 4 games. How many games did they lose?. \\ \hline
+Irrelevant Information 10\% & Sara has 20 baseball cards but 9 were torn. She gave 10 baseball cards to Joan. How many cards does she now have? \\ \hline
+Others 10\% & In March it rained 0.81 inches. It rained 0.35 inches less in April than in March. How much did it rain in April?  \\ \hline
+\end{tabular}
+\caption{Solver errors}
+\label{figure:16}
+\end{table}
+
+
 \section{Conclusion}\label{sec:conclusion}
 This paper presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of sentence simplification for operator predictions. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed a particular problem type before.
 
