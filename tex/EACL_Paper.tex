@@ -39,7 +39,7 @@ This paper presents a sentence simplification approach in learning to solve arit
 \section{Introduction}
 Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. It will be difficult to extract accurate information from the unsimplified sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1}.
 
-To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem , we extract an equation using the coherent set of simplified sentences and their predicted operators.
+To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem, we extract an equation using the coherent set of simplified sentences and their predicted operators.
 \begin{table}[h]
 \fontsize{9}{9}
 \begin{tabularx}{7.9cm}{|c|c|}
@@ -62,7 +62,7 @@ In this section we describe how our system maps an arithmetic word problem to an
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item Extract simplified sentences from complex word problems using the simplification rules. 
 \item Train a model to classify operators for each simplified sentence.
-\item Solve the problem by updating the world states with the learned verb categories and forming equations.
+\item Solve the problem by updating problem state with learned operators and create equations.
 \end{enumerate}
 
 \subsection{Sentence Simplification and Problem Decomposition}
