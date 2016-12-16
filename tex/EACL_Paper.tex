@@ -37,7 +37,7 @@ This paper presents a sentence simplification approach in learning to solve arit
 \end{abstract}
 
 \section{Introduction}
-Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. It will be difficult to extract accurate information from the unsimplified sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1} in order to solve the problem.
+Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. It will be difficult to extract accurate information from the unsimplified sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1}.
 
 To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem , we extract an equation using the coherent set of simplified sentences and their predicted operators.
 \begin{table}[h]
@@ -55,7 +55,7 @@ To simplify the word problem, we execute a set of rules on each sentence so that
 \end{table}
 
 \section{Related Work}
-There have been a number of attempts to solve arithmetic word problems through machine learning (ML). All of the approaches that are not template based (e.g., ~\cite{ARIS:14}, ~\cite{RoyT:15} and ~\cite{RoyR:15}) use different methods to extract similar information. Based on different ways the information is represented, an equation is generated for the problem text. The template based method of ~\cite{Kushman:14} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems (e.g., ~\cite{ARIS:14} and ~\cite{RoyT:15}) while others (e.g., ~\cite{RoyR:15} and ~\cite{Kushman:14}) can also solve problems that require multiplication/division operations. Our approach uses the idea of sentence simplification to predict operators and handles addition and subtraction problems.
+All of the approaches, to solve arithmetic word problems, that are not template based (e.g., ~\cite{ARIS:14}, ~\cite{RoyT:15} and ~\cite{RoyR:15}) use different methods to extract similar information. Based on different ways the information is represented, an equation is generated for the problem text. The template based method of ~\cite{Kushman:14} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems (e.g., ~\cite{ARIS:14} and ~\cite{RoyT:15}) while others (e.g., ~\cite{RoyR:15} and ~\cite{Kushman:14}) can also solve problems that require multiplication/division operations. Our approach uses the idea of sentence simplification to predict operators and handles addition and subtraction problems.
 
 \section{Our Method}
 In this section we describe how our system maps an arithmetic word problem to an equation. It consists of three main steps:
@@ -189,9 +189,9 @@ After all the sentences are simplified, we randomly divide the dataset into trai
 - & Subtraction Operation\\ \hline
 ? & Fragment asking some question\\ \hline
 = & Assignment Operation\\ \hline
-i & Irrelevant information for solving the word problem \\ \hline
+i & Irrelevant information \\ \hline
 \end{tabular}
-\caption{Class Labels for Operator Prediction Classifier}
+\caption{Labels for Operator Prediction Classifier}
 \label{figure:7}
 \end{table}
 
@@ -271,7 +271,7 @@ $\mathit{k_{2}}$: she gave Sam some of her seashells .\\
 \hline
 $\mathit{k_{3}}$: She has 27 seashell .\\
 \hline
-$\mathit{k_{4}}$: How many seashells did she give to Sam ?\\
+$\mathit{k_{4}}$: How many seashells did she give to Sam?\\
 \hline
 \end{tabular}
 \caption{Example Word Problem}
