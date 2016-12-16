@@ -16,6 +16,8 @@
   
 \captionsetup[table]{name=Figure}
 \captionsetup{belowskip=-20pt,aboveskip=4pt}
+\captionsetup[figure]{font=small,labelfont=footnotesize}
+\captionsetup[table]{font=small,labelfont=footnotesize}
 
 \begin{document}
 \title{Using Sentence Simplification to Solve Arithmetic Word Problems}
@@ -43,13 +45,13 @@ To simplify the word problem, we execute a set of rules on each sentence so that
 \begin{tabularx}{7.9cm}{|c|c|}
 \hline 
 \multicolumn{2}{|c|}{\bf{Example Word Problem}} \\ \hline
-\multicolumn{2}{|p{7cm}|}{A spaceship traveled 0.5 light-year from Earth to Planet X and 0.1 light-year from Planet X to Planet Y. How many light-years did the spaceship travel in all ?} \\ \hline
+\multicolumn{2}{|p{7cm}|}{\small A spaceship traveled 0.5 light-year from Earth to Planet X and 0.1 light-year from Planet X to Planet Y. How many light-years did the spaceship travel in all ?} \\ \hline
 \multicolumn{1}{|m{5cm}|}{\bf \centering Simplified Sentence} & \multicolumn{1}{m{2cm}|}{\bf \centering Predicted Operations} \\ \hline
-\multicolumn{1}{|m{5cm}|}{A spaceship traveled 0.5 light-year from Earth to Planet X.} & \multicolumn{1}{m{2cm}|}{\centering + 0.5 light-year} \\ \hline
-\multicolumn{1}{|m{5cm}|}{A spaceship traveled 0.1 light-year from Planet X to Planet Y.} & \multicolumn{1}{m{2cm}|}{\centering + 0.1 light-year} \\ \hline
-\multicolumn{2}{|m{7cm}|}{\centering \textbf{Equation:}  + 0.5 light-year + 0.1 light-year} \\ \hline
+\multicolumn{1}{|m{5cm}|}{\small A spaceship traveled 0.5 light-year from Earth to Planet X.} & \multicolumn{1}{m{2cm}|}{\small \centering + 0.5 light-year} \\ \hline
+\multicolumn{1}{|m{5cm}|}{\small A spaceship traveled 0.1 light-year from Planet X to Planet Y.} & \multicolumn{1}{m{2cm}|}{\small \centering + 0.1 light-year} \\ \hline
+\multicolumn{2}{|m{7cm}|}{\small \centering \textbf{Equation:}  + 0.5 light-year + 0.1 light-year} \\ \hline
 \end{tabularx}
-\caption{\label{figure:1} Equation Extraction from Simplified Sentences }
+\caption{\small \label{figure:1} Equation Extraction from Simplified Sentences }
 \end{table}
 
 \section{Related Work}
@@ -70,7 +72,7 @@ Sentences in an arithmetic word problem are sometimes complex. Hence, it is diff
 
 \subsubsection{Rules for Simplifying Sentences}\label{sec:SimplificationRules}
 When the conjunction \textit{"and"} or  the punctuation character \textit{","} is encountered, our system attempts to create two simplified sentences from the actual sentence. The first sentence is the part before these elements while the second sentence is the part after them. Notably, after the split there may be some words which would be required in the second sentence. Consider the sentence in Figure \ref{figure:2}: 
-
+\vspace{-0.7cm}
 \begin{table}[H]
 \centering
 \begin{tabular}{ | m{7cm} | }
@@ -78,7 +80,7 @@ When the conjunction \textit{"and"} or  the punctuation character \textit{","} i
 $\mathbf{s}$: The school cafeteria ordered 42 red apples and 7 green apples for students lunches.\\
 \hline
 \end{tabular}
-\caption{Example Sentence}
+\caption{\small Example Sentence}
 \label{figure:2}
 \end{table}
 
