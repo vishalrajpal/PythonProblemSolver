@@ -15,6 +15,7 @@
   \setlength\belowdisplayskip{0pt}}
   
 \captionsetup[table]{name=Figure}
+\captionsetup{belowskip=-20pt,aboveskip=4pt}
 
 \begin{document}
 \title{Using Sentence Simplification to Solve Arithmetic Word Problems}
@@ -38,6 +39,7 @@ Interpreting a sentence representing a single mathematical operation is relative
 
 To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem , we extract an equation using the coherent set of simplified sentences and their predicted operators.
 \begin{table}[h]
+\fontsize{9}{9}
 \begin{tabularx}{7.9cm}{|c|c|}
 \hline 
 \multicolumn{2}{|c|}{\bf{Example Word Problem}} \\ \hline
@@ -108,8 +110,6 @@ $\mathit{k_{2}}$: There were 2 house cats.\\
 \caption{Example sentence for Rule \ref{rule:1}}.
 \label{figure:3}
 \end{table}
-
-The expletive and verb were added to $\mathit{k_{2}}$ based on the simplification rule mentioned above.
 
 \item \label{rule:2}
 If $\mathit{k_{1}}$ starts with a noun, and if $\mathit{k_{2}}$ starts with a verb, the noun from the former will be distributed to the latter. Refer to an example in Figure \ref{figure:4}.
