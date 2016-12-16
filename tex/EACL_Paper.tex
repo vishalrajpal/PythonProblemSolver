@@ -6,12 +6,18 @@
 \usepackage{caption}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{enumitem}
 %\eaclfinalcopy
-
+\usepackage[compact]{titlesec}         % you need this package
+\titlespacing{\section}{0pt}{0pt}{0pt} % this reduces space between (sub)sections to 0pt, for example
+\AtBeginDocument{%                     % this will reduce spaces between parts (above and below) of texts within a (sub)section to 0pt, for example - like between an 'eqnarray' and text
+  \setlength\abovedisplayskip{0pt}
+  \setlength\belowdisplayskip{0pt}}
+  
 \captionsetup[table]{name=Figure}
 
 \begin{document}
-\title{Operator Prediction through Sentence Simplification for Solving Arithmetic Word Problems}
+\title{Using Sentence Simplification to Solve Arithmetic Word Problems}
 
 \author{First Author \\
   Affiliation / Address line 1 \\
@@ -49,7 +55,7 @@ There have been a number of attempts to solve arithmetic word problems through m
 
 \section{Our Method}
 In this section we describe how our system maps an arithmetic word problem to an equation. It consists of three main steps:
-\begin{enumerate}
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item Extract simplified sentences from complex word problems using the simplification rules. 
 \item Train a model to classify operators for each simplified sentence.
 \item Solve the problem by updating the world states with the learned verb categories and forming equations.
@@ -84,7 +90,7 @@ $\mathit{k_{2}}$:\textit{7 green apples for students lunches}
 Here $\mathit{k_{1}}$ has a subject and a verb while $\mathit{k_{2}}$ does not have them, making it an improper sentence. Hence, there are some rules for adding words to simplified sentences:
 
 \subsubsection{Rules for adding words to simplified sentences.}\label{sec:secondsentencesimplification}
-\begin{enumerate}
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item \label{rule:1}
 If $\mathit{k_{1}}$ starts with an existential and has a verb after it and if $\mathit{k_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:3}:
 
@@ -287,7 +293,7 @@ $\mathit{k_{3}}$ & $\mathit{=}$ & $\mathit{Joan > 70 - X = 27}$ \textit{seashell
 
 
 We use Spacy\footnote{https://spacy.io} to extract dependency relations and attempt to extract equation for a word problem based on the subject and object identified in the question sentence. There are 4 scenarios we consider:
-\begin{enumerate}
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item If the question sentence has a singular subject and an object, we map the subject to one of the entities in our representation and output the result.
 \item If the question sentence has a plural subject (For Example: \textit{they}) and an object, we perform all the identified operations for that object.
 \item If the question sentence has a comparative adjective and multiple subjects or multiple objects, we output the result by subtracting the smaller quantity from the greater one.
@@ -325,7 +331,7 @@ $\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
 ~\newcite{ARIS:14} & 83.6 & 75.0 & 74.4 & 77.7 \\ \hline
 ~\newcite{RoyR:15} & - & - & - & 78.0 \\ \hline
 ~\newcite{Kushman:14} & 89.6 & 51.1 & 51.2 & 64.0 \\ \hline
-\textbf{Proposed Method} & \textbf{93.0} & 52.0 & \textbf{81.0} & 75.33 \\ \hline
+\textbf{Proposed Method} & \textbf{97.8} & 59.28 & \textbf{73.6} & 76.9 \\ \hline
 \end{tabular}
 \caption{Solver Results for AI2 Dataset}
 \label{figure:13}
@@ -333,7 +339,7 @@ $\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|m{3cm}|m{2cm}|m{2cm}|}
+\begin{tabular}{|m{3cm}|m{2cm}|m{1.5cm}|}
 \hline
  & \textbf{Training} & \textbf{Testing} \\ \hline
  \textbf{Count} & 1015 & 203 \\ \hline
@@ -345,16 +351,17 @@ $\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
 
 \section{Error Analysis}
 \subsection{Sentence Simplification}
-We analysed the errors in sentence simplification system where minimal manual internvention was required to simplify the sentences correctly. We present our analysis in Figure \ref{figure:15}. There were few word problems in the dataset where the conjunction \textit{and} was missing so the sentence could not be simplified at all. There were around 2\% of word problems that had adjective implicitly added to the object mentioned later in the sentence. For such sentences the nouns from the second simplified sentence is not attached to the adjective in the first simplified sentence. Finally, we also have sentences starting with conditional words like \textit{if} and \textit{when} that are not simplified since the system could not identify the subject, object and verb correctly in the sentence.
+We analyzed the errors in sentence simplification system where minimal manual intervention was required to simplify the sentences correctly. We present our analysis in Figure \ref{figure:15}. 
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|m{1cm}|m{3cm}|m{3cm}|}
+\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|}
 \hline
- \textbf{Error Type} & \textbf{Example}  & \textbf{Simplified Sentence}\\ \hline
- Dataset error 2\% & Joan has 5 apples Mary has 2 apples. & Joan has 5 apples Mary has 2 apples. \\ \hline
-Attaching adjectives 2\% & Joan has 5 blue and 2 red marbles. & Joan has 5 blue. Joan has 2 red marbles. \\ \hline
-Conditional start 3\% & If her fund was worth 1472 before , how much is it worth now ? & If her fund was worth 1472 before, how much is it worth now ? \\ \hline
+\textbf{Error Type} & \textbf{Description} & \textbf{Example}  \\ \hline
+Dataset Errors 2\% & Improper formed sentences in the dataset. & Joan has 5 apples Mary has 2 apples. \\ \hline
+Compound Nouns 2\% & Unable to identify compound nouns. & Joan has 5 blue and 2 red marbles. \\ \hline
+Conditional Beginnings 5\% & Sentences beginning with conditional words such as \textit{if} or \textit{when}. & If her fund was worth 1472 before , how much is it worth now ? \\ \hline
+Parsing Errors 8\% &  & \\ \hline
 \end{tabular}
 \caption{Sentence simplification errors}
 \label{figure:15}
@@ -378,7 +385,7 @@ Others 10\% & In March it rained 0.81 inches. It rained 0.35 inches less in Apri
 
 
 \section{Conclusion}\label{sec:conclusion}
-This paper presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoritical framework, centered around the notion of sentence simplification for operator predictions. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed a particular problem type before.
+This paper presents a method for understanding and solving addition and subtraction arithmetic word problems. We develop a novel theoretical framework, centered around the notion of sentence simplification for operator predictions. We show this by developing a classifier that yields strong performance on several benchmark collections. Our approach also performs equally well on multistep problems, even when it has never observed a particular problem type before.
 
 \bibliography{EACL_Paper.bib}
 \bibliographystyle{eacl2017.bst}
