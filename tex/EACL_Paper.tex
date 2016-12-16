@@ -7,6 +7,7 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{enumitem}
+
 %\eaclfinalcopy
 \usepackage[compact]{titlesec}         % you need this package
 \titlespacing{\section}{0pt}{0pt}{0pt} % this reduces space between (sub)sections to 0pt, for example
@@ -22,6 +23,8 @@
 \captionsetup[table]{font=small,labelfont=footnotesize}
 
 \begin{document}
+\nocite{MARTHA, Vickrey, Clark, Quants, Hannaneh}
+
 \title{Using Sentence Simplification to Solve Arithmetic Word Problems}
 
 \author{First Author \\
@@ -35,13 +38,12 @@
 \maketitle
 
 \begin{abstract}
-This paper presents a sentence simplification approach in learning to solve arithmetic word problems. The approach performs a thorough analysis to map each sentence in the word problem to a simplified sentence. The objective of our approach is to use the basic properties of the English language to simplify sentences and then classify the simplified sentences to their operators. We simplify the sentence until it represents a single operation. Using the predicted operators for each simplified sentence we build an equation and solve the problem. We train our classifier on MAWPS (A Math Word Problem Repository)~\cite{MAWPS} dataset and achieve an accuracy of 82.57\%. We show that our method performs relatively better than other methods, achieving state of the art performance on benchmark datasets.
+This paper presents a sentence simplification based approach for learning to solve arithmetic word problems. In an effort to reduce parsing and classification errors, we begin by using linguistic properties to process the text such that each sentence represents a single mathematical operation.  Based on the simplified sentences, a classifier is learned to predict operators for each simplified sentence that is used to build an equation to solve the problem. On the MAWPS~\cite{MAWPS} addition and subtraction problems, we demonstrate performance competitive with existing state of the art systems. 
 \end{abstract}
 
 \section{Introduction}
-Interpreting a sentence representing a single mathematical operation is relatively easier than interpreting a sentence having multiple mathematical operations. It will be difficult to extract accurate information from the unsimplified sentences in the actual question. However, it becomes much simpler to extract information useful for the equation from the simplified sentences as shown in Figure \ref{figure:1}.
+Interpreting a sentence representing a single mathematical operation is simpler and less error prone than interpreting a sentence having multiple mathematical operations. For example, consider Figure \ref{figure:1} where splitting the first sentence into two sentences leads to a more straightforward analysis.  To simplify the word problem, we execute a set of rules on each sentence to possibly produce multiple simplified sentences with the goal of a single mathematical operation associated with each simplified sentence.  We then learn a operator classifier based on these simplified sentences and generate a solution equation.
 
-To simplify the word problem, we execute a set of rules on each sentence so that it possibly has multiple simplified sentences. Our goal here is to have a single operation in each simplified sentence. To solve the problem, we extract an equation using the coherent set of simplified sentences and their predicted operators.
 \begin{table}[h]
 \fontsize{9}{9}
 \begin{tabularx}{7.9cm}{|c|c|}
@@ -57,7 +59,8 @@ To simplify the word problem, we execute a set of rules on each sentence so that
 \end{table}
 
 \section{Related Work}
-All of the approaches, to solve arithmetic word problems, that are not template based (e.g., ~\cite{ARIS:14}, ~\cite{RoyT:15} and ~\cite{RoyR:15}) use different methods to extract similar information. Based on different ways the information is represented, an equation is generated for the problem text. The template based method of ~\cite{Kushman:14} implicitly assumes that the solution will be generated from a set of predefined equation templates. Some of these methods only solve addition and subtraction problems (e.g., ~\cite{ARIS:14} and ~\cite{RoyT:15}) while others (e.g., ~\cite{RoyR:15} and ~\cite{Kushman:14}) can also solve problems that require multiplication/division operations. Our approach uses the idea of sentence simplification to predict operators and handles addition and subtraction problems.
+There have been a number of attempts to solve arithmetic word problems through machine learning (ML). Template based methods (e.g., \cite{Kushman:14}) implicitly assumes that the solution will be generated from a set of predefined equation templates.  Non-template based methods (e.g., \cite{ARIS:14,RoyT:15,RoyR:15}) use different methods to extract similar information. Based on different representations of the extracted information, an equation is generated for the problem text.  %Some of these methods only solve addition and subtraction problems (e.g., ~\cite{ARIS:14} and ~\cite{RoyT:15}) while others (e.g., ~\cite{RoyR:15} and ~\cite{Kushman:14}) can also solve problems that require multiplication/division operations. 
+Our approach is distinct in that it uses sentence simplification to predict operators to handle addition and subtraction problems.
 
 \section{Our Method}
 In this section we describe how our system maps an arithmetic word problem to an equation. It consists of three main steps:
@@ -88,6 +91,7 @@ $\mathbf{s}$: \small The school cafeteria ordered 42 red apples and 7 green appl
 \vspace{0.3cm}
 In s, the split based on \textit{"and"} will result in two sentences as shown below:
 \\
+\\
 $\mathit{k_{1}}$:\textit{The school cafeteria ordered 42 red apples}\\
 $\mathit{k_{2}}$:\textit{7 green apples for students lunches}
 \\
@@ -97,7 +101,7 @@ Here $\mathit{k_{1}}$ has a subject and a verb while $\mathit{k_{2}}$ does not h
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item \label{rule:1}
 If $\mathit{k_{1}}$ starts with an existential and has a verb after it and if $\mathit{k_{2}}$ does not have either expletive or verb, distribute them to $\mathit{k_{2}}$. Consider the example in Figure \ref{figure:3}:
-\vspace{0.65cm}
+\vspace{0cm}
 \begin{table}[h!]
 \centering
 \begin{tabular}{ | m{7cm} | }
@@ -183,14 +187,14 @@ After all the sentences are simplified, we randomly divide the dataset into trai
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{ | m{2cm} | m{5cm} |}
+\begin{tabular}{ | m{1.6cm} | m{4cm} |}
 \hline
-\textbf{Class Label} & \textbf{Description}\\ \hline
-+ & Addition Operation.\\ \hline
-- & Subtraction Operation\\ \hline
-? & Fragment asking some question\\ \hline
-= & Assignment Operation\\ \hline
-i & Irrelevant information \\ \hline
+\textbf{\small Class Label} & \textbf{\small Description}\\ \hline
+\small + & \small Addition Operation.\\ \hline
+\small - & \small Subtraction Operation\\ \hline
+\small ? & \small Fragment asking some question\\ \hline
+\small = & \small Assignment Operation\\ \hline
+\small i & \small Irrelevant information \\ \hline
 \end{tabular}
 \caption{Labels for Operator Prediction Classifier}
 \label{figure:7}
@@ -203,29 +207,29 @@ The index of simplified sentence in the question is important to determine the o
 \centering
 \begin{tabular}{ | m{3cm} | m{4cm} |}
 \hline
-\textbf{Feature} & \textbf{Description}\\ \hline
-IsItAFirstSentence & Most word problems in the training data had a positive operation in the first sentence.\\ \hline
-IsItALastSentence & Almost always the last sentence in the word problem is a question sentence.\\ \hline
+\textbf{\small Feature} & \textbf{\small Description}\\ \hline
+\small IsItAFirstSentence & \small Most word problems in the training data had a positive operation in the first sentence.\\ \hline
+\small IsItALastSentence & \small Almost always the last sentence in the word problem is a question sentence.\\ \hline
 \end{tabular}
 \caption{Position based Features}
 \label{figure:8}
 \end{table}
-
+\vspace{0.25cm}
 \subsubsection{Relation based}
 Existence of some important dependency relations is used as a feature. Refer to Figure \ref{figure:9} for the list of relation based features:
 \begin{table}[H]
-\begin{tabular}{|m{2cm} | m{5cm}|}
+\begin{tabular}{|m{2cm} | m{4cm}|}
 \hline 
-\textbf{Feature} & \textbf{Description}\\ \hline
-nsubj & \multirow{2}{5cm}{\centering The sentence is more likely to perform an operation in the presence of these two relations.} \\[10pt]
+\textbf{\small Feature} & \textbf{\small Description}\\ \hline
+\small nsubj & \multirow{2}{4cm}{\small The sentence is more likely to perform an operation in the presence of these two relations.} \\[10pt]
 \cline{1-1} 
- dobj & \\[10pt]
+ \small dobj & \\[10pt]
 \hline
 \end{tabular}
 \caption{Relation based Features}
 \label{figure:9}
 \end{table}
-
+\vspace{0.15cm}
 \subsubsection{Parts of Speech based}
 Existence of some Parts of Speech of the words in the sentence is used as a feature. Refer to Figure \ref{figure:10} for the list of POS based features:
 
@@ -233,26 +237,26 @@ Existence of some Parts of Speech of the words in the sentence is used as a feat
 \centering
 \begin{tabular}{ | m{3cm} | m{4cm} |}
 \hline
-\textbf{Feature} & \textbf{Description}\\ \hline
-CD: Cardinal & \multirow{8}{4cm}{\centering The sentence is more likely to perform an operation in the presence of these Parts of Speech.} \\
+\textbf{\small Feature} & \textbf{\small Description}\\ \hline
+\small CD: Cardinal & \multirow{8}{4cm}{\centering The sentence is more likely to perform an operation in the presence of these Parts of Speech.} \\
 \cline{1-1} 
-WRB: WH-Adverb & \\
+\small WRB: WH-Adverb & \\
 \cline{1-1} 
-EX: Expletive & \\ 
+\small EX: Expletive & \\ 
 \cline{1-1} 
-RBR: Comparative Adverb & \\ 
+\small RBR: Comparative Adverb & \\ 
 \cline{1-1} 
-RBS: Superlative Adverb & \\ 
+\small RBS: Superlative Adverb & \\ 
 \cline{1-1} 
-VBD: Past tense Verb & \\ 
+\small VBD: Past tense Verb & \\ 
 \cline{1-1} 
-VB: Base form Verb & \\ 
+\small VB: Base form Verb & \\ 
 \hline
 \end{tabular}
-\caption{Position based Features}
+\caption{Parts of Speech based Features}
 \label{figure:10}
 \end{table}
-
+\vspace{0.15cm}
 \subsubsection{Verb Similarity based}
 A \textit{Positive Verb} is a verb which indicates that the subject in the sentence is gaining some quantified object. A \textit{Negative Verb} is a verb which indicates that the subject is losing something. We extract the most frequent verbs in  $\mathit{+}$ and $\mathit{-}$ labeled sentences. Based on the frequencies we extract 13 significantly differentiating verbs for each class. The similarity of the lemma of these verbs to the action verb in the sentence is then used as a feature. Therefore, we have a total of 26 such features. The similarity score is calculated based on the WUP word similarity using WordNet~\cite{WordNet:95}.
 
@@ -264,37 +268,36 @@ Based on the predicted operators for each simplified sentence, we create a repre
 \centering
 \begin{tabular}{ | m{7cm} | }
 \hline
- $\mathbf{w}$\textbf{: Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ?}\\
+ $\mathbf{\small S}$\textbf{\small : Joan found 70 seashells on the beach . she gave Sam some of her seashells . She has 27 seashell . How many seashells did she give to Sam ?}\\
 \hline
-$\mathit{k_{1}}$: Joan found 70 seashells on the beach.\\
+$\mathit{\small k_{1}}$\small : Joan found 70 seashells on the beach.\\
 \hline
-$\mathit{k_{2}}$: she gave Sam some of her seashells .\\
+$\mathit{\small k_{2}}$\small : she gave Sam some of her seashells .\\
 \hline
-$\mathit{k_{3}}$: She has 27 seashell .\\
+$\mathit{\small k_{3}}$\small : She has 27 seashell .\\
 \hline
-$\mathit{k_{4}}$: How many seashells did she give to Sam?\\
+$\mathit{\small k_{4}}$\small : How many seashells did she give to Sam?\\
 \hline
 \end{tabular}
 \caption{Example Word Problem}
 \label{figure:11}
 \end{table}
 
+\vspace{0.25cm}
 The representation of the above simplified sentences would be as shown in Figure \ref{figure:12}:
 \begin{table}[h!]
 \centering
 \begin{tabular}{ |p{1.3cm}|p{1.7cm}|p{3.7cm}| }
 \hline
-\textbf{Sentence} & \textbf{Predicted Operator} & \textbf{Representation} \\ \hline
-$\mathit{k_{1}}$ & $\mathit{+}$ & $\mathit{Joan > 70}$\textit{seashell} \\ \hline
-$\mathit{k_{2}}$ & $\mathit{-}$ & $\mathit{Joan> 70 - X}$\textit{seashell} $\mathit{Sam > +X}\textit{seashell}$ \\ \hline
-$\mathit{k_{3}}$ & $\mathit{=}$ & $\mathit{Joan > 70 - X = 27}$ \textit{seashell}\\ \hline
+\textbf{\small Sentence} & \textbf{\small Predicted Operator} & \textbf{\small Representation} \\ \hline
+$\mathit{\small k_{1}}$ & $\mathit{\small +}$ & $\mathit{\small Joan \leftarrow 70}$\textit{\small seashell} \\ \hline
+$\mathit{\small k_{2}}$ & $\mathit{\small -}$ & $\mathit{\small Joan \leftarrow 70 - X}$\textit{\small seashell} $\mathit{\small Sam \leftarrow +X}\textit{\small seashell}$ \\ \hline
+$\mathit{\small k_{3}}$ & $\mathit{\small =}$ & $\mathit{\small Joan \leftarrow 70 - X = 27}$ \textit{\small seashell}\\ \hline
 \end{tabular}
-\caption{Example Word Problem}
-\label{figure:11}
+\caption{Word Problem State Representation}
+\label{figure:12}
 \end{table}
-
-
-
+\vspace{0.25cm}
 We use Spacy\footnote{https://spacy.io} to extract dependency relations and attempt to extract equation for a word problem based on the subject and object identified in the question sentence. There are 4 scenarios we consider:
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item If the question sentence has a singular subject and an object, we map the subject to one of the entities in our representation and output the result.
@@ -310,80 +313,85 @@ Out of 1218 simplified word problems, we use 1015 to train our classifier and th
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|m{0.8cm}|m{1.4cm}|m{1.4cm}|m{1.4cm}|m{1cm}|}
+\begin{tabular}{|m{0.6cm}|m{1.2cm}|m{1.2cm}|m{1.2cm}|m{0.8cm}|}
 \hline
-\textbf{Class} & \textbf{Training Count} & \textbf{Testing Count} & \textbf{Precision} & \textbf{Recall} \\ \hline
-$\mathit{+}$ & 1811 & 375 & 96.23 & 74.93 \\ \hline
-$\mathit{-}$ & 528 & 102 & 85.57 & 87.25 \\ \hline
-$\mathit{?}$ & 1015 & 203 & 100 & 100 \\ \hline
-$\mathit{=}$ & 113 & 28 & 25 & 53.57 \\ \hline
-$\mathit{i}$ & 317 & 44 & 35.48 & 75 \\ \hline
-\multicolumn{5}{|m{7cm}|}{\textbf{Accuracy: 82.57}\%} \\ \hline
+\textbf{\small Class} & \textbf{\small Training Count} & \textbf{\small Testing Count} & \textbf{\small Precision} & \textbf{\small Recall} \\ \hline
+$\mathit{\small +}$ & \small 1811 & \small 375 & \small 96.23 & \small 74.93 \\ \hline
+$\mathit{\small -}$ & \small 528 & \small 102 & \small 85.57 & \small 87.25 \\ \hline
+$\mathit{\small ?}$ & \small 1015 & \small 203 & \small 100 & \small 100 \\ \hline
+$\mathit{\small =}$ & \small 113 & \small 28 & \small 25 & \small 53.57 \\ \hline
+$\mathit{\small i}$ & \small 317 & \small 44 & \small 35.48 & \small 75 \\ \hline
+\multicolumn{5}{|m{7cm}|}{\textbf{\small Accuracy: 82.57}\%} \\ \hline
 \end{tabular}
 \caption{Operator Prediction Results}
-\label{figure:12}
+\label{figure:13}
 \end{table}
+\vspace{0.15cm}
+We achieve nearly 75\% or more precision and recall for all three important operations.
 
 \subsection{Word Problem Solver}
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|m{3.5cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|}
+\begin{tabular}{|m{2.9cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|m{0.7cm}|}
 \hline
- & \textbf{MA1} & \textbf{IXL} & \textbf{MA2} & \textbf{Total} \\ \hline
-~\newcite{ARIS:14} & 83.6 & 75.0 & 74.4 & 77.7 \\ \hline
-~\newcite{RoyR:15} & - & - & - & 78.0 \\ \hline
-~\newcite{Kushman:14} & 89.6 & 51.1 & 51.2 & 64.0 \\ \hline
-\textbf{Proposed Method} & \textbf{97.8} & 59.28 & \textbf{73.6} & 76.9 \\ \hline
+ & \textbf{\small MA1} & \textbf{\small IXL} & \textbf{\small MA2} & \textbf{\small Total} \\ \hline
+\small ~\newcite{ARIS:14} & \small 83.6 & \small 75.0 & \small 74.4 & \small 77.7 \\ \hline
+\small ~\newcite{RoyR:15} & - & - & - & \small 78.0 \\ \hline
+\small ~\newcite{Kushman:14} & \small 89.6 & \small 51.1 & \small 51.2 & \small 64.0 \\ \hline
+\textbf{\small Proposed Method} & \textbf{\small 97.8} & \small 59.28 & \textbf{\small 76.03} & 77.7 \\ \hline
 \end{tabular}
 \caption{Solver Results for AI2 Dataset}
-\label{figure:13}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|m{3cm}|m{2cm}|m{1.5cm}|}
-\hline
- & \textbf{Training} & \textbf{Testing} \\ \hline
- \textbf{Count} & 1015 & 203 \\ \hline
- \textbf{Accuracy} & 90.14 & \textbf{91.62} \\ \hline
-\end{tabular}
-\caption{Solver Results for MAWPS Dataset}
 \label{figure:14}
 \end{table}
-
+\vspace{0.3cm}
+Overall, we perform as good as ~\cite{ARIS:14} and we achieve better results in 2 datasets because of our improvement in operator prediction. The word problems in \textbf{MA2} are comparatively complex, and hence our sentence simplification system needs improvement to simplify sentences more accurately.
+\begin{table}[H]
+\centering
+\begin{tabular}{|m{2cm}|m{1.2cm}|m{1.2cm}|}
+\hline
+ \small MAWPS Dataset & \textbf{\small Training} & \textbf{\small Testing} \\ \hline
+ \textbf{\small Count} & \small 1015 & \small 203 \\ \hline
+ \textbf{\small Accuracy} & \small 90.14 & \textbf{\small 91.62} \\ \hline
+\end{tabular}
+\caption{Solver Results for MAWPS Dataset}
+\label{figure:15}
+\end{table}
+\vspace{0.25cm}
+We achieve exceptional results on the universal dataset for arithmetic word problems.
+\vspace{0.1cm}
 \section{Error Analysis}
 \subsection{Sentence Simplification}
-We analyzed the errors in sentence simplification system where minimal manual intervention was required to simplify the sentences correctly. We present our analysis in Figure \ref{figure:15}. 
+We analyzed the errors in sentence simplification system where minimal manual intervention was required to simplify the sentences correctly. We present our analysis in Figure \ref{figure:16}. 
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|}
 \hline
-\textbf{Error Type} & \textbf{Description} & \textbf{Example}  \\ \hline
-Dataset Errors 2\% & Improper formed sentences in the dataset. & Joan has 5 apples Mary has 2 apples. \\ \hline
-Compound Nouns 2\% & Unable to identify compound nouns. & Joan has 5 blue and 2 red marbles. \\ \hline
-Conditional Beginnings 5\% & Sentences beginning with conditional words such as \textit{if} or \textit{when}. & If her fund was worth 1472 before , how much is it worth now ? \\ \hline
-Parsing Errors 8\% &  & \\ \hline
+\textbf{\small Error Type} & \textbf{\small Description} & \textbf{\small Example}  \\ \hline
+\small Dataset Errors 2\% &\small Improper formed sentences in the dataset. & \small Joan has 5 apples Mary has 2 apples. \\ \hline
+\small Compound Nouns 2\% & \small Unable to identify compound nouns. & \small Joan has 5 blue and 2 red marbles. \\ \hline
+\small Conditional Beginnings 5\% & \small Sentences beginning with conditional words such as \textit{if} or \textit{when}. & \small If her fund was worth 1472 before , how much is it worth now ? \\ \hline
+\small Parsing Errors 8\% & \small Uncertainty of dependency parser while parsing complex sentences. & \small Each year, salmon travels upstream, going from the ocean to the rivers where they were born.\\ \hline
 \end{tabular}
-\caption{Sentence simplification errors}
-\label{figure:15}
+\caption{Sentence Simplification Errors}
+\label{figure:16}
 \end{table}
 
 \subsection{Solver}
-There are 4 major classes of errors for the solver. In the first category, the parser is not able to correctly identify the subject and object in the sentence. The second category refers to errors that require set completion knowledge. For example, played can be divided into win and lose. Also, we find irrelevant information with cardinals that add to errors in the solver. For example, to identify the count of cards, it is not required to know how many of them were torn.
+There are 4 major classes of errors for the solver as shown in \ref{figure:17}. In the first category, the parser is not able to correctly identify the subject and object in the sentence. The second category refers to errors that require set completion knowledge. For example, played can be divided into win and lose. Also, we find irrelevant information with cardinals that add to errors in the solver. For example, to identify the count of cards, it is not required to know how many of them were torn.
 \begin{table}[h!]
 \centering
 \begin{tabular}{|m{2cm}|m{4 cm}|}
 \hline
- \textbf{Error Type} & \textbf{Example}\\ \hline
-Parsing Issues 15\% & Sally had 27 Pokemon cards. Dan gave her 41 new Pokemon cards. How many Pokemon cards does Sally have now? \\ \hline
-Set Completion 5\% & Sara’s school played 12 games this year. They won 4 games. How many games did they lose?. \\ \hline
-Irrelevant Information 10\% & Sara has 20 baseball cards but 9 were torn. She gave 10 baseball cards to Joan. How many cards does she now have? \\ \hline
-Others 10\% & In March it rained 0.81 inches. It rained 0.35 inches less in April than in March. How much did it rain in April?  \\ \hline
+ \textbf{\small Error Type} & \textbf{\small Example}\\ \hline
+\small Parsing Issues 15\% & \small Sally had 27 Pokemon cards. Dan gave her 41 new Pokemon cards. How many Pokemon cards does Sally have now? \\ \hline
+\small Set Completion 5\% &\small  Sara's school played 12 games this year. They won 4 games. How many games did they lose?. \\ \hline
+\small Irrelevant Information 10\% & \small Sara has 20 baseball cards but 9 were torn. She gave 10 baseball cards to Joan. How many cards does she now have? \\ \hline
+\small Others 10\% & \small In March it rained 0.81 inches. It rained 0.35 inches less in April than in March. How much did it rain in April?  \\ \hline
 \end{tabular}
-\caption{Solver errors}
-\label{figure:16}
+\caption{Solver Errors}
+\label{figure:17}
 \end{table}
 
 
